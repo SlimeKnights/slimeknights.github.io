@@ -36,6 +36,9 @@ plugins:
   
 sass:
   style: compact # possible values: nested expanded compact compressed
+  
+header_pages:
+- about.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
