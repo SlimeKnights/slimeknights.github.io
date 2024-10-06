@@ -3,3 +3,11 @@
 @import "{{ site.theme }}";
 @import "treeview";
 
+/* Add logo to the site title */
+.site-title {
+    padding-left: 56px;
+    image-rendering: pixelated;
+    background-image: url(/assets/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: top 4px left;
+}
