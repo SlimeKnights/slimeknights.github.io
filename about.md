@@ -4,15 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+SlimeKnights is a group of developers creating mods for Minecraft. They are most well known for creating [Tinkers' Construct](https://github.com/SlimeKnights/TinkersConstruct) and [Natura](https://github.com/progwml6/Natura), but also have several other projects under the group. For more info, check out the group on [GitHub](https://github.com/SlimeKnights)
