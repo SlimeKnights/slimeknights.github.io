@@ -38,8 +38,8 @@ if include.name
     %}<tt><b>{{include.name}}</b></tt> {%
 endif %}{%
 
-if link != ""
-    %}(<a href="{{link}}">{{name}}</a>):{%
+if include.link or link != ""
+    %}(<a href="{{include.link | default: link}}">{{name}}</a>):{%
 else
     %}({{name}}):{%
 endif

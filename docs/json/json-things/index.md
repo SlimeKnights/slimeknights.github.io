@@ -2,7 +2,9 @@
 layout: page
 title: Json Things
 ---
-<div class="hatnote">This page covers information for 1.19.2+. Json Things support in 1.18.2 may differ slightly.</div>
+<div class="hatnote" markdown=1>
+  This page covers information for 1.19.2+. For 1.18.2, see [Json Things 1.18](1.18).
+</div>
 
 While we aim to make as much of our mods configurable and extendable through data packs and resource packs, there are some areas of the game that simply cannot be data driven at this time. Addons written in Java can of course access these features through code, but that is more difficult for modpacks and developers with less coding experience.
 
