@@ -12,3 +12,26 @@
     background-repeat: no-repeat;
     background-position: top 4px left;
 }
+
+/* Hatnotes and disambiguation notices, from https://minecraft.wiki/w/MediaWiki:common.css */
+.hatnote {
+	font-style: italic;
+}
+
+.hatnote i {
+	font-style: normal;
+}
+
+div.hatnote {
+	padding-left: 1.6em;
+	margin-bottom: 0.5em;
+}
+
+div.hatnote + div.hatnote {
+	margin-top: -0.5em;
+}
+
+/* Add a vertical line under h2 to help break up page contents */
+h2 {
+    border-bottom: 1px solid #d1d9e0b3;
+}
