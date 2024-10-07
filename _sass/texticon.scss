@@ -1,0 +1,63 @@
+/* offsets the sprite positions */
+@mixin sprite($row, $col, $size: -16px) {
+    background-position: calc($col * $size) calc($row * $size);
+}
+
+/* Icon sheet from https://minecraft.wiki/w/Template:nbt */
+.nbt-icon {
+    padding-left: 3px;    
+    &::before {
+        content: " ";
+        image-rendering: pixelated;
+        top: 3px;
+        left: -2px;
+        height: 16px;
+        width: 16px;
+        display: inline-block;
+        position: relative;
+        background-image: url(/assets/images/nbt-sprites.png);
+        background-size: 64px auto;
+        background-repeat: no-repeat;
+        @include sprite(3, 1);
+    }
+
+    &.nbt-bool::before, &.nbt-boolean::before {
+        @include sprite(2, 3);
+    }
+    &.nbt-byte::before {
+        @include sprite(0, 0);
+    }
+    &.nbt-short::before {
+        @include sprite(1, 1);
+    }
+    &.nbt-int::before, &.nbt-integer::before {
+        @include sprite(0, 3);
+    }
+    &.nbt-long::before {
+        @include sprite(1, 0);
+    }
+    &.nbt-float::before {
+        @include sprite(0, 2);
+    }
+    &.nbt-double::before {
+        @include sprite(0, 1);
+    }
+    &.nbt-byte-array::before {
+        @include sprite(2, 0);
+    }
+    &.nbt-int-array::before {
+        @include sprite(2, 1);
+    }
+    &.nbt-long-array::before {
+        @include sprite(3, 0);
+    }
+    &.nbt-string::before {
+        @include sprite(1, 2);
+    }
+    &.nbt-list::before {
+        @include sprite(2, 2);
+    }
+    &.nbt-compound::before {
+        @include sprite(1, 3);
+    }
+}
