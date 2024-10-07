@@ -1,0 +1,46 @@
+{% assign link = "" %}{%
+if include.type == "integer" or include.type == "int" %}{%
+    assign name = "Integer" %}{%
+    assign icon = "nbt-int" %}{%
+elsif include.type == "number" %}{%
+    assign name = "Number" %}{%
+    assign icon = "nbt-float" %}{%
+elsif include.type == "boolean" %}{%
+    assign name = "Boolean" %}{%
+    assign icon = "nbt-bool" %}{%
+elsif include.type == "string" %}{%
+    assign name = "String" %}{%
+    assign icon = "nbt-string" %}{%
+elsif include.type == "array" or include.type == "list" %}{%
+    assign name = "Array" %}{%
+    assign icon = "nbt-list" %}{%
+elsif include.type == "object" or include.type == "compound" %}{%
+    assign name = "Object" %}{%
+    assign icon = "nbt-compound" %}{%
+
+elsif include.type == "resource location" %}{%
+    assign name = "Resource Location" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/resource-location" %}{%
+
+elsif include.type contains "ID" %}{%
+    assign name = include.type %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/resource-location#registry-ids" %}{%
+
+else %}{%
+    assign name = include.type %}{%
+    assign icon = "nbt-compound" %}{%
+endif 
+%}<span class="nbt-icon {{icon}}">{%
+
+if include.name
+    %}<tt><b>{{include.name}}</b></tt> {%
+endif %}{%
+
+if link != ""
+    %}(<a href="{{link}}">{{name}}</a>):{%
+else
+    %}({{name}}):{%
+endif
+%}</span>
