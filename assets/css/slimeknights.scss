@@ -44,3 +44,12 @@ h2 {
         height: 64px;
     }
 }
+
+/* Hide permalink icons when not hovered */
+.hover-container:not(:hover) > .hover-icon {
+    display: none;
+}
+/* Highlight link header */
+:target {
+    background-color: rgba(255, 255, 0, 0.28);
+}
