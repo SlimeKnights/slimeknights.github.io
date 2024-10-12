@@ -36,3 +36,5 @@ This page lists download links for all SlimeKnights mods.
       description="Mantle is a mod containing shared code for SlimeKnights mods. Why? For science and slime, why else?"
     %}
 </div>
+
+## Inactivate Projects
