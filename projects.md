@@ -11,7 +11,7 @@ In each section, mods are sorted by latest Minecraft Version, then alphabeticall
 An exception is Mantle, since its special so it goes first.
 {% endcomment %}
 
-## Active Projects
+## Current Projects
 
 These SlimeKnights projects are actively supported, either on the latest Minecraft version or in development for a later Minecraft version.
 
@@ -80,7 +80,7 @@ These mods are made by a member of SlimeKnights, but are not directly part of th
 </div>
 
 
-## Inactivate Projects
+## Abandoned Projects
 
 These SlimeKnights mods are no longer actively being maintained.
 
