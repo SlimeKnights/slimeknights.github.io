@@ -53,3 +53,27 @@ h2 {
 :target {
     background-color: rgba(255, 255, 0, 0.28);
 }
+
+/* Project page */
+.project-list > .uk-card:not(:last-child) {
+    margin-bottom: 15px;
+}
+.project-links .uk-button {
+    &.uk-button-primary, &.uk-button-danger {
+        color: #fff !important;
+    }
+    
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+.project-title {
+    margin-bottom: -10px;
+}
+
+/* Green button */
+.uk-button-success {
+    background-color: #32a852;
+    color: #fff !important;
+    border: 1px solid transparent;
+}

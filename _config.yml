@@ -45,6 +45,7 @@ sass:
 header_pages:
 - about.md
 - docs/index.md
+- projects.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
