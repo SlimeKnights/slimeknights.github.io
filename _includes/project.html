@@ -1,28 +1,40 @@
 <div class="uk-card uk-card-default uk-card-body uk-card-hover uk-card-small">
     <div uk-grid data-uk-grid-margin class="">
         <div class="uk-width-1-1@s uk-width-1-4@m uk-text-center">
-            <img src="/assets/images/projects/{{include.name}}.png"/>
+            <img src="/assets/images/projects/{{include.name}}.{{include.image-extension | default: "png"}}"/>
+            {% if include.author %}
+                <div><i>Author: {{include.author}}</i></div>
+            {% endif %}
         </div>
+       {% assign name-capitalized = include.name | capitalize %}
         <div class="uk-width-1-1@s uk-width-1-2@m">
-            <h3 id="{{include.name}}" class="project-title">{{include.title | default: include.name}}</h3>
+            <h3 id="{{include.name}}" class="project-title">{{include.title | default: name-capitalized}}</h3>
             {% if include.latest %}
-                <i class="hatnote">Latest Minecraft Version: {{include.latest}}</i>
+                <i>Latest Minecraft Version: {{include.latest}}</i>
             {% endif %}
             <p>{{include.description}}</p>
         </div>
         <div class="uk-width-1-1@s uk-width-1-4@m project-links">
-            <a href="https://www.curseforge.com/minecraft/mc-mods/{{include.curseforge | default: include.name}}" 
-               class="uk-width-1-1 uk-button uk-button-success uk-button-small uk-text-bold">
-                CurseForge
-            </a>
+            {% unless include.curseforge == false %}
+                <a href="https://www.curseforge.com/minecraft/mc-mods/{{include.curseforge | default: include.name}}" 
+                   class="uk-width-1-1 uk-button uk-button-success uk-button-small uk-text-bold">
+                    CurseForge
+                </a>
+            {% endunless %}
             {% unless include.modrinth == false %}
                 <a href="https://modrinth.com/mod/{{include.modrinth | default: include.name}}"
                    class="uk-width-1-1 uk-button uk-button-success uk-button-small uk-text-bold">
                     Modrinth
                 </a>
             {% endunless %}
-            {% assign github-author = include.github-author | default: "SlimeKnights" %}
-            {% assign github-project = include.github | default: include.name %}
+            {% if include.forum %}
+                <a href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/{{include.forum}}"
+                   class="uk-width-1-1 uk-button uk-button-success uk-button-small uk-text-bold">
+                    Forum
+                </a>
+            {% endif %}
+            {% assign github-author = include.github-author | default: include.author | default: "SlimeKnights" %}
+            {% assign github-project = include.github | default: name-capitalized %}
             {% assign github-url = "https://github.com/" | append: github-author | append: "/" | append: github-project %}
             {% unless include.inactive %}
                 <a href="{{github-url}}/issues"
