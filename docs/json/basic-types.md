@@ -5,6 +5,8 @@ redirect_from:
   - /docs/json/resource-location/
 ---
 
+{% include toc.html %}
+
 ## Resource Location
 
 String representing the registry name of an object in the game. Format is always `<domain>:<name>`, where `<domain>` typically represents a mod or datapack ID, and `<name>` is the specific name for this object. Valid characters are any lowercase letter, any number, `-`, `_`, and `/`. A single `:` is allowed between the domain and name.

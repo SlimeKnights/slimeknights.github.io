@@ -13,6 +13,8 @@ Armor models are located at `assets/<domain>/tinkering/armor_models/<name>.json`
 
 When using [JSON Things](/docs/json/json-things#armor) to add armor using the type `tconstruct:multilayer_armor`, this ID is set by the field `name`.
 
+{% include toc.html %}
+
 ## JSON Format
 
 Armor models have the following format:
