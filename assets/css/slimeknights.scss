@@ -81,3 +81,30 @@ h2 {
 .social-media-list .uk-icon {
     color: #000;
 }
+
+/*
+ * Ordered list where nested lists use the parent number
+ * From https://stackoverflow.com/questions/13841771/ordered-list-css-style-includes-parent-number
+ */
+.section-list {
+    ol {
+      /* Creates a new instance of the section counter with each ol element */
+      counter-reset: section;                
+      list-style-type: none;
+    }
+    li:before {
+      /* Increments only this instance of the section counter */
+      counter-increment: section;        
+      /* Adds the value of all instances of the section counter separated by a ".". */      
+      content: counters(section, ".") " ";   
+    }
+}
+
+.toc {
+    width: max-content;
+    font-size: small;
+    
+    .uk-open .uk-accordion-title {
+        margin-bottom: -15px;
+    }
+}
