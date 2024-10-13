@@ -48,14 +48,14 @@ These mods are made by a member of SlimeKnights, but are not directly part of th
 
 <div class="project-list">
     {% include project.html
+      name="simply-tea" title="Simply Tea" latest="1.20.1"
+      author="KnightMiner" github="SimplyTea"
+      description="A simple tea mod made for /u/Pickles256 on Reddit!"
+    %}
+    {% include project.html
       name="inspirations" latest="1.19.2"
       author="KnightMiner"
       description="Inspirations is a mod for Minecraft adding various smaller features to the game. The design is targeted towards vanilla, so instead of game changing features there are many smaller changes. "
-    %}
-    {% include project.html
-      name="simply-tea" title="Simply Tea" latest="1.19.2"
-      author="KnightMiner" github="SimplyTea"
-      description="A simple tea mod made for /u/Pickles256 on Reddit!"
     %}
     {% include project.html
       name="animal-crops" title="Animal Crops" latest="1.18.2"
