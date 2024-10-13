@@ -3,11 +3,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"/>
+  
+  {%- capture cache_buster -%}?{{site.time | date: '%s'}}{%- endcapture -%}
+  
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}{{cache_buster}}"/>
   <link rel="stylesheet" href="{{ "/assets/css/slimeknights.css" | relative_url }}"/>
   <link rel="stylesheet" href="{{ "/assets/css/uikit.min.css" | relative_url }}" />
   <script src="{{ "/assets/js/jquery.min.js" | relative_url }}"></script>
-  <script src="{{ "/assets/js/slimeknights.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/slimeknights.js" | relative_url }}{{cache_buster}}"></script>
   <script src="{{ "/assets/js/uikit.min.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/uikit-icons.min.js" | relative_url }}"></script>
   {%- feed_meta -%}
