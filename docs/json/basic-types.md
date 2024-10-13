@@ -18,7 +18,9 @@ Note that when creating new content, it is always advised to use a custom domain
 A common application of resource locations is an ID of a value in a registry. Unlike regular resource locations, registry IDs are often validated against the registry contents to ensure a matching ID exists.
 
 ### Tag Name
-<div class="hatnote" markdown=1>See also [the Minecraft Wiki article on tags](https://minecraft.wiki/w/Tags)</div>
+<div class="hatnote" markdown=1>
+See also [the Minecraft Wiki article on tags](https://minecraft.wiki/w/Tags)
+</div>
 
 Another common application of resource locations is an ID of a tag for a registry. Tags typically exist under `data/<domain>/tags/<registry name>/<name>.json`, though material and modifier tags exist under `data/<domain>/tinkering/tags/<materials|modifiers>/<name>.json`.
 
