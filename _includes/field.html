@@ -38,6 +38,11 @@ elsif include.type contains "ID" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/basic-types#registry-ids" %}{%
 
+elsif include.type contains "Tag" %}{%
+    assign name = include.type %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/basic-types#tag-name" %}{%
+
 else %}{%
     assign name = include.type %}{%
     assign icon = "nbt-compound" %}{%

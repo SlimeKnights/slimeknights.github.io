@@ -15,6 +15,13 @@ Note that when creating new content, it is always advised to use a custom domain
 
 A common application of resource locations is an ID of a value in a registry. Unlike regular resource locations, registry IDs are often validated against the registry contents to ensure a matching ID exists.
 
+### Tag Name
+<div class="hatnote" markdown=1>See also [the Minecraft Wiki article on tags](https://minecraft.wiki/w/Tags)</div>
+
+Another common application of resource locations is an ID of a tag for a registry. Tags typically exist under `data/<domain>/tags/<registry name>/<name>.json`, though material and modifier tags exist under `data/<domain>/tinkering/tags/<materials|modifiers>/<name>.json`.
+
+For JSON tag fields, if the requested tag does not exist the behavior is the same as if the tag is empty.
+
 ## Color
 
 Many JSON contain colors expressed as 6 or 8 digit hex color strings. 6 digit RGB strings use the format of `"RRGGBB"`, while 8 digit ARGB strings use the format of `"AARRGGBB"`. `AA`, `RR`, `GG`, and `BB` are hex numbers between 0 (`00`) and 255 (`FF`) representing the intensity of the color in (case insensitive) hexadecimal, with higher values meaning more of that color is present. On ARGB strings, if only 6 digits are provided then `AA` is set to 255.

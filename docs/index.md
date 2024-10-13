@@ -3,6 +3,7 @@ layout: page
 title: Documentation
 permalink: /docs/
 redirect_from:
+  - /docs/commands/
   - /docs/json/
 ---
 
@@ -11,6 +12,9 @@ Index page for all documentation currently covered on this site.
 ## Resource Packs
 
 * [**Armor Models**](json/armor-models): Documentation for the model format for modifiable armor from Tinkers' Construct.
+
+## Commands
+* [**Mantle Commands**](commands/mantle): Documentation for all commands added by Mantle.
 
 ## Miscellaneous
 
