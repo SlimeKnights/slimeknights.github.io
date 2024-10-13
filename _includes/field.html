@@ -18,15 +18,25 @@ elsif include.type == "object" or include.type == "compound" %}{%
     assign name = "Object" %}{%
     assign icon = "nbt-compound" %}{%
 
+elsif include.type == "color" or include.type == "rgb" %}{%
+    assign name = "RGB Color" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/basic-types#color" %}{%
+
+elsif include.type == "argb" %}{%
+    assign name = "ARGB Color" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/basic-types#color" %}{%
+
 elsif include.type == "resource location" %}{%
     assign name = "Resource Location" %}{%
     assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/resource-location" %}{%
+    assign link = "/docs/json/basic-types#resource-location" %}{%
 
 elsif include.type contains "ID" %}{%
     assign name = include.type %}{%
     assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/resource-location#registry-ids" %}{%
+    assign link = "/docs/json/basic-types#registry-ids" %}{%
 
 else %}{%
     assign name = include.type %}{%

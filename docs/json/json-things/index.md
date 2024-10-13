@@ -110,7 +110,7 @@ There are two different armor item types, `tconstruct:basic_armor` uses two text
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} The root object.
     * {% include field.html type="resource location" name="type" %} Item type ID, may be `tconstruct:basic_armor` or `tconstruct:multilayer_armor`.
-    * {% include field.html type="resource location" name="name" %} Name of this armor set, typically the item name without the slot (e.g. `tconstruct:plate` for `tconstruct:plate_helmet`). Used to determine armor textures.
+    * {% include field.html type="resource location" name="name" %} Name of this armor set, typically the item name without the slot (e.g. `tconstruct:plate` for `tconstruct:plate_helmet`). Used to determine armor textures or [Armor Models](/docs/json/armor-models).
     * {% include field.html type="Sound Event ID" name="equip_sound" %} Sound to play when equipping the armor. If unset, defaults to `minecraft:item.armor.equip_generic`.
     * {% include field.html type="string" name="slot" %} Slot where this armor piece is worn. May be `helmet`, `chestplate`, `leggings`, or `boots`.
     * *Any other fields supported in [item definitions][item-definitions] except `max_stack_size`, which is always 1.*
