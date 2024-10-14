@@ -21,7 +21,7 @@ Can datagen using [`AbstractMaterialDataProvider`](https://github.com/SlimeKnigh
 
 Material definitions cause the material to be available in material lists, such as creative tabs and the books. They also allow the material to be craftable in some recipes, though the majority of recipes are defined [separately](recipes/materials). Definitions are the only part of the main material format that is conditional, other resources such as stats or traits are simply unused if the definition is disabled.
 
-The material definition for `<domain>:<name>` will be located at `data/<domain/tinkering/materials/definition/<name>.json`. They have the following format:
+The material definition for `<domain>:<name>` will be located at `data/<domain>/tinkering/materials/definition/<name>.json` (since 1.18) or `data/<domain>/materials/definition/<name>.json` (in 1.16). They have the following format:
 
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} The root object.
@@ -73,7 +73,7 @@ Can datagen using [`AbstractMaterialStatsDataProvider`](https://github.com/Slime
 
 Material stats have two functions. The first is the obvious function, it sets the stats when using the material for that stat type. The second function is making a material available to any material items or tool parts that use that stat type.
 
-The material stats for `<domain>:<name>` will be located at `data/<domain/tinkering/materials/stats/<name>.json`. They have the following format:
+The material stats for `<domain>:<name>` will be located at `data/<domain>/tinkering/materials/stats/<name>.json` (since 1.18) or `data/<domain>/materials/stats/<name>.json` (in 1.16). They have the following format:
 
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} The root object.
@@ -125,7 +125,7 @@ Can datagen using [`AbstractMaterialTraitDataProvider`](https://github.com/Slime
 
 Material traits defines the traits associated with a material. There are two methods to define traits: default and per stat. Additionally (since 1.18.2), traits can be assigned either to a stat type or a stat group within per stats. The materials final traits will be the first one present between the stat group, stat type, then the default traits.
 
-The material traits for `<domain>:<name>` will be located at `data/<domain/tinkering/materials/traits/<name>.json`. They have the following format:
+The material traits for `<domain>:<name>` will be located at `data/<domain>/tinkering/materials/traits/<name>.json` (since 1.18) or `data/<domain>/materials/traits/<name>.json` (in 1.16). They have the following format:
 
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} The root object.
