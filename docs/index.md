@@ -9,6 +9,8 @@ redirect_from:
 
 Index page for all documentation currently covered on this site.
 
+Unless stated otherwise, all documentation pages are applicable to all versions of the mod since 1.16.5. Version specific information will be noted as applicable, or if its significant will be split out into a separate page.
+
 ## Data Packs
 
 * [**Recipe Format**](json/recipes): Index page for pages on different recipe formats.
