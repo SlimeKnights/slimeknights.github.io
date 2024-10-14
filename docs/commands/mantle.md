@@ -91,7 +91,7 @@ Prints the preferred registry entry for the given tag. Typically used for recipe
 **Arguments:**
 
 * {% include field.html name="\<type\>" type="Registry ID" %} Tag registry ID, for example `minecraft:item` or `minecraft:potion`
-* {% include field.html name="\<name\>" type="Tag" %}: Tag name, for example `forge:ingots/iron`
+* {% include field.html name="\<name\>" type="Tag" %} Tag name, for example `forge:ingots/iron`
   
 ## Tags
 
@@ -109,7 +109,7 @@ Prints all values in the given tag to the console.
 **Arguments:**
 
 * {% include field.html name="\<type\>" type="Registry ID" %} Tag registry ID, for example `minecraft:item` or `minecraft:potion`
-* {% include field.html name="\<name\>" type="Tag" %}: Tag name, for example `forge:ingots/iron`
+* {% include field.html name="\<name\>" type="Tag" %} Tag name, for example `forge:ingots/iron`
 
 ### Tags For
 
@@ -127,7 +127,7 @@ Fetches a registry entry by ID and lists all its tags.
 **Arguments:**
 
 * {% include field.html name="\<type\>" type="Registry ID" %} Tag registry ID, for example `minecraft:item` or `minecraft:potion`
-* {% include field.html name="\<name\>" type="Item ID" %}: Registry entry name, for example `minecraft:iron_ingot`
+* {% include field.html name="\<name\>" type="Item ID" %} Registry entry name, for example `minecraft:iron_ingot`
 
 #### Held
 
@@ -175,8 +175,8 @@ Prints a JSON object containing the combination of a tag from all loaded datapac
 **Arguments:**
 
 * {% include field.html name="\<type\>" type="Registry ID" %} Tag registry ID, for example `minecraft:item` or `minecraft:potion`
-* {% include field.html name="\<name\>" type="Tag" %}: Tag name, for example `forge:ingots/iron`
-* {% include field.html name="[action]" type="string" %}: Dump action to take. If unset, defaults to `log`.
+* {% include field.html name="\<name\>" type="Tag" %} Tag name, for example `forge:ingots/iron`
+* {% include field.html name="[action]" type="string" %} Dump action to take. If unset, defaults to `log`.
     * `log`: writes the tag contents to the log as JSON.
     * `save` (since 1.18.1): saves the tag as a JSON file in the same directory used by [`/mantle dump_all_tags`](#dump-all-tags).
     * `sources` (since 1.19.2): writes the tag contents to the log as a list, including both IDs and the datapack responsible for adding each ID. 

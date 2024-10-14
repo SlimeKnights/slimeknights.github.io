@@ -120,3 +120,13 @@ h2 {
     color: #000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
 }
+
+/* Make code inside links still blue */
+a > code {
+    color: #0f6ecd;
+}
+
+/* Jekyll makes *italics* use <em>, but UiKit makes that red. Don't want italics to be red. */
+em {
+    color: initial;
+}
