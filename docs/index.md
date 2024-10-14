@@ -19,6 +19,7 @@ Index page for all documentation currently covered on this site.
 ## Miscellaneous
 
 * [**Basic Types**](json/basic-types): Common types of fields that occur in various JSON formats.
+* [**Conditions**](json/conditions): Format for JSON condition types added by SlimeKnights mods.
 * [**Json Things support**](json/json-things) ([1.18](json/json-things/1.18)): Documentation for all block and item types that Tinkers' Construct adds to Json Things' "Thing Packs".
 
 ## Other Documentation
