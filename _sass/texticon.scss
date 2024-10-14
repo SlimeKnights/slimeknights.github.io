@@ -16,6 +16,9 @@
         background-position: -16px -48px;
     }
 
+    &.nbt-any::before, &.nbt-null::before {
+        background-position: -16px -48px;
+    }
     &.nbt-bool::before, &.nbt-boolean::before {
         background-position: -48px -32px;
     }

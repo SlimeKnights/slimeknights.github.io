@@ -1,49 +1,56 @@
 {% assign link = "" %}{%
-if include.type == "integer" or include.type == "int" %}{%
+   assign type = include.type | downcase %}{%
+if type == "integer" or type == "int" %}{%
     assign name = "Integer" %}{%
     assign icon = "nbt-int" %}{%
-elsif include.type == "number" %}{%
+elsif type == "number" or type == "float" %}{%
     assign name = "Number" %}{%
     assign icon = "nbt-float" %}{%
-elsif include.type == "boolean" %}{%
+elsif type == "boolean" %}{%
     assign name = "Boolean" %}{%
     assign icon = "nbt-bool" %}{%
-elsif include.type == "string" %}{%
+elsif type == "string" %}{%
     assign name = "String" %}{%
     assign icon = "nbt-string" %}{%
-elsif include.type == "array" or include.type == "list" %}{%
+elsif type == "array" or type == "list" %}{%
     assign name = "Array" %}{%
     assign icon = "nbt-list" %}{%
-elsif include.type == "object" or include.type == "compound" %}{%
+elsif type == "object" or type == "compound" %}{%
     assign name = "Object" %}{%
     assign icon = "nbt-compound" %}{%
+elsif type == "any" %}{%
+    assign name = "Any" %}{%
+    assign icon = "nbt-any" %}{%
+elsif type == "null" %}{%
+    assign name = "Null" %}{%
+    assign icon = "nbt-null" %}{%
 
-elsif include.type == "color" or include.type == "rgb" %}{%
+elsif type == "color" or type == "rgb" %}{%
     assign name = "RGB Color" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/basic-types#color" %}{%
 
-elsif include.type == "argb" %}{%
+elsif type == "argb" %}{%
     assign name = "ARGB Color" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/basic-types#color" %}{%
 
-elsif include.type == "condition" %}{%
+elsif type == "condition" %}{%
     assign name = "Condition" %}{%
     assign icon = "nbt-compound" %}{%
     assign link = "/docs/json/conditions" %}{%
 
-elsif include.type == "resource location" %}{%
+elsif type == "resource location" %}{%
     assign name = "Resource Location" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/basic-types#resource-location" %}{%
-
-elsif include.type contains "ID" %}{%
+    
+elsif type contains "id" %}{%
     assign name = include.type %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/basic-types#registry-ids" %}{%
 
-elsif include.type contains "Tag" %}{%
+elsif type contains "tag" %}{%
     assign name = include.type %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/basic-types#tag-name" %}{%
