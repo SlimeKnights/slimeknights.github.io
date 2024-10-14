@@ -45,6 +45,16 @@ elsif type == "resource location" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/basic-types#resource-location" %}{%
     
+elsif type == "material id" %}{%
+    assign name = "Material ID" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/materials" %}{%
+    
+elsif type == "stat type id" %}{%
+    assign name = "Stat Type ID" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/stat-types" %}{%
+    
 elsif type contains "id" %}{%
     assign name = include.type %}{%
     assign icon = "nbt-string" %}{%

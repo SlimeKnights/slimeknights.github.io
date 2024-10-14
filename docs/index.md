@@ -9,6 +9,12 @@ redirect_from:
 
 Index page for all documentation currently covered on this site.
 
+## Data Packs
+
+* [**Recipe Format**](json/recipes): Index page for pages on different recipe formats.
+* [**Material Format**](json/materials): Documentation for defining materials.
+* [**Stat Types**](json/stat-types) ([1.16-1.18](json/stat-types/1.18)): List of all stat types available to materials.
+
 ## Resource Packs
 
 * [**Armor Models**](json/armor-models): Documentation for the model format for modifiable armor from Tinkers' Construct.
