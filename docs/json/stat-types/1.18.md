@@ -36,7 +36,7 @@ Head stats have stat type ID `tconstruct:head` and the following format:
         * `minecraft:stone`: equivalent to mining with a stone tool.
         * `minecraft:iron`: equivalent to mining with a iron tool.
         * `minecraft:diamond`: equivalent to mining with a diamond tool.
-        * `minecraft:netherite`: equivalent to mining with a netherite tool. Note vanilla makes no distinction between this tier and diamond, but mods may add blocks that require gold.
+        * `minecraft:netherite`: equivalent to mining with a netherite tool. Note vanilla makes no distinction between this tier and diamond, but mods may add blocks that require netherite.
         * *For a full list of tiers and their pack defined order, use the [`/mantle harvest_tiers`](/docs/commands/mantle#harvest-tiers) command.*
 </div>
 

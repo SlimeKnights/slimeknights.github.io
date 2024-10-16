@@ -14,7 +14,7 @@ Conditions have the following basic format:
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} A condition object.
     * {% include field.html name="type" type="resource location" %} The condition serializer ID.
-    * *Other fields based on the condition supplier ID.*
+    * *Other fields based on the condition serializer ID.*
 </div>
 
 Often, conditions are defined in arrays. When defined as such, if any condition in the array fails to parse, later conditions are not even deserialized, allowing conditioning on a mod ID before using a condition defined by that mod.
