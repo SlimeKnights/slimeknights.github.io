@@ -5,7 +5,7 @@ permalink: /docs/books/
 redirect_from:
   - /docs/books/1.19/
 ---
-The following books from SlimeKnights mods are available online SlimeKnights mods. Click a book to read the contents.
+The following books from SlimeKnights mods are available online. Click a book to read the contents.
 
 Note that books on this site are just static images of the book contents. Interactive elements such as animations and tooltips will not be available. In addition, the books are generated without content from addons, the best source for book content is always the in game books.
 
