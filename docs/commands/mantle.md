@@ -51,21 +51,42 @@ Runs commands related to books. These commands typically use book IDs, which are
 
 For the sake of testing book elements, Mantle also registers an internal book ID `mantle:test`, which can only be opened using the `/mantle book_test` command.
 
-### Book Test
+### Open Book
 <div class="hatnote">Since 1.18.1</div>
 
 Opens the given book. This is equivalent to opening the book by other means such as the book item or a lectern, but does not require obtaining that item.
 
-**Syntax:**
+**Syntax (1.18-1.19):**
 ```
 /mantle book_test [id]
 ```
 
+**Syntax (1.20):**
+```
+/mantle book open <id>
+```
+
 **Arguments:**
 
-* {% include field.html name="[id]" type="resource location" %} Book ID to open, if unset opens the book `mantle:test`.
+* {% include field.html name="[id]" type="resource location" %} Book ID to open, if unset (before 1.20) opens the book `mantle:test`.
+
+### Export Book Images
+<div class="hatnote">Since 1.20</div>
+
+Exports all pages of a book as static images in the screenshots folder. Used to generate images for [pages on this website](/docs/books). Export will be located at `screenshots/mantle_book/<domain>/<name>` for a book with ID `<domain>:<name>`.
+
+**Syntax:**
+```
+/mantle book export_images <id> [scale]
+```
+
+**Arguments:**
+
+* {% include field.html name="\<id\>" type="resource location" %} Book ID to export.
+* {% include field.html name="[scale]" type="number" %} GUI scale for export. If unset, defaults to 1.
 
 ### Clear Book Cache
+<div class="hatnote">Since 1.18.2</div>
 
 Clears the book cache, causing the book contents to reload. Book cache is generally cleared when resource packs or datapacks reload, but since the cache is built directly from resource pack files (rather than from loaded contents), this can greatly speed up testing book contents as you only need to modify the book and reload the cache instead of also reloading resource packs.
 
