@@ -1,0 +1,1 @@
+The images in this directory are generated automatically using a command in Mantle. See https://slimeknights.github.io/docs/commands/mantle#export for more information.

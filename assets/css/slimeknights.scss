@@ -130,3 +130,23 @@ a > code {
 em {
     color: initial;
 }
+
+.uk-lightbox-items>*>:not(iframe) {
+    /* book covers are square, so just use the smaller dimension as the side length */
+    &.book-cover {
+        image-rendering: pixelated;
+        width: min(100vw, 100vh);
+        height: min(100vw, 100vh);
+    }
+    /* book pages are a 2:1 width:height ratio, so width is 2x height or height is width/2 */
+    &.book-page {
+        image-rendering: pixelated;
+        width: min(100vw, 200vh);
+        height:min(100vh, 50vw);
+    }
+}
+.book-link img {
+    image-rendering: pixelated;
+    width: 64px;
+    height: 64px;
+}
