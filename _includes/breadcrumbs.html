@@ -1,0 +1,29 @@
+<div id="breadcrumbs" class="hatnote">
+    {%- comment -%}
+        There is no conveient way to filter an array where a string starts with another in Jekyll.
+        Instead, we just filter the array for a string containing another.
+
+        If it ever becomes an issue, we can validate the string starting by prefixing both strings
+        with a string unlikely to appear:
+            {%- assign startsWithPrefix = "slimeknights.github.io" -%}
+            {%- assign prefixedUrl = page.url | prepend: startsWithPrefix -%}
+            {%- assign prefixedCrumbUrl = crumb.url | prepend: startsWithPrefix -%}
+            {% if prefixedUrl contains prefixedCrumbUrl %}
+              do stuff
+            {% endif %}
+        Note its not possible to use filters in a where_exp, so you have to do it inside the loop
+            
+        Also, note this code relies on permalinks: pretty in the site config.
+    {%- endcomment -%}
+    {%- assign crumbs = site.html_pages | where_exp: "item", "page.url contains item.url" | sort: "url" -%}
+    <a href="/">Home</a>
+    {%- for crumb in crumbs -%}
+      {%- if page.url != crumb.url -%}
+        {%- assign crumbTitle = crumb.breadcrumb | default: crumb.title -%}
+        {% if crumbTitle %}
+          / <a href="{{crumb.url}}">{{crumbTitle}}</a>
+        {% endif %}
+      {%- endif -%}
+    {% endfor %}
+    / {{ page.title }}
+</div>
