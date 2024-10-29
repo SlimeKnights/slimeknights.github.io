@@ -48,6 +48,11 @@ These mods are made by a member of SlimeKnights, but are not directly part of th
 
 <div class="project-list">
     {% include project.html
+      name="simple-gravel-ores" title="Simple Gravel Ores" latest="1.20.1"
+      author="KnightMiner" github-author="elucent" github="GravelOres" modrinth=false
+      description="Simple Gravel Ores brings back the classic gravel ores from Tinkers' Construct 1 into modern versions, with configurability to support any mod's ores."
+    %}
+    {% include project.html
       name="simply-tea" title="Simply Tea" latest="1.20.1"
       author="KnightMiner" github="SimplyTea"
       description="A simple tea mod made for /u/Pickles256 on Reddit!"
@@ -71,11 +76,6 @@ These mods are made by a member of SlimeKnights, but are not directly part of th
       name="simple-absorption" title="Simple Absorption" latest="1.18.2"
       author="KnightMiner" github="SimpleAbsorption"
       description="This is a simple mod giving the player absorption hearts to make a world without natural regeneration less punishing."
-    %}
-    {% include project.html
-      name="simple-gravel-ores" title="Simple Gravel Ores" latest="1.12.2"
-      author="KnightMiner" github-author="elucent" github="GravelOres" modrinth=false
-      description="Simple Gravel Ores brings back the classic gravel ores from Tinkers' Construct 1 into modern versions, with configurability to support any mod's ores."
     %}
     {% include project.html
       name="tinkers-complement" title="Tinkers' Complement" latest="1.12.2"
