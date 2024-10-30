@@ -40,20 +40,47 @@ elsif type == "condition" %}{%
     assign icon = "nbt-compound" %}{%
     assign link = "/docs/json/conditions" %}{%
 
-elsif type == "resource location" %}{%
-    assign name = "Resource Location" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/basic-types#resource-location" %}{%
-    
-elsif type == "material id" %}{%
+elsif type == "ingredient" or type == "item ingredient" %}{%
+    assign name = "Item Ingredient" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/ingredients#item-ingredients" %}{%
+
+elsif type == "sized ingredient" %}{%
+    assign name = "Sized Ingredient" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/ingredients#sized" %}{%
+
+elsif type == "fluid ingredient" %}{%
+    assign name = "Fluid Ingredient" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/ingredients#fluid-ingredients" %}{%
+
+elsif type == "entity ingredient" %}{%
+    assign name = "Entity Ingredient" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/ingredients#entity-ingredients" %}{%
+
+
+elsif type == "material" or type == "material id" %}{%
     assign name = "Material ID" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/materials" %}{%
+    
+elsif type == "material variant" or type == "material variant id" %}{%
+    assign name = "Material Variant" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/materials#variants" %}{%
     
 elsif type == "stat type id" %}{%
     assign name = "Stat Type ID" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/stat-types" %}{%
+
+
+elsif type == "resource location" %}{%
+    assign name = "Resource Location" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/basic-types#resource-location" %}{%
     
 elsif type contains "id" %}{%
     assign name = include.type %}{%

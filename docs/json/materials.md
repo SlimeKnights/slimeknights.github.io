@@ -4,15 +4,24 @@ title: Material Format
 ---
 
 <div class="hatnote" markdown=1>
-This page is about the JSON required to define a material. For the JSON to make the material craftable, see [Material Recipes](recipes/materials).
+This page is about the JSON required to define a material. For the JSON to make the material craftable, see [Material Recipes](../recipes/materials).
 </div>
 <div class="hatnote" markdown=1>
 See also [Stat Types](stat-types) for the formats for different stat types supported by materials.
 </div>
 
-Materials require three basic components to define: definition, stats, and traits. The [Material ID](basic-types#resource-location) is determined by the name of each of the files.
+Materials require three basic components to define: definition, stats, and traits. The [Material ID](../basic-types#resource-location) is determined by the name of each of the files.
 
 {% include toc.html %}
+
+## Variants
+
+Materials in recipes often support specifying material variants instead of material IDs.
+Material variants have the same [definition](#definition), [stats](#stats), and [traits](#traits) as the original material, but may have different display names, colors, textures, and recipes.
+
+A material variant may either be expressed as a standard `<domain>:<name>` [resource location](../basic-types#resource-location) representing a material ID with no variant, or can be expressed as `<domain>:<name>#<variant>` representing a material with ID `<domain>:<name>` and variant `<variant>`.
+
+Most [material recipes](../recipes/materials) support specifying a material variant as the output. When used as a recipe input, a material variant of the form `<domain>:<name>#<variant>` will only match if the variants are equal. A material variant of the form `<domain>:<name>` will match any variant of that material. Sometimes, it is desirable to match a material ID with no variant as an input, which can be expressed using a material variant of `<domain>:<name>#default` (note this also matches the variant of `default`, but that variant name is discouraged from usage).
 
 ## Definition
 <div class="hatnote" markdown=1>
