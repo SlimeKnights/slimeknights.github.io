@@ -3,7 +3,7 @@ layout: page
 title: Stat Types
 ---
 <div class="hatnote" markdown=1>
-This page is about the stat type format since 1.19.2. For the format from 1.16 to 1.18.2, see [Stat Types 1.16 - 1.18](1.18).
+This page is about the stat type format since 1.19.2. For the format from 1.16 to 1.18.2, see [Stat Types 1.16-1.18](1.18).
 </div>
 
 Both [material stats](../materials#stats) and [materials traits](../materials#traits) make use of stat types as part of their definition. Stat types are often represented by a stat type ID, which takes the form of a standard [resource location](../basic-types#resource-location). The following stat types exist natively in Tinkers' Construct. Most stat types exist within a group, which can be used to simply adding traits to a specific type of tool.

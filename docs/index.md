@@ -26,8 +26,12 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 ### Data Packs
 
 * [**Recipe Format**](json/recipes): Index page for pages on different recipe formats.
+
+#### Tinkers' Construct
+
 * [**Material Format**](json/materials): Documentation for defining materials.
 * [**Stat Types**](json/stat-types) ([1.16-1.18](json/stat-types/1.18)): List of all stat types available to materials.
+* [**Tool Definitions**](json/tool-definitions) ([1.16-1.18](json/tool-definitions/1.18)): Format for tool definitions, which define the properties of a tool item.
 
 ### Resource Packs
 
