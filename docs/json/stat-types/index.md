@@ -6,7 +6,7 @@ title: Stat Types
 This page is about the stat type format since 1.19.2. For the format from 1.16 to 1.18.2, see [Stat Types 1.16 - 1.18](1.18).
 </div>
 
-Both [material stats](../materials#stats) and [materials traits](../materials#traits) make use of stat types as part of their definition. The following stat types exist natively in Tinkers' Construct. Most stat types exist within a group, which can be used to simply adding traits to a specific type of tool.
+Both [material stats](../materials#stats) and [materials traits](../materials#traits) make use of stat types as part of their definition. Stat types are often represented by a stat type ID, which takes the form of a standard [resource location](../basic-types#resource-location). The following stat types exist natively in Tinkers' Construct. Most stat types exist within a group, which can be used to simply adding traits to a specific type of tool.
 
 Many stat types are repairable, meaning that a matching material can be used to repair the tool. During repair, the durability stat of the first matching repairable stat type determines the amount repaired.
 
@@ -113,6 +113,7 @@ The bowstring stat type has no stats, simply applying their trait. Defining this
 Armor stats refer to stats for plate armor and plate shields. The group has a stat type ID of `tconstruct:armor`, which applies default traits to all types in the group.
 
 ### Plating
+<div class="hatnote" markdown=1>
 Can datagen using [`PlatingMaterialStats`](https://github.com/SlimeKnights/TinkersConstruct/blob/1.19.2/src/main/java/slimeknights/tconstruct/tools/stats/PlatingMaterialStats.java).
 </div>
 

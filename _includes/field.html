@@ -40,6 +40,17 @@ elsif type == "condition" %}{%
     assign icon = "nbt-compound" %}{%
     assign link = "/docs/json/conditions" %}{%
 
+elsif type == "item output" %}{%
+    assign name = "Item Output" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/basic-types#item-output" %}{%
+
+elsif type == "fluid stack" %}{%
+    assign name = "Fluid Stack" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/basic-types#fluid-stack" %}{%
+
+
 elsif type == "ingredient" or type == "item ingredient" %}{%
     assign name = "Item Ingredient" %}{%
     assign icon = "nbt-compound" %}{%
@@ -81,6 +92,11 @@ elsif type == "resource location" %}{%
     assign name = "Resource Location" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/basic-types#resource-location" %}{%
+    
+elsif type == "pattern" %}{%
+    assign name = "Pattern" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/basic-types#pattern" %}{%
     
 elsif type contains "id" %}{%
     assign name = include.type %}{%
