@@ -36,10 +36,34 @@ Many JSON contain colors expressed as 6 or 8 digit hex color strings. 6 digit RG
 
 For example, `"FF00000"` represents a bright red, as `RR` is 255 and both `GG` and `BB` are 0. If this was an ARGB color, then `AA` would be set to 255 (fully opaque).
 
+## Integer Range
+
+Recipe types working with numbers often make use of the integer range type, which contains a minimum and maximum value in a range. This type can be parsed either as an object or an integer. As an object, an integer range has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The integer range object.
+    * {% include field.html name="min" type="integer" %} Minimum value for the range. If unset, defaults to the minimum value for the given context.
+    * {% include field.html name="max" type="integer" %} Maximum value for the range. If unset, defaults to the maximum value for the given context.
+</div>
+
+For an integer range to be valid, `max` must be greater than or equal to `min`. In the integer format, an integer range behaves as follows:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="integer" %} The exact value to match.
+</div>
+
+This is equivalent to setting both `min` and `max` to the same value.
+
 ## Item Output
 
 An item output is essentially an [ingredient](../ingredients#item-ingredients) for recipe outputs.
-In the most basic form, an item output may be just a string field containing an [item ID](#registry-ids), representing the output item with a stack size of 1. In other cases, the item output will be a JSON object, containing either a [stack](#stack-output) or a [tag](#tag-output).
+In the most basic form, an item output may be just a string field containing an [item ID](#registry-ids), representing the output item with a stack size of 1:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="Item ID" %} The item to output.
+</div>
+
+In other cases, the item output will be a JSON object, containing either a [stack](#stack-output) or a [tag](#tag-output).
 
 Note that based on the usage of item output, its possible that count is fixed to 1, in which case the count field is ignored. In addition, in some contexts empty item stacks are not supported, in which case an empty stack or a zero count will produce a parsing error.
 

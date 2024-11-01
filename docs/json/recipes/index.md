@@ -19,7 +19,7 @@ Recipes related to the tool module, used for crafting and modifying tools.
 
 Recipes for applying modifiers, implementing modifiers on tools, and manipulating modifiers on tools.
 
-* [**Modifiers**](modifiers): Recipes for applying modifiers to tools.
+* [**Modifiers**](modifiers): Recipes for applying modifiers to tools, along with salvage when removing modifiers.
 * [**Modifier Repair**](modifier-repair): Recipes for repairing tools that have a particular modifier.
 * [**Severing**](severing): Recipes for gaining additional drops from mobs using the severing modifier.
 * [**Worktable**](worktable): Recipes for usage in the modifier worktable.
