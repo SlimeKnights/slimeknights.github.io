@@ -188,3 +188,46 @@ Together, they are equivalent to the following material traits defined in a sing
     }
 }
 ```
+
+## Material Providers
+
+Some JSON contexts support specifying material providers that may be possibly randomized given a stat type. Random material providers have the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The material provider object.
+    * {% include field.html name="type" type="resource location" %} Random material provider type.
+    * *Additional fields based on the random material provider*.
+</div>
+
+The following subsections describe the different random material serializers provided by default.
+
+### Fixed
+
+The fixed material provider always returns the same fixed material. It has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The material provider object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:fixed`.
+    * {% include field.html name="material" type="material ID" %} Material to provide.
+</div>
+
+### First
+
+The first material provider the first material for the stat type, as determined by the material's sort order and tier. It has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The material provider object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:first`.
+</div>
+
+### Random
+
+The random material provider selects a random material from the material registry, possibly filtered by a tier or tag. It has the following format:\
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The material provider object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:random`.
+    * {% include field.html name="tier" type="int range" %} If set, only provides materials with a tier within the range.
+    * {% include field.html name="tag" type="Material tag" %} If set, only provides materials within the tag.
+    * {% include field.html name="allow_hidden" type="boolean" %} If true, may provide hidden materials. Defaults to false.
+</div>

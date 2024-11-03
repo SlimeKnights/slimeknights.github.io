@@ -128,6 +128,11 @@ elsif type == "material" or type == "material id" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/materials" %}{%
     
+elsif type == "random material" or type == "material provider" %}{%
+    assign name = "Material Provider" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/materials#material-provider" %}{%
+    
 elsif type == "modifier" or type == "modifier id" %}{%
     assign name = "Modifier ID" %}{%
     assign icon = "nbt-string" %}{%
@@ -147,6 +152,11 @@ elsif type == "stat type" or type == "stat type id" %}{%
     assign name = "Stat Type" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/stat-types" %}{%
+    
+elsif type == "tool hook" or type == "tool hook id" %}{%
+    assign name = "Tool Hook ID" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/tool-definitions#tool-hooks" %}{%
 
 elsif type == "slot type" %}{%
     assign name = "Slot Type" %}{%
@@ -162,6 +172,11 @@ elsif type == "slot count" %}{%
     assign name = "Slot Count" %}{%
     assign icon = "nbt-compound" %}{%
     assign link = "/docs/json/slot-types#slot-count" %}{%
+    
+elsif type == "tool action" %}{%
+    assign name = "Tool Action" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/basic-types#tool-actions" %}{%
 
 elsif type == "resource location" %}{%
     assign name = "Resource Location" %}{%

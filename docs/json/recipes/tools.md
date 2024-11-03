@@ -83,16 +83,15 @@ This section covers various specialized recipes associated with tools. It is not
 
 ### Tinker Station Repair
 
-The recipe serializer `tconstruct:tinker_station_repair` allows repairing a tool using materials. It notably handles repairing a tool using the materials of tool parts. In addition, since 1.19.2 this recipe handles repairing tools with no materials using a material defined in the [tool definition](../../tool-definitions).
+The recipe serializer `tconstruct:tinker_station_repair` allows repairing a tool using materials. It notably handles repairing a tool using the materials of tool parts. In addition, since 1.19.2 this recipe handles repairing tools with no materials using a material defined in the [tool definition](../../tool-definitions#material-hooks).
 
 ### Crafting Table Repair Kit
 
-The recipe serializer `tconstruct:crafting_table_repair` allows repairing a tool using repair kits in the crafting table. It notably handles repairing a tool using the materials of tool parts. In addition, since 1.19.2 this recipe handles repairing tools with no materials using a material defined in the [tool definition](../../tool-definitions).
+The recipe serializer `tconstruct:crafting_table_repair` allows repairing a tool using repair kits in the crafting table. It notably handles repairing a tool using the materials of tool parts. In addition, since 1.19.2 this recipe handles repairing tools with no materials using a material defined in the [tool definition](../../tool-definitions#material-hooks).
 
 ### Part Swapping
 
-The recipe serializer `tconstruct:tinker_station_part_swapping` allows swapping parts on a tool using a matching tool part. The part list for the tool is pulled directly from the [tool definition](../../tool-definitions).
-
+The recipe serializer `tconstruct:tinker_station_part_swapping` allows swapping parts on a tool using a matching tool part. The part list for the tool is pulled directly from the [tool definition](../../tool-definitions#material-hooks).
 
 ## Specialized Tool Repair
 <div class="hatnote">This recipe type no longer exists in current versions of Tinkers' Construct. It is documented here for the sake of people working with older versions.</div>

@@ -24,7 +24,7 @@ Modifier set recipes have the following format:
     * {% include field.html name="allow_traits" type="boolean" %} Predicate matching modifiers that may be added or removed from the set.
     * {% include field.html name="data_key" type="resource location" %} Resource location representing a list of modifiers in the tool's persistent data. Functionality of a given key is provided in code; by default the following keys exist:
         * **`tconstruct:invisible_modifiers`**: Modifiers which skip rendering in the tool model.
-        * **`tconstruct:attack_modifiers`**: Interaction modifiers which trigger on left click instead of right click.
+        * **`tconstruct:attack_modifiers`**: Interaction modifiers which trigger on "attack" (left click) instead of "interact" (right click).
     * {% include field.html name="add_to_set" type="boolean" %} If true, the selected modifier will be added to the set indicated by `data_key`. If false, the selected modifier will be removed from the set.
 </div>
 

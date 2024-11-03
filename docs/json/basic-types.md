@@ -36,6 +36,12 @@ Many JSON contain colors expressed as 6 or 8 digit hex color strings. 6 digit RG
 
 For example, `"FF00000"` represents a bright red, as `RR` is 255 and both `GG` and `BB` are 0. If this was an ARGB color, then `AA` would be set to 255 (fully opaque).
 
+## Tool Action
+
+A tool action is a registry defined by Forge for behaviors that a tool may perform. Unlike [item tags](#tag-name), tool actions may be NBT sensitive. Tool action in JSON are simply string values, though any associated behavior typically needs to be defined in code.
+
+For a list of tool actions defined by Forge, see [the Forge GitHub](https://github.com/MinecraftForge/MinecraftForge/blob/1.19.2/src/main/java/net/minecraftforge/common/ToolActions.java).
+
 ## Integer Range
 
 Recipe types working with numbers often make use of the integer range type, which contains a minimum and maximum value in a range. This type can be parsed either as an object or an integer. As an object, an integer range has the following format:
