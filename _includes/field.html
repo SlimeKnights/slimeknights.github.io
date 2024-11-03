@@ -153,9 +153,14 @@ elsif type == "slot type" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/slot-types" %}{%
 
+elsif type == "mining tier" %}{%
+    assign name = "Mining Tier" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/tool-stats#mining-tier" %}{%
+
 elsif type == "slot count" %}{%
     assign name = "Slot Count" %}{%
-    assign icon = "nbt-object" %}{%
+    assign icon = "nbt-compound" %}{%
     assign link = "/docs/json/slot-types#slot-count" %}{%
 
 elsif type == "resource location" %}{%

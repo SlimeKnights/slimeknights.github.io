@@ -60,9 +60,6 @@ For addons, more textures can be added via Mantle's `NBTKeyModel.registerExtraTe
 * `textureName` should be the ID of your modifier slot
 * `texture` should be the texture path in standard model resource pack format.
 
-
-
-
 ## Slot Count
 
 Slot types are commonly used in slot count objects, to define the count for various slots. This may be used for a slot requirement or a slot reward. Typically, it has the following format:
