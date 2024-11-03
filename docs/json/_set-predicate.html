@@ -1,0 +1,15 @@
+{%- assign lowercase_name = include.name | downcase -%}
+{%- assign key_default = lowercase_name | append: "s" -%}
+{%- assign key = include.key | default: key_default -%}
+{%- assign id = include.name | append: " ID" -%}
+
+The {{lowercase_name}} set predicate matches if the {{lowercase_name}} is within the given set. {{include.name}} set predicates are effectively a hardcoded {{lowercase_name}} tag predicate, useful when a set is not reusable enough to need a specific tag.
+
+{{include.name}} set predicates have the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A {{lowercase_name}} predicate object.
+    * {% include field.html name="type" type="resource location" %} Always `mantle:set`.
+    * {% include field.html name=key type="list" %} List of {{lowercase_name}} IDs, matches if any match the input.
+        * {% include field.html type=id %} {{include.name}} ID option to match.
+</div>

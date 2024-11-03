@@ -61,6 +61,41 @@ elsif type == "fluid stack" %}{%
     assign link = "/docs/json/basic-types#fluid-stack" %}{%
 
 
+elsif type == "block predicate" %}{%
+    assign name = "Block Predicate" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/predicates#block-predicates" %}{%
+    
+elsif type == "item predicate" %}{%
+    assign name = "Item Predicate" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/predicates#item-predicates" %}{%
+    
+elsif type == "entity predicate" %}{%
+    assign name = "Entity Predicate" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/predicates#entity-predicates" %}{%
+    
+elsif type == "damage predicate" %}{%
+    assign name = "Damage Predicate" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/predicates#damage-predicates" %}{%
+    
+elsif type == "modifier predicate" %}{%
+    assign name = "Modifier Predicate" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/predicates#modifier-predicates" %}{%
+    
+elsif type == "tool predicate" or type == "tool stack predicate" %}{%
+    assign name = "Tool Predicate" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/predicates#tool-predicates" %}{%
+    
+elsif type == "tool context predicate" %}{%
+    assign name = "Tool Context Predicate" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/predicates#tool-predicates" %}{%
+
 elsif type contains "predicate" %}{%
     assign name = include.type %}{%
     assign icon = "nbt-compound" %}{%
