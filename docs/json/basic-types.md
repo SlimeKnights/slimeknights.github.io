@@ -54,6 +54,28 @@ For an integer range to be valid, `max` must be greater than or equal to `min`. 
 
 This is equivalent to setting both `min` and `max` to the same value.
 
+## Item Stack
+
+A fluid stack represents an item with a size and optional NBT, typically used in recipe outputs (as [item ingredients](../ingredients#item-ingredients) are more flexible for inputs). Note that for most recipes, [item output](#item-output) is preferred due to allowing tag outputs, but select recipes still make use of direct item stacks.
+
+In the most basic form, an item output may be just a string field containing an [item ID](#registry-ids), representing the output item with a stack size of 1:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="Item ID" %} The item in the stack.
+</div>
+
+Alternatively, an item stack may be expressed as a JSON object, allowing setting count and NBT:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The item stack object.
+    * {% include field.html name="item" type="item ID" %} Item in the stack. If unset, defaults to `minecraft:air` making the stack empty.
+    * {% include field.html name="count" type="integer" %} Stack size. If unset, defaults to 1. If empty is supported, may be 0 to indicate an empty stack.
+    * {% include field.html name="nbt" type="object" %} NBT for the item stack, represented as a JSON object. If unset, the stack has no NBT.
+    * {% include field.html name="nbt" type="string" %} NBT for the item stack, represented as a string. If unset, the stack has no NBT.
+</div>
+
+Note that based on the usage, count may be fixed to 1, and NBT may be ignored. In addition, some contexts do not support empty item stacks, causing a parsing error.
+
 ## Item Output
 
 An item output is essentially an [ingredient](../ingredients#item-ingredients) for recipe outputs.

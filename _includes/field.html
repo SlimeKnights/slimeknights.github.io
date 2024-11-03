@@ -50,10 +50,21 @@ elsif type == "item output" %}{%
     assign icon = "nbt-compound" %}{%
     assign link = "/docs/json/basic-types#item-output" %}{%
 
+elsif type == "item stack" %}{%
+    assign name = "Item Stack" %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/basic-types#item-stack" %}{%
+
 elsif type == "fluid stack" %}{%
     assign name = "Fluid Stack" %}{%
     assign icon = "nbt-compound" %}{%
     assign link = "/docs/json/basic-types#fluid-stack" %}{%
+
+
+elsif type contains "predicate" %}{%
+    assign name = include.type %}{%
+    assign icon = "nbt-compound" %}{%
+    assign link = "/docs/json/predicates" %}{%
 
 
 elsif type == "ingredient" or type == "item ingredient" %}{%
