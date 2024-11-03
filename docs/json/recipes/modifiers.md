@@ -14,27 +14,6 @@ Modifier recipes are used to apply modifiers to tools. Unless otherwise stated, 
 
 Modifier recipes share certain common components, which are discussed more in depth here.
 
-### Slot Types
-
-Tools support many different modifier slot types. By default, the following slot types are available:
-
-* `upgrades`: Common modifier slot for low cost modifier recipes. Tools have many upgrade slots and can receive many more.
-* `abilities`: Rare modifier slot for high cost or high impact modifiers. Tools have few ability slots and adding more is expensive.
-* `defense`: Uncommon modifier slots available on most forms of armor. While armor tends to have more defense slots than ability slots, there is only 1 way to gain an additional defense slot.
-
-Beyond the default types, modpacks can freely define additional slot types, provided they also define a way to obtain the slots on tools using modifiers or tool starting slots.
-
-### Slot Count
-
-A slot count object represents a slot requirement or reward on a modifier recipe. Typically, it has the following format:
-
-<div class="treeview" markdown=1>
-* {% include field.html type="Slot Count" link="#slot-count" %} Slot count object.
-    * {% include field.html name="\<slot\>" type="integer" %} Number of slots of the [slot type](#slot-types) `<slot>`.
-</div>
-
-For example, `{ "upgrades": 3 }` represents a slot count of 3 upgrades. In most cases, a slot count may only have 1 type of slot specified, and leaving the object out represents no slots.
-
 ### Level Ranges
 
 Many modifier recipes support level ranges, which validate the minimum and maximum levels allowed by the recipe. This level is validated after applying the modifier recipe (that is, the current level plus 1). Level ranges typically default the minimum to 1 if unset. For more information on the level range format, see [Integer Ranges](/docs/json/basic-types#integer-range).
@@ -54,8 +33,8 @@ Basic modifier recipes have the following format:
     * {% include field.html name="max_tool_size" type="integer" %} Maximum number of tools that can receive this modifier at once. Used by stackable tools such as daggers to allow applying a modifier to fewer tools at once. If unset, defaults to 16.
     * {% include field.html name="inputs" type="list" %} List of sized ingredients for the requirements to apply this recipe. All items must be present with the minimum stack size to apply.
         * {% include field.html type="sized ingredient" %} A single sized ingredient.
-    * {% include field.html name="slots" type="Slot Count" link="#slot-count" %} Modifier slots required to apply this recipe, will be removed when applied, or produce a validation error if the tool has too few slots. If unset, no slots are required.
-        * {% include field.html name="\<slot\>" type="integer" %} Number of slots required of the [slot type](#slot-types) `<slot>`. Only one slot type may be specified.
+    * {% include field.html name="slots" type="Slot Count" %} Modifier slots required to apply this recipe, will be removed when applied, or produce a validation error if the tool has too few slots. If unset, no slots are required.
+        * {% include field.html name="\<slot\>" type="integer" %} Number of slots required of the [slot type](/docs/json/slot-types) `<slot>`. Only one slot type may be specified.
     * {% include field.html name="result" type="Modifier ID" %} Modifier applied by this recipe. In addition to other validations, the tool will be validated after applying this modifier to check modifier requirements.
     * {% include field.html name="level" type="int range" %} The resulting tool's level of `result` must be within this range after applying the recipe, see [level ranges](#level-ranges). If unset, any level is allowed.
     * {% include field.html name="check_trait_level" type="boolean" %} If true, `level` will consider the trait level on the tool, useful for preventing wasting resources on some abilities that also appear as traits. Defaults to false, which ignores the trait level.
@@ -77,8 +56,8 @@ Incremental modifier recipes have the following format:
     * {% include field.html name="needed_per_level" type="integer" %} Number of items needed for a full level of this modifier.
     * {% include field.html name="amount_per_item" type="integer" %} Amount this recipe counts towards `needed_per_level`. Used to allow multiple recipes to apply the same modifier at different values, for instance redstone may count as 1 while redstone blocks count as 9. If unset, defaults to 1.
     * {% include field.html name="leftover" type="item output" %} Item to return if the tool needs less than `amount_per_item` to reach `needed_per_level`. Stack size will be scaled based on the extra amount. If unset, then no leftover is returned. Unused if `amount_per_item` is 1.
-    * {% include field.html name="slots" type="Slot Count" link="#slot-count" %} Modifier slots required to apply this recipe, will be removed when applied, or produce a validation error if the tool has too few slots. If unset, no slots are required. Ignored on tools that already contain this modifier.
-        * {% include field.html name="\<slot\>" type="integer" %} Number of slots required of the [slot type](#slot-types) `<slot>`. Only one slot type may be specified.
+    * {% include field.html name="slots" type="Slot Count" %} Modifier slots required to apply this recipe, will be removed when applied, or produce a validation error if the tool has too few slots. If unset, no slots are required. Ignored on tools that already contain this modifier.
+        * {% include field.html name="\<slot\>" type="integer" %} Number of slots required of the [slot type](/docs/json/slot-types) `<slot>`. Only one slot type may be specified.
     * {% include field.html name="result" type="Modifier ID" %} Modifier applied by this recipe. In addition to other validations, the tool will be validated after applying this modifier to check modifier requirements.
     * {% include field.html name="level" type="int range" %} The resulting tool's level of `result` must be within this range after applying the recipe, see [level ranges](#level-ranges). If unset, any level is allowed.
     * {% include field.html name="check_trait_level" type="boolean" %} If true, `level` will consider the trait level on the tool, useful for preventing wasting resources on some abilities that also appear as traits. Defaults to false, which ignores the trait level.
@@ -98,8 +77,8 @@ Swappable modifier recipes have the following format:
     * {% include field.html name="max_tool_size" type="integer" %} Maximum number of tools that can receive this modifier at once. Used by stackable tools such as daggers to allow applying a modifier to fewer tools at once. If unset, defaults to 16.
     * {% include field.html name="inputs" type="list" %} List of sized ingredients for the requirements to apply this recipe. All items must be present with the minimum stack size to apply.
         * {% include field.html type="sized ingredient" %} A single sized ingredient.
-    * {% include field.html name="slots" type="Slot Count" link="#slot-count" %} Modifier slots required to apply this recipe, will be removed when applied, or produce a valuation error if the tool has too few slots. If unset, no slots are required.
-        * {% include field.html name="\<slot\>" type="integer" %} Number of slots required of the [slot type](#slot-types) `<slot>`. Only one slot type may be specified.
+    * {% include field.html name="slots" %} Modifier slots required to apply this recipe, will be removed when applied, or produce a valuation error if the tool has too few slots. If unset, no slots are required.
+        * {% include field.html name="\<slot\>" type="integer" %} Number of slots required of the [slot type](/docs/json/slot-types) `<slot>`. Only one slot type may be specified.
     * {% include field.html name="result" type="object" %} Result object.
         * {% include field.html name="name" type="Modifier ID" %} Modifier applied by this recipe. In addition to other validations, the tool will be validated after applying this modifier to check modifier requirements.
         * {% include field.html name="value" type="string" %} Modifier variant applied by this recipe. In the recipe serializer, any value is allowed, though based on the modifier there may be restrictions on useful values.
@@ -127,8 +106,8 @@ Multilevel modifier recipes have the following format:
     * {% include field.html name="levels" type="list" %} List of slot requirements for each level range. Any levels outside the ranges listed are not supported for this recipe and will produce a validation error.
         * {% include field.html type="object" %} A level entry object. Determines for a given level range the slot requirement.
             * {% include field.html name="level" type="int range" %} If the resulting tool's level of `result` is within this range after applying the recipe, this entry applies. See [level ranges](#level-ranges).
-            * {% include field.html name="slots" type="Slot Count" link="#slot-count" %} Modifier slots required to apply this recipe for this level range, will be removed when applied, or produce a validation error if the tool has too few slots. If unset, no slots are required for this level range.
-                * {% include field.html name="\<slot\>" type="integer" %} Number of slots required of the [slot type](#slot-types) `<slot>`. Only one slot type may be specified.
+            * {% include field.html name="slots" type="Slot Count" %} Modifier slots required to apply this recipe for this level range, will be removed when applied, or produce a validation error if the tool has too few slots. If unset, no slots are required for this level range.
+                * {% include field.html name="\<slot\>" type="integer" %} Number of slots required of the [slot type](/docs/json/slot-types) `<slot>`. Only one slot type may be specified.
     * {% include field.html name="check_trait_level" type="boolean" %} If true, `levels` will consider the trait level on the tool, useful for preventing wasting resources on some abilities that also appear as traits. Defaults to false, which ignores the trait level.
     * {% include field.html name="allow_crystal" type="boolean" %} If true (default), this modifier recipe may be applied using a modifier crystal, ignoring the standard inputs. Unusual modifier recipes will often set this to false to special case crystals.
 </div>
@@ -146,8 +125,8 @@ Modifier salvage recipes have the following format:
     * {% include field.html name="max_tool_size" type="integer" %} Unused, leftover from an older version of modifier salvage.
     * {% include field.html name="modifier" type="Modifier ID" %} Modifier removed to apply this salvage.
     * {% include field.html name="level" type="int range" %} The initial tool's level of `modifier` must be within this range for this salvage to apply, see [level ranges](#level-ranges). If unset, any level will apply this salvage.
-    * {% include field.html name="slots" type="Slot Count" link="#slot-count" %} Modifier slots returned when removing this modifier.
-        * {% include field.html name="\<slot\>" type="integer" %} Number of slots returned of the [slot type](#slot-types) `<slot>`. Only one slot type may be specified.
+    * {% include field.html name="slots" type="Slot Count" %} Modifier slots returned when removing this modifier.
+        * {% include field.html name="\<slot\>" type="integer" %} Number of slots returned of the [slot type](/docs/json/slot-types) `<slot>`. Only one slot type may be specified.
 </div>
 
 
@@ -182,6 +161,6 @@ The armor dyeing recipe has the following format:
 
 ### Creative Slot
 
-The creative slot modifier recipe `tconstruct:creative_slot_modifier` is used to apply the creative slot modifier. This recipe will dynamically support adding in any registered modifier [slot type](#slot-types) with no limit. It is designed for testing in creative mode, and will likely be made creative only in the future due to abuse in modpacks.
+The creative slot modifier recipe `tconstruct:creative_slot_modifier` is used to apply the creative slot modifier. This recipe will dynamically support adding in any registered modifier [slot type](/docs/json/slot-types) with no limit. It is designed for testing in creative mode, and will likely be made creative only in the future due to abuse in modpacks.
 
 If you are a modpack maker, do not give players creative modifiers, they are meant for creative mode. Use [basic modifier recipes](#basic-modifiers) to add a new recipe for a new modifier slot you can properly limit.

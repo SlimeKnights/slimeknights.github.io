@@ -17,6 +17,9 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 * [**Mantle Commands**](commands/mantle): Documentation for all commands added by Mantle.
 
 ## JSON Format
+
+The following pages cover pages on general JSON formats, which may be used in data packs, resource packs, or thing packs:
+
 * [**Basic Types**](json/basic-types): Common types of fields that occur in various JSON formats.
 * [**Conditions**](json/conditions): Format for JSON condition types added by SlimeKnights mods.
 * [**Ingredients**](json/ingredients): JSON object representing the input to a recipe, which is able to list all matching entries.
@@ -25,14 +28,20 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 
 ### Data Packs
 
+The following pages are specific to data pack formats:
+
 * [**Recipe Format**](json/recipes): Index page for pages on different recipe formats.
 
 #### Tinkers' Construct
 
+The following pages cover data pack concepts specific to in Tinkers' Construct:
+
 * [**Material Format**](json/materials): Documentation for defining materials.
-* [**Stat Types**](json/stat-types) ([1.16-1.18](json/stat-types/1.18)): List of all stat types available to materials.
+* [**Material Stat Types**](json/stat-types) ([1.16-1.18](json/stat-types/1.18)): List of all stat types available to materials.
+* [**Modifier Slot Types**](json/slot-types): Documentation for modifier slot types.
 * [**Station Slot Layouts**](json/slot-layouts): JSON defining the arrangement of slots in the tinker station or tinker's anvil, used for in game documentation about how to craft tools.
 * [**Tool Definitions**](json/tool-definitions) ([1.16-1.18](json/tool-definitions/1.18)): Format for tool definitions, which define the properties of a tool item.
+* [**Tool Stats**](json/tool-stats): Documentation for all tool stats usable by tools.
 
 ### Resource Packs
 

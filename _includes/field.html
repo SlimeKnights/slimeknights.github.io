@@ -98,11 +98,25 @@ elsif type == "material variant" or type == "material variant id" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/materials#variants" %}{%
     
-elsif type == "stat type id" %}{%
-    assign name = "Stat Type ID" %}{%
+elsif type == "tool stat" or type == "tool stat id" %}{%
+    assign name = "Tool Stat" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/tool-stats" %}{%
+    
+elsif type == "stat type" or type == "stat type id" %}{%
+    assign name = "Stat Type" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/stat-types" %}{%
 
+elsif type == "slot type" %}{%
+    assign name = "Slot Type" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/slot-types" %}{%
+
+elsif type == "slot count" %}{%
+    assign name = "Slot Count" %}{%
+    assign icon = "nbt-object" %}{%
+    assign link = "/docs/json/slot-types#slot-count" %}{%
 
 elsif type == "resource location" %}{%
     assign name = "Resource Location" %}{%

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stat Types
+title: Material Stat Types
 ---
 <div class="hatnote" markdown=1>
 This page is about the stat type format since 1.19.2. For the format from 1.16 to 1.18.2, see [Stat Types 1.16-1.18](1.18).
