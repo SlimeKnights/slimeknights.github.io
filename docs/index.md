@@ -38,6 +38,7 @@ The following pages cover data pack concepts specific to in Tinkers' Construct:
 
 * [**Material Format**](json/materials): Documentation for defining materials.
 * [**Material Stat Types**](json/stat-types) ([1.16-1.18](json/stat-types/1.18)): List of all stat types available to materials.
+* [**Modifiers**](json/modifiers) ([Serializers](json/modifiers/serializers)): Documentation for adding custom modifiers via JSON.
 * [**Modifier Slot Types**](json/slot-types): Documentation for modifier slot types.
 * [**Station Slot Layouts**](json/slot-layouts): JSON defining the arrangement of slots in the tinker station or tinker's anvil, used for in game documentation about how to craft tools.
 * [**Tool Definitions**](json/tool-definitions) ([1.16-1.18](json/tool-definitions/1.18)): Format for tool definitions, which define the properties of a tool item.
