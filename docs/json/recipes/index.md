@@ -8,6 +8,12 @@ See also: [the Minecraft Wiki on recipes](https://minecraft.wiki/w/Recipe).
 
 This page serves as an index for many different types of custom recipes added by various SlimeKnights mods. Recipes are defined in `data/<domain>/recipe/`. The name of the recipe along with sub-folders beyond `recipe` does not matter unless your goal is to override a specific recipe.
 
+## Vanilla
+
+The following pages cover additional recipes added for vanilla crafting blocks:
+
+* [**Crafting Table**](crafting-table): Custom crafting table recipe formats added by SlimeKnights mods.
+
 ## Tools
 
 Recipes related to the tool module, used for crafting and modifying tools.
