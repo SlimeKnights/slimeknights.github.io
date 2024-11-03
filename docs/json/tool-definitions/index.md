@@ -6,7 +6,7 @@ title: Tool Definitions
 This page is about the JSON defining a tool properties since 1.19.2. For the format from 1.16 to 1.18.2, see [Tool Definitions 1.16-1.18](1.18). For the recipes defining tool crafting, see [Tool Recipes](../recipes/tools).
 </div>
 
-Tool definitions are used to assign behaviors to a tool. Tool definitions are located under `data/<domain>/tinkering/tool_definitions/<name>.json` for the [tool definition ID](/docs/basic-types#resource-location) `<domain>:<name>`.
+Tool definitions are used to assign behaviors to a tool. Tool definitions are located under `data/<domain>/tinkering/tool_definitions/<name>.json` for the [tool definition ID](/docs/json/basic-types#resource-location) `<domain>:<name>`.
 
 {% include toc.html %}
 
