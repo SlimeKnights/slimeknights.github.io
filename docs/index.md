@@ -48,6 +48,7 @@ The following pages cover data pack concepts specific to in Tinkers' Construct:
 ### Resource Packs
 
 * [**Armor Models**](json/armor-models): Documentation for the model format for modifiable armor from Tinkers' Construct.
+* [**Fluid Tooltips**](json/fluid-tooltips): JSON format for defining fluid unit lists for tooltips.
 
 ## Other Documentation
 

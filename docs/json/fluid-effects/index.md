@@ -6,12 +6,13 @@ title: Fluid Effects
 This page is about the fluid effect format since 1.19.2. For the format from 1.16 to 1.18.2, see [Spilling Effects](1.18).
 </div>
 
-Fluid effects are a system used to define the behavior of fluids when used in fluid effect modifiers such as spilling, spitting, and wetting. The effects for a fluid are defined in JSON under `data/<domain>/tinkering/fluid_effects/<name>.json`, though the location `<domain>:<name>` has no impact on behavior apart from data pack overrides.
+Fluid effects are a system used to define the behavior of fluids when used in fluid effect modifiers such as spilling, spitting, and wetting.
 
 {% include toc.html %}
 
 ## Effect Lists
 
+Fluid effect JSON are defined under `data/<domain>/tinkering/fluid_effects/<name>.json`, though the location `<domain>:<name>` has no impact on behavior apart from data pack overrides.
 Fluid effect JSON has the following format:
 
 <div class="treeview" markdown=1>
