@@ -8,7 +8,7 @@ By default, Forge has no concept of fluid tooltips in UIs, leaving the implement
 
 ## Unit Lists
 
-Fluid unit lists are defined in resource packs under `assets/<domain>/mantle/fluid_effects/<name>.json`. In most cases, the location `<domain>:<name>` has no impact on behavior apart from data pack overrides. However, some contexts make use of a [named unit list](#named-unit-lists) for defining special behavior, such as the units for an empty tank.
+Fluid unit lists are defined in resource packs under `assets/<domain>/mantle/fluid_effects/<name>.json`. In most cases, the location `<domain>:<name>` has no impact on behavior apart from resource pack overrides. However, some contexts make use of a [named unit list](#named-unit-lists) for defining special behavior, such as the units for an empty tank.
 
 Fluid unit JSON has the following format:
 

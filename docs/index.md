@@ -30,6 +30,7 @@ The following pages cover pages on general JSON formats, which may be used in da
 
 The following pages are specific to data pack formats:
 
+* [**Fluid Transfer**](json/fluid-transfer): JSON format for the Mantle system that allows interacting with fluids in items outside of Forge capabilities.
 * [**Recipe Format**](json/recipes): Index page for pages on different recipe formats.
 
 #### Tinkers' Construct
