@@ -91,9 +91,13 @@ Block predicates match block state values. They support all [common predicate](#
 
 In addition, the following sections discuss serializers with additional fields.
 
+In 1.18, some uses of block predicates used a version defined by Tinkers' Construct where all [common predicate](#common-predicates) along with the `required_tool` predicate were registered under a domain of `tconstruct` instead of `mantle`.
+
 ### Block Set
 
 {% include_relative _set-predicate.html name="Block" %}
+
+In 1.18, some uses of the block predicate used a version defined by Tinkers' Construct. For those block predicates, the block set predicate had a `type` of `tconstruct:set`.
 
 ### Block Properties
 
@@ -215,7 +219,9 @@ The message damage predicate matches a specific damage source based on the damag
 
 ## Modifier Predicates
 
-Modifier predicates are a predicate type added by Tinkers' Construct, matching modifiers. They support all [common predicate](#common-predicates) serializers (including tag predicates), along with the modifier predicate serializers discussed in the following sections.
+Modifier predicates are a predicate type added by Tinkers' Construct, matching modifiers. They support all [common predicate](#common-predicates) serializers, though tag predicates are registered with a `type` of `tconstruct:tag` instead of `mantle:tag`. Additional modifier predicate serializers are discussed in the following sections.
+
+In 1.18, all [common predicate](#common-predicates) were registered under a domain of `tconstruct` instead of `mantle`.
 
 ### Single Modifier
 

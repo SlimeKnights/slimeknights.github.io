@@ -18,7 +18,7 @@ A tool definition has the following format:
 * {% include field.html type="object" %} The root tool definition object.
     * {% include field.html name="modules" type="list" %} List of tool modules on the tool.
         * {% include field.html type="object" %} A single tool module.
-            * {% include field.html name="type" type="resource location" %} The tool module type.
+            * {% include field.html name="type" type="resource location" %} The [tool module](#tool-modules) type.
             * {% include field.html name="hooks" type="list" %} List of [tool hook IDs](#tool-hooks) defining when this module is used. If unset, will use the default list of hooks defined by the tool module type.
                 * {% include field.html type="resource location" %} A [tool hook ID](#tool-hooks). The tool module type must support the given hook.
             * *Any other fields defined by the tool module type*.
@@ -92,6 +92,16 @@ The multiply stats module is used to set the stat multipliers for a tool, which 
         * {% include field.html name="\<tool_stat\>" type="number" %} Sets the multiplier for `<tool_stat>` to the given value.
 </div>
 
+#### Modifier Slots
+
+The modifier slots module is used to set the tool's starting modifier slots. This module by default implements the hook `tconstruct:volatile_data`, and has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A tool module object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:modifier_slots`.
+    * {% include field.html name="slots" type="Slot Count" %} Starting modifier slots for this tool.
+        * {% include field.html name="\<slot\>" type="integer" %} Number of slots added of the [slot type](/docs/json/slot-types) `<slot>`.
+
 #### Tool Actions
 
 The tool actions module is used to add tool actions which can be performed by this tool. This is typically used to define actions related to a tool's core behaviors such as blocks it can mine, as behaviors such as tilling are handled by modifiers. This module by default implements the hook `tconstruct:tool_actions`, and has the following format:
@@ -133,7 +143,7 @@ This module by default implements the `tconstruct:tool_stats`, `tconstruct:tool_
         * {% include field.html type="item ID" %} Compact format to specify a tool part item for the index. Item must implement `IToolPart`.
         * {% include field.html type="object" %} Object format to specify a tool part item.
             * {% include field.html name="item" type="item ID" %} Tool part item for the index, must implement `IToolPart`.
-            * {% include field.html name="scale" type="float" %} Scaling value for the [material stat type](../stat-type) from this part.
+            * {% include field.html name="scale" type="float" %} Scaling value for the [material stat type](../stat-type) from this part. If unset, defaults to 1.
     * {% include field.html name="primary_part" type="integer" %} Index of the tool part to use for traits for the `tconstruct:rebalanced_trait` hook. Defaults to 0, setting to -1 will provide no rebalanced trait.
 </div>
 
@@ -150,7 +160,7 @@ This module by default implements the `tconstruct:tool_stats`, `tconstruct:tool_
         * {% include field.html type="Stat Type ID" %} Compact format to specify a stat type for the index.
         * {% include field.html type="object" %} Object format to specify a stat type.
             * {% include field.html name="stat" type="stat type ID" %} Stat type for the index. 
-            * {% include field.html name="scale" type="float" %} Scaling value for the stat type.
+            * {% include field.html name="scale" type="float" %} Scaling value for the stat type. If unset, defaults to 1.
     * {% include field.html name="primary_part" type="integer" %} Index of the stat type to use for traits for the `tconstruct:rebalanced_trait` hook. Defaults to 0, setting to -1 will provide no rebalanced trait.
 </div>
 
