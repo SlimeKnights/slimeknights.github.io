@@ -36,6 +36,7 @@ The following pages are specific to data pack formats:
 
 The following pages cover data pack concepts specific to in Tinkers' Construct:
 
+* [**Fluid Effects**](json/fluid-effects) ([1.18](json/fluid-effects/1.18)): Documentation for defining effects of fluids in various fluid effect modifiers.
 * [**Material Format**](json/materials): Documentation for defining materials.
 * [**Material Stat Types**](json/stat-types) ([1.16-1.18](json/stat-types/1.18)): List of all stat types available to materials.
 * [**Modifiers**](json/modifiers) ([Serializers](json/modifiers/serializers)): Documentation for adding custom modifiers via JSON.

@@ -141,11 +141,14 @@ Entity predicates match living entity instances, allowing matching properties of
 
 In addition, the following sections discuss entity predicate serializers with additional fields.
 
+In 1.18, some uses of entity predicates used a legacy version defined by Tinkers' Construct where all relevant predicates were registered under a domain of `tconstruct` instead of `mantle`. In addition, `mantle:on_ground`, `mantle:underwater`, and `mantle:has_enchantment` are not available.
+
 ### Entity Set
 
 {% include_relative _set-predicate.html name="Entity" key="entities" %}
 
 ### Has Enchantment
+<div class="hatnote">Not available in legacy Tinkers' Construct entity predicate.</div>
 
 The "has enchantment" entity predicate matches any entity that is wearing a piece of equipment with the given enchantment. This predicate only considers equipment slots that are normally allowed to contain the given enchantment, meaning armor enchantments will only consider armor slots for instance.
 
