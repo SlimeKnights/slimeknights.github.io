@@ -101,6 +101,7 @@ The modifier slots module is used to set the tool's starting modifier slots. Thi
     * {% include field.html name="type" type="resource location" %} Always `tconstruct:modifier_slots`.
     * {% include field.html name="slots" type="Slot Count" %} Starting modifier slots for this tool.
         * {% include field.html name="\<slot\>" type="integer" %} Number of slots added of the [slot type](/docs/json/slot-types) `<slot>`.
+</div>
 
 #### Tool Actions
 
@@ -357,6 +358,7 @@ The box AOE iterator defines tool AOE in a cube, with the following format:
         * **`tconstruct:side_hit`**: Orients based on the targeted block face. `width` is to the left/right of the target, `height` is above/below the target, and `depth` back behind the target.
         * **`tconstruct:pitch`**: Orients based on the direction the player is facing. `width` is to the left/right of the player view, `height` is above/below the player view, and `depth` back behind the player view.
         * **`tconstruct:height`**: Orients height to the Y axis, `width` to the left/right of the side hit, and `depth` behind the target. When targeting the top or bottom of a  block, `width` orients to the left/right of the player view, and `depth` behind the player view.
+</div>
 
 #### Circle AOE Iterator
 
