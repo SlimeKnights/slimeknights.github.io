@@ -48,6 +48,8 @@ The following pages cover data pack concepts specific to in Tinkers' Construct:
 
 ### Resource Packs
 
+* [**Models**](json/models): Documentation for the custom model loaders added by SlimeKnights mods. Applicable anywhere [vanilla models](https://minecraft.wiki/w/Model) are used.
+
 #### Mantle
 
 * [**Fluid Textures**](json/fluid-textures): JSON format for defining the textures of fluids for Mantle mods.
