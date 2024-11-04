@@ -49,8 +49,12 @@ The following pages cover data pack concepts specific to in Tinkers' Construct:
 ### Resource Packs
 
 * [**Armor Models**](json/armor-models): Documentation for the model format for modifiable armor from Tinkers' Construct.
+
+#### Mantle
+
 * [**Fluid Textures**](json/fluid-textures): JSON format for defining the textures of fluids for Mantle mods.
 * [**Fluid Tooltips**](json/fluid-tooltips): JSON format for defining fluid unit lists for tooltips.
+* [**Resource Colors**](json/colors): Documentation for Mantle's resource color system, primarily used for tooltip text colors.
 
 ## Other Documentation
 

@@ -36,6 +36,29 @@ Many JSON contain colors expressed as 6 or 8 digit hex color strings. 6 digit RG
 
 For example, `"FF00000"` represents a bright red, as `RR` is 255 and both `GG` and `BB` are 0. If this was an ARGB color, then `AA` would be set to 255 (fully opaque).
 
+### Text Color
+
+Some JSON formats are deserialized using "text color", which is a variant of RGB colors that also supports parsing named colors. Text colors are parsed using the format of `"#RRGGBB"`, which is the same format as the 6 digit RGB string, except with a leading `#` character. In addition, text colors support the following named colors:
+
+| Name | Value |
+| :--- | :---- |
+| `black`        | <span class="color" style="background-color: #000000;"/> `"#000000"` | 
+| `dark_blue`    | <span class="color" style="background-color: #0000AA;"/> `"#0000AA"` |
+| `dark_green`   | <span class="color" style="background-color: #00AA00;"/> `"#00AA00"` |
+| `dark_aqua`    | <span class="color" style="background-color: #00AAAA;"/> `"#00AAAA"` |
+| `dark_red`     | <span class="color" style="background-color: #AA0000;"/> `"#AA0000"` |
+| `dark_purple`  | <span class="color" style="background-color: #AA00AA;"/> `"#AA00AA"` |
+| `gold`         | <span class="color" style="background-color: #FFAA00;"/> `"#FFAA00"` |
+| `gray`         | <span class="color" style="background-color: #AAAAAA;"/> `"#AAAAAA"` |
+| `dark_gray`    | <span class="color" style="background-color: #555555;"/> `"#555555"` |
+| `blue`         | <span class="color" style="background-color: #5555FF;"/> `"#5555FF"` |
+| `green`        | <span class="color" style="background-color: #55FF55;"/> `"#55FF55"` |
+| `aqua`         | <span class="color" style="background-color: #55FFFF;"/> `"#55FFFF"` |
+| `red`          | <span class="color" style="background-color: #FF5555;"/> `"#FF5555"` |
+| `light_purple` | <span class="color" style="background-color: #FF55FF;"/> `"#FF55FF"` |
+| `yellow`       | <span class="color" style="background-color: #FFFF55;"/> `"#FFFF55"` |
+| `white`        | <span class="color" style="background-color: #FFFFFF;"/> `"#FFFFFF"` |
+
 ## Tool Action
 
 A tool action is a registry defined by Forge for behaviors that a tool may perform. Unlike [item tags](#tag-name), tool actions may be NBT sensitive. Tool action in JSON are simply string values, though any associated behavior typically needs to be defined in code.
