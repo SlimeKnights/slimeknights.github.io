@@ -19,4 +19,4 @@ Fluid texture JSON are defined under `assets/<domain>/mantle/fluid_texture/<name
     * {% include field.html name="camera" type="resource location" %} Path to the camera texture, applied when an entity is swimming in the fluid. Does not support animations. If unset, no camera overlay is applied.
 </div>
 
-All texture paths are relative to `assets/<domain>/textures/`.
+All texture paths are relative to `assets/<domain>/textures/` and should not contain the `.png` extension.
