@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "SlimeKnights Documentation",
+  "short_name": "SlimeKnights Docs",
   "icons": [
     {
       "src": "/assets/images/web-app-manifest-192x192.png",
