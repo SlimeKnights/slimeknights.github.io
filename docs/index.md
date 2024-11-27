@@ -17,6 +17,9 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 
 * [**Design Docs**](design): Developer docs used to organize, balance, and plan out content in the mod.
 * [**Online Books**](books): Links to online versions of many books from SlimeKnights mods.
+* [**What's New?**](whats-new): Covers all major changes made to Tinkers' Construct 3 compared to Tinkers' Construct 2.
+    * [**Roadmap**](roadmap): Discusses various future plans for our mods, along with current work.
+    * [**Removed Features**](removed): Covers features from older versions of Tinkers' Construct that were removed in the latest versions, along with some reasoning or alternatives.
 
 ## Commands
 * [**Mantle Commands**](commands/mantle): Documentation for all commands added by Mantle.
@@ -70,5 +73,4 @@ The following pages cover data pack concepts specific to in Tinkers' Construct:
 
 * [**Mantle GitHub Wiki**](https://github.com/SlimeKnights/Mantle/wiki): Documentation specific to Mantle, the library mod used by SlimeKnights' mods. Will eventually be migrated to this website.
 * [**Tinkers' Construct GitHub Wiki**](https://github.com/SlimeKnights/TinkersConstruct/wiki): Documentation for Tinkers' Construct content, along with general FAQs. Will eventually be migrated to this website.
-* [**Missing Features**](https://docs.google.com/spreadsheets/d/1CuGKWMtrX-RM26U2xEdrpt5HCYLywQcr_qWhvzyYOGc/edit?usp=sharing): Features from TiC 1 or TiC 2 that are not currently present in TiC 3. Also lists some addons that were not ported and alternatives to their features.
 * [**Unofficial Alternatives**](https://docs.google.com/spreadsheets/d/1gOxPm37wu8Y9vVewNYv8JAxfkPQmkUfvnSjsk_sMiBo/edit?usp=sharing): Mods similar to Tinkers' Construct on various Minecraft platforms.
