@@ -4,3 +4,4 @@
 
 layout: home
 ---
+Welcome to the SlimeKnights Documentation website! We use this site to document many elements of our mods, primarily geared towards authors of modpacks and addons. Use the navigation bar at the top to access site resources, or see below for our update blog posts.
