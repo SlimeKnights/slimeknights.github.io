@@ -44,6 +44,7 @@ sass:
   
 header_pages:
 - about.md
+- faq/index.md
 - docs/index.md
 - projects.md
 
