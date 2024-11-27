@@ -3,7 +3,7 @@ layout: page
 title: What's New?
 ---
 <div class="hatnote" markdown=1>
-This page is a summary of all changes since Tinkers' Construct 2. For specific build by build changes, see [the release notes](https://github.com/SlimeKnights/TinkersConstruct/releases). For future plans, see [Future Plans](../future). For features removed in Tinkers' Construct 3, see [Removed Features](../removed).
+This page is a summary of all changes since Tinkers' Construct 2. For specific build by build changes, see [the release notes](https://github.com/SlimeKnights/TinkersConstruct/releases). For future plans, see [Roadmap](../roadmap). For features removed in Tinkers' Construct 3, see [Removed Features](../removed).
 </div>
 
 This page is a summary of the changes in Tinkers' Construct 3 for 1.16+, as compared to Tinkers' Construct 2 from 1.12 and before.

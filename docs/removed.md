@@ -27,7 +27,7 @@ The following tools were moved to the official addon [Tinkers' Things](/projects
 ### Projectiles
 
 <div class="hatnote" markdown=1>
-See also: [Potential future plan](../future#projectiles) reimplementing projectiles in a new way.
+See also: [Potential future plan](../roadmap#projectiles) reimplementing projectiles in a new way.
 </div>
 
 In general, projectile in Tinkers' 1 and 2 had several flaws, leading to the following reasons for their removal:
