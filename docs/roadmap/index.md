@@ -24,7 +24,7 @@ This page covers information on future plans for Tinkers' Construct 3. Note that
 
 Slimesteel and King's Slime will be usable to make late game fluid mechanics.
 
-**King's Slime:**
+### King's Slime
 
 * New tier 3 material alloyed from gold, ichor, and scorched stone.
 * Trait boosts damage/velocity/protection provided the tool has its overslime bar non-empty.

@@ -3,7 +3,7 @@ layout: page
 title: Design Documents
 ---
 <div class="hatnote" markdown=1>
-This page is about documentation on mostly implemented features. For features that are not implemented in the mod, see [Future Plans](../future).
+This page is about documentation on mostly implemented features. For features that are not implemented in the mod, see [Roadmap](../roadmap).
 </div>
 
 This page is an index of links or pages for various design docs used to organize contents about the game.
