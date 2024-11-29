@@ -150,3 +150,148 @@ encyclopedia_19:
       
     - index: 158
       text: Slimeskulls
+
+
+materials_and_you_18:
+  path: tinkers/3.7.2/materials_and_you
+  max_page: 26
+  titles:
+    - index: 1
+      text: Introduction
+     
+    - index: 6
+      text: Tier 1 Melee
+      
+    - index: 11
+      text: Tier 1 Ranged
+      
+    - index: 15
+      text: Tools
+      
+    - index: 22
+      text: Modifiers
+      
+    - index: 25
+      text: Further Reading
+
+puny_smelting_18:
+  path: tinkers/3.7.2/puny_smelting
+  max_page: 72
+  titles:
+    - index: 2
+      text: Melter & Moving Fluids
+      
+    - index: 8
+      text: Casting
+      
+    - index: 12
+      text: Tier 2 Melee
+      
+    - index: 20
+      text: Tier 2 Ranged
+      
+    - index: 26
+      text: Puny Armor
+      
+    - index: 29
+      text: Upgrades
+      
+    - index: 62
+      text: Slotless Modifiers
+      
+    - index: 72
+      text: Further Reading
+
+mighty_smelting_18:
+  path: tinkers/3.7.2/mighty_smelting
+  max_page: 67
+  titles:
+    - index: 2
+      text: Smeltery
+      
+    - index: 13
+      text: Tier 3 Melee
+      
+    - index: 20
+      text: Tier 3 Ranged
+      
+    - index: 27
+      text: Broad Tools
+      
+    - index: 32
+      text: Abilities
+      
+    - index: 60
+      text: Defense
+
+fantastic_foundry_18:
+  path: tinkers/3.7.2/fantastic_foundry
+  max_page: 25
+  titles:      
+    - index: 2
+      text: Alloyer
+      
+    - index: 4
+      text: Foundry
+      
+    - index: 13
+      text: Blazing Blood
+      
+    - index: 16
+      text: Tier 4 Melee
+      
+    - index: 20
+      text: Tier 4 Ranged
+      
+    - index: 23
+      text: Fantastic Armor
+
+tinkers_gadgetry_18:
+  path: tinkers/3.7.2/tinkers_gadgetry
+  max_page: 32
+  titles:
+    - index: 2
+      text: Gadgets
+      
+    - index: 7
+      text: Odd Modifiers
+      
+    - index: 13
+      text: Exploration
+      
+    - index: 20
+      text: Staffs
+      
+    - index: 22
+      text: Slimy Armor
+
+encyclopedia_18:
+  path: tinkers/3.7.2/encyclopedia
+  max_page: 148
+  titles:
+    - index: 2
+      text: Tools
+      
+    - index: 14
+      text: Armor
+      
+    - index: 22
+      text: Upgrades
+      
+    - index: 55
+      text: Defense
+      
+    - index: 62
+      text: Slotless
+      
+    - index: 72
+      text: Abilities
+      
+    - index: 100
+      text: Melee Harvest Materials
+      
+    - index: 122
+      text: Ranged Materials
+      
+    - index: 141
+      text: Slimeskulls
