@@ -6,7 +6,7 @@ materials_and_you_19:
       text: Introduction
      
     - index: 6
-      text: Tier 1 Melee
+      text: Tier 1 Melee Harvest
       
     - index: 11
       text: Tier 1 Ranged
@@ -31,7 +31,7 @@ puny_smelting_19:
       text: Casting
       
     - index: 12
-      text: Tier 2 Melee
+      text: Tier 2 Melee Harvest
       
     - index: 19
       text: Tier 2 Ranged
@@ -59,7 +59,7 @@ mighty_smelting_19:
       text: Smeltery
       
     - index: 13
-      text: Tier 3 Melee
+      text: Tier 3 Melee Harvest
       
     - index: 20
       text: Tier 3 Ranged
@@ -90,7 +90,7 @@ fantastic_foundry_19:
       text: Blazing Blood
       
     - index: 16
-      text: Tier 4 Melee
+      text: Tier 4 Melee Harvest
       
     - index: 20
       text: Tier 4 Ranged
@@ -160,7 +160,7 @@ materials_and_you_18:
       text: Introduction
      
     - index: 6
-      text: Tier 1 Melee
+      text: Tier 1 Melee Harvest
       
     - index: 11
       text: Tier 1 Ranged
@@ -185,7 +185,7 @@ puny_smelting_18:
       text: Casting
       
     - index: 12
-      text: Tier 2 Melee
+      text: Tier 2 Melee Harvest
       
     - index: 20
       text: Tier 2 Ranged
@@ -210,7 +210,7 @@ mighty_smelting_18:
       text: Smeltery
       
     - index: 13
-      text: Tier 3 Melee
+      text: Tier 3 Melee Harvest
       
     - index: 20
       text: Tier 3 Ranged
@@ -238,7 +238,7 @@ fantastic_foundry_18:
       text: Blazing Blood
       
     - index: 16
-      text: Tier 4 Melee
+      text: Tier 4 Melee Harvest
       
     - index: 20
       text: Tier 4 Ranged
