@@ -295,3 +295,133 @@ encyclopedia_18:
       
     - index: 141
       text: Slimeskulls
+
+
+materials_and_you_16:
+  path: tinkers/3.3.4/materials_and_you
+  max_page: 22
+  titles:
+    - index: 1
+      text: Introduction
+     
+    - index: 6
+      text: Tier 1 Materials
+      
+    - index: 11
+      text: Tools
+      
+    - index: 16
+      text: Travelers' Gear
+      
+    - index: 18
+      text: Modifiers
+      
+    - index: 21
+      text: Further Reading
+
+puny_smelting_16:
+  path: tinkers/3.3.4/puny_smelting
+  max_page: 48
+  titles:
+    - index: 2
+      text: Melter & Moving Fluids
+      
+    - index: 8
+      text: Casting
+      
+    - index: 12
+      text: Tier 2 Materials
+      
+    - index: 20
+      text: Upgrades
+      
+    - index: 41
+      text: Slotless Modifiers
+      
+    - index: 26
+      text: Puny Armor
+      
+    - index: 72
+      text: Further Reading
+
+mighty_smelting_16:
+  path: tinkers/3.3.4/mighty_smelting
+  max_page: 51
+  titles:
+    - index: 2
+      text: Smeltery
+      
+    - index: 12
+      text: Tier 3 Materials
+      
+    - index: 19
+      text: Broad Tools
+      
+    - index: 24
+      text: Abilities
+      
+    - index: 45
+      text: Defense
+
+fantastic_foundry_16:
+  path: tinkers/3.3.4/fantastic_foundry
+  max_page: 21
+  titles:      
+    - index: 2
+      text: Alloyer
+      
+    - index: 4
+      text: Foundry
+      
+    - index: 11
+      text: Blazing Blood
+      
+    - index: 15
+      text: Plate Armor
+      
+    - index: 18
+      text: Tier 4 Materials
+
+tinkers_gadgetry_16:
+  path: tinkers/3.3.4/tinkers_gadgetry
+  max_page: 22
+  titles:
+    - index: 2
+      text: Gadgets
+      
+    - index: 7
+      text: Odd Modifiers
+      
+    - index: 8
+      text: Exploration
+      
+    - index: 13
+      text: Slimy Armor
+
+encyclopedia_16:
+  path: tinkers/3.3.4/encyclopedia
+  max_page: 105
+  titles:
+    - index: 1
+      text: Tools
+      
+    - index: 9
+      text: Armor
+      
+    - index: 16
+      text: Materials
+      
+    - index: 39
+      text: Slimeskulls
+      
+    - index: 47
+      text: Upgrades
+      
+    - index: 70
+      text: Defense
+      
+    - index: 77
+      text: Slotless
+      
+    - index: 85
+      text: Abilities
