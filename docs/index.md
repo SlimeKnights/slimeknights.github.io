@@ -24,6 +24,7 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 
 ## Commands
 * [**Mantle Commands**](commands/mantle): Documentation for all commands added by Mantle.
+* [**Tinkers' Construct Commands**](commands/tinkers): Documentation for all commands added by Tinkers' Construct.
 
 ## JSON Format
 
@@ -68,6 +69,7 @@ The following pages cover data pack concepts specific to in Tinkers' Construct:
 #### Tinkers' Construct
 
 * [**Armor Models**](json/armor-models): Documentation for the model format for modifiable armor from Tinkers' Construct.
+* [**Material Render Info**](json/material-render-info): Documentation for assigning textures to materials.
 * [**Modifier Icons**](json/modifier-icons): Documentation for assigning icons to modifiers (used notably in JEI).
 
 ## Other Documentation

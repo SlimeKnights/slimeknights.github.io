@@ -153,6 +153,11 @@ elsif type == "tool stat" or type == "tool stat id" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/tool-stats" %}{%
     
+elsif type == "numeric tool stat" %}{%
+    assign name = "Numeric Tool Stat" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "/docs/json/tool-stats#numeric-tool-stats" %}{%
+    
 elsif type == "stat type" or type == "stat type id" %}{%
     assign name = "Stat Type" %}{%
     assign icon = "nbt-string" %}{%
@@ -202,6 +207,11 @@ elsif type contains "tag" %}{%
     assign name = include.type %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/basic-types#tag-name" %}{%
+
+elsif type == "entity argument" %}{%
+    assign name = "Entity Argument" %}{%
+    assign icon = "nbt-string" %}{%
+    assign link = "https://minecraft.wiki/w/Argument_types#entity" %}{%
 
 else %}{%
     assign name = include.type %}{%
