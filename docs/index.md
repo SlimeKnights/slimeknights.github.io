@@ -17,6 +17,7 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 ## General
 
 * [**Design Docs**](design): Developer docs used to organize, balance, and plan out content in the mod.
+* [**Addon Documentation**](addons): Documentation on making addons geared towards Java based addons.
 * [**Online Books**](books): Links to online versions of many books from SlimeKnights mods.
 * [**What's New?**](whats-new): Covers all major changes made to Tinkers' Construct 3 compared to Tinkers' Construct 2.
     * [**Roadmap**](roadmap): Discusses various future plans for our mods, along with current work.

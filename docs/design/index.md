@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Design Documents
+breadcrumb: Design
 description: This page contains links to various design documents we have shared related to features for Tinkers' Construct 3. The often are more detailed than the in game descriptions, and also give some info on future content. If you are making an addon, its encouraged to read through the relevant documents to ensure you understand how the mod is organized.
 ---
 <div class="hatnote" markdown=1>
-This page is about documentation on mostly implemented features. For features that are not implemented in the mod, see [Roadmap](../roadmap).
+This page is about design documentation on implemented features. For features that are not implemented in the mod, see [Roadmap](../roadmap). For Java documentation, see [Addon Documentation](../addons).
 </div>
 
 {{page.description}}
@@ -25,7 +26,5 @@ In general, design docs are updated to the latest 1.19 build with the addition o
 
 ## Technical
 
-* [**Texture Generators**](texture-generators): Details how to use the material texture generators provided by Tinkers' Construct.
-* [**Persistent Inventory Crafting Blocks**](persistent-inventory): Details how to handle the crafting station in mods wanting to do weird things in their crafting recipes (like player access which is *not* available in vanilla without hacks).
 * [**Faucet State Diagram**](https://docs.google.com/drawings/d/1Hxv2Xdv3n_D2cg1fpCvv1jYoIz3hVJ5_zO-vr74L754/edit?usp=sharing): State transition diagram for the faucet and its interactions with redstone.
 * [**Tool NBT Components**](https://docs.google.com/drawings/d/1BI42KITkszTT0BVb4xeQQU1-38t2mcKaa1ISM8fHx2g/edit): Contains information on all the elements of tool NBT, useful for modders who need to work with NBT directly or pack makers wanting to add commands related to NBT.

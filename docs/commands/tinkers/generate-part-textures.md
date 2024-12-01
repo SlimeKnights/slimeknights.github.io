@@ -5,11 +5,11 @@ breadcrumb: Generate Part Textures
 description: Tinkers' Construct 3 makes extensive use of data generators to generate material variants of tool parts with more detail than a simple tint. The generate part textures command makes this feature available to data pack and resource pack creators.
 ---
 <div class="hatnote" markdown=1>
-This page is about using texture generators for data pack or resource pack authors. For addon authors, see the [texture generator documentation](/docs/design/texture-generators).
+This page is about using texture generators for data pack or resource pack authors. For addon authors, see the [texture generator documentation](/docs/addons/texture-generators).
 </div>
 {{page.description}}
 
-The generator command is primarily meant for use by mod pack, data pack and resource pack authors, along with creators of low code mods (this command for instance was used in the creation of [Tinkers' Things](/projects#tinkers-things)). Java addon creators will have a much better experience using the [texture generator](/docs/design/texture-generators) during datagen.
+The generator command is primarily meant for use by mod pack, data pack and resource pack authors, along with creators of low code mods (this command for instance was used in the creation of [Tinkers' Things](/projects#tinkers-things)). Java addon creators will have a much better experience using the [texture generator](/docs/`/texture-generators) during datagen.
 
 {% include toc.html %}
 
