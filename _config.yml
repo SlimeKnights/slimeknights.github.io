@@ -22,8 +22,7 @@ title: SlimeKnights
 email: knightminer4@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the SlimeKnights developer documentation, a place for documentation about
-  writing addons or datapacks for SlimeKnights mods, along with developer
-  notes and design documents.
+  writing addons or datapacks for SlimeKnights mods such as Tinkers' Construct, along with developer notes and design documents.
 tagline: "SlimeKnights Developer Documentation"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
