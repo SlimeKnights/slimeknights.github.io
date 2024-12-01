@@ -1,0 +1,13 @@
+{%- for page in (include.start..include.end) -%}
+    <li class="{%
+        if page >= 10 %}two-digit{% endif %}{%
+        if page == current_page %} uk-active" aria-current="page{% endif %}">
+        {%- if page == include.page -%}
+            <b>{{ page }}</b>
+        {%- elsif page == 1 and include.first_path -%}
+            <a href="{{include.first_path}}">1</a>
+        {%- else -%}
+            <a href="{{ include.path | replace: ':num', page }}">{{ page }}</a>
+        {%- endif -%}
+    </li>
+{%- endfor -%}

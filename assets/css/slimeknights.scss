@@ -158,6 +158,14 @@ em {
 #breadcrumbs, #breadcrumbs a {
     color: silver;
 }
+/* Prevent vitited page links from turning blue */
+.uk-pagination > * > a:visited {
+    color: #999;
+}
+/* Reduce padding on 2 digit links */
+.uk-pagination > .two-digit > * {
+    padding: 5px;
+}
 
 /* Color circles */
 .color {

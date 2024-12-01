@@ -3,6 +3,7 @@ layout: post
 title:  "Online Books and Documentation Updates"
 date:   2024-11-30 14:58:00 -0400
 categories: posts
+author: KnightMiner
 ---
 We have been working hard to add content to the SlimeKnights' Documentation. One of the player oriented pieces of content available is the [online books](/docs/books), which contain galleries of book pages for browsing the book contents out of game. All books from SlimeKnights mods between 1.16.5 and 1.19.2 have been added to the site, and future books will be added as updates change them. This is made possible by the new [export book images](/docs/commands/mantle/#export-book-images) command added by fuj1n.
 

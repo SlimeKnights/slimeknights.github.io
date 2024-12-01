@@ -3,6 +3,7 @@ layout: post
 title:  "SlimeKnights developer documentation and blog"
 date:   2024-10-06 21:47:10 -0400
 categories: posts
+author: KnightMiner
 ---
 Welcome to the SlimeKnight's developer documentation. This site will contain documentation on information useful to addon developers, data pack authors, and modpack developers related to any of the SlimeKnights mods. This site will also be used in the future for visual changelogs.
 
