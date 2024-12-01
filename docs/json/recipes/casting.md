@@ -40,3 +40,19 @@ Potion casting recipes define casting a potion on an item to produce a potion it
     * {% include field.html name="cooling_time" type="integer" %} Time in ticks (1/20 of a second) for this recipe to finish cooling.
     * {% include field.html name="result" type="Item ID" %} Result item for the recipe. Expected to be an item that supports potion NBT, such as a potion, splash potion, lingering potion, or tipped arrow.
 </div>
+
+## Container Filling
+
+The container filling recipe defines filling a Forge fluid container using a fluid. Its designed for container items with a fixed size, but also supports filling containers that support incremental amounts in fixed increments.
+
+This recipe has two variants, `tconstruct:table_filling` for filling fluid containers in the casting table, and `tconstruct:basin_filling` for filling fluid containers in the casting basin.
+
+The container filling recipe has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The recipe object.
+    * {% include field.html name="type" type="resource location" %} Either `tconstruct:table_filling` or `tconstruct:basin_filling`.
+    * {% include field.html name="group" type="string" %} Recipe group for the recipe book, currently unused.
+    * {% include field.html name="fluid_amount" type="integer" %} Amount of fluid to use to fill the container, should match the container size. 
+    * {% include field.html name="container" type="Item ID" %} Container item to fill.
+</div>

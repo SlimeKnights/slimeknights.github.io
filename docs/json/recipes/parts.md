@@ -25,7 +25,7 @@ The format for a part builder recipe is as follows:
     * {% include field.html name="type" type="resource location" %} Recipe serializer ID, always `tconstruct:part_builder`.
     * {% include field.html name="group" type="string" %} Recipe group for the recipe book, currently unused.
     * {% include field.html name="pattern" type="pattern" %} Pattern button that must be selected to craft this part. Typically matches the name of the result tool part.
-    * {% include field.html name="pattern_item" type="ingredient" %} Item required in the pattern slot to craft this part. If unset, defaults to an ingredient matching the item tag `tconstruct:patterns/default`.
+    * {% include field.html name="pattern_item" type="ingredient" version="1.18+" %} Item required in the pattern slot to craft this part. If unset, defaults to an ingredient matching the item tag `tconstruct:patterns/default`.
     * {% include field.html name="cost" type="integer" %} Cost of this part. Will be used to scale the input item cost.
     * {% include field.html name="result" type="object" %} The result of this recipe.
         * {% include field.html name="item" type="item ID" %} Result item for the recipe. Should be an item that supports materials.
@@ -61,5 +61,5 @@ The format for a part casting recipe is as follows:
     * {% include field.html name="group" type="string" %} Recipe group for the recipe book, currently unused.
     * {% include field.html name="item_cost" type="integer" %} Cost of this part. Will be used to scale the input fluid amount.
     * {% include field.html name="result" type="item ID" %} Result item for the recipe. Should be an item that supports materials.
-    * {% include field.html name="casting_stat_conflict" type="stat type ID" %} If set, prevents composite casting with any materials that support the given stat type. Used to prevent conflicts between composite casting and [tool casting recipes](../tools#casting).
+    * {% include field.html name="casting_stat_conflict" type="stat type ID" version="1.19+" %} If set, prevents composite casting with any materials that support the given stat type. Used to prevent conflicts between composite casting and [tool casting recipes](../tools#casting).
 </div>

@@ -14,5 +14,13 @@ The rate of fuel consumption varies based on the usage. For the melter and alloy
     * {% include field.html name="type" type="resource location" %} Always `tconstruct:melting_fuel`.
     * {% include field.html name="fluid" type="fluid ingredient" %} Fluid ingredient matching the fuel. Amount determines how much fuel is consumed per operation.
     * {% include field.html name="duration" type="integer" %} Amount of "fuel units" produced per operation. The exact 
-    * {% include field.html name="temperature" type="integer" %} Fuel temperature value, used for gating [melting](../item-melting) and [alloying](../alloying) recipes. Additionally, acts as a multiplier on the rate items melt, with 1000 being the baseline.
+    * {% include field.html name="temperature" type="temperature" %} Fuel temperature value, used for gating [melting](../item-melting) and [alloying](../alloying) recipes. Additionally, acts as a multiplier on the rate items melt, with 1000 being the baseline.
 </div>
+
+## Temperature
+
+Fuel temperature is often used as a gating mechanism for recipes. The following fuel temperatures are defined in the base mod:
+
+* Soild fuel has a temperature of 800 degrees.
+* Lava has a temperature of 1000 degrees.
+* Blazing Blood has a temperature of 1500 degrees.

@@ -22,11 +22,11 @@ The format for a tool building recipe is the following:
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} The recipe object.
     * {% include field.html name="type" type="resource location" %} Always `tconstruct:tool_building`.
-    * {% include field.html name="extra_requirements" type="list" %} Additional requirements to craft the tool beyond the tool parts. Order of the requirements matters. Optional if the tool definition has tool parts.
+    * {% include field.html name="extra_requirements" type="list" version="1.18.2+" %} Additional requirements to craft the tool beyond the tool parts. Order of the requirements matters. Optional if the tool definition has tool parts.
         * {% include field.html type="ingredient" %} Resulting tool. An additional ingredient requirement.
     * {% include field.html name="result" type="item ID" %} Resulting tool. Tool must be a modifiable item with a valid tool definition.
-    * {% include field.html name="result_count" type="integer" %} Stack size of the resulting tool. If unset, defaults to 1.
-    * {% include field.html name="layout_slot" type="resource location" %} ID of the [station slot layout](../../slot-layouts) used for displaying this recipe in JEI. If unset, defaults to the layout matching the tool's ID.
+    * {% include field.html name="result_count" type="integer" version="1.18.2+"  %} Stack size of the resulting tool. If unset, defaults to 1.
+    * {% include field.html name="layout_slot" type="resource location" version="1.18.2+"  %} ID of the [station slot layout](../../slot-layouts) used for displaying this recipe in JEI. If unset, defaults to the layout matching the tool's ID.
 </div>
 
 ## Tool Casting

@@ -26,7 +26,7 @@ Item melting recipes have the following format:
     * {% include field.html name="result" type="fluid stack" %} Melting result. Does not support NBT.
     * {% include field.html name="byproducts" type="list" %} Additional results produced in when this item is melted in the foundry. Unused in the melter, smeltery, and melting modifier. If unset, defaults to an empty list.
         * {% include field.html type="fluid stack" %} Byproduct result. Does not support NBT.
-    * {% include field.html name="temperature" type="integer" %} Minimum fuel temperature to perform this alloy recipe.
+    * {% include field.html name="temperature" type="temperature" %} Minimum fuel temperature to perform this alloy recipe.
 </div>
 
 ## Damageable Melting
@@ -41,11 +41,11 @@ Damageable melting recipes have the following format:
     * {% include field.html name="ingredient" type="ingredient" %} Item ingredient matching the item to melt.
     * {% include field.html name="time" type="integer" %} Time it takes to melt this item.
     * {% include field.html name="result" type="fluid stack" %} Melting result. Does not support NBT.
-        * {% include field.html name="unit_size" type="integer" %} Unit size for the melting result. If unset, defaults to 1. 
+        * {% include field.html name="unit_size" type="integer" version="1.18.2+" %} Unit size for the melting result. If unset, defaults to 1. 
     * {% include field.html name="byproducts" type="list" %} Additional results produced in when this item is melted in the foundry. Unused in the melter, smeltery, and melting modifier. If unset, defaults to an empty list.
         * {% include field.html type="fluid stack" %} Byproduct result. Does not support NBT.
-            * {% include field.html name="unit_size" type="integer" %} Unit size for the byproduct. If unset, defaults to 1.
-    * {% include field.html name="temperature" type="integer" %} Minimum fuel temperature to perform this alloy recipe.
+            * {% include field.html name="unit_size" type="integer" version="1.18.2+" %} Unit size for the byproduct. If unset, defaults to 1.
+    * {% include field.html name="temperature" type="temperature" %} Minimum fuel temperature to perform this alloy recipe.
 </div>
 
 ## Ore Melting
@@ -58,11 +58,11 @@ Ore melting recipes define melting an ore into a fluid. The result fluid is scal
     * {% include field.html name="ingredient" type="ingredient" %} Item ingredient matching the item to melt.
     * {% include field.html name="time" type="integer" %} Time it takes to melt this item.
     * {% include field.html name="result" type="fluid stack" %} Melting result. Does not support NBT.
-    * {% include field.html name="rate" type="string" %} Scaling method for melting result, and default scaling method for byproduct results. See [ore rates](#ore-rates).
+    * {% include field.html name="rate" type="string" version="1.18+" %} Scaling method for melting result, and default scaling method for byproduct results. See [ore rates](#ore-rates).
     * {% include field.html name="byproducts" type="list" %} Additional results produced in when this item is melted in the foundry. Unused in the melter, smeltery, and melting modifier. If unset, defaults to an empty list.
         * {% include field.html type="fluid stack" %} Byproduct result. Does not support NBT.
-            * {% include field.html name="rate" type="string" %} Scaling method for byproduct, see [ore rates](#ore-rates). If unset, defaults to the rate from the melting result.
-    * {% include field.html name="temperature" type="integer" %} Minimum fuel temperature to perform this alloy recipe.
+            * {% include field.html name="rate" type="string" version="1.19+" %} Scaling method for byproduct, see [ore rates](#ore-rates). If unset, defaults to the rate from the melting result.
+    * {% include field.html name="temperature" type="temperature" %} Minimum fuel temperature to perform this alloy recipe.
 </div>
 
 ### Ore rates

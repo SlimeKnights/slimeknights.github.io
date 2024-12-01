@@ -17,7 +17,7 @@ Alloying recipes are used to mix multiple fluid ingredients into a single fluid 
     * {% include field.html name="inputs" type="list" %} List of fluid ingredients to alloy together. Sizes indicate the amount consumed in a single alloying operation, which is also the the minimum input size.
         * {% include field.html type="fluid ingredient" %} A single fluid ingredient input.
     * {% include field.html name="result" type="fluid stack" %} Alloy result. Size indicates the amount produced in a single alloying operation. Does not support NBT.
-    * {% include field.html name="temperature" type="integer" %} Minimum fuel temperature to perform this alloy recipe.
+    * {% include field.html name="temperature" type="temperature" %} Minimum fuel temperature to perform this alloy recipe. See [fuel recipes](../fuel) for more information.
 </div>
 
 Note that the inputs are all checked in order, and a single fluid in the smeltery cannot match multiple inputs. If your desired alloy recipe has multiple inputs that can both match the same fluid (due to one being a superset of the other), ensure the most strict ingredient is first in the input array.

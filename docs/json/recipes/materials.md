@@ -41,7 +41,7 @@ Material casting recipes have the folllowing format:
 * {% include field.html type="object" %} The recipe object.
     * {% include field.html name="type" type="resource location" %} Recipe serializer ID, always `tconstruct:material_fluid`.
     * {% include field.html name="fluid" type="fluid ingredient" %} Fluid used to cast this material. Amount will be scaled based on the part cost.
-    * {% include field.html name="temperature" type="integer" %} Fluid temperature. Used to determine how long it takes the part to cool after casting.
+    * {% include field.html name="temperature" type="temperature" %} Fluid temperature. Used to determine how long it takes the part to cool after casting.
     * {% include field.html name="output" type="material variant" %} Material variant produced by this recipe.
     * {% include field.html name="input" type="material variant" %} If set, this recipe defines composite castng using `input` as a base. If unset, this recipe defines standard part casting using a cast as the base.
 </div>
@@ -54,6 +54,6 @@ Material melting recipes allow melting tool parts into the appropriate fluid in 
 * {% include field.html type="object" %} The recipe object.
     * {% include field.html name="type" type="resource location" %} Recipe serializer ID, always `tconstruct:material_melting`.
     * {% include field.html name="input" type="material variant" %} Material melted by this recipe.
-    * {% include field.html name="temperature" type="integer" %} Fluid temperature. Used to determine how long it takes the part to melt, and allows gating the recipe using the fuel temperature.
+    * {% include field.html name="temperature" type="temperature" %} Fluid temperature. Used to determine how long it takes the part to melt, and allows gating the recipe using the fuel temperature.
     * {% include field.html name="result" type="fluid stack" %} Result fluid for melting this material. Size will be scaled based on the part cost. May not be empty, and ignores NBT.
 </div>

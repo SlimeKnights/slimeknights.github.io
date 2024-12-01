@@ -20,6 +20,7 @@ Item repair recipes allow repairing a tool using the given ingredient provided i
 </div>
 
 ## Material Repair
+<div class="hatnote">Since 1.18.2</div>
 
 Material repair recipes allow repairing a tool using items matching the given tool material provided it has the listed modifier. This recipe has two variants, `tconstruct:modifier_material_repair` which defines repairing the tool in the tinker station or tinker's anvil using items associated with the material, and `tconstruct:crafting_modifier_material_repair` which defines repairing the tool in the crafting table using repair kits. Both variants have the following format:
 
