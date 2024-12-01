@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Part Recipes
+description: In order for a Tinkers' Construct tool part or material item (such as a repair kit) to be craftable in the relevant machines, its necessary to define recipes for crafting that part. These recipes perform the actual crafting logic within the machine, and also are used to define any associated costs for the part. Most parts will wish to define all relevant recipes to ensure the part can be made in all relevant machines.
 ---
 
 <div class="hatnote" markdown=1>
 This page is about the JSON to make a tool part or material item craftable. For the recipe making the material side of the part craftable, see [Material Recipes](../materials).
 </div>
 
-In order for a tool part or material item (such as a repair kit) to be craftable in the relevant machines, its necessary to define recipes for crafting that part. These recipes perform the actual crafting logic within the machine, and also are used to define any associated costs for the part. Most parts will wish to define all relevant recipes to ensure the part can be made in all relevant machines.
+{{page.description}}
 
 Most recipes define a cost field. The value of the cost is in terms of the "base unit" of the material, which is up to the material to define. For metals, this base unit is typically an ingot, while for wood it is a single plank. As a baseline, 2 of the base unit is expected to craft most tool heads. Typically, the cost of a part should remain consistent across all relevant recipes.
 

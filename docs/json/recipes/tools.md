@@ -1,14 +1,13 @@
 ---
 layout: page
 title: Tool Recipes
+description: In order for a Tinkers' Construct tool to be craftable, its necessary to define the relevant recipes. This can either allow crafting tools in the tinker station or tinker's anvil, or crafting through other devices such as a casting table. In addition, this page covers some auxiliary recipes related to tool maintenance that did not fit on other pages, such as repairing and part swapping.
 ---
 <div class="hatnote" markdown=1>
 This page is about recipes defining crafting tools. For the JSON defining the tool properties see [Tool Definitions](../../tool-definitions). For recipes related to modifying tools, see [Modifier Recipes](../modifiers).
 </div>
 
-In order for a tool to be craftable, its necessary to define the relevant recipes. This can either allow crafting tools in the tinker station or tinker's anvil, or crafting through other devices such as a casting table.
-
-In addition, this page covers some auxiliary recipes related to tool maintenance that did not fit on other pages, such as repairing and part swapping.
+{{page.description}}
 
 {% include toc.html %}
 

@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Item Melting Recipes
+description: This page covers the format for item melting recipes, which are used by the melter, smeltery, foundry, and melting modifier to melt items into fluids in Tinkers' Construct since 1.16.
 ---
 <div class="hatnote" markdown=1>
 This page is about the format for item melting recipes. For entity melting recipes, see [Entity Melting Recipes](../entity-melting).
 </div>
 
-This page covers the format for item melting recipes, which are used by the melter, smeltery, foundry, and melting modifier to melt items into fluids.
+{{page.description}}
 
 Item melting recipes typically have a time value, which determines how quickly the recipe is performed. For a fuel with a temperature of 1000, the time is expressed in units of 1/5 of a second, meaning a time of 20 would take 4 seconds to melt. For other temperatures, the melting time is multiplied by `1000 / temperature`.
 

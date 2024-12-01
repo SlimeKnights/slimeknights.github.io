@@ -1,12 +1,14 @@
 ---
 layout: page
 title: Modifier Recipes
+description: Modifier recipes are used to apply modifiers to tools in Tinkers' Construct.
 ---
 <div class="hatnote" markdown=1>
 This page is about the recipes used to apply modifiers to tools. For the recipes implementing repair based modifiers, see [Modifier Repair Recipes](../modifier-repair). For the recipes implementing the severing modifier, see [Severing Recipes](../severing).
 </div>
 
-Modifier recipes are used to apply modifiers to tools. Unless otherwise stated, the inputs in the modifier recipe may be applied in any order.
+{{page.description}}
+Unless otherwise stated, the inputs in the modifier recipe may be applied in any order.
 
 {% include toc.html %}
 

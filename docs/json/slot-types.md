@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Modifier Slot Types
+description: Modifier slot types are used in modifier recipes in Tinkers' Construct to allow limiting some more powerful modifier while leaving other, weaker modifiers a large number of slots. All modifiers recipes to add modifiers to a tool must select a slot type.
 ---
 
-Modifier slot types are used in [modifier recipes](../recipes/modifiers) in Tinkers' Construct to allow limiting some more powerful modifier while leaving other, weaker modifiers a large number of slots.
-All modifiers added to a tool must select a slot type.
+Modifier slot types are used in [modifier recipes](../recipes/modifiers) in Tinkers' Construct to allow limiting some more powerful modifier while leaving other, weaker modifiers a large number of slots. All modifiers recipes to add modifiers to a tool must select a slot type.
 
 {% include toc.html %}
 

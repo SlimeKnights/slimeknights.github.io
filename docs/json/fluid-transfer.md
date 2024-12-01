@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Fluid Transfer
+description: By default, any item with a Forge fluid handler capability is able to interact with tanks from SlimeKnights mods, which notably includes buckets and many custom fluid containers such as Tinkers' Construct copper cans. Some items in gameplay terms should contain fluid, but due to either non-standard implementations or fluids defined as part of a modpack cannot implement a Forge fluid handler. To handle these cases, Mantle (since 1.18.2) allows data packs to specify additional item fluid transfer behavior. In addition, any transfer behavior defined in JSON takes precedence over the Forge fluid handler, allowing modpacks to override broken item fluid handlers for Mantle tanks.
 ---
-By default, any item with a Forge fluid handler capability is able to interact with tanks from SlimeKnights mods, which notably includes buckets and many custom fluid containers such as Tinkers' Construct copper cans.
-Some items in gameplay terms should contain fluid, but due to either non-standard implementations or fluids defined as part of a modpack cannot implement a Forge fluid handler. To handle these cases, Mantle (since 1.18.2) allows data packs to specify additional item fluid transfer behavior. In addition, any transfer behavior defined in JSON takes precedence over the Forge fluid handler, allowing modpacks to override broken item fluid handlers for Mantle tanks.
+{{page.description}}
 
 ## JSON Format
 

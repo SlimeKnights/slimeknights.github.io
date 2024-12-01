@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Crafting Table Recipes
+description: This page covers the format for custom crafting table recipes added by SlimeKnights mods since 1.16. 
 ---
 <div class="hatnote" markdown=1>
 This page is about the format for custom crafting table recipes added by SlimeKnights mods. For the format of vanilla crafting table recipes, see [the Minecraft Wiki on recipes](https://minecraft.wiki/w/Recipe).
 </div>
 
-This page covers the format for custom crafting table recipes added by SlimeKnights mods. 
+{{page.description}}
 
 {% include toc.html %}
 

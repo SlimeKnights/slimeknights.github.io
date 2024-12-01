@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Armor Models
+description: Since 1.19.2, Tinkers' Construct armors have their textures controlled via JSON. This allows configuring how the model renders its base layer, materials, embellishments, dye, materials, and other modifiers.
 ---
-
-Since 1.19.2, Tinkers' Construct armors have their textures controlled via JSON. This allows configuring how the model renders its base layer, materials, embellishments, dye, materials, and other modifiers.
+{{page.description}}
 
 Armor models are located at `assets/<domain>/tinkering/armor_models/<name>.json`, for armor with the ID `<domain>:<name>`. In the base mod, there are three armor models:
 

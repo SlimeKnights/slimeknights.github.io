@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Fluid Tooltips
+description: By default, Forge has no concept of fluid tooltips in UIs, leaving the implementation up to mods. Since 1.18.2, Mantle provides an implementation of fluid tooltips, which notably includes displaying fluid in custom units instead of in direct millibucket values.
 ---
-By default, Forge has no concept of fluid tooltips in UIs, leaving the implementation up to mods. Since 1.18.2, Mantle provides an implementation of fluid tooltips, which notably includes displaying fluid in custom units instead of in direct millibucket values.
+{{page.description}}
 
 {% include toc.html %}
 

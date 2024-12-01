@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Predicates
+description: Predicates are a JSON element defined by Mantle used in many different JSON formats to represent a condition that must be matched by a piece of the JSON format. Unlike ingredients, predicates are not required to list their full contents for display in recipe viewers, though they may be used indirectly to construct displays.
 ---
 <div class="hatnote" markdown=1>
 This page is about conditions that cannot list 

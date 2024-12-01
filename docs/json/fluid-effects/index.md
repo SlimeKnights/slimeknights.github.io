@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Fluid Effects
+description: Fluid effects are a system added to Tinkers' Construct in 1.19.2 used to define the behavior of fluids when used in fluid effect modifiers such as spilling, spitting, and wetting.
 ---
 <div class="hatnote" markdown=1>
 This page is about the fluid effect format since 1.19.2. For the format from 1.16 to 1.18.2, see [Spilling Effects](1.18).
 </div>
 
-Fluid effects are a system used to define the behavior of fluids when used in fluid effect modifiers such as spilling, spitting, and wetting.
+{{page.description}}
 
 {% include toc.html %}
 

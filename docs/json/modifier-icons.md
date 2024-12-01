@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Modifier Icons
+description: Modifier icons is a JSON file added to Tinkers' Construct in 1.18.2, used to assign icons to modifiers. The primary use of the icon is modifier display in JEI.
 ---
-Modifier icons is a JSON file added in 1.18.2 used to assign icons to [modifiers](../modifiers). The primary use of the icon is modifier display in JEI.
+Modifier icons is a JSON file added to Tinkers' Construct in 1.18.2, used to assign icons to [modifiers](../modifiers). The primary use of the icon is modifier display in JEI.
 
 Any modifier which lacks an icon will be rendered using a default book icon, which is tinted based on the [modifiers text color](../colors#usages).
 

@@ -1,8 +1,11 @@
 ---
 layout: page
 title: Alloying Recipes
+description: Alloying recipes are used to define how fluids mix in the smeltery or alloyer in Tinkers' Construct.
 ---
-Alloying recipes are used to define how fluids mix in the smeltery or alloyer. Alloying recipes typically run every 4 ticks, or 1/5 of a second, meaning if you multiply recipe sizes by 5 you can get the amount alloyed per second.
+{{page.description}}
+
+Alloying recipes typically run every 4 ticks, or 1/5 of a second, meaning if you multiply recipe sizes by 5 you can get the amount alloyed per second.
 
 ## Alloying
 

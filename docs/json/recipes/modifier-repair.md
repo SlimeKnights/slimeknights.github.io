@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Modifier Repair Recipes
+description: Modifier repair recipes are used to define additional methods to repair a Tinkers' Construct tool that contains a specific modifier.
 ---
-Modifier repair recipes are used to define additional methods to repair a tool with a modifier.
+{{page.description}}
 
 {% include toc.html %}
 

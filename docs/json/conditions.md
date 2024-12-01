@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Conditions
+description: Forge defines the ability for many different JSON to be conditionally loaded. This includes most notably recipes, along with many Tinkers' Construct serializers as well. This page covers condition formats used in SlimeKnights mods.
 ---
-
-Forge defines the ability for many different JSON to be conditionally loaded. This includes most notably recipes, along with many Tinkers' Construct serializers as well.
+{{page.description}}
 
 {% include toc.html %}
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tool Stats
+description: Tool stats are a registry in Tinkers' Construct used by tool definitions and modifiers to define the behavior of tools.
 ---
 <div class="hatnote" markdown=1>
 This page is about tool stats supported by Tinkers' Construct. For the combination of stats used to define material stats, see [Stat Types](../stat-types).

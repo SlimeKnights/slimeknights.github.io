@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Part Builder Recipes
+description: This page covers all recipe formats for crafting items in the Tinkers' Construct part builder.
 ---
-
-This page covers all recipe formats for crafting items in the part builder.
+{{page.description}}
 
 {% include toc.html %}
 

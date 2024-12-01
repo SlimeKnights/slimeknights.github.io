@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Molding Recipes
+description: This page covers recipes for transforming the item in a Tinkers' Construct casting basin or casting table by using another item on the table.
 ---
-This page covers recipes for transforming the item in a casting basin or casting table by using another item on the table.
+{{page.description}}
 
 Molding recipes are run when a player holding an item interacts with a casting table or casting basin, which will attempt to transform the item in the table or basin as the second items is placed.
 In addition, if that recipe is unsuccessful, or the player's hand is empty, a molding recipe with an empty mold will run upon attempting to pick up the item in the table, transforming it upon pickup.

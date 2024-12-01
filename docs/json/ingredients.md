@@ -1,7 +1,10 @@
 ---
 layout: page
 title: Ingredients
+description: This page covers common ingredient formats used in SlimeKnights mods. In addition to the common item ingredients used in many mods, it also defines format for ingredients matching fluids and entities. 
 ---
+
+{{page.description}}
 
 Ingredients are used in many different JSON formats to represent an input which also has the ability to display a full list of matching inputs (unlike [predicates](../predicates)).
 

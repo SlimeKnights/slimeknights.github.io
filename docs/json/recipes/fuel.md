@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Fuel Recipes
+description: Fuel recipes are used to define valid fluids in the melter, alloyer, smeltery, and foundry in Tinkers' Construct since 1.16.
 ---
-Fuel recipes are used to define valid fluids in the melter, alloyer, smeltery, and foundry.
+{{page.description}}
 
 The rate of fuel consumption varies based on the usage. For the melter and alloyer, 1 fuel "duration" is consumed every 4 ticks, or 1/5 of a second. For the smeltery and foundry, multiple "duration" may will be consumed based on the size of the structure, causing the fuel to not exactly map to seconds.
 

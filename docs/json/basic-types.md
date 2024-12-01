@@ -3,7 +3,12 @@ layout: page
 title: Basic Types
 redirect_from:
   - /docs/json/resource-location/
+description: This page covers many commonly used JSON elements that show up in a variety off formats in data packs or resource packs.
 ---
+<div class="hatnote" markdown=1>
+See also: [Conditions](../conditions), [Ingredients](../ingredients) and [Predicates](../predicates)
+</div>
+{{page.description}}
 
 {% include toc.html %}
 

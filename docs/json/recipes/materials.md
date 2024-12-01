@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Material Recipes
+description: In order for a Tinkers' Construct material to be craftable and repairable, its necessary to define one or more recipes. This page documents the recipe format for working with materials using the part builder, casting, and melting.
 ---
 
 <div class="hatnote" markdown=1>
 This page is about the JSON to make a material craftable. For the JSON to define the material, see [Material Format](../../materials). For the JSON to craft tool parts and other material items, see [Part Recipes](../parts).
 </div>
 
-In order for a material to be craftable and repairable, its neccessary to define one or more recipes.
+{{page.description}}
 
 {% include toc.html %}
 

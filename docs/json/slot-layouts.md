@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Station Slot Layouts
+description: Station slot layouts are used in Tinkers' Construct since 1.16 to define arrangements of buttons in the tinker station and tinker's anvil. The primary purpose is for in game documentation on how to craft tools, though this format is also used to define the default "repair and modify tool" layouts for the tinker station and tinker's anvil.
 ---
 <div class="hatnote" markdown=1>
 This page is about the JSON defining the layout buttons in the tinker station and tinker's anvil. For the recipes defining tool crafting, see [Tool Building Recipes](../recipes/tools#tool-building).
 </div>
 
-Station slot layouts define arrangements of buttons in the tinker station and tinker's anvil. The primary purpose is for in game documentation on how to craft tools, though this format is also used to define the default "repair and modify tool" layouts for the tinker station and tinker's anvil.
+{{page.description}}
 
 Note that a station slot layout *does not* make a tool craftable, its purely a cosmetic arrangement of slots in the tinker station or anvil. Making a tool craftable is done through the [tool definition](../tool-definitions) and [tool recipes](../recipes/tools#tool-building).
 

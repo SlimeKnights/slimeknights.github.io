@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Casting Recipes
+description: This page covers formats for casting items using the casting table or casting basin in Tinkers' Construct since 1.16.
 ---
-This page covers the formats for casting items using the casting table or casting basin.
+{{page.description}}
 
 {% include toc.html %}
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Material Format
+description: "This page covers the JSON format for defining materials in datapacks in Tinkers' Construct 3. Materials require three basic components to define: definition, stats, and traits. The Material ID is determined by the name of each of the files."
 ---
 
 <div class="hatnote" markdown=1>
@@ -10,7 +11,7 @@ This page is about the JSON required to define a material. For the JSON to make 
 See also [Stat Types](stat-types) for the formats for different stat types supported by materials.
 </div>
 
-Materials require three basic components to define: definition, stats, and traits. The [Material ID](../basic-types#resource-location) is determined by the name of each of the files.
+This page covers the JSON format for defining materials in datapacks in Tinkers' Construct 3. Materials require three basic components to define: definition, stats, and traits. The [Material ID](../basic-types#resource-location) is determined by the name of each of the files.
 
 {% include toc.html %}
 

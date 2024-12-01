@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Json Things
+description: Page describing the JSON formatfor adding additional Tinkers' Construct content in Minecraft 1.19.2+ using Thing Packs from JSON Things.
 ---
 <div class="hatnote" markdown=1>
   This page covers information for 1.19.2+. For 1.18.2, see [Json Things 1.18](1.18).

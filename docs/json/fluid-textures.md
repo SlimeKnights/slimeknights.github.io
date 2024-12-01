@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Fluid Textures
+description: By default in Forge, the textures and color for a fluid are hardcoded in Java, restricting the ability for resource packs to modify fluid appearance (especially if a mod makes heavy usage of tinting a solid colored fluid texture). Since 1.19.2, Mantle defines fluid textures in JSON, allowing more control to resource packs.
 ---
-By default in Forge, the textures and color for a fluid are hardcoded in Java, restricting the ability for resource packs to modify fluid appearance (especially if a mod makes heavy usage of tinting a solid colored fluid texture). Since 1.19.2, Mantle defines fluid textures in JSON, allowing more control to resource packs.
+{{page.description}}
 
 Note that this feature does not apply to all fluids, a mod must opt-in to this feature by defining their fluid to use the Mantle fluid texture system in Java.
 

@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Resource Colors
+description: Since 1.18.2, mods using Mantle can assign colors to a component in JSON. This is most commonly used for the colors of tooltip strings, since methods for setting tooltip colors via language files are both unreliable and limited in options.
 ---
 <div class="hatnote" markdown=1>
 This page is about the JSON in Mantle assigning colors to various resources. For the common JSON format for a color, see [Basic Types](../basic-types#color).
 </div>
 
-Since 1.18.2, mods using Mantle can assign colors to a component in JSON. This is most commonly used for the colors of tooltip strings, since methods for setting tooltip colors via language files are both unreliable and limited in options.
+{{page.description}}
 
 ## Color Format
 

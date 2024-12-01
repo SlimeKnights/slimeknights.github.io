@@ -1,12 +1,15 @@
 ---
 layout: page
 title: Models
+description: This page serves as an index for many different types of custom model loaders added by various SlimeKnights mods.
 ---
 <div class="hatnote" markdown=1>
 See also: [the Minecraft Wiki on models](https://minecraft.wiki/w/Model).
 </div>
 
-This page serves as an index for many different types of custom model loaders added by various SlimeKnights mods. Item models are defined in `assets/<domain>/model/item/<name>.json`, where `<domain>:<name>` is the item's ID. Block models are typically defined under `assets/<domain>/model/block/`, though the names are arbitrary (as long as its properly referenced from the block state).
+{{page.description}}
+
+Item models are defined in `assets/<domain>/model/item/<name>.json`, where `<domain>:<name>` is the item's ID. Block models are typically defined under `assets/<domain>/model/block/`, though the names are arbitrary (as long as its properly referenced from the block state).
 
 ## Basic
 

@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Severing Recipes
+description: Severing recipes are used by Tinkers' Construct to define additional drops for mobs when using the severing modifier.
 ---
-Severing recipes are used to define additional drops for mobs when using the severing modifier.
+{{page.description}}
 
 For any given recipe, the chance of the item dropping is 5% plus 1% per level of looting. That chance is then multiplied by the level of the severing modifier.
 An entity may have multiple matching severing recipes, in which case the chance is resolved independently for each recipe.

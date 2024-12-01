@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Entity Melting Recipes
+description: This page covers the format for entity melting recipes, which are used by the smeltery, foundry, and melting modifier to melt entities into fluids in Tinkers' Construct since 1.16.
 ---
 <div class="hatnote" markdown=1>
 This page is about the format for entity melting recipes. For item melting recipes, see [Item Melting Recipes](../item-melting).
 </div>
 
-This page covers the format for entity melting recipes, which are used by the smeltery, foundry, and melting modifier to melt entities into fluids.
+{{page.description}}
 In the smeltery and foundry, these recipes run every second with entities in the structure, damaging the entity and producing the amount of fluid listed, while the melting modifier triggers after damaging an entity using a weapon with the modifier.
 
 The output fluid amount is the maximum fluid produced per operation, however if the entity takes less health than the damage listed in the recipe, the output fluid will be scaled down based on the damage dealt. The output amount is never scaled up, meaning the melting modifier may not produce the maximum amount of fluid for an entity's max health.

@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Worktable Recipes
+description: This page covers the format for all Tinkers' Construct modifier worktable recipes. Modifier worktable recipes take a tool, 1-2 input items, and a selection of a modifier to apply a modification to a tool; typically modifying a modifier. In addition, each recipe has a title and a description used for display in the worktable and in JEI. Modifier worktable recipes tend to be highly specialized, as a result the recipe formats are mostly useful for changing the inputs to a recipe. Defining new custom behavior typically requires writing additional Java.
 ---
-This page covers the format for all modifier worktable recipes. Modifier worktable recipes take a tool, 1-2 input items, and a selection of a modifier to apply a modification to a tool; typically modifying a modifier. In addition, each recipe has a title and a description used for display in the worktable and in JEI.
-
-Modifier worktable recipes tend to be highly specialized, as a result the recipe formats are mostly useful for changing the inputs to a recipe. Defining new custom behavior typically requires writing additional Java.
+{{page.description}}
 
 {% include toc.html %}
 
