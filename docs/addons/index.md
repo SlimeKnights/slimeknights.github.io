@@ -10,5 +10,6 @@ This page is about documentation of Java features. For documentation on design e
 
 {{page.description}}
 
+* [**Gradle Setup**](gradle): Describes how to add Tinkers' Construct to a development workspace in Gradle.
 * [**Texture Generators**](texture-generators): Details how to use the material texture generators provided by Tinkers' Construct.
 * [**Persistent Inventory Crafting Blocks**](persistent-inventory): Details how to handle the crafting station in mods wanting to do weird things in their crafting recipes (like player access which is *not* available in vanilla without hacks).
