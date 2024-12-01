@@ -29,6 +29,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
+minima:
+  date_format: "%A, %B %-d, %Y"
 plugins:
   - jekyll-feed
   - jekyll-paginate

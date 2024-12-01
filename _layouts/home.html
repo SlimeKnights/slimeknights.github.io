@@ -33,7 +33,7 @@ layout: default
         <div class="post-meta hatnote">
           {{ post.date | date: date_format }}
           {% if post.author %}
-            by {{post.author}}
+            • {{post.author}}
           {% endif %}
         </div>
         {%- if site.show_excerpts -%}
