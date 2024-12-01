@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Design Documents
+description: This page contains links to various design documents we have shared related to features for Tinkers' Construct 3. The often are more detailed than the in game descriptions, and also give some info on future content. If you are making an addon, its encouraged to read through the relevant documents to ensure you understand how the mod is organized.
 ---
 <div class="hatnote" markdown=1>
 This page is about documentation on mostly implemented features. For features that are not implemented in the mod, see [Roadmap](../roadmap).
 </div>
 
-This page is an index of links or pages for various design docs used to organize contents about the game.
-This page contains links to various design documents we have shared related to features for Tinkers' Construct 3. The often are more detailed than the in game descriptions, and also give some info on future content. If you are making an addon, its encouraged to read through the relevant documents to ensure you understand how the mod is organized.
+{{page.description}}
 
 In general, design docs are updated to the latest 1.19 build with the addition of content for future plans. The [in game books](../books) remain the best source of information accurate to your version of the mod. Note that many design docs will also contain future plans instead of just current features.
 

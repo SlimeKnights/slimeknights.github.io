@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Removed Features
+description: This page covers various features that were removed in Tinkers' Construct 3, along with the reasoning for their removal.
 ---
 <div class="hatnote" markdown=1>
 See also the [missing features spreadsheet](https://docs.google.com/spreadsheets/d/1CuGKWMtrX-RM26U2xEdrpt5HCYLywQcr_qWhvzyYOGc/edit?usp=sharing) summarizing many removed features.
 </div>
 
-This page covers various features that were removed in Tinkers' Construct 3, along with the reasoning for their removal.
+{{page.description}}
 
 {% include toc.html %}
 

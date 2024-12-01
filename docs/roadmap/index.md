@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Roadmap
+description: This page covers information on future plans for Tinkers' Construct 3. Note that just because a feature is on this list does not mean its guaranteed to be included; roadmap features tend to get many design iterations before getting added to the mod.
 ---
 <div class="hatnote" markdown=1>
 See also: [Design Documents](../design) - may contain details on future plans that fall under an existing feature.
 </div>
 
-This page covers information on future plans for Tinkers' Construct 3. Note that just because a feature is on this list does not mean its guaranteed to be included; roadmap features tend to get many design iterations before getting added to the mod.
+{{page.description}}
 
 {% include toc.html %}
 

@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Tinkers' Construct 2 FAQ
+description: This page covers frequently asked questions about Tinkers' Construct 2, which was developed for Minecraft versions 1.8 to 1.12. Answers to questions on this page may not reflect the latest version of the mod.
 ---
 
-This FAQ covers questions specific to the gameplay or development of Tinkers' Construct 2, which is Tinkers' Construct between 1.8 and 1.12.
+{{page.description}}
 
 {%include toc.html %}
 

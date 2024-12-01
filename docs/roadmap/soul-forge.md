@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Soul Forge
+description: The soul forge is a multiblock made from all the dimensions. Allows advanced manipulation of traits and creation of unique materials.
 ---
 
-The soul forge is a multiblock made from all the dimensions. Allows advanced manipulation of traits and creation of unique materials.
+{{page.description}}
 
 {% include toc.html %}
 

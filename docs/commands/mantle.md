@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Mantle Commands
+description: Since 1.16.5, Mantle adds several commands under the root command /mantle. This page lists the usage and syntax of all commands added by Mantle.
 ---
-Since 1.16.5, Mantle adds several commands under the root command `/mantle`.
+Since 1.16.5, Mantle adds several commands under the root command `/mantle`. This page lists the usage and syntax of all commands added by Mantle.
 
 {% include toc.html %}
 

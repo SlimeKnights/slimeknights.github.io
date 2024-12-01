@@ -1,9 +1,10 @@
 ---
 layout: page
 title: FAQ
+description: This page covers frequently asked questions about SlimeKnights mods. These answers are meant as a general answer to questions in any of our mods; mods will often have a specific FAQ to answer more specific questions.
 ---
 
-This FAQ covers commonly asked questions about SlimeKnights mods. 
+{{page.description}}
 
 Because it needs to be said to our discord users for some reason, **this FAQ is up to date**. If it has not been updated in awhile, that means nothing has changed. Asking a question that is on here because "it has not been updated in awhile" is a violation of our rules and is grounds for banning.
 

@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Tinkers' Construct 3 FAQ
+description: This page covers frequently asked questions about Tinkers' Construct 2, which is the current version of Tinkers' Construct, first released for Minecraft versions 1.16. This FAQ not cover general questions about SlimeKnights mod development.
 ---
 
-This FAQ covers questions specific to the gameplay of Tinkers' Construct 3, which is Tinkers' Construct since 1.16.
+{{page.description}}
 
 {%include toc.html %}
 

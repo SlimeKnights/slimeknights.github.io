@@ -2,9 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
+description: List of all Minecraft mods created by or maintained by SlimeKnights, along with notable mods associated with a group member.
 ---
 
-This page lists download links for all SlimeKnights mods.
+{{page.description}}
 
 {% comment %}
 In each section, mods are sorted by latest Minecraft Version, then alphabetically.

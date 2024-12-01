@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Persistent Inventory Crafting Blocks
+description: One of the features Tinkers' Construct provides is persistent inventory crafting blocks. In other words, the items in the crafting station remain in the block when closing the UI. To do this effectively, all crafting logic was moved into the tile entity, with a couple of hooks in the container to actually take the result. This design overall has led to far simpler code and and reduced duplication bugs when multiple players are both accessing the table, but can cause challenges with unconventional crafting recipes. This page details how the system works to help authors overcome those challenge.
 ---
 
-One of the features Tinkers' Construct provides is persistent inventory crafting blocks. In other words, the items in the crafting station remain in the block when closing the UI. To do this effectively, all crafting logic was moved into the tile entity, with a couple of hooks in the container to actually take the result. This design overall has led to far simpler code and and reduced duplication bugs when multiple players are both accessing the table.
+{{page.description}}
 
-As a side-effect of this design, all players share the same crafting UI including the same items and the same result, rather than having a copy per player. This means a couple things that affect gameplay:
+One side-effect of this design is all players share the same crafting UI including the same items and the same result, rather than having a copy per player. This means a couple things that affect gameplay:
 
 * Crafting recipes cannot be individually hidden
     * Tinkers' works around this by not allowing players to take the result if they lack access to the recipe
