@@ -177,3 +177,8 @@ em {
   margin-bottom: -3px;
   border: 1px solid gray;
 }
+
+/** Remove margin from the top of nav links */
+.navigation {
+	margin-top: -1.5em;
+}

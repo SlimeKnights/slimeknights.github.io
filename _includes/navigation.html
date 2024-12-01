@@ -1,0 +1,16 @@
+<nav class="navigation">
+  <ul class="uk-pagination">
+    {%- if include.previous -%}
+      <li><a href="../{{include.previous}}">
+        <span class="uk-margin-small-right" uk-pagination-previous></span>
+        {{ include.previous_title | default: include.previous }}
+      </a></li>
+    {% endif %}
+    {%- if include.next -%}
+      <li class="uk-margin-auto-left"><a href="../{{include.next}}">
+        {{ include.next_title | default: include.next }}
+        <span class="uk-margin-small-left" uk-pagination-next></span>
+      </a></li>
+    {% endif %}
+    </ul>
+</nav>
