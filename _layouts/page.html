@@ -6,6 +6,11 @@ layout: default
   <header class="post-header">
     {% include breadcrumbs.html %}
     <h1 class="post-title">{{ page.title | escape }}</h1>
+    {% if page.next or page.previous %}
+      {% include navigation.html
+         previous=page.previous previous_title=page.previous_title
+         next=page.next         next_title=page.next_title %}
+    {% endif %}
   </header>
 
   <div class="post-content">
