@@ -436,6 +436,7 @@ mechworks_16:
     - index: 5
       text: Upgrades
       
+
 materials_and_you_12:
   path: tinkers/2.13.0.183
   max_page: 55
@@ -454,3 +455,65 @@ materials_and_you_12:
       
     - index: 51
       text: Multiblock
+
+
+materials_and_you_vol_1:
+  path: tinkers/1.8.8/materials_and_you_vol_1
+  no_cover: true
+  max_page: 24
+  titles:
+    - index: 0
+      text: Getting Started
+      
+    - index: 2
+      text: Recipes
+      
+    - index: 14
+      text: Armor Modifiers
+
+materials_and_you_vol_2:
+  path: tinkers/1.8.8/materials_and_you_vol_2
+  no_cover: true
+  max_page: 46
+  titles:
+    - index: 1
+      text: Tools
+      
+    - index: 11
+      text: Materials
+      
+    - index: 23
+      text: Modifiers
+
+mighty_smelting_7:
+  path: tinkers/1.8.8/mighty_smelting
+  no_cover: true
+  max_page: 14
+  titles:
+    - index: 0
+      text: Introduction
+      
+    - index: 2
+      text: Smeltery
+      
+    - index: 4
+      text: Recipes
+
+tinkers_weaponry_7:
+  path: tinkers/1.8.8/tinkers_weaponry
+  no_cover: true
+  max_page: 5
+  titles:      
+    - index: 2
+      text: Throwing Weapons
+      
+    - index: 3
+      text: Projectile Weapons
+      
+    - index: 4
+      text: Projectiles
+
+diary_7:
+  path: tinkers/1.8.8/diary
+  no_cover: true
+  max_page: 9

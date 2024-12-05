@@ -22,3 +22,7 @@ description: Main index page for all online books available on this site. Contai
 ## <a href="1.12">1.12</a>
 
 {% include_relative 1.12/_index.md %}
+
+## <a href="1.7">1.7</a>
+
+{% include_relative 1.7/_index.md %}
