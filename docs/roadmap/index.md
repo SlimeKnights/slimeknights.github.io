@@ -71,8 +71,15 @@ The sublimery is currently targeted for an early 1.20 build, likely before the f
 * Will likely have the same ore output rate as smelteries, though it will be configurable in case a modpack wishes it to be higher.
 
 ### Soul Forge
+<div class="hatnote" markdown=1>
+Main page: [Soul Forge](soul-forge).
+</div>
 
 The soul forge is a planned multiblock for late game tool, modifier, and material crafting. The soul forge at earliest will come in 1.20, though 1.21 or later is more likely. For more information, see [Soul Forge](soul-forge).
+
+### Fluid Cannon
+
+Special tank that shoots a fluid projectile when powered by redstone.
 
 ## Tools
 
@@ -81,6 +88,11 @@ The soul forge is a planned multiblock for late game tool, modifier, and materia
 * Round Plate becomes an Adze Head
 * Add new tool part: plate binding, meant for large tools to have a binding.
 * Idea still under consideration.
+
+### Slimeshields
+
+* The missing shield type
+* Lean into the bouncy aspect of slime with knockback and bouncing?
 
 ### Ranged
 
@@ -92,21 +104,11 @@ We wish to add at least 1 or 2 more variants of ranged weapons. Below are a few 
 * **Boomerangs**: Replacement for shurikens, essentially just a spear that has returning.
 
 ### Ancient Tools
+<div class="hatnote" markdown=1>
+Main page: [Ancient Tools](ancient-tools).
+</div>
 
-Ancient tools are being considered for 1.20, but may be held off until longer.
-
-* Ancient tools are unique tools that appear as loot and cannot be crafted.
-* Each type of tool will have a unique method of obtaining.
-* Each tool features a randomized head material which determines stats and repair material. They can additionally be modified, and may start with some random modifiers.
-* Each tool combines two functions in a way not previously seen in craftable tools.
-* New tools potentially include:
-    * War Pick: a cross between a pickaxe and a bow, can be discovered in illager outposts or raids
-    * Knight's Shovel: the shovel wielded by one of the greatest warriors of the past, found in dungeons or in the hands of zombies
-    * Battle Sign: The Zisteaonian combat shield of legend, found in nether fortresses and pigmen hands
-    * Ancient Trident: a throwable high range weapon, found in deep sea chests and wielded by drowned. May or may not replace [spears](#ranged)
-    * And more!
-* Expect the tools to be slightly stronger than craftable tools on average but weaker than a well designed crafted tool.
-* Tools will have some randomized stats balancing them in favor of one of the two functions.
+Ancient tools are being considered for 1.19 or 1.20. They are strong tools that are found as loot instead of crafted, starting with random material variants that cannot be changed, but also the ability to be modified like regular tools.
 
 ### Projectiles
 
