@@ -1,6 +1,6 @@
 <div class="uk-text-center">
     <a class="uk-inline book-link" href="/docs/books/{{include.version}}/{{include.name}}">
-        <img src="/assets/images/book/icons/{{include.name}}.png" alt=""/>
+        <img src="/assets/images/book/icons/{{include.icon | default: include.name}}.png" alt=""/>
         <br>
         {{include.title}}
     </a>

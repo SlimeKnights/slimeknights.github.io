@@ -435,3 +435,22 @@ mechworks_16:
       
     - index: 5
       text: Upgrades
+      
+materials_and_you_12:
+  path: tinkers/2.13.0.183
+  max_page: 55
+  titles:     
+    - index: 2
+      text: Tools
+      
+    - index: 15
+      text: Tool Materials
+      
+    - index: 29
+      text: Bow Materials
+      
+    - index: 39
+      text: Modifiers
+      
+    - index: 51
+      text: Multiblock
