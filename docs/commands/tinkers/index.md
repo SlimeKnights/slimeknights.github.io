@@ -139,6 +139,56 @@ Sets the remaining slot count on the given tool to the passed argument. Note tha
 * {% include field.html name="\<slot_type\>" type="slot type" %} Modifier slot type to set.
 * {% include field.html name="\<count\>" type="int" %} Number of slots to add. Must be non-negative. Tool will receive the proper number of slots (negative or positive) to match the passed count.
 
+## Materials
+<div class="hatnote">Upcoming 1.19.2</div>
+
+The materials command is used to either change materials on a tool or query information about materials.
+
+### Set Material
+
+The set material command sets a material in the target entity's held tool.
+
+For the command to succeed, the tool must both be modifiable and able to build with the given material swapped (e.g. removing rose gold requires a free upgrade slot). The material does not need to be normally applicable to the tool, and will not automatically repair the tool like part swapping.
+
+**Syntax:**
+```
+/tconstruct materials set <target> <index> <material>
+```
+
+**Arguments:**
+
+* {% include field.html name="\<target\>" type="Entity Argument" %} Specifies the target entity, the tool held in their main hand will be modified (if modifiable).
+* {% include field.html name="\<index\>" type="int" %} Material index to set.
+* {% include field.html name="\<material\>" type="Material Variant" %} Material to set on the tool.
+
+### Material Stats
+
+The material stats command queries stat information for a material. The command always succeeds when querying default stats, and succeeds on material specific stats provided they exist.
+
+**Syntax:**
+```
+/tconstruct materials stats <stat_type> [material]
+```
+
+**Arguments:**
+
+* {% include field.html name="\<stat_type\>" type="Stat Type ID" %} Material stat type to query.
+* {% include field.html name="[material]" type="Material ID" %} Material to query. If unset, queries default stats for the stat type.
+
+### Material Traits
+
+The material stats command lists traits for a given material and optional stat type. The command always succeeds.
+
+**Syntax:**
+```
+/tconstruct materials stats <material> [stat_type]
+```
+
+**Arguments:**
+
+* {% include field.html name="\<material\>" type="Material ID" %} Material to query.
+* {% include field.html name="[stat_type]" type="Stat Type ID" %} Material stat type to query. If unset, queries default traits for the material.
+
 ## Report
 
 The report command generates a table of data about various elements in Tinkers' Construct.
