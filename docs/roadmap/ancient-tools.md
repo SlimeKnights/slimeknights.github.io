@@ -25,7 +25,7 @@ When applying rebalanced to an ancient tool, the effect is doubled, granting the
 ## Frypan
 
 The frypan is a unqiue melee weapon. It can be found in dungeons, igloos, and alike. It has the following behavior:
-The frypan is a unqiue melee weapon. It can be found in dungeons, igloos, and alike. It has the following behavior:
+
 * **Parts**: Tool Head (melee/harvest), Bow Limb (ranged)
 * **Model**:
     * Pan head uses the tool head material.
