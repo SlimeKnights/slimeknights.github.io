@@ -153,7 +153,7 @@ encyclopedia_19:
 
 
 materials_and_you_18:
-  path: tinkers/3.7.2/materials_and_you
+  path: tinkers/3.7.2.167/materials_and_you
   max_page: 26
   titles:
     - index: 1
@@ -175,7 +175,7 @@ materials_and_you_18:
       text: Further Reading
 
 puny_smelting_18:
-  path: tinkers/3.7.2/puny_smelting
+  path: tinkers/3.7.2.167/puny_smelting
   max_page: 72
   titles:
     - index: 2
@@ -203,7 +203,7 @@ puny_smelting_18:
       text: Further Reading
 
 mighty_smelting_18:
-  path: tinkers/3.7.2/mighty_smelting
+  path: tinkers/3.7.2.167/mighty_smelting
   max_page: 67
   titles:
     - index: 2
@@ -225,7 +225,7 @@ mighty_smelting_18:
       text: Defense
 
 fantastic_foundry_18:
-  path: tinkers/3.7.2/fantastic_foundry
+  path: tinkers/3.7.2.167/fantastic_foundry
   max_page: 25
   titles:      
     - index: 2
@@ -247,7 +247,7 @@ fantastic_foundry_18:
       text: Fantastic Armor
 
 tinkers_gadgetry_18:
-  path: tinkers/3.7.2/tinkers_gadgetry
+  path: tinkers/3.7.2.167/tinkers_gadgetry
   max_page: 32
   titles:
     - index: 2
@@ -266,7 +266,7 @@ tinkers_gadgetry_18:
       text: Slimy Armor
 
 encyclopedia_18:
-  path: tinkers/3.7.2/encyclopedia
+  path: tinkers/3.7.2.167/encyclopedia
   max_page: 148
   titles:
     - index: 2
