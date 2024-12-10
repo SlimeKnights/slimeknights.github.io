@@ -233,6 +233,9 @@ The modifier priority command lists all modifiers along with their listed priori
 * {% include field.html name="[modifier_hook]" type="Modifier Hook ID" %} If set, filters the table to only list modifiers that implement the given hook. If unset, all modifiers are listed.
 
 ## Generate Part Textures
+<div class="hatnote" markdown=1>
+Main page: [Generate Part Textures](generate-part-textures)
+</div>
 
 Generates part textures for materials in the mod. Useful for modpack makers to ensure all addons have compatability with each other, along with creators of data packs and resource packs to quickly create relevant textures.
 

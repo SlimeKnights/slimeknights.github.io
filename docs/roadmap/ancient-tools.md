@@ -26,7 +26,7 @@ When applying rebalanced to an ancient tool, the effect is doubled, granting the
 
 The frypan is a unqiue melee weapon. It can be found in dungeons, igloos, and alike. It has the following behavior:
 
-* **Parts**: Tool Head (melee/harvest), Bow Limb (ranged)
+* **Parts**: Tool Head (melee/harvest), Limb (ranged)
 * **Model**:
     * Pan head uses the tool head material.
     * Pan handle uses the bow limb material.
@@ -44,7 +44,7 @@ The frypan is a unqiue melee weapon. It can be found in dungeons, igloos, and al
 
 The war pick is a pickaxe crossbow. It can be found in mineshafts or pillager outposts. It has the following behavior:
 
-* **Parts**: Tool Head (melee/harvest), Bow Limb (ranged)
+* **Parts**: Tool Head (melee/harvest), Limb (ranged)
 * **Model**:
     * Crossbow rotated 90 degrees.
     * Enlarged pickaxe head replaces the bow limb at the top.
@@ -76,7 +76,7 @@ The battle sign is a melee shield. It can be found in nether fortresses and bast
 
 The swasher is a fluid based melee weapon. It can be found in in shipwrecks, buried treasure, and ocean ruins.  It has the following behavior:
 
-* **Parts**: Tool Head (melee/harvest), Bow Grip (ranged)
+* **Parts**: Tool Head (melee/harvest), Grip (ranged)
 * **Model**:
     * Visuals based on a cutlass pistol
     * Grip determines handle

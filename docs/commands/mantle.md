@@ -72,7 +72,7 @@ Opens the given book. This is equivalent to opening the book by other means such
 * {% include field.html name="[id]" type="resource location" %} Book ID to open, if unset (before 1.20) opens the book `mantle:test`.
 
 ### Export Book Images
-<div class="hatnote">Upcoming 1.18.2, upcoming 1.19.2</div>
+<div class="hatnote">Since 1.18.2, upcoming 1.19.2</div>
 
 Exports all pages of a book as static images in the screenshots folder. Used to generate images for [pages on this website](/docs/books). Export will be located at `screenshots/mantle_book/<domain>/<name>` for a book with ID `<domain>:<name>`.
 
