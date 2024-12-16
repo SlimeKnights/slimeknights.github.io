@@ -73,4 +73,5 @@ header_pages:
 
 exclude:
   - README.md
+  - build.bat
   - assets/images/book/README.md
