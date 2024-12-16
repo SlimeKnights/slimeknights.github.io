@@ -29,7 +29,7 @@ The following commands provide information that is not listed directly on the FA
 * `!events`: Post a reference image for common reasons an event handler does not work.
 * `!mcjty`: Post a link to [McJty's modding tutorials](https://www.mcjty.eu/docs/intro).
 * `!pings`: Posts a reminder to avoid unneeded pings to the dev team.
-* `!disablepings`: Posts i
+* `!disablepings`: Posts information on how to disable pings on reply.
 
 ## Memes
 
