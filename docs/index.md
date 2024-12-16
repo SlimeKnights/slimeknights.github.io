@@ -26,6 +26,7 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 ## Commands
 * [**Mantle Commands**](commands/mantle): Documentation for all commands added by Mantle.
 * [**Tinkers' Construct Commands**](commands/tinkers): Documentation for all commands added by Tinkers' Construct.
+* [**Discord Commands**](commands/discord): Documentation for commands on our discord server. Cannot be run inside Minecraft, simply are informational commands.
 
 ## JSON Format
 

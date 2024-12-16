@@ -8,8 +8,6 @@ description: This page covers frequently asked questions about SlimeKnights mods
 
 Because it needs to be said to our discord users for some reason, **this FAQ is up to date**. If it has not been updated in awhile, that means nothing has changed. Asking a question that is on here because "it has not been updated in awhile" is a violation of our rules and is grounds for banning.
 
-Some questions have discord commands. This is for the sake of others asking the same question, it has identical information to this FAQ so there is no need to run it for yourself.
-
 {%include toc.html %}
 
 ## Mod Specific Questions
@@ -20,9 +18,6 @@ This FAQ page covers general questions about our mods. If you have a mod specifi
 * [**Tinkers' Construct 3**](tinkers-construct-3): Tinkers' Construct since 1.16.
 
 ## What versions of Minecraft do you support?
-<div class="hatnote" markdown=1>
-Discord command `!support`
-</div>
 
 We currently are primarily focused on 1.19.2, which was recently marked as stable. We still have some API improvements and new features planned (see the [roadmap](/docs/roadmap)), but no major breaking changes so its a good time to port addons. We plan to release a new update to 1.18.2 in the near future to deal with bugs discovered during the 1.19 port, though it is end of life meaning no new major features are planned (just bug fixes or minor features). Anything before 1.18.2 is no longer supported.
 
@@ -54,9 +49,6 @@ We do not give permission to port Tinkers' Construct to any other Minecraft edit
 You are free to fork the mod if you wish to port to a platform we do not support, such as Fabric, Bedrock, or alike. If you do so however, we require you to name the project something other than "Tinkers' Construct" to prevent confusion for the end users expecting it to be the same project. Existing projects with the name "Tinkers' Construct" that are not made by SlimeKnights received permission before this policy was made or otherwise have an exception due to personally knowing one of the devs. You may reuse code and assets from Tinkers' Construct to make such a fork happen, as those are under the MIT license. Additionally, if you have a public release or a code repository with significant progress, feel free to post about it on [our discord](https://discord.gg/njGrvuh) and I will add it to the spreadsheet.
 
 ## Where are the builds? I cannot find them on CurseForge!
-<div class="hatnote" markdown=1>
-Discord command `!cfbuilds`
-</div>
 
 CurseForge is not great about displaying alpha builds on CurseForge. To ensure you don't miss the file, instead of looking at the sidebar, click "Files" then "View all". There is also a dropdown on the "View all" page to filter by version.
 

@@ -113,7 +113,6 @@ No, we do not need to have shovels just because vanilla does, we can make our ow
 Slime boots are not ruined. Firstly, while at first glance it may appear they are gated behind the end, you can get the bouncy modifier for your plate or travelers boots as early as the nether. Secondly, while the boot physics are a bit different than before, the primary reason for the change was to prevent bugs with infinite momentum that existed both on 1.12 and with new 1.16 features such as dolphins grace.
 
 ## How do I configure slime islands?
-<div class="hatnote">Discord command <code>!islands</code></div>
 
 As of 1.18.2, datapacks have a lot more control over structures. You can find our placement settings for islands in the mod JAR, and copy them into a datapack to replace our settings. __To disable, make the structures array empty__. See [The Minecraft Wiki](https://minecraft.wiki/w/Structure_set) for more info, such as how to make them more or less common.
 
