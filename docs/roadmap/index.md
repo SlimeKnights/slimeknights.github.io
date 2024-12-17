@@ -14,7 +14,7 @@ See also: [Design Documents](../design) - may contain details on future plans th
 ## Next Actions
 
 <div class="hatnote" markdown=1>
-See also [#5064](https://github.com/SlimeKnights/TinkersConstruct/issues/5064).
+See also [#5281](https://github.com/SlimeKnights/TinkersConstruct/issues/5281).
 </div>
 
 1.19.2 is currently considered stable. It is undecided on how many future features will target 1.19.2 as opposed to a future version. 1.20.1 is our next version target, though as always there is no timeline.
@@ -178,6 +178,12 @@ Several new material tiers are planned:
 **Quick ability**
 
 * Way to upgrade small tools by granting them a non-combat ability on pressing right click
+
+### Fluid Effect Rework
+
+* Add a fluid effect that breaks blocks, add it to several key fluids for ranged mining.
+* Likely want to use said effect for water breaking plants too.
+* Redesign fluid effects other fluids to be more logical and cohesive.
 
 ## Worldgen
 
