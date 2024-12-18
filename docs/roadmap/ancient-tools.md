@@ -12,7 +12,7 @@ Ancient tools will typically double the traits from each of their parts, and get
 
 ## Overview
 
-Generally, ancient tools have 2 materials, each of which grants twice as many levels of the trait as they would normally (effectively, they have 4 materials at half stat effect each).
+Generally, ancient tools have 2 materials, which are randomly selected during worldgen and cannot be changed.
 
 When applying rebalanced to an ancient tool, the effect is doubled, granting the following choices:
 
@@ -20,31 +20,31 @@ When applying rebalanced to an ancient tool, the effect is doubled, granting the
 * +2 defense slots.
 * +2 soul slots.
 * +1 ability slot.
-* Extra level of all material traits.
+* Extra level of the first two material traits.
 
-## Frypan
+## Melting Pan
 
-The frypan is a unqiue melee weapon. It can be found in dungeons, igloos, and alike. It has the following behavior:
+The melting is a unqiue defensive and mining tool. It can be found in dungeons, igloos, and alike. It has the following behavior:
 
-* **Parts**: Tool Head (melee/harvest), Limb (ranged)
+* **Parts**: Shield Plating (armor), Limb (ranged)
 * **Model**:
-    * Pan head uses the tool head material.
+    * Pan head uses the shield plating material.
     * Pan handle uses the bow limb material.
 * **Modifier Slots**
     * 1 upgrade slot
     * 1 defense slot
-    * 1 ability slot
+    * 2 ability slots
 * **Functionality**:
-    * Melee weapon
-    * Starts with bonking (which uses bow stats)
-    * Starts with fire protection
-    * Holds 3 pieces of food, which get cooked as the frypan does damage
+    * Starts with an upgraded version of melting with a higher ore rate.
+    * Can mine any meltable blocks. Once it has a fluid inside mining is restricted to those that melt into that fluid.
+    * Starts with a large fluid tank.
+    * Can receive staff modifiers.
 
 ## War Pick
 
 The war pick is a pickaxe crossbow. It can be found in mineshafts or pillager outposts. It has the following behavior:
 
-* **Parts**: Tool Head (melee/harvest), Limb (ranged)
+* **Parts**: Tool Head (melee/harvest), Limb (ranged), Bowstring (ranged)
 * **Model**:
     * Crossbow rotated 90 degrees.
     * Enlarged pickaxe head replaces the bow limb at the top.
@@ -71,6 +71,7 @@ The battle sign is a melee shield. It can be found in nether fortresses and bast
 * **Functionality**:
     * Melee weapon
     * Blocks (between travelers and plate shields)
+    * Starts with knockback and bonking
 
 ## Swasher
 
