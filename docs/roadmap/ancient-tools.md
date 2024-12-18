@@ -22,9 +22,11 @@ When applying rebalanced to an ancient tool, the effect is doubled, granting the
 * +1 ability slot.
 * Extra level of the first two material traits.
 
+All ancient tools can be randomly bought from the wandering trader as their "rare trade". Cost ranges between 6 and 32 emeralds based on the quality of the tool.
+
 ## Melting Pan
 
-The melting is a unqiue defensive and mining tool. It can be found in dungeons, igloos, and alike. It has the following behavior:
+The melting is a unqiue defensive and mining tool. It can be found in dungeons, igloos, and the hands of husks. It also is given by a toolsmith villager as a thanks for defending against a raid. It has the following behavior:
 
 * **Parts**: Shield Plating (armor), Limb (ranged)
 * **Model**:
@@ -42,7 +44,7 @@ The melting is a unqiue defensive and mining tool. It can be found in dungeons, 
 
 ## War Pick
 
-The war pick is a pickaxe crossbow. It can be found in mineshafts or pillager outposts. It has the following behavior:
+The war pick is a pickaxe crossbow. It can be found in mineshafts or pillager outposts, and in the hands of zombie villagers. It also is given by a weaponsmith villager as a thanks for defending against a raid. It has the following behavior:
 
 * **Parts**: Tool Head (melee/harvest), Limb (ranged), Bowstring (ranged)
 * **Model**:
@@ -59,7 +61,7 @@ The war pick is a pickaxe crossbow. It can be found in mineshafts or pillager ou
 
 ## Battle Sign
 
-The battle sign is a melee shield. It can be found in nether fortresses and bastions. It has the following behavior:
+The battle sign is a melee shield. It can be found in nether fortresses, bastions, the hands of piglins, and from bartering. It has the following behavior:
 
 * **Parts**: Shield Plating (armor), Tool Head (ranged)
 * **Model**:
@@ -75,7 +77,7 @@ The battle sign is a melee shield. It can be found in nether fortresses and bast
 
 ## Swasher
 
-The swasher is a fluid based melee weapon. It can be found in in shipwrecks, buried treasure, and ocean ruins.  It has the following behavior:
+The swasher is a fluid based melee weapon. It can be found in in shipwrecks, buried treasure, ocean ruins, the hands of drowned, and from fishing. It has the following behavior:
 
 * **Parts**: Tool Head (melee/harvest), Grip (ranged)
 * **Model**:
