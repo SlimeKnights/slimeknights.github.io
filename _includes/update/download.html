@@ -1,0 +1,23 @@
+{%- assign name-capitalized = include.name | capitalize -%}
+{%- assign github-project = include.github | default: name-capitalized -%}
+<ul>
+  <li>
+    <a href="https://github.com/{{include.author | default: "SlimeKnights"}}/{{github-project}}/releases/v{{include.version}}">
+      Github: Download & full changelog
+    </a>
+  </li>
+  {%- if include.curseforge -%}
+  <li>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/{{include.name}}/files/{{include.curseforge}}">
+      CurseForge
+    </a>
+  </li>
+  {%- endif -%}
+  {%- unless include.modrinth == false -%}
+    <li>
+      <a href="https://modrinth.com/mod/{{include.name}}/version/{{include.version}}">
+        Modrinth
+      </a>
+    </li>
+  {%- endunless -%}
+</ul>
