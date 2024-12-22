@@ -72,7 +72,7 @@ One last recipe related change is soulbound is now created using echo shards ins
 
 {% include update/image.html name="soul-belt" alt="Book page for soul belt, a new ability modifier." %}
 
-On a related note, there is a new modifier: soul belt. This leggings ability modifier allows you to make your entire hotbar persist upon death, including items that cannot normally receive soulbound such as tinkers tools. It requires soulbound to apply, along with a soul compass.
+On a related note, there is a new modifier: soul belt. This leggings ability modifier allows you to make your entire hotbar persist upon death, including items that cannot normally receive soulbound (basically anything that is not a tinker's tool). It requires soulbound to apply, along with a soul compass.
 
 ## Swift Sneak
 
