@@ -5,6 +5,6 @@ breadcrumb: 1.19
 previous: 1.18
 description: Index page for all online books available for Minecraft 1.19.2.
 ---
-{% include book-header.html %}
+{% include book/header.html %}
 
 {% include_relative _index.md %}

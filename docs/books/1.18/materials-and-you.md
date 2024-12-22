@@ -5,4 +5,4 @@ breadcrumb: Materials and You
 description: Gallery of all pages for Materials and You from Tinkers' Construct in Minecraft 1.18.2.
 ---
 
-{%include book.html book=site.data.books.materials_and_you_18 %}
+{%include book/pages.html book=site.data.books.materials_and_you_18 %}

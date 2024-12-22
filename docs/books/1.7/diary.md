@@ -5,4 +5,4 @@ breadcrumb: Diary of a Tinkerer
 description: Gallery of all pages for Diary of a Tinkerer from Tinkers' Construct in Minecraft 1.7.10.
 ---
 
-{%include book.html book=site.data.books.diary_7 %}
+{%include book/pages.html book=site.data.books.diary_7 %}

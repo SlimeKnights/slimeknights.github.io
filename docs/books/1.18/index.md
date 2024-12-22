@@ -6,6 +6,6 @@ previous: 1.16
 next: 1.19
 description: Index page for all online books available for Minecraft 1.18.2.
 ---
-{% include book-header.html %}
+{% include book/header.html %}
 
 {% include_relative _index.md %}

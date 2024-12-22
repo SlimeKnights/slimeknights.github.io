@@ -3,7 +3,7 @@ layout: page
 title: Book Index
 description: Main index page for all online books available on this site. Contains links to other indexes along with other books.
 ---
-{% include book-header.html %}
+{% include book/header.html %}
 
 {% include toc.html %}
 
