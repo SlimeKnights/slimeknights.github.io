@@ -180,7 +180,14 @@ The has enchantment entity predicate has the following format:
 
 ## Damage Predicates
 
-Damage predicates match damage source instances, allowing matching based on the cause of damage. They support all [common predicate](#common-predicates) serializers (excluding tag predicates), along with the following serializers which have no extra fields:
+Damage predicates match damage source instances, allowing matching based on the cause of damage. They support all [common predicate](#common-predicates) serializers, though notably only support tag predicates in 1.20 and onwards. In addition, they support the following serializers which have no extra fields:
+
+* **`mantle:can_protect`**: Matches damage that is blocked by protection enchantments, specifically damage that does not bypass magic, enchantments, or invulnerability.
+* **`mantle:is_indirect`** (upcoming 1.19.2): Matches damage where the causing entity (e.g. a player or mob) is not the same as the direct entity (if it matches, typically a projectile). Note this will not match if both entities are `null`.
+* **`mantle:has_entity`** (upcoming 1.19.2): Matches damage sources that have an entity set.
+* **`tconstruct:direct`** (since 1.20.1): Matches damage sources that have an entity, are not indirect, and are not thorns.
+
+In addition, until 1.19.2 the following serializers with no extra fields exist:
 
 * **`mantle:bypass_armor`**: Matches damage that is not reduced by armor, such as starving, fall damage, fire, and magic.
 * **`mantle:bypass_enchantments`**: Matches damage that bypasses protection enchantments, such as the warden's "sonic boom" attack.
@@ -192,7 +199,6 @@ Damage predicates match damage source instances, allowing matching based on the 
 * **`mantle:fire`**: Matches damage caused by fire or lava.
 * **`mantle:magic`**: Matches damage caused by magic such as potions.
 * **`mantle:projectile`**: Matches damage caused by projectiles, such as arrows.
-* **`mantle:can_protect`**: Matches damage that is blocked by protection enchantments, specifically damage that does not bypass magic, enchantments, or invulnerability.
 * **`mantle:melee`**: Matches damage that is caused by a melee attack. Unlike other predicates, "melee damage" is not a vanilla concept, so it uses the following heuristics:
     * If the damage is caused by a projectile, it is not melee damage.
     * If the damage is caused by an entity, it is melee damage provided it is it not caused by thorns.
@@ -209,6 +215,9 @@ The attacker damage predicate matches damage sources with an attacker matching t
     * {% include field.html name="type" type="resource location" %} Always `mantle:attacker`.
     * {% include field.html name="entity_type" type="resource location" %} An [entity predicate](#entity-predicate) serializer ID matching the attacker.
     * *All relevant fields from the entity predicate serializer*.
+    * {% include field.html name="which" type="resource location" version="upcoming 1.20.1" %} Selects which entity to check. Options:
+         * `causing`: Checks the entity who initiated the action, typically a player or mob.
+         * `direct`: Checks the entity that directly inflicted the damage. If not a player, will be a mob
 </div>
 
 ### Message

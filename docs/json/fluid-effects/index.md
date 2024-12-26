@@ -176,7 +176,10 @@ The damage entity effect damages the target, either with projectile damage if us
 * {% include field.html type="object" %} Entity effect object.
     * {% include field.html name="type" type="resource location" %} Always `tconstruct:damage`.
     * {% include field.html name="damage" type="float" %} Damage to deal.
-    * {% include field.html name="modifier" type="list" %} List of modifiers to apply to the damage. If unset, applies no modifiers.
+    * {% include field.html name="damage_type" type="object" version="since 1.20.1" %} Object containing a pair of damage type IDs to use when applying this effect. If unset, uses the generic player attack/mob attack for melee, and mob projectile for ranged.
+        * {% include field.html name="melee" type="damage type ID" %} Damage type to use for melee applications, such as spilling or splashing.
+        * {% include field.html name="ranged" type="damage type ID" %} Damage type to use for ranged, such as spitting.
+    * {% include field.html name="modifier" type="list" version="until 1.19.2" %} List of modifiers to apply to the damage. If unset, applies no modifiers.
         * {% include field.html type="resource location" %} Modifier to apply. The following options are available by default:
             * **`tconstruct:fire`**: Makes the damage count as fire damage.
             * **`tconstruct:explosion`**: Makes the damage count as explosion damage.
