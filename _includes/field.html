@@ -1,213 +1,17 @@
-{% assign link = "" %}{%
-   assign type = include.type | downcase %}{%
-if type == "integer" or type == "int" %}{%
-    assign name = "Integer" %}{%
-    assign icon = "nbt-int" %}{%
-elsif type == "number" or type == "float" %}{%
-    assign name = "Number" %}{%
-    assign icon = "nbt-float" %}{%
-elsif type == "boolean" %}{%
-    assign name = "Boolean" %}{%
-    assign icon = "nbt-bool" %}{%
-elsif type == "string" %}{%
-    assign name = "String" %}{%
-    assign icon = "nbt-string" %}{%
-elsif type == "array" or type == "list" %}{%
-    assign name = "Array" %}{%
-    assign icon = "nbt-list" %}{%
-elsif type == "object" or type == "compound" %}{%
-    assign name = "Object" %}{%
-    assign icon = "nbt-compound" %}{%
-elsif type == "any" %}{%
-    assign name = "Any" %}{%
-    assign icon = "nbt-any" %}{%
-elsif type == "null" %}{%
-    assign name = "Null" %}{%
-    assign icon = "nbt-null" %}{%
-
-elsif type == "color" or type == "rgb" %}{%
-    assign name = "RGB Color" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/basic-types#color" %}{%
-
-elsif type == "argb" %}{%
-    assign name = "ARGB Color" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/basic-types#color" %}{%
-
-elsif type == "text color" %}{%
-    assign name = "Text Color" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/basic-types#text-color" %}{%
-
-elsif type == "condition" %}{%
-    assign name = "Condition" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/conditions" %}{%
-
-elsif type == "int range" or type == "integer range" %}{%
-    assign name = "Integer Range" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/basic-types#integer-range" %}{%
-
-elsif type == "item output" %}{%
-    assign name = "Item Output" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/basic-types#item-output" %}{%
-
-elsif type == "item stack" %}{%
-    assign name = "Item Stack" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/basic-types#item-stack" %}{%
-
-elsif type == "fluid stack" %}{%
-    assign name = "Fluid Stack" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/basic-types#fluid-stack" %}{%
-
-elsif type == "temperature" %}{%
-    assign name = "Temperature" %}{%
-    assign icon = "nbt-int" %}{%
-    assign link = "/docs/json/recipes/fuel#temperature" %}{%
-
-
-elsif type == "block predicate" %}{%
-    assign name = "Block Predicate" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/predicates#block-predicates" %}{%
-    
-elsif type == "item predicate" %}{%
-    assign name = "Item Predicate" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/predicates#item-predicates" %}{%
-    
-elsif type == "entity predicate" %}{%
-    assign name = "Entity Predicate" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/predicates#entity-predicates" %}{%
-    
-elsif type == "damage predicate" %}{%
-    assign name = "Damage Predicate" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/predicates#damage-predicates" %}{%
-    
-elsif type == "modifier predicate" %}{%
-    assign name = "Modifier Predicate" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/predicates#modifier-predicates" %}{%
-    
-elsif type == "tool predicate" or type == "tool stack predicate" %}{%
-    assign name = "Tool Predicate" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/predicates#tool-predicates" %}{%
-    
-elsif type == "tool context predicate" %}{%
-    assign name = "Tool Context Predicate" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/predicates#tool-predicates" %}{%
+{% assign type = include.type | downcase %}{%
+   
+assign field = site.data.fields[type] %}{%
+if field %}{%
+    assign typeName = include.type | capitalize %}{%
+    assign name = field.name | default: typeName %}{%
+    assign icon = field.icon | default: "nbt-compound" %}{%
+    assign link = field.link | default: "" %}{%
 
 elsif type contains "predicate" %}{%
     assign name = include.type %}{%
     assign icon = "nbt-compound" %}{%
     assign link = "/docs/json/predicates" %}{%
 
-elsif type == "loot entry" %}{%
-    assign name = "Loot Entry" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "https://minecraft.wiki/w/Loot_table#Entry" %}{%
-
-
-elsif type == "ingredient" or type == "item ingredient" %}{%
-    assign name = "Item Ingredient" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/ingredients#item-ingredients" %}{%
-
-elsif type == "sized ingredient" %}{%
-    assign name = "Sized Ingredient" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/ingredients#sized" %}{%
-
-elsif type == "fluid ingredient" %}{%
-    assign name = "Fluid Ingredient" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/ingredients#fluid-ingredients" %}{%
-
-elsif type == "entity ingredient" %}{%
-    assign name = "Entity Ingredient" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/ingredients#entity-ingredients" %}{%
-
-
-elsif type == "material" or type == "material id" %}{%
-    assign name = "Material ID" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/materials" %}{%
-    
-elsif type == "random material" or type == "material provider" %}{%
-    assign name = "Material Provider" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/materials#material-provider" %}{%
-    
-elsif type == "modifier" or type == "modifier id" %}{%
-    assign name = "Modifier ID" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/modifiers" %}{%
-    
-elsif type == "material variant" or type == "material variant id" %}{%
-    assign name = "Material Variant" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/materials#variants" %}{%
-    
-elsif type == "tool stat" or type == "tool stat id" %}{%
-    assign name = "Tool Stat" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/tool-stats" %}{%
-    
-elsif type == "numeric tool stat" %}{%
-    assign name = "Numeric Tool Stat" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/tool-stats#numeric-tool-stats" %}{%
-    
-elsif type == "stat type" or type == "stat type id" %}{%
-    assign name = "Stat Type" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/stat-types" %}{%
-    
-elsif type == "tool hook" or type == "tool hook id" %}{%
-    assign name = "Tool Hook ID" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/tool-definitions#tool-hooks" %}{%
-
-elsif type == "slot type" %}{%
-    assign name = "Slot Type" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/slot-types" %}{%
-
-elsif type == "mining tier" %}{%
-    assign name = "Mining Tier" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/tool-stats#mining-tier" %}{%
-
-elsif type == "slot count" %}{%
-    assign name = "Slot Count" %}{%
-    assign icon = "nbt-compound" %}{%
-    assign link = "/docs/json/slot-types#slot-count" %}{%
-    
-elsif type == "tool action" %}{%
-    assign name = "Tool Action" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/basic-types#tool-actions" %}{%
-
-elsif type == "resource location" %}{%
-    assign name = "Resource Location" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/basic-types#resource-location" %}{%
-    
-elsif type == "pattern" %}{%
-    assign name = "Pattern" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "/docs/json/basic-types#pattern" %}{%
-    
 elsif type contains "id" %}{%
     assign name = include.type %}{%
     assign icon = "nbt-string" %}{%
@@ -218,14 +22,10 @@ elsif type contains "tag" %}{%
     assign icon = "nbt-string" %}{%
     assign link = "/docs/json/basic-types#tag-name" %}{%
 
-elsif type == "entity argument" %}{%
-    assign name = "Entity Argument" %}{%
-    assign icon = "nbt-string" %}{%
-    assign link = "https://minecraft.wiki/w/Argument_types#entity" %}{%
-
 else %}{%
     assign name = include.type %}{%
     assign icon = "nbt-compound" %}{%
+    assign link = "" %}{%
 endif 
 %}<span class="nbt-icon {{icon}}">{%
 

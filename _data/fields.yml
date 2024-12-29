@@ -1,0 +1,267 @@
+# File assigning icons and links to common JSON types
+# format:
+# <input>:
+#  name: Displayed Name
+#  icon: Icon CSS class
+#  link: Page to link. If unset, uses no link.
+# <input> will automatically be converted to lowercase
+
+###############
+# Basic types #
+###############
+
+integer: &integer
+  name: Integer
+  icon: nbt-int
+int: *integer
+
+number: &number
+  name: Number
+  icon: nbt-float
+float: *number
+
+boolean:
+  name: Boolean
+  icon: nbt-bool
+
+string:
+  name: String
+  icon: nbt-string
+
+array: &array
+  name: Array
+  icon: nbt-list
+list: *array
+
+object: &object
+  name: Object
+  icon: nbt-compound
+compound: *object
+
+any:
+  name: Any
+  icon: nbt-any
+
+null:
+  name: Null
+  icon: nbt-null
+
+
+###################
+# Minecraft types #
+###################
+
+resource location:
+  name: Resource Location
+  icon: nbt-string
+  link: /docs/json/basic-types#resource-location
+
+item stack:
+  name: Item Stack
+  icon: nbt-compound
+  link: /docs/json/basic-types#item-stack
+  
+ingredient: &ingredient
+  name: Item Ingredient
+  icon: nbt-compound
+  link: /docs/json/ingredients#item-ingredients
+item ingredient: *ingredient
+
+loot entry:
+  name: Loot Entry
+  icon: nbt-compound
+  link: https://minecraft.wiki/w/Loot_table#Entry
+
+entity argument:
+  name: Entity Argument
+  icon: nbt-string
+  link: https://minecraft.wiki/w/Argument_types#entity
+
+
+###############
+# Forge types #
+###############
+
+condition:
+  name: Condition
+  icon: nbt-compound
+  link: /docs/json/conditions
+
+fluid stack:
+  name: Fluid Stack
+  icon: nbt-compound
+  link: /docs/json/basic-types#fluid-stack
+
+mining tier:
+  name: Mining Tier
+  icon: nbt-string
+  link: /docs/json/tool-stats#mining-tier
+
+tool action:
+  name: Tool Action
+  icon: nbt-string
+  link: /docs/json/basic-types#tool-actions
+
+
+################
+# Mantle types #
+################
+
+# Color formats
+
+color: &color
+  name: RBG Color
+  icon: nbt-string
+  link: /docs/json/basic-types#color
+rgb: *color
+
+argb:
+  <<: *color
+  name: ARBG Color
+
+text color:
+  name: Text Color
+  icon: nbt-string
+  link: /docs/json/basic-types#text-color
+
+
+# Recipe
+
+item output:
+  name: Item Output
+  icon: nbt-compound
+  link: /docs/json/basic-types#item-output
+
+sized ingredient:
+  name: Sized Ingredient
+  icon: nbt-compound
+  link: /docs/json/ingredients#sized
+
+fluid ingredient:
+  name: Fluid Ingredient
+  icon: nbt-compound
+  link: /docs/json/ingredients#fluid-ingredients
+
+entity ingredient:
+  name: Entity Ingredient
+  icon: nbt-compound
+  link: /docs/json/ingredients#entity-ingredients
+
+
+# Predicate
+
+block predicate:
+  name: Block Predicate
+  icon: nbt-compound
+  link: /docs/json/predicates#block-predicates
+    
+item predicate:
+  name: Item Predicate
+  icon: nbt-compound
+  link: /docs/json/predicates#item-predicates
+    
+entity predicate:
+  name: Entity Predicate
+  icon: nbt-compound
+  link: /docs/json/predicates#entity-predicates
+    
+damage predicate:
+  name: Damage Predicate
+  icon: nbt-compound
+  link: /docs/json/predicates#damage-predicates
+
+
+#################
+# Tinkers types #
+#################
+
+# Registries
+
+material: &material
+  name: Material ID
+  icon: nbt-string
+  link: /docs/json/materials
+material id: *material
+    
+material variant: &materialVariant
+  name: Material Variant
+  icon: nbt-string
+  link: /docs/json/materials#variants
+material variant id: *materialVariant
+    
+modifier: &modifier
+  name: Modifier ID
+  icon: nbt-string
+  link: /docs/json/modifiers
+modifier id: *modifier
+
+stat type: &statType
+  name: Stat Type
+  icon: nbt-string
+  link: /docs/json/stat-types
+stat type id: *statType
+  
+numeric tool stat:
+  name: Numeric Tool Stat
+  icon: nbt-string
+  link: /docs/json/tool-stats#numeric-tool-stats
+    
+tool hook: &toolHook
+  name: Tool Hook ID
+  icon: nbt-string
+  link: /docs/json/tool-definitions#tool-hooks
+tool hook id: *toolHook
+
+slot type:
+  name: Slot Type
+  icon: nbt-string
+  link: /docs/json/slot-types
+
+pattern:
+  name: Pattern
+  icon: nbt-string
+  link: /docs/json/basic-types#pattern
+
+
+# Utility
+
+int range: &intRange
+  name: Integer Range
+  icon: nbt-compound
+  link: /docs/json/basic-types#integer-range
+integer range: *intRange
+
+temperature:
+  name: Temperature
+  icon: nbt-int
+  link: /docs/json/recipes/fuel#temperature
+
+random material: &randomMaterial
+  name: Material Provider
+  icon: nbt-compound
+  link: /docs/json/materials#material-provider
+material provider: *randomMaterial
+
+slot count:
+  name: Slot Count
+  icon: nbt-compound
+  link: /docs/json/slot-types#slot-count
+
+
+# Predicate
+    
+modifier predicate:
+  name: Modifier Predicate
+  icon: nbt-compound
+  link: /docs/json/predicates#modifier-predicates
+  
+tool predicate: &toolPredicate
+  name: Tool Predicate
+  icon: nbt-compound
+  link: /docs/json/predicates#tool-predicates
+tool stack predicate: *toolPredicate
+    
+tool context predicate:
+  name: Tool Context Predicate
+  icon: nbt-compound
+  link: /docs/json/predicates#tool-predicates
