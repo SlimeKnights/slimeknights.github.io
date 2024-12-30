@@ -111,6 +111,11 @@ tool action:
   icon: nbt-string
   link: /docs/json/basic-types#tool-actions
 
+forge face data:
+  name: Forge Face Data
+  icon: nbt-compound
+  link: /docs/json/models/overview#forge-face-data
+
 
 ################
 # Mantle types #
@@ -180,7 +185,6 @@ damage predicate:
   link: /docs/json/predicates#damage-predicates
 
 
-
 # Utility
 
 fluid cuboid:
@@ -192,6 +196,16 @@ render item:
   name: Render Item
   icon: nbt-compound
   link: /docs/json/models/render-items#format
+
+simple block model:
+  name: Simple Block Model
+  icon: nbt-compound
+  link: /docs/json/models/overview#simple-block-model
+
+colored block model:
+  name: Colored Block Model
+  icon: nbt-compound
+  link: /docs/json/models/overview#colored-block-model
 
 #################
 # Tinkers types #

@@ -96,7 +96,7 @@ Since 1.20, templates may be defined under are located in `assets/<domain>/mantl
 
 ## Channel Fluids
 <div class="hatnote" markdown=1>
-For the format used from 1.16 to 1.19, see [Channel Model](../channel).
+For the format used from 1.16 to 1.19, see [Channel Model](../fluids#channel).
 </div>
 
 Channel fluids are used since 1.20 to define the location of fluids within a casting channel in Tinkers' Construct or Ceramics. Channel fluids are defined under`assets/<domain>/mantle/model/channel_fluids/<name>.json` for the block or template named `<domain>:<name>`. They have the following format:
