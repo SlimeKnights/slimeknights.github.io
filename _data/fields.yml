@@ -188,6 +188,11 @@ fluid cuboid:
   icon: nbt-compound
   link: /docs/json/models/fluid-cuboids#format
 
+render item:
+  name: Render Item
+  icon: nbt-compound
+  link: /docs/json/models/render-items#format
+
 #################
 # Tinkers types #
 #################
