@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Overview of Models
+breadcrumb: Overview
 description: This page describes the basics of models. Forge allows mods to extend the vanilla model format by adding custom model loaders which can have dynamic behavior. These loaders will replace certain but not all elements of the vanilla model format.
 ---
 

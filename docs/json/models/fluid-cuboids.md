@@ -3,6 +3,9 @@ layout: page
 title: Fluid Cuboid
 description: Fluid cuboids are a JSON object used in many different loaders in Mantle and Tinkers' Construct to specify the location of fluids in models or renderers. This page describes both the format for fluid cuboids along with common usages of them in Mantle and Tinkers' Construct.
 ---
+<div class="hatnote" markdown=1>
+See also: [Tank Model](../tank).
+</div>
 
 {{page.description}}
 

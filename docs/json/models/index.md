@@ -40,7 +40,7 @@ The following pages cover custom model formats defined in Mantle:
 
 ## Data Models
 
-The following models existed simply to parse and store data used by block entity renderers. As of 1.20, these models have been removed in favor of [fluid cuboids](fluid-cuboids) and [render items](render-items) having dedicated JSON formats.
+The following models existed simply to parse and store data used by block entity renderers. As of 1.20, these models have been removed in favor of [block fluids](fluid-cuboids#block-fluids) and [render items lists](render-items#render-item-lists) having dedicated JSON formats.
 
 * [**Fluids**](fluids): Model format defining the location of fluids, used for various types of tanks.
     * [**Channel**](fluids#channel): Model defining the locations of fluids on each side of the casting channel.
