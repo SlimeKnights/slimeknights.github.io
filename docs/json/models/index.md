@@ -11,10 +11,11 @@ See also: [the Minecraft Wiki on models](https://minecraft.wiki/w/Model).
 
 Item models are defined in `assets/<domain>/model/item/<name>.json`, where `<domain>:<name>` is the item's ID. Block models are typically defined under `assets/<domain>/model/block/`, though the names are arbitrary (as long as its properly referenced from the block state).
 
-## Basic
+## Common
 
-* [**Model Components**](components): Components that show up in many different model formats.
-* [**Faucet Fluids**](faucet-fluids): JSON defining the location of fluid in a block when a Tinkers' Construct or Ceramics faucet pours into the block.
+* [**Simple Block Model**](simple-block-model): JSON format for the primary components of a block model which show up in many model formats.
+* [**Fluid Cuboids**](fluid-cuboids): JSON format for positions of fluids in block entity renderers.
+* [**Render Items**](render-items): JSON format for positions of items in block entity renderers.
 
 ## Mantle
 

@@ -160,3 +160,42 @@ Fluid stacks have the following format in JSON:
 </div>
 
 Note that some contexts using fluid stacks disallow empty fluid stacks, in which case an `amount` of 0 or a `fluid` of `minecraft:empty` will cause a parsing error. In addition, some contexts will ignore the output NBT entirely, causing those fields to be ignored.
+
+## Block State Variant
+
+A block state variant is a string representation of a set of properties for a block state, notably used in the [block state format](https://minecraft.wiki/w/Tutorial:Models#Block_states).
+
+A block state variant is a string containing a comma separated list of `<property>=<value>` pairs, where `<property>` is the name of a property on the block and `<value>` is a string representation of a value. The string does not need to contain every property on the block, only the ones the variant is used to match.
+
+For example, the string `"facing=north,color=red"` would match a block with a property `color` set to `red` and a property `facing` set to `north`. Alternatively, `""` will match all variants of the block.
+
+## Vector
+
+A vector is a list of 3 integer values representing a coordinate, such as a world position or a location within a block model. They have the following format in JSON:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="list" %} A vector.
+    * {% include field.html type="number" %} First index representing the X value.
+    * {% include field.html type="number" %} Second index representing the Y value.
+    * {% include field.html type="number" %} Third index representing the Z value.
+</div>
+
+Alternatively, in many contexts a vector may also be specified in object format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A vector.
+    * {% include field.html name="x" type="number" %} The X value.
+    * {% include field.html name="y" type="number" %} The Y value.
+    * {% include field.html name="z" type="number" %} The Z value.
+</div>
+
+## Direction
+
+A direction is an enumeration of values used commonly for orientations in block models, commonly represented as a string. It has the following possible values:
+
+* `down`: Represents a negative direction on the Y axis.
+* `up`: Represents a positive direction on the Y axis.
+* `north`: Represents a negative direction on the Z axis.
+* `south`: Represents a positive direction on the Z axis.
+* `west`: Represents a negative direction on the X axis.
+* `east`: Represents a positive direction on the X axis.

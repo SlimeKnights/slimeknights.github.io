@@ -1,0 +1,28 @@
+{% assign type = include.type | downcase %}{%
+   
+assign field = site.data.fields[type] %}{%
+if field %}{%
+    assign typeName = include.type | capitalize %}{%
+    assign name = field.name | default: typeName %}{%
+    assign link = field.link | default: "" %}{%
+
+elsif type contains "predicate" %}{%
+    assign name = include.type %}{%
+    assign link = "/docs/json/predicates" %}{%
+
+elsif type contains "id" %}{%
+    assign name = include.type %}{%
+    assign link = "/docs/json/basic-types#registry-ids" %}{%
+
+elsif type contains "tag" %}{%
+    assign name = include.type %}{%
+    assign link = "/docs/json/basic-types#tag-name" %}{%
+
+else %}{%
+    assign name = include.type %}{%
+    assign link = "" %}{%
+endif %}{%
+if include.lowercase %}{%
+    assign name = name | downcase %}{%
+endif
+%}<a href="{{link}}">{{name}}</a>

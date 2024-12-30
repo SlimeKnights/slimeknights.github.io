@@ -77,6 +77,15 @@ entity argument:
   icon: nbt-string
   link: https://minecraft.wiki/w/Argument_types#entity
 
+block state variant:
+  name: Block State Variant
+  icon: nbt-string
+  link: /docs/json/basic-types#block-state-variant
+
+vector:
+  name: Vector
+  icon: nbt-list
+  link: /docs/json/basic-types#vector
 
 ###############
 # Forge types #
@@ -170,6 +179,14 @@ damage predicate:
   icon: nbt-compound
   link: /docs/json/predicates#damage-predicates
 
+
+
+# Utility
+
+fluid cuboid:
+  name: Fluid Cuboid
+  icon: nbt-compound
+  link: /docs/json/models/fluid-cuboids#format
 
 #################
 # Tinkers types #
