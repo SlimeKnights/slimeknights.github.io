@@ -11,7 +11,7 @@ Tinkers' Construct is now available for 1.20.1! As part of this update, we have 
 
 If you are a modpack maker, note that this new release is an alpha, so we ask you only include it in a modpack if you plan to continue to support your modpack for the next couple of months while we finish stabilizing this release.
 
-As is typical with new releases, the API is going to be a bit unstable for addons while Tinkers' is in alpha. Once we make a beta release the API is expected to remain stable until the next major release. So if you are an addon author, you may wish to hold off on making an update. If you are willing to push ahead anyways, check out [the update primer](/posts/2024/12/31/1.20-update-primer/).
+As is typical with new releases, the API is going to be a bit unstable for addons while Tinkers' is in alpha. Once we make a beta release the API is expected to remain stable until the next major release. So if you are an addon author, you may wish to hold off on making an update. If you are willing to push ahead anyways, check out [the update primer]({% post_url 2024-12-31-1.20-update-primer %}).
 
 {% include toc.html %}
 
