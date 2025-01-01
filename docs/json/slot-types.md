@@ -49,6 +49,10 @@ For example, for upgrades:
 }
 ```
 
+### Color
+
+Since 1.20, slot type colors are defined using [resource colors](../colors) with a key of `stat.tconstruct.slot.<id>` for the slot `<id>`.
+
 ### Textures
 
 Slot types require a texture which is used both for the creative slot modifier, and in JEI integration to show slot cost. If a texture is not defined, it will fallback to the slotless book icon. Internally, JEI integration uses the textures from the item model to define.

@@ -93,3 +93,4 @@ Tinkers' Construct uses the resource color list with the following keys:
 * The [material](../materials) `<domain>:<name>` defines its text color using the key `material.<domain>.<name>`.
 * The [material variant](../materials#variants) `<domain>:<name>#<variant>` defines its text color using the key `material.<domain>.<name>.<variant>`.
 * The [mining tier](../tool-stats#mining-tier) `<domain>:<name>` defines its text color using the key `harvest_tier.<domain>.<name>`.
+* Since 1.20, the [slot type](../slot-types) `<name>` defines its text color using the key `stat.tconstruct.slot.<name>`.

@@ -1,20 +1,24 @@
 ---
 layout: post
 title:  "Tinkers' Construct 1.20 and Ancient Tool Update"
+date:   2024-12-31 22:58:00 -0400
 categories: posts
 author: KnightMiner
 update_images: tinkers/ancient-tools
 ---
 
-Tinkers' Construct is now available for 1.20.1! As part of this update, we have added many cool new features, most notably ancient tools. In addition, a lot of these features are also avaiable on the latest release for 1.19.2 (as many of them were coded before the port).
+Tinkers' Construct is now available for 1.20.1! As part of this update, we have added many cool new features, most notably ancient tools. In addition, a few of these features will also be available in the next release for 1.19.2 (as many of them were coded before the port), see the note at the top of the section for supported versions.
 
-This was partly brought about as in starting off 1.20 development, we wanted to finish removing some deprecated APIs; however those APIs were still in use in a few places requiring some work on 1.19 to finish removing them. Since an update that just cleans up APIs is pretty boring, we decided to add a few smaller features for another 1.19.2 update.
+If you are a modpack maker, note that this new release is an alpha, so we ask you only include it in a modpack if you plan to continue to support your modpack for the next couple of months while we finish stabilizing this release.
+
+As is typical with new releases, the API is going to be a bit unstable for addons while Tinkers' is in alpha. Once we make a beta release the API is expected to remain stable until the next major release. So if you are an addon author, you may wish to hold off on making an update. If you are willing to push ahead anyways, check out [the update primer](/posts/2024/12/31/1.20-update-primer/).
 
 {% include toc.html %}
 
 {% include update/start.html %}
 
 ## Ancient Tools
+<div class="hatnote">Available on 1.19.2 and 1.20.1</div>
 
 The first new feature is ancient tools! These are a new variant of tools which are not crafted, but instead found in loot. Ancient tools typically have 2 "tool parts" with completely random materials. They do not support part swapping, but support most modifiers that regular tools support. In addition, applying the rebalanced modifier to an ancient tool will grant double the modifier slots, or provide an ability slot with no penalty.
 
@@ -52,13 +56,47 @@ Battlesigns in addition to shielding also start with the bonking modifier, which
 
 All variants of piglin will occasionally spawn holding a battlesign. In addition, they can be obtained in bastions and from bartering with piglins.
 
+## Armor Trims
+<div class="hatnote">Available on 1.20.1 only</div>
+
+{% include update/image.html name="armor-trims" alt="Adding trim to a plate chestplate." %}
+
+Now that we are on 1.20, we have access to armor trims! You can add them to most Tinkers' Armor (notably excludes the travelers goggles) using the trim pattern and the trim material in the Tinker Station or Tinker's Anvil as a slotless modifier.
+
+To help with applying trims, the tinker station, tinkers' anvil, and modifier worktable all have an armor stand preview the equipment you are modifying, similar to the smithing table. For it to appear on the modifier worktable you must not have the side chest inventory visible.
+
+We are currently undecided on whether the netherite modifier will require the netherite trim item in the future. We do have plans to include some of our metals as new trim materials once we find the cleanest way to do that (seems the simplest approach is using a mod called Trimmed, but we don't want another hard dependency).
+
+## Tool Part Reworks
+<div class="hatnote">Available on 1.20.1 only</div>
+
+Several tools got their tool parts reworked slightly.
+
+### Adze Head
+
+{% include update/image.html name="pickadze" alt="Comparing a pickaxe and a pickadze after the texture tweak." %}
+
+The adze head is a reskin of the previous round plate tool part. Given the part had 2 usages, both in a variant of an adze, it seemed reasonable to make the part reflect that.
+
+As part of this change, pickadzes got a texture tweak to make them more distinct from a pickaxe.
+
+### Tough Collar
+
+{% include update/image.html name="tough-binding" alt="Casting a cobalt tough collar, a new tool part for broad tool bindings." %}
+
+With the increase of bnding exclusive tool materials, we wanted to options open to broad tool builds by giving more of them bindings. To accommodate this, we created a new tool part, the tough collar. It is effectively the same part as the tough binding from 1.12 and before; its a large variant of a tool binding.
+
+Tough collars are used in place of the second large plate on mattocks, and in place of the large plate on the vein hammer giving both of them a binding stat. In addition, the tool binding in the broad axe and the scythe are both now tough collars.
+
 ## More Shield Abilities
+<div class="hatnote">Available on 1.19.2 and 1.20.1</div>
 
 {% include update/image.html name="shield-bonk" alt="Bonking recipe can now be applied to a shield." %}
 
 Ancient tools are not having all the fun in this update; shields got a couple of internal tweaks that allowed them to receive flinging, springing, bonking, warping, spitting, and zoom! All of these modifiers are charged up or used while you block with the shield, and when applicable actively upon releasing the shield. Use it to defend yourself until you can escape, or to launch an effective counterattack.
 
 ## Smelting Modifier
+<div class="hatnote">Available on 1.19.2 and 1.20.1</div>
 
 {% include update/image.html name="smelting" alt="Smelting modifier book page." %}
 
@@ -66,7 +104,19 @@ During the development of ancient tools, a lot of ideas for unique traits on anc
 
 The smelting modifier reworks frying into an upgrade available to most tools. Sneaking and interacting opens an inventory with 1 slot per level of the modifier. Using the tool (for mining, as a melee weapon, as armor, etc.) will slowly cook the items inside, making your tool an effective furnace that doesn't require fuel. Or, just fill the slots with items and use the tool is a (really small) bag.
 
+## Improved Creative Tabs
+<div class="hatnote">Available on 1.20.1 only</div>
+
+{% include update/image.html name="creative" alt="Searching for iron in the fluid creative tab." %}
+
+As part of 1.20, creative tabs got reworked. We took the opportunity to rethink our creative tabs to improve the experience. The gadgets tab got merged into the general tab as it had very few items. Replacing it is the new tables tab, and the fluids tab.
+
+The fluids tab contains filled variants of all of our tanks and copper cans, which are very convenient for testing fluid modifiers in tools. You can search these with the search bar on top, which is also available in the tools and tool parts tab.
+
+Check out the client config to control which creative entries show in JEI.
+
 ## Book Page Numbers
+<div class="hatnote">Available on 1.19.2 and 1.20.1</div>
 
 {% include update/image.html name="book-pages" alt="Smelting modifier book page." %}
 
@@ -78,10 +128,20 @@ Speaking of Mantle changes, another new change is the addition of the [book expo
 
 ## Download
 
-Download Tinkers' Construct ### for 1.20.1 at the following links:
+### 1.20.1
 
-* Not yet released.
+Download Tinkers' Construct 3.9.0.6 for 1.20.1 at the following links:
 
-You can also download many of these new features in ### for 1.19.2 at the following:
+{% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.9.0.6" curseforge="6041763" %}
 
-* Not yet released.
+Requires Mantle 1.11.28:
+
+{% include update/download.html name="mantle" version="1.11.28" curseforge="6041712" %}
+
+### 1.19.2
+
+You can also download many of these new features in 1.19.2 at the following:
+
+* *Coming soon*.
+
+
