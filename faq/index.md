@@ -19,11 +19,11 @@ This FAQ page covers general questions about our mods. If you have a mod specifi
 
 ## What versions of Minecraft do you support?
 
-We currently are primarily focused on 1.19.2, which was recently marked as stable. We still have some API improvements and new features planned (see the [roadmap](/docs/roadmap)), but no major breaking changes so its a good time to port addons. We plan to release a new update to 1.18.2 in the near future to deal with bugs discovered during the 1.19 port, though it is end of life meaning no new major features are planned (just bug fixes or minor features). Anything before 1.18.2 is no longer supported.
+We currently are primarily focused on 1.20.1, which is currently in Alpha. We still have some API improvements and new features planned (see the [roadmap](/docs/roadmap)), including some minor breaking changes to the API. We plan to release a new update to 1.19.2 in the near future to deal with bugs discovered during the 1.20 port, along with a couple of new features. 1.18.2 may also receive a new release with a couple of major bugs discovered recently. Anything before 1.18.2 is no longer supported.
 
-1.20 will come after we are satisfied with content on 1.19.2. 1.19.4 will likely not get a release. It is undecided which 1.20.x version we will support; it depends entirely on what we feel is the best version to support given the Forge and NeoForge split.
+1.21 will come eventually after we are satisfied with content on 1.20.1. We are undecided on whether 1.20.2+ will receive any updates.
 
-If you want help with gameplay, you are free to ask on [our discord](https://discord.gg/njGrvuh), though note help with 1.7.10 or 1.12 may be limited due to how old those versions are (its been years, details are forgotten). Additionally, anything older than 1.7.10 and any version between 1.8 and 1.11 are entirely unsupported. Make sure to mention what version you are talking about if asking about any version other than 1.19.2, as otherwise we will answer for 1.19.2.
+If you want help with gameplay, you are free to ask on [our discord](https://discord.gg/njGrvuh), though note help with 1.7.10 or 1.12 may be limited due to how old those versions are (its been years, details are forgotten). Additionally, anything older than 1.7.10 and any version between 1.8 and 1.11 are entirely unsupported. Make sure to mention what version you are talking about if asking about any version other than 1.20.1, as otherwise we will answer for 1.20.1.
 
 ## Do you plan to port the mod to other platforms?
 

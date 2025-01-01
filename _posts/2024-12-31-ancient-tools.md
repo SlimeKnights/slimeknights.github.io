@@ -104,6 +104,13 @@ During the development of ancient tools, a lot of ideas for unique traits on anc
 
 The smelting modifier reworks frying into an upgrade available to most tools. Sneaking and interacting opens an inventory with 1 slot per level of the modifier. Using the tool (for mining, as a melee weapon, as armor, etc.) will slowly cook the items inside, making your tool an effective furnace that doesn't require fuel. Or, just fill the slots with items and use the tool is a (really small) bag.
 
+## Hanging Signs
+<div class="hatnote">Available on 1.20.1 only</div>
+
+{% include update/image.html name="hanging-signs" alt="Hanging signs announcing the release date of 1.20.1 Tinkers." %}
+
+Hanging signs are now available in Tinkers' Construct wood types. Not much else to say, they are signs that hang.
+
 ## Improved Creative Tabs
 <div class="hatnote">Available on 1.20.1 only</div>
 
