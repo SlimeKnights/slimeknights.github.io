@@ -1,3 +1,160 @@
+materials_and_you_20:
+  path: tinkers/3.9.0/materials_and_you
+  max_page: 26
+  titles:
+    - index: 1
+      text: Introduction
+     
+    - index: 6
+      text: Tier 1 Melee Harvest
+      
+    - index: 11
+      text: Tier 1 Ranged
+      
+    - index: 15
+      text: Tools
+      
+    - index: 22
+      text: Modifiers
+      
+    - index: 25
+      text: Further Reading
+
+puny_smelting_20:
+  path: tinkers/3.9.0/puny_smelting
+  max_page: 82
+  titles:
+    - index: 2
+      text: Melter & Moving Fluids
+      
+    - index: 8
+      text: Casting
+      
+    - index: 12
+      text: Tier 2 Melee Harvest
+      
+    - index: 19
+      text: Tier 2 Ranged
+      
+    - index: 25
+      text: Tier 2 Armor
+      
+    - index: 33
+      text: Puny Armor
+      
+    - index: 39
+      text: Upgrades
+      
+    - index: 73
+      text: Slotless Modifiers
+      
+    - index: 82
+      text: Further Reading
+
+mighty_smelting_20:
+  path: tinkers/3.9.0/mighty_smelting
+  max_page: 74
+  titles:
+    - index: 2
+      text: Smeltery
+      
+    - index: 13
+      text: Tier 3 Melee Harvest
+      
+    - index: 20
+      text: Tier 3 Ranged
+      
+    - index: 27
+      text: Tier 3 Armor
+      
+    - index: 34
+      text: Broad Tools
+      
+    - index: 38
+      text: Abilities
+      
+    - index: 68
+      text: Defense
+
+fantastic_foundry_20:
+  path: tinkers/3.9.0/fantastic_foundry
+  max_page: 25
+  titles:      
+    - index: 2
+      text: Alloyer
+      
+    - index: 4
+      text: Foundry
+      
+    - index: 13
+      text: Blazing Blood
+      
+    - index: 16
+      text: Tier 4 Melee Harvest
+      
+    - index: 20
+      text: Tier 4 Ranged
+      
+    - index: 23
+      text: Tier 4 Armor
+
+tinkers_gadgetry_20:
+  path: tinkers/3.9.0/tinkers_gadgetry
+  max_page: 31
+  titles:
+    - index: 2
+      text: Gadgets
+      
+    - index: 6
+      text: Odd Modifiers
+      
+    - index: 13
+      text: Exploration
+      
+    - index: 19
+      text: Staffs
+      
+    - index: 22
+      text: Ancient Tools
+      
+    - index: 24
+      text: Slimy Armor
+
+encyclopedia_20:
+  path: tinkers/3.9.0/encyclopedia
+  max_page: 165
+  titles:
+    - index: 2
+      text: Tools
+      
+    - index: 16
+      text: Armor
+      
+    - index: 25
+      text: Upgrades
+      
+    - index: 59
+      text: Defense
+      
+    - index: 66
+      text: Slotless
+      
+    - index: 76
+      text: Abilities
+      
+    - index: 106
+      text: Melee Harvest Materials
+      
+    - index: 127
+      text: Ranged Materials
+      
+    - index: 145
+      text: Armor Materials
+      
+    - index: 162
+      text: Slimeskulls
+
+
 materials_and_you_19:
   path: tinkers/3.8.4/materials_and_you
   max_page: 26
