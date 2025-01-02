@@ -6,10 +6,6 @@ categories: posts
 author: KnightMiner
 update_images: tinkers/ancient-tools
 ---
-<div class="hatnote" markdown=1>
-Update: New release for 1.19.2 is up with a few of the features, notably ancient tools. See [Downloads](#1192).
-</div>
-
 Tinkers' Construct is now available for 1.20.1! As part of this update, we have added many cool new features, most notably ancient tools. In addition, a few of these features are also available in the latest release for 1.19.2 (as many of them were coded before the port), see the note at the top of the section for supported versions.
 
 If you are a modpack maker, note that this new release is an alpha, so we ask you only include it in a modpack if you plan to continue to support your modpack for the next couple of months while we finish stabilizing this release.
