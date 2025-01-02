@@ -21,9 +21,17 @@ See also: [Design Documents](../design) - may contain details on future plans th
 See also [#5281](https://github.com/SlimeKnights/TinkersConstruct/issues/5281).
 </div>
 
-1.19.2 is currently considered stable. It is undecided on how many future features will target 1.19.2 as opposed to a future version. 1.20.1 is our next version target, though as always there is no timeline.
+1.20.1 is in public Alpha. It will be receiving a few more updates to work out bugs and to add additional roadmap features. 
 
-1.18.2 will continue to receive support for now, though baring any significant issues being reported another release is unlikely.
+1.19.2 and 1.18.2 are both considered stable. Additional releases are possible but are unlikely. Anything before 1.18.2 has no releases planned.
+
+## Ichor
+
+* Ichor will be meltable using a foundry.
+* Melting ichor will produce 125mb of pure liquid ichor, and some amount of either lava or blazing blood. This means its not 1 to 1 casting and melting.
+* Pure ichor can be casted like any other slime type.
+* Pure ichor will possibly be used as a smeltery fuel, granting high speeds but low fuel efficiency/temperature.
+* Pure ichor is also used in alloying [King's Slime](#kings-slime).
 
 ## Multiblock
 
@@ -87,12 +95,6 @@ Special tank that shoots a fluid projectile when powered by redstone.
 
 ## Tools
 
-### Tool Part Tweaks
-
-* Round Plate becomes an Adze Head
-* Add new tool part: plate binding, meant for large tools to have a binding.
-* Idea still under consideration.
-
 ### Slimeshields
 
 * The missing shield type
@@ -108,11 +110,30 @@ We wish to add at least 1 or 2 more variants of ranged weapons. Below are a few 
 * **Boomerangs**: Replacement for shurikens, essentially just a spear that has returning.
 
 ### Ancient Tools
-<div class="hatnote" markdown=1>
-Main page: [Ancient Tools](ancient-tools).
-</div>
 
-Ancient tools are being considered for 1.19 or 1.20. They are strong tools that are found as loot instead of crafted, starting with random material variants that cannot be changed, but also the ability to be modified like regular tools.
+Several new ancient tools are planned for later versions of the mod.
+
+#### Swasher
+
+The swasher is a fluid based melee weapon. It can be found in in shipwrecks, buried treasure, ocean ruins, the hands of drowned, and from fishing. It has the following behavior:
+
+* **Parts**: Tool Head (melee/harvest), Grip (ranged)
+* **Model**:
+    * Visuals based on a cutlass pistol
+    * Grip determines handle
+    * Head determines blade
+* **Modifier Slots**:
+    * 3 upgrade slots
+* **Functionality**:
+    * Melee weapon
+    * Starts with spilling
+    * Starts with spitting (uses bow stats, maybe spitting 2)
+
+#### Other Considerations
+
+* **Trident**: Melee throwable weapon. May or may not replace [spears](#ranged).
+* **Knight's Shovel**: the shovel wielded by one of the greatest warriors of the past, found in dungeons or in the hands of zombies.
+* **Ancient armor set**, either as 4 unique pieces with special traits or 4 pieces fitting an untouched area of armor.
 
 ### Projectiles
 
