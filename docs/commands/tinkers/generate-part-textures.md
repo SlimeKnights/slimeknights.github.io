@@ -37,10 +37,12 @@ The part texture JSON is located at `assets/<domain>/tinkering/generator_part_te
     * {% include field.html name="parts" type="list" %} List of part textures to generate.
         * {% include field.html type="object" %} A part object.
             * {% include field.html name="path" type="resource location" %} Path to the texture.
-            * {% include field.html name="baseFolder" type="boolean" %}: In 1.16, this field determines whether textures automatically prepend `item/tool`. As of 1.18, this field is removed and all textures are relative to the base textures folder.
+            * {% include field.html name="stat_type" type="stat type" %} Stat type for the texture. If the material render info does not support this stat type, this pairing will be skipped. In 1.16-1.18.2, this field is instead named `statType`.
+            * {% include field.html name="stat_type" type="list" version="since 1.19.2" %} List of stat types for this texture. The texture will be generated if any of them is supported.
+                * {% include field.html name="stat_type" type="stat type" %} Stat type in the list.
+            * {% include field.html name="baseFolder" type="boolean" version="1.16 only" %}: This field determines whether textures automatically prepend `item/tool`. As of 1.18, this field is removed and all textures are relative to the base textures folder.
                  * If `true`, textures are relative to `assets/<mod_id>/textures/`.
                  * If `false`, textures are relative to `assets/<mod_id>/textures/item/tool/` (default).
-            * {% include field.html name="stat_type" type="stat type" %} Stat type for the texture. If the material render info does not support this stat type, this pairing will be skipped. In 1.16-1.18.2, this field is instead named `statType`.
     * {% include field.html name="overrides" type="object" %} Since 1.18.2, defines a list of stat type overrides to apply. Used to add an additional stat type to a material without modifying its render type info (for instance, when said material is from another mod). If unset, no overrides are applied.
         * {% include field.html name="\<stat_type\>" type="list" %} Material stat type to override.
             * {% include field.html type="material variant" %} Material variant to add to the stat type `<stat_type>` for the generator.

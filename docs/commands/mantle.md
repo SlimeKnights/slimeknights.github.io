@@ -57,22 +57,22 @@ For the sake of testing book elements, Mantle also registers an internal book ID
 
 Opens the given book. This is equivalent to opening the book by other means such as the book item or a lectern, but does not require obtaining that item.
 
-**Syntax (1.18-1.19):**
-```
-/mantle book_test [id]
-```
-
-**Syntax (1.20):**
+**Syntax (since 1.18.2):**
 ```
 /mantle book open <id>
 ```
 
+**Syntax (1.18):**
+```
+/mantle book_test [id]
+```
+
 **Arguments:**
 
-* {% include field.html name="[id]" type="resource location" %} Book ID to open, if unset (before 1.20) opens the book `mantle:test`.
+* {% include field.html name="[id]" type="resource location" %} Book ID to open, if unset (in 1.18) opens the book `mantle:test`.
 
 ### Export Book Images
-<div class="hatnote">Since 1.18.2, upcoming 1.19.2</div>
+<div class="hatnote">Since 1.18.2</div>
 
 Exports all pages of a book as static images in the screenshots folder. Used to generate images for [pages on this website](/docs/books). Export will be located at `screenshots/mantle_book/<domain>/<name>` for a book with ID `<domain>:<name>`.
 

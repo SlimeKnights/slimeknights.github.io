@@ -140,7 +140,7 @@ Sets the remaining slot count on the given tool to the passed argument. Note tha
 * {% include field.html name="\<count\>" type="int" %} Number of slots to add. Must be non-negative. Tool will receive the proper number of slots (negative or positive) to match the passed count.
 
 ## Materials
-<div class="hatnote">Upcoming 1.19.2</div>
+<div class="hatnote">Since 1.19.2</div>
 
 The materials command is used to either change materials on a tool or query information about materials.
 
