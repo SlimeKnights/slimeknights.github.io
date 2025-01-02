@@ -16,8 +16,18 @@ In general, design docs are updated to the latest 1.19 build with the addition o
 
 * [**Tools**](https://docs.google.com/spreadsheets/d/1SLqUg2Rg3HxTaJD97gXw3fipkz-jTY78k8JrunJhFic/edit#gid=0): Contains information on tools, tool parts, armor, and projectile added by the mod.
 * [**Tool upgrades**](https://docs.google.com/drawings/d/1OjAT9ySZ3pXVbgXZY5RpfNkpVWJ5ectsqEbYELlU7OQ/edit): Visual chart connecting related tools and their upgrades.
-* <b id="modifiers">Modifiers and Traits</b> ([1.16](https://docs.google.com/spreadsheets/d/18duuzGfy3-AF9zUTsl_wg-osdjykvkZzpJT2EiR5UuM/edit), [1.18](https://docs.google.com/spreadsheets/d/17qwV8UOR0DBsUqbxyernG4e4LtjAZ55DMAqnJWc2kLw/edit), [1.19](https://docs.google.com/spreadsheets/d/19Nbi-jTrhZg4zMZ8DreELWHv6SZDik5wxiz13Iqhnbw/edit?usp=sharing)): Detailed trait descriptions for each material, along with detailed modifier descriptions.
-* <b id="materials">Material tiers</b> ([1.16](https://docs.google.com/spreadsheets/d/1fx9SF4K_6Eg9LBCuaV43bdyuh5KgNZsAIY6fkYAFbYQ/edit), [1.18](https://docs.google.com/spreadsheets/d/10nTUAQ5iPhzyf8BTlX9Wy9spJLbYrziYeCwZWcD5xJ0/edit), [1.19](https://docs.google.com/spreadsheets/d/1c8SOET2_i82slCiay_Cn0NNmoGBYn-IhmIl9PePwqEY/edit?usp=sharing)): Classification of materials into tiers and stat types, along with a listing of tool stats.
+* <b id="modifiers">Modifiers and Traits</b>
+  ([1.16](https://docs.google.com/spreadsheets/d/18duuzGfy3-AF9zUTsl_wg-osdjykvkZzpJT2EiR5UuM/edit),
+  [1.18](https://docs.google.com/spreadsheets/d/17qwV8UOR0DBsUqbxyernG4e4LtjAZ55DMAqnJWc2kLw/edit),
+  [1.19](https://docs.google.com/spreadsheets/d/19Nbi-jTrhZg4zMZ8DreELWHv6SZDik5wxiz13Iqhnbw/edit?usp=sharing),
+  [1.20](https://docs.google.com/spreadsheets/d/1uQre2AIXdAETeXGIKe2bIs8jbIvAVOnYZ11zo9ODBQQ/edit?usp=sharingsharing)):
+  Detailed trait descriptions for each material, along with detailed modifier descriptions.
+* <b id="materials">Material tiers</b> 
+  ([1.16](https://docs.google.com/spreadsheets/d/1fx9SF4K_6Eg9LBCuaV43bdyuh5KgNZsAIY6fkYAFbYQ/edit),
+  [1.18](https://docs.google.com/spreadsheets/d/10nTUAQ5iPhzyf8BTlX9Wy9spJLbYrziYeCwZWcD5xJ0/edit),
+  [1.19](https://docs.google.com/spreadsheets/d/1c8SOET2_i82slCiay_Cn0NNmoGBYn-IhmIl9PePwqEY/edit?usp=sharing),
+  [1.20](https://docs.google.com/spreadsheets/d/1WMK9s_e27o4YTdBvPQYa3ifloobjVLwK2qljL2ozPXM/edit?usp=sharing)):
+  Classification of materials into tiers and stat types, along with a listing of tool stats.
 * [**Modifiers vs. Enchantments**](enchantments): Discussion on what makes modifiers different from enchantments, and how they are balanced. Useful for considering how to adapt an enchantment into a modifier or vice versa.
 
 ## Smeltery
