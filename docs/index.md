@@ -2,9 +2,6 @@
 layout: page
 title: Documentation
 permalink: /docs/
-redirect_from:
-  - /docs/commands/
-  - /docs/json/
 description: Index page for all documentation currently covered on this site. Includes documentation on current and future mod plans, online versions of in game books, data pack and resource pack formats, along with knowledge for addon developers.
 ---
 
