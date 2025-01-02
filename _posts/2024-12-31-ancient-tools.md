@@ -6,8 +6,11 @@ categories: posts
 author: KnightMiner
 update_images: tinkers/ancient-tools
 ---
+<div class="hatnote" markdown=1>
+Update: New release for 1.19.2 is up with a few of the features, notably ancient tools. See [Downloads](#1192).
+</div>
 
-Tinkers' Construct is now available for 1.20.1! As part of this update, we have added many cool new features, most notably ancient tools. In addition, a few of these features will also be available in the next release for 1.19.2 (as many of them were coded before the port), see the note at the top of the section for supported versions.
+Tinkers' Construct is now available for 1.20.1! As part of this update, we have added many cool new features, most notably ancient tools. In addition, a few of these features are also available in the latest release for 1.19.2 (as many of them were coded before the port), see the note at the top of the section for supported versions.
 
 If you are a modpack maker, note that this new release is an alpha, so we ask you only include it in a modpack if you plan to continue to support your modpack for the next couple of months while we finish stabilizing this release.
 
@@ -147,8 +150,11 @@ Requires Mantle 1.11.28:
 
 ### 1.19.2
 
-You can also download many of these new features in 1.19.2 at the following:
+You can also download many of these new features in 3.8.5.58 for 1.19.2 at the following:
 
-* *Coming soon*.
+{% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.8.5.58" curseforge="6044827" %}
 
+Requires Mantle 1.10.48:
+
+{% include update/download.html name="mantle" version="1.10.48 " curseforge="6044700" %}
 
