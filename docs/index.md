@@ -33,6 +33,7 @@ The following pages cover pages on general JSON formats, which may be used in da
 * [**Conditions**](json/conditions): Format for JSON condition types added by SlimeKnights mods.
 * [**Ingredients**](json/ingredients): JSON object representing the input to a recipe, which is able to list all matching entries.
 * [**Predicates**](json/predicates): JSON object representing a condition on a part of a JSON component. Unlike ingredients, predicates do not display all matching entries.
+* [**Results**](json/results): Common result field types, occuring primarily in recipes.
 * [**Json Things support**](json/json-things) ([1.18](json/json-things/1.18)): Documentation for all block and item types that Tinkers' Construct adds to Json Things' "Thing Packs".
 
 ### Data Packs

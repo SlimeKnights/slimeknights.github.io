@@ -33,7 +33,7 @@ All three variants have the following format:
 * {% include field.html type="object" %} The fluid transfer object.
     * {% include field.html name="type" type="resource location" %} Either `mantle:empty_item`, `mantle:empty_nbt`, or `tconstruct:empty_potion`.
     * {% include field.html name="input" type="ingredient" %} Ingredient determining fluid items emptied using this transfer.
-    * {% include field.html name="fluid" type="fluid stack" %} Fluid to add to the target tank. Does not support NBT.
+    * {% include field.html name="fluid" type="fluid output" %} Fluid to add to the target tank. Does not support NBT.
     * {% include field.html name="filled" type="item output" %} Item representing the container without `fluid`. Does not support stack size.
 </div>
 

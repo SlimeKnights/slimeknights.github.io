@@ -4,7 +4,7 @@ title: Basic Types
 description: This page covers many commonly used JSON elements that show up in a variety off formats in data packs or resource packs.
 ---
 <div class="hatnote" markdown=1>
-See also: [Conditions](../conditions), [Ingredients](../ingredients) and [Predicates](../predicates)
+See also: [Conditions](../conditions), [Ingredients](../ingredients), [Results](../results) and [Predicates](../predicates).
 </div>
 {{page.description}}
 
@@ -85,79 +85,6 @@ For an integer range to be valid, `max` must be greater than or equal to `min`. 
 </div>
 
 This is equivalent to setting both `min` and `max` to the same value.
-
-## Item Stack
-
-A fluid stack represents an item with a size and optional NBT, typically used in recipe outputs (as [item ingredients](../ingredients#item-ingredients) are more flexible for inputs). Note that for most recipes, [item output](#item-output) is preferred due to allowing tag outputs, but select recipes still make use of direct item stacks.
-
-In the most basic form, an item output may be just a string field containing an [item ID](#registry-ids), representing the output item with a stack size of 1:
-
-<div class="treeview" markdown=1>
-* {% include field.html type="Item ID" %} The item in the stack.
-</div>
-
-Alternatively, an item stack may be expressed as a JSON object, allowing setting count and NBT:
-
-<div class="treeview" markdown=1>
-* {% include field.html type="object" %} The item stack object.
-    * {% include field.html name="item" type="item ID" %} Item in the stack. If unset, defaults to `minecraft:air` making the stack empty.
-    * {% include field.html name="count" type="integer" %} Stack size. If unset, defaults to 1. If empty is supported, may be 0 to indicate an empty stack.
-    * {% include field.html name="nbt" type="object" %} NBT for the item stack, represented as a JSON object. If unset, the stack has no NBT.
-    * {% include field.html name="nbt" type="string" %} NBT for the item stack, represented as a string. If unset, the stack has no NBT.
-</div>
-
-Note that based on the usage, count may be fixed to 1, and NBT may be ignored. In addition, some contexts do not support empty item stacks, causing a parsing error.
-
-## Item Output
-
-An item output is essentially an [ingredient](../ingredients#item-ingredients) for recipe outputs.
-In the most basic form, an item output may be just a string field containing an [item ID](#registry-ids), representing the output item with a stack size of 1:
-
-<div class="treeview" markdown=1>
-* {% include field.html type="Item ID" %} The item to output.
-</div>
-
-In other cases, the item output will be a JSON object, containing either a [stack](#stack-output) or a [tag](#tag-output).
-
-Note that based on the usage of item output, its possible that count is fixed to 1, in which case the count field is ignored. In addition, in some contexts empty item stacks are not supported, in which case an empty stack or a zero count will produce a parsing error.
-
-### Stack Output
-
-Represents an output of an item stack with count and optional NBT. The format for a stack output is as follows:
-
-<div class="treeview" markdown=1>
-* {% include field.html type="object" %} The item output object.
-    * {% include field.html name="item" type="item ID" %} Item to output. If unset, defaults to `minecraft:air` making the output empty.
-    * {% include field.html name="count" type="integer" %} Output stack size. If unset, defaults to 1. If empty is supported, may be 0 to indicate an empty output.
-    * {% include field.html name="nbt" type="object" %} NBT for the item stack, represented as a JSON object. If unset, the output has no NBT.
-    * {% include field.html name="nbt" type="string" %} NBT for the item stack, represented as a string. If unset, the output has no NBT.
-</div>
-
-### Tag Output
-
-Represents an output of the preferred entry from an item tag using Mantle's [tag preference](/docs/commands/mantle#tag-preference) system. The format for a tag output is as follows:
-
-<div class="treeview" markdown=1>
-* {% include field.html type="object" %} The item output object.
-    * {% include field.html name="tag" type="item tag" %} Tag to output. The preferred entry from the tag will be used for the output.
-    * {% include field.html name="count" type="integer" %} Output stack size. If unset, defaults to 1.
-</div>
-
-## Fluid Stack
-
-A fluid stack represents a fluid with a size, typically used in recipe outputs (as [fluid ingredients](../ingredients#fluid-ingredients) are more flexible for inputs).
-
-Fluid stacks have the following format in JSON:
-
-<div class="treeview" markdown=1>
-* {% include field.html type="object" %} The item output object.
-    * {% include field.html name="fluid" type="fluid ID" %} Fluid in the stack. If unset, defaults to `minecraft:empty` making the stack empty.
-    * {% include field.html name="amount" type="integer" %} Output stack size. May be 0 to indicate an empty stack.
-    * {% include field.html name="nbt" type="object" %} NBT for the item stack, represented as a JSON object. If unset, the output has no NBT.
-    * {% include field.html name="nbt" type="string" %} NBT for the item stack, represented as a string. If unset, the output has no NBT.
-</div>
-
-Note that some contexts using fluid stacks disallow empty fluid stacks, in which case an `amount` of 0 or a `fluid` of `minecraft:empty` will cause a parsing error. In addition, some contexts will ignore the output NBT entirely, causing those fields to be ignored.
 
 ## Block State Variant
 

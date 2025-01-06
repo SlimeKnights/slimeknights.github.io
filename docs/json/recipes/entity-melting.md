@@ -20,7 +20,7 @@ Entity melting recipes have the following format:
 * {% include field.html type="object" %} The recipe object.
     * {% include field.html name="type" type="resource location" %} Always `tconstruct:entity_melting`.
     * {% include field.html name="entity" type="entity ingredient" %} Entity to melt.
-    * {% include field.html name="result" type="fluid stack" %} Melting result, will be produced every operation.
+    * {% include field.html name="result" type="fluid output" %} Melting result, will be produced every operation.
     * {% include field.html name="damage" type="integer" %} Damage dealt to the entity per operation. If the entity takes less damage, `result` will be scaled linearly. If unset, defaults to 2.
 </div>
 

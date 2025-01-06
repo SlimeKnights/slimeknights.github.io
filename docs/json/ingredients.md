@@ -3,6 +3,9 @@ layout: page
 title: Ingredients
 description: This page covers common ingredient formats used in SlimeKnights mods. In addition to the common item ingredients used in many mods, it also defines format for ingredients matching fluids and entities. 
 ---
+<div class="hatnote" markdown=1>
+See also: [Results](../results).
+</div>
 
 {{page.description}}
 

@@ -59,7 +59,7 @@ resource location:
 item stack:
   name: Item Stack
   icon: nbt-compound
-  link: /docs/json/basic-types#item-stack
+  link: /docs/json/results#item-stack
   
 ingredient: &ingredient
   name: Item Ingredient
@@ -99,7 +99,7 @@ condition:
 fluid stack:
   name: Fluid Stack
   icon: nbt-compound
-  link: /docs/json/basic-types#fluid-stack
+  link: /docs/json/results#fluid-stack
 
 mining tier:
   name: Mining Tier
@@ -144,7 +144,12 @@ text color:
 item output:
   name: Item Output
   icon: nbt-compound
-  link: /docs/json/basic-types#item-output
+  link: /docs/json/results#item-output
+
+fluid output:
+  name: Fluid Output
+  icon: nbt-compound
+  link: /docs/json/results#fluid-output
 
 sized ingredient:
   name: Sized Ingredient
