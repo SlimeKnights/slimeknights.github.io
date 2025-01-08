@@ -50,7 +50,7 @@ You are free to fork the mod if you wish to port to a platform we do not support
 
 ## Where are the builds? I cannot find them on CurseForge!
 
-CurseForge is not great about displaying alpha builds on CurseForge. To ensure you don't miss the file, instead of looking at the sidebar, click "Files" then "View all". There is also a dropdown on the "View all" page to filter by version.
+CurseForge is not great about displaying alpha builds on CurseForge. To ensure you don't miss the file, instead of looking at the sidebar, click "Files" then "View all" (legacy site) or "Show alpha files" (new site). There is also a dropdown on after switching the view to filter by version.
 
 ## I found a bug, what do I do?
 
