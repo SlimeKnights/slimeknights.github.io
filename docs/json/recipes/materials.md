@@ -55,5 +55,5 @@ Material melting recipes allow melting tool parts into the appropriate fluid in 
     * {% include field.html name="type" type="resource location" %} Recipe serializer ID, always `tconstruct:material_melting`.
     * {% include field.html name="input" type="material variant" %} Material melted by this recipe.
     * {% include field.html name="temperature" type="temperature" %} Fluid temperature. Used to determine how long it takes the part to melt, and allows gating the recipe using the fuel temperature.
-    * {% include field.html name="result" type="fluid output" %} Result fluid for melting this material. Size will be scaled based on the part cost. May not be empty, and ignores NBT.
+    * {% include field.html name="result" type="fluid output" %} Result fluid for melting this material. Size will be scaled based on the part cost. May not be empty.
 </div>
