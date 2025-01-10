@@ -23,6 +23,20 @@ Item casting recipes define casting a fluid into a casting table to produce a st
     * {% include field.html name="switch_slots" type="boolean" %} If true, after casting the item will be placed in the input and the cast in the output; used notably for cast creation. Defaults to false.
 </div>
 
+## Cast Duplication
+<div class="hatnote">Since 1.20.1</div>
+
+The cast duplication recipe consumes the fluid to create a copy of the cast item in the output (including NBT if present). It is notably used for duplicating smithing templates by pouring molten diamond on top. Cast duplication has two variants, `tconstruct:basin_duplication` for casting basins, and `tconstruct:table_duplication` for casting tables. Both variants have the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The recipe object.
+    * {% include field.html name="type" type="resource location" %} Either `tconstruct:table_duplication` or `tconstruct:basin_duplication`.
+    * {% include field.html name="group" type="string" %} Recipe group for the recipe book, currently unused.
+    * {% include field.html name="cast" type="ingredient" %} Item that must be in the table to cast this item. Cannot be empty.
+    * {% include field.html name="fluid" type="fluid ingredient" %} Fluid consumed to perform this casting recipe.
+    * {% include field.html name="cooling_time" type="integer" %} Time in ticks (1/20 of a second) for this recipe to finish cooling.
+</div>
+
 ## Part Casting
 
 There are two types of part casting recipes. The standard part casting recipes define casting a fluid into a casting table to produce a tool part or material item, which is covered on [Part Recipes](../parts#part-casting). Composite part casting recipes define casting a fluid on a tool part to change the material of the tool part, which is also covered on [Part Recipes](../parts#composite-casting). Both part casting and composite casting require associating a fluid with a material, which is defined on [Material Recipes](../materials#casting-and-composite).
