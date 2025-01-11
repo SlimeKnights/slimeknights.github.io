@@ -17,6 +17,11 @@ The rate of fuel consumption varies based on the usage. For the melter and alloy
     * {% include field.html name="temperature" type="temperature" %} Fuel temperature value, used for gating [melting](../item-melting) and [alloying](../alloying) recipes. Additionally, acts as a multiplier on the rate items melt, with 1000 being the baseline.
 </div>
 
+### Solid Fuel
+<div class="hatnote">Upcoming 1.20.1</div>
+
+In the next 1.20 update, creating a fuel instance without setting `fluid` and `duration` will cause that temperature and duration to be used for solid fuel in the heater. Only a single recipe should be provided to set solid fuel properties, which is provided by Tinkers' Construct; modify that recipe if you wish to change it in a modpack.
+
 ## Temperature
 
 Fuel temperature is often used as a gating mechanism for recipes. The following fuel temperatures are defined in the base mod:
