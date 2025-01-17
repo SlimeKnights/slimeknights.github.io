@@ -21,17 +21,24 @@ See also: [Design Documents](../design) - may contain details on future plans th
 See also [#5281](https://github.com/SlimeKnights/TinkersConstruct/issues/5281).
 </div>
 
-1.20.1 is in public Alpha. It will be receiving a few more updates to work out bugs and to add additional roadmap features. 
+1.20.1 is in public Alpha. Current plan is to release a second alpha in the next couple of days, then after that work towards a beta.
 
 1.19.2 and 1.18.2 are both considered stable. Additional releases are possible but are unlikely. Anything before 1.18.2 has no releases planned.
 
 ## Ichor
 
 * Ichor will be meltable using a foundry.
-* Melting ichor will produce 125mb of pure liquid ichor, and some amount of either lava or blazing blood. This means its not 1 to 1 casting and melting.
+* Melting ichor will produce some amount of pure liquid ichor as a byproduct, and some amount of blazing blood. This means its not 1 to 1 casting and melting.
+* Requires blazing blood to melt ichor.
 * Pure ichor can be casted like any other slime type.
-* Pure ichor will possibly be used as a smeltery fuel, granting high speeds but low fuel efficiency/temperature.
 * Pure ichor is also used in alloying [King's Slime](#kings-slime).
+
+## Fluid Block Effects
+
+* Slime fluids will be given more utilitarian effects on blocks of their current potion effects.
+* Ichor will notably break blocks.
+* Enderslime will break a block and replace it with one from your hand.
+* Some fluids such as glass or obsidian will place spike blocks to damage and slow attackers. 
 
 ## Multiblock
 
@@ -39,10 +46,10 @@ See also [#5281](https://github.com/SlimeKnights/TinkersConstruct/issues/5281).
 
 Slimesteel and King's Slime will be usable to make late game fluid mechanics.
 
-#### King's Slime
+#### Cinderslime
 
 * New tier 3 material alloyed from gold, ichor, and scorched stone.
-* Trait boosts damage/velocity/protection provided the tool has its overslime bar non-empty.
+* Trait restores overslime by consuming fuel in the tools tank.
 * Requires ichor being added as a fluid, now that plans for it are more settled.
 
 #### Inverted Channels
@@ -52,7 +59,7 @@ Slimesteel and King's Slime will be usable to make late game fluid mechanics.
 
 #### Casting Tank
 
-* Crafted from slimesteel.
+* Crafted from slimesteel or copper perhaps.
 * This tank has a slot that accepts an item via automation such as hoppers.
 * Tank will immediately fill/empty the item if possible, or wait to empty if the tank is full/unable to accept the fluid.
 * After interacting with the item, its moved to the "output slot" so it won't interact again. Automation can then extract it and insert a new item.
@@ -60,7 +67,7 @@ Slimesteel and King's Slime will be usable to make late game fluid mechanics.
 
 #### Tinker Tank
 
-* Crafted from King's Slime.
+* Crafted from cinderslime.
 * Tank has a single slot that can hold an item with a fluid handler.
 * Any interactions to the tank will interact with the item's fluid handler, essentially proxying it.
 * Useful to automatically fill or empty variable sized tanks or tools.
@@ -91,7 +98,11 @@ The soul forge is a planned multiblock for late game tool, modifier, and materia
 
 ### Fluid Cannon
 
-Special tank that shoots a fluid projectile when powered by redstone.
+* Special tank that shoots a fluid projectile when powered by redstone.
+* Has 3 variants:
+  * Overworld: crafted from copper + seared stone. Power 1.
+  * Nether: crafted from cobalt + scorched stone. Power 2.
+  * End: crafted from knightmetal + slimestone. Power 4.
 
 ## Tools
 
@@ -117,10 +128,10 @@ Several new ancient tools are planned for later versions of the mod.
 
 The swasher is a fluid based melee weapon. It can be found in in shipwrecks, buried treasure, ocean ruins, the hands of drowned, and from fishing. It has the following behavior:
 
-* **Parts**: Tool Head (melee/harvest), Grip (ranged)
+* **Parts**: Tool Head (melee/harvest), Grip (ranged), Handle (melee/harvest)
 * **Model**:
     * Visuals based on a cutlass pistol
-    * Grip determines handle
+    * Grip/handle determines handle parts
     * Head determines blade
 * **Modifier Slots**:
     * 3 upgrade slots
@@ -131,7 +142,6 @@ The swasher is a fluid based melee weapon. It can be found in in shipwrecks, bur
 
 #### Other Considerations
 
-* **Trident**: Melee throwable weapon. May or may not replace [spears](#ranged).
 * **Knight's Shovel**: the shovel wielded by one of the greatest warriors of the past, found in dungeons or in the hands of zombies.
 * **Ancient armor set**, either as 4 unique pieces with special traits or 4 pieces fitting an untouched area of armor.
 
