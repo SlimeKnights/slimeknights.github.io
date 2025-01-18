@@ -18,11 +18,11 @@ These SlimeKnights projects are actively supported, either on the latest Minecra
 
 <div class="project-list">
     {% include project.html
-      name="mantle" latest="1.19.2"
+      name="mantle" latest="1.20.1"
       description="Mantle is a mod containing shared code for SlimeKnights mods. Why? For science and slime, why else?"
     %}
     {% include project.html
-      name="tinkers-construct" title="Tinkers' Construct" latest="1.19.2"
+      name="tinkers-construct" title="Tinkers' Construct" latest="1.20.1"
       github="TinkersConstruct"
       description="Tinkers' Construct is a mod about putting tools together in a wide variety of ways, then modifying them until they turn into something else."
     %}
