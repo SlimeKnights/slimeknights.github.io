@@ -1,5 +1,5 @@
 materials_and_you_20:
-  path: tinkers/3.9.0/materials_and_you
+  path: tinkers/3.9.1/materials_and_you
   max_page: 26
   titles:
     - index: 1
@@ -21,7 +21,7 @@ materials_and_you_20:
       text: Further Reading
 
 puny_smelting_20:
-  path: tinkers/3.9.0/puny_smelting
+  path: tinkers/3.9.1/puny_smelting
   max_page: 83
   titles:
     - index: 2
@@ -48,11 +48,11 @@ puny_smelting_20:
     - index: 73
       text: Slotless Modifiers
       
-    - index: 82
+    - index: 83
       text: Further Reading
 
 mighty_smelting_20:
-  path: tinkers/3.9.0/mighty_smelting
+  path: tinkers/3.9.1/mighty_smelting
   max_page: 74
   titles:
     - index: 2
@@ -77,7 +77,7 @@ mighty_smelting_20:
       text: Defense
 
 fantastic_foundry_20:
-  path: tinkers/3.9.0/fantastic_foundry
+  path: tinkers/3.9.1/fantastic_foundry
   max_page: 25
   titles:      
     - index: 2
@@ -99,8 +99,8 @@ fantastic_foundry_20:
       text: Tier 4 Armor
 
 tinkers_gadgetry_20:
-  path: tinkers/3.9.0/tinkers_gadgetry
-  max_page: 33
+  path: tinkers/3.9.1/tinkers_gadgetry
+  max_page: 34
   titles:
     - index: 2
       text: Gadgets
@@ -121,13 +121,13 @@ tinkers_gadgetry_20:
       text: Slimy Armor
 
 encyclopedia_20:
-  path: tinkers/3.9.0/encyclopedia
+  path: tinkers/3.9.1/encyclopedia
   max_page: 169
   titles:
     - index: 2
       text: Tools
       
-    - index: 16
+    - index: 17
       text: Armor
       
     - index: 25
