@@ -15,11 +15,11 @@ The rate of fuel consumption varies based on the usage. For the melter and alloy
     * {% include field.html name="fluid" type="fluid ingredient" %} Fluid ingredient matching the fuel. Amount determines how much fuel is consumed per operation.
     * {% include field.html name="duration" type="integer" %} Amount of "fuel units" produced per operation. The exact amount of units consumed is based on the structure size.
     * {% include field.html name="temperature" type="temperature" %} Fuel temperature value, used for gating [melting](../item-melting) and [alloying](../alloying) recipes. Additionally, before 1.20 acts as a multiplier on the rate items melt, with 1000 being the baseline.
-    * {% include field.html name="rate" type="integer" version="upcoming 1.20.1" %} How quickly items are heated up using this fuel. 10 is a typical baseline (visualized in JEI as 1.0x).
+    * {% include field.html name="rate" type="integer" version="since 1.20.1" %} How quickly items are heated up using this fuel. 10 is a typical baseline (visualized in JEI as 1.0x).
 </div>
 
 ### Solid Fuel
-<div class="hatnote">Upcoming 1.20.1</div>
+<div class="hatnote">Since 1.20.1</div>
 
 In the next 1.20 update, creating a fuel instance without setting `fluid` and `duration` will cause that temperature and rate to be used for solid fuel in the heater. Only a single recipe should be provided to set solid fuel properties, which is provided by Tinkers' Construct; modify that recipe if you wish to change it in a modpack.
 

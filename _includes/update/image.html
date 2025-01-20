@@ -1,5 +1,5 @@
 {%- capture image_url -%}
-  /assets/images/updates/{{page.update_images}}/{{include.name}}.png
+  /assets/images/updates/{{page.update_images}}/{{include.name}}.{{include.ext | default: "png"}}
 {%- endcapture -%}
 <a class="update-image" href="{{image_url}}" data-caption="{{include.alt}}">
   <img src="{{image_url}}" alt="{{include.alt}}"/>

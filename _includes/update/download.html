@@ -1,8 +1,7 @@
 {%- assign name-capitalized = include.name | capitalize -%}
-{%- assign github-project = include.github | default: name-capitalized -%}
 <ul>
   <li>
-    <a href="https://github.com/{{include.author | default: "SlimeKnights"}}/{{github-project}}/releases/v{{include.version}}">
+    <a href="https://github.com/{{include.author | default: "SlimeKnights"}}/{{include.github | default: name-capitalized}}/releases/v{{include.version}}">
       Github: Download & full changelog
     </a>
   </li>
@@ -15,7 +14,7 @@
   {%- endif -%}
   {%- unless include.modrinth == false -%}
     <li>
-      <a href="https://modrinth.com/mod/{{include.name}}/version/{{include.version}}">
+      <a href="https://modrinth.com/mod/{{include.modrinth | default: include.name}}/version/{{include.version}}">
         Modrinth
       </a>
     </li>
