@@ -27,12 +27,12 @@ These SlimeKnights projects are actively supported, either on the latest Minecra
       description="Tinkers' Construct is a mod about putting tools together in a wide variety of ways, then modifying them until they turn into something else."
     %}
     {% include project.html
-      name="tinkers-things" title="Tinkers' Things" latest="1.19.2"
+      name="tinkers-things" title="Tinkers' Things" latest="1.20.1"
       github="TinkersThings" curseforge="tinkers-json-things"
       description="Official addon for Tinkers' Construct adding a variety of content written purely in JSON."
     %}
     {% include project.html
-      name="tinkers-mechworks" title="Tinkers' Mechworks" latest="1.16.5"
+      name="tinkers-mechworks" title="Tinkers' Mechworks" latest="1.19.2"
       github="TinkersMechworks"
       description="Tinkers' Mechworks is a mod that adds various redstone machines such as drawbridges."
     %}
