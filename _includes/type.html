@@ -24,5 +24,9 @@ else %}{%
 endif %}{%
 if include.lowercase %}{%
     assign name = name | downcase %}{%
-endif
-%}<a href="{{link}}">{{name}}</a>
+endif %}{%
+if include.name
+%}<a href="{{link}}">{{include.name}}</a>{%
+else
+%}<a href="{{link}}">{{name}}</a>{%
+endif %}

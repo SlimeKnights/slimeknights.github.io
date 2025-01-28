@@ -22,6 +22,7 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 ## Guides
 
 * [**Gradle Setup**](guides/gradle): Describes how to add Tinkers' Construct to a development workspace in Gradle.
+* [**Adding a Material**](guides/material): Describes how to add a material to Tinkers' Construct in an addon or datapack.
 * [**Texture Generators**](guides/texture-generators): Details how to use the material texture generators provided by Tinkers' Construct.
 * [**Persistent Inventory Crafting Blocks**](guides/persistent-inventory): Details how to handle the crafting station in mods wanting to do weird things in their crafting recipes (like player access which is *not* available in vanilla without hacks).
 

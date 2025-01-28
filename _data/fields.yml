@@ -101,10 +101,11 @@ fluid stack:
   icon: nbt-compound
   link: /docs/json/results#fluid-stack
 
-mining tier:
+mining tier: &miningTier
   name: Mining Tier
   icon: nbt-string
   link: /docs/json/tool-stats#mining-tier
+harvest tier: *miningTier
 
 tool action:
   name: Tool Action
