@@ -1,7 +1,12 @@
 <div class="uk-text-center">
-    <a class="uk-inline book-link" href="/docs/books/{{include.version}}/{{include.name}}">
-        <img src="/assets/images/book/icons/{{include.icon | default: include.name}}.png" alt=""/>
-        <br>
-        {{include.title}}
-    </a>
+  {%- if include.name -%}
+    {%- assign name = include.name -%}
+  {%- else -%}
+    {%- assign name = include.title | slugify -%}
+  {%- endif -%}
+  <a class="uk-inline book-link" href="/docs/books/{{include.version}}/{{name}}">
+    <img src="/assets/images/book/icons/{{include.icon | default: name}}.png" alt=""/>
+    <br>
+    {{include.title | default: name}}
+  </a>
 </div>
