@@ -63,6 +63,6 @@ The list of materials used for the generator will be filtered from all [material
 Within the material render info, the `texture` determines the output location of the generated material part texture. The `fallbacks` array is used to select a texture to pass into the generator; if no fallback exists the base texture is passed to the generator. `color` and `luminosity` are ignored by the generator.
 
 A material is considered valid for a part if any of the following hold true:
-* The part stat type is in the material's `supportedStats` list.
-* `ignoreMaterialStats` is `false` and the material has stats for the part's stat type defined in it's [material stats](/docs/json/materials#stats).
+* The part stat type is in the material's `supported_stats` list.
+* `ignore_material_stats` is `false` and the material has stats for the part's stat type defined in it's [material stats](/docs/json/materials#stats).
 * In 1.18.2+, an override is defined in the [part textures JSON](#part-textures) listing the material variant under the stat type.

@@ -21,8 +21,8 @@ Material render info has the following format:
 
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} Root render info object.
-    * {% include field.html name="texture" type="resource location" %} Unique texture name for the material. If unset, uses the material ID (if not a variant), otherwise uses the texture `<domain>:<name>_<variant>` for the variant ID `<domain>:<name>#<variant>`.
-    * {% include field.html name="skipUniqueTexture" type="boolean" %} If true, the material will not load a unique texture, instead just tinting a fallback texture. Used primarily for debug materials.
+    * {% include field.html name="texture" type="resource location" %} Unique texture name for the material. If unset, uses the material ID (if not a variant), otherwise uses the texture `<domain>:<name>_<variant>` for the variant ID `<domain>:<name>#<variant>`. Since 1.20.1, may be set to `null` (not `"null"`) to skip loading a default texture.
+    * {% include field.html name="skipUniqueTexture" type="boolean" %} If true, the material will not load a unique texture, instead just tinting a fallback texture. Used primarily for debug materials. Since 1.20.1, this field is deprecated in favor of setting `texture` to `null`.
     * {% include field.html name="fallbacks" type="list" %} List of fallback names to use if the unique material texture is missing.
         * {% include field.html type="string" %} A fallback name. If missing will continue to the next fallback, or the base texture.
     * {% include field.html name="color" type="argb" %} Color to tint the selected fallback texture. Only used if the unique texture is missing.
@@ -31,9 +31,9 @@ Material render info has the following format:
         * {% include field.html name="transformer" type="object" link="#sprite-transformers" %} The sprite transformer used to create sprites for this material.
             * {% include field.html name="type" type="resource location" %} Sprite transformer ID, see [sprite transformers](#sprite-transformers).
             * *Other fields defined by the sprite transformer.*
-        * {% include field.html name="supportedStats" type="list" %} List of supported stat types for this material. 
+        * {% include field.html name="supported_stats" type="list" %} List of supported stat types for this material. Before 1.20.1, this field was named `supportedStats`.
             * {% include field.html type="stat type" %} A stat type supported by this material. Any sprites with matching type will be generated in this material.
-        * {% include field.html name="ignoreMaterialStats" type="boolean" %}
+        * {% include field.html name="ignore_material_stats" type="boolean" %} Before 1.20.1, this field was named `ignoreMaterialStats`.
             * If `true`, running the [generate part textures command][generate-command] will ignore [material stats](/docs/json/materials#stats), using just `supportedStats`.
             * If `false` (default), when running the [generate part textures command][generate-command] this render info will be treated as supporting all stats defined in the [material stats](/docs/json/materials#stats) in addition to `supportedStats`. Ensures addons making an existing material support new types still get textures.
 </div>

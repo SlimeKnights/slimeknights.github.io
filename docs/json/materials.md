@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Material Format
+title: Materials
 description: "This page covers the JSON format for defining materials in datapacks in Tinkers' Construct 3. Materials require three basic components to define: definition, stats, and traits. The Material ID is determined by the name of each of the files."
 ---
 
@@ -8,7 +8,7 @@ description: "This page covers the JSON format for defining materials in datapac
 This page is about the JSON required to define a material. For the JSON to make the material craftable, see [Material Recipes](../recipes/materials). For the JSON to add textures to the material, see [Material Render Info](../material-render-info).
 </div>
 <div class="hatnote" markdown=1>
-See also [Stat Types](stat-types) for the formats for different stat types supported by materials.
+See also [Stat Types](../stat-types) for the formats for different stat types supported by materials.
 </div>
 
 This page covers the JSON format for defining materials in datapacks in Tinkers' Construct 3. Materials require three basic components to define: definition, stats, and traits. The [Material ID](../basic-types#resource-location) is determined by the name of each of the files.
@@ -87,8 +87,8 @@ The material stats for `<domain>:<name>` will be located at `data/<domain>/tinke
 
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} The root object.
-    * {% include field.html name="stats" type="object" %} Object containing all stats. Keys in this object are [stat type IDs](stat-types), while the values have a format based on the type.
-        * {% include field.html name="\<domain\>:\<name\>" type="object" %} Defines the stats for the type `<domain>:<name>`. Format is defined by the [stat type](stat-types).
+    * {% include field.html name="stats" type="object" %} Object containing all stats. Keys in this object are [stat type IDs](../stat-types), while the values have a format based on the type.
+        * {% include field.html name="\<domain\>:\<name\>" type="object" %} Defines the stats for the type `<domain>:<name>`. Format is defined by the [stat type](../stat-types).
         * {% include field.html name="\<domain\>:\<name\>" type="null" %} Removes the stats for the type `<domain>:<name>`.
 </div>
 
@@ -143,7 +143,7 @@ The material traits for `<domain>:<name>` will be located at `data/<domain>/tink
         * {% include field.html type="object" %} A modifier entry.
             * {% include field.html name="name" type="modifier ID" %} Modifier to apply.
             * {% include field.html name="level" type="int" %} Modifier level to apply. If unset, defaults to 1.
-    * {% include field.html name="perStat" type="object" %} Object containing all stats. Keys in this object are [stat type IDs](stat-types), while the values have a format based on the type.
+    * {% include field.html name="perStat" type="object" %} Object containing all stats. Keys in this object are [stat type IDs](../stat-types), while the values have a format based on the type.
         * {% include field.html name="\<domain\>:\<name\>" type="list" %} Defines the traits for the type `<domain>:<name>`.
             * {% include field.html type="object" %} A modifier entry.
                 * {% include field.html name="name" type="modifier ID" %} Modifier to apply.
