@@ -4,6 +4,7 @@ title: Texture Generators
 description: Tinkers' Construct 3 makes extensive use of data generators to generate material variants of tool parts with more detail than a simple tint. This page documents those data generators for use by addon creators.
 redirect_from:
     - /docs/design/texture-generators/
+    - /docs/addons/texture-generators/
 ---
 <div class="hatnote" markdown=1>
 This page is about using texture generators for addon authors. For data pack or resource pack authors, see the [generate part textures command](/docs/commands/tinkers/generate-part-textures).

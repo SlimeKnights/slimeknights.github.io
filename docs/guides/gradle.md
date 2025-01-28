@@ -2,6 +2,8 @@
 layout: page
 title: Gradle Setup
 description: Documentation for how to add Tinkers' Construct as a dependency in a development environment.
+redirect_from:
+    - /docs/addons/gradle/
 ---
 
 {{page.description}}
@@ -66,7 +68,8 @@ The `${tinkers_build}` corresponds to the latest release and its jenkins build. 
 
 | Minecraft Version | Mantle Version | Tinkers Build |
 |:-|:-|:-|
-| 1.19.2 | [1.10.35](https://github.com/SlimeKnights/TinkersConstruct/blob/1.19.2/gradle.properties#L20) | [3.8.4.50](https://github.com/SlimeKnights/TinkersConstruct/releases/tag/v3.8.4.50)
+| 1.20.1 | [1.11.36](https://github.com/SlimeKnights/TinkersConstruct/blob/1.20.1/gradle.properties#L21) | [3.9.1.19](https://github.com/SlimeKnights/TinkersConstruct/releases/tag/v3.9.1.19)
+| 1.19.2 | [1.10.48](https://github.com/SlimeKnights/TinkersConstruct/blob/1.19.2/gradle.properties#L20) | [3.8.5.58](https://github.com/SlimeKnights/TinkersConstruct/releases/tag/v3.8.5.58)
 | 1.18.2 | [1.9.49](https://github.com/SlimeKnights/TinkersConstruct/blob/1.18.2/gradle.properties#L20) | [3.7.2.167](https://github.com/SlimeKnights/TinkersConstruct/releases/tag/3.7.2.167)
 | 1.16.5 | [1.6.158](https://github.com/SlimeKnights/TinkersConstruct/blob/1.16/gradle.properties#L20) | [3.3.4.335](https://github.com/SlimeKnights/TinkersConstruct/releases/tag/3.3.4.335)
 | 1.12.2 | [1.3.3.49](https://github.com/SlimeKnights/TinkersConstruct/blob/1.12/build.properties#L7) | [2.13.0.183](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct/files/2902483)

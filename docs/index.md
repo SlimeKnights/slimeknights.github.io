@@ -14,11 +14,16 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 ## General
 
 * [**Design Docs**](design): Developer docs used to organize, balance, and plan out content in the mod.
-* [**Addon Documentation**](addons): Documentation on making addons geared towards Java based addons.
 * [**Online Books**](books): Links to online versions of many books from SlimeKnights mods.
 * [**What's New?**](whats-new): Covers all major changes made to Tinkers' Construct 3 compared to Tinkers' Construct 2.
     * [**Roadmap**](roadmap): Discusses various future plans for our mods, along with current work.
     * [**Removed Features**](removed): Covers features from older versions of Tinkers' Construct that were removed in the latest versions, along with some reasoning or alternatives.
+
+## Guides
+
+* [**Gradle Setup**](guides/gradle): Describes how to add Tinkers' Construct to a development workspace in Gradle.
+* [**Texture Generators**](guides/texture-generators): Details how to use the material texture generators provided by Tinkers' Construct.
+* [**Persistent Inventory Crafting Blocks**](guides/persistent-inventory): Details how to handle the crafting station in mods wanting to do weird things in their crafting recipes (like player access which is *not* available in vanilla without hacks).
 
 ## Commands
 * [**Mantle Commands**](commands/mantle): Documentation for all commands added by Mantle.
