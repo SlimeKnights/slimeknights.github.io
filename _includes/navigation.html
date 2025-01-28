@@ -1,16 +1,26 @@
 <nav class="navigation">
   <ul class="uk-pagination">
     {%- if include.previous -%}
-      <li><a href="../{{include.previous}}">
+      <li>
+        {%- if include.previous.link -%}
+          <a href="../{{include.previous.link}}">
+        {%- else -%}
+          <a href="../{{include.previous.title | slugify }}">
+        {%- endif -%}
         <span class="uk-margin-small-right" uk-pagination-previous></span>
-        {{ include.previous_title | default: include.previous }}
+        {{ include.previous.title | default: include.previous.link }}
       </a></li>
-    {% endif %}
+    {%- endif -%}
     {%- if include.next -%}
-      <li class="uk-margin-auto-left"><a href="../{{include.next}}">
-        {{ include.next_title | default: include.next }}
+      <li class="uk-margin-auto-left">
+        {%- if include.next.link -%}
+          <a href="../{{include.next.link}}">
+        {%- else -%}
+          <li><a href="../{{include.next.title | slugify }}">
+        {%- endif -%}
+        {{ include.next.title | default: include.next.link }}
         <span class="uk-margin-small-left" uk-pagination-next></span>
       </a></li>
-    {% endif %}
+    {%- endif -%}
     </ul>
 </nav>
