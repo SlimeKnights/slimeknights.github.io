@@ -311,6 +311,16 @@ encyclopedia_19:
     - index: 162
       text: Slimeskulls
 
+mechworks_19:
+  path: mechworks/2.2.8
+  max_page: 7
+  titles:
+    - index: 2
+      text: Machines
+      
+    - index: 5
+      text: Upgrades
+
 
 materials_and_you_18:
   path: tinkers/3.7.2.167/materials_and_you
@@ -455,6 +465,16 @@ encyclopedia_18:
       
     - index: 141
       text: Slimeskulls
+
+mechworks_18:
+  path: mechworks/2.2.8  # technically this is the 1.19 book, but nothing changed
+  max_page: 7
+  titles:
+    - index: 2
+      text: Machines
+      
+    - index: 5
+      text: Upgrades
 
 
 materials_and_you_16:

@@ -9,3 +9,8 @@ The following books are available online from 1.19 versions of SlimeKnights mods
     {% include book/link.html title="Tinkers' Gadgetry"         name="tinkers-gadgetry"  version="1.19" %}
     {% include book/link.html title="Encyclopedia of Tinkering" name="encyclopedia"      version="1.19" %}
 </div>
+
+**Tinkers' Mechworks**
+<div class="uk-child-width-1-2 uk-child-width-1-6@s uk-grid-small" uk-grid>
+    {% include book/link.html title="Mechanical Tinkering"      name="mechworks"         version="1.19" %}
+</div>
