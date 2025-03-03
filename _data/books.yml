@@ -1,5 +1,5 @@
 materials_and_you_20:
-  path: tinkers/3.9.1/materials_and_you
+  path: tinkers/3.9.2/materials_and_you
   max_page: 26
   titles:
     - index: 1
@@ -21,8 +21,8 @@ materials_and_you_20:
       text: Further Reading
 
 puny_smelting_20:
-  path: tinkers/3.9.1/puny_smelting
-  max_page: 83
+  path: tinkers/3.9.2/puny_smelting
+  max_page: 84
   titles:
     - index: 2
       text: Melter & Moving Fluids
@@ -45,15 +45,15 @@ puny_smelting_20:
     - index: 39
       text: Upgrades
       
-    - index: 73
+    - index: 74
       text: Slotless Modifiers
       
     - index: 83
       text: Further Reading
 
 mighty_smelting_20:
-  path: tinkers/3.9.1/mighty_smelting
-  max_page: 74
+  path: tinkers/3.9.2/mighty_smelting
+  max_page: 75
   titles:
     - index: 2
       text: Smeltery
@@ -73,33 +73,33 @@ mighty_smelting_20:
     - index: 38
       text: Abilities
       
-    - index: 68
+    - index: 69
       text: Defense
 
 fantastic_foundry_20:
-  path: tinkers/3.9.1/fantastic_foundry
-  max_page: 25
+  path: tinkers/3.9.2/fantastic_foundry
+  max_page: 27
   titles:      
     - index: 2
       text: Alloyer
       
-    - index: 4
+    - index: 5
       text: Foundry
       
-    - index: 13
+    - index: 14
       text: Blazing Blood
       
-    - index: 16
+    - index: 17
       text: Tier 4 Melee Harvest
       
-    - index: 20
+    - index: 21
       text: Tier 4 Ranged
       
-    - index: 23
+    - index: 24
       text: Tier 4 Armor
 
 tinkers_gadgetry_20:
-  path: tinkers/3.9.1/tinkers_gadgetry
+  path: tinkers/3.9.2/tinkers_gadgetry
   max_page: 34
   titles:
     - index: 2
@@ -121,8 +121,8 @@ tinkers_gadgetry_20:
       text: Slimy Armor
 
 encyclopedia_20:
-  path: tinkers/3.9.1/encyclopedia
-  max_page: 169
+  path: tinkers/3.9.2/encyclopedia
+  max_page: 203
   titles:
     - index: 2
       text: Tools
@@ -133,26 +133,29 @@ encyclopedia_20:
     - index: 25
       text: Upgrades
       
-    - index: 59
+    - index: 60
       text: Defense
       
-    - index: 66
+    - index: 67
       text: Slotless
       
-    - index: 76
+    - index: 77
       text: Abilities
       
-    - index: 106
+    - index: 108
       text: Melee Harvest Materials
       
-    - index: 127
+    - index: 130
       text: Ranged Materials
       
-    - index: 145
+    - index: 149
       text: Armor Materials
       
-    - index: 162
+    - index: 166
       text: Slimeskulls
+      
+    - index: 173
+      text: Fluid Effects
 
 
 materials_and_you_19:
