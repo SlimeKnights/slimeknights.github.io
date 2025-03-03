@@ -67,6 +67,8 @@ Ichor, cinderslime, and steel aren't just useful as tool materials, they are als
 
 Before, a lot of fluids were given effects just to make spilling have options, but not a ton of thought was put into them. Notably, there were a ton of metal options, but blazing blood tended to out perform a lot of them in terms of raw damage (despite being one of the cheaper options). Now, we have reworked the effects similarly to materials, dividing fluids into different tiers and classes with more expensive effects being stronger. Note that in addition to the below fluids, you can continue to use potions in fluid effects for a larger variety of options.
 
+For a full list of effects, check out the [in game books](/docs/books/1.20/encyclopedia/#fluid-effects) or the [design documents](/docs/design#modifiers).
+
 ### Gems
 
 {% include update/image.html name="gem-effects" alt="Showing several gems with block breaking." %}

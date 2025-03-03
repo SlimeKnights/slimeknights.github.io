@@ -71,7 +71,7 @@ Fluid stacks have the following format in JSON:
 Note that some contexts using fluid stacks disallow empty fluid stacks, in which case an `amount` of 0 or a `fluid` of `minecraft:empty` will cause a parsing error. In addition, some contexts will ignore the output NBT entirely, causing those fields to be ignored (most notably recipes in 1.18 and before).
 
 ## Fluid Output
-<div class="hatnote">Upcoming 1.20</div>
+<div class="hatnote">Since 1.20</div>
 
 A fluid output is essentially an [fluid ingredient](../ingredients#fluid-ingredients) for recipe outputs. Before 1.20, most outputs instead used [fluid stacks](#fluid-stack).
 
