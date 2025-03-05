@@ -121,8 +121,8 @@ tinkers_gadgetry_20:
       text: Slimy Armor
 
 encyclopedia_20:
-  path: tinkers/3.9.2/encyclopedia
-  max_page: 203
+  path: tinkers/3.9.2.37/encyclopedia
+  max_page: 206
   titles:
     - index: 2
       text: Tools
