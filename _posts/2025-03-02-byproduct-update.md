@@ -177,10 +177,11 @@ Update to the latest Mantle 1.11.44 for 1.20.1:
 {% include update/download.html name="mantle" version="1.11.44" curseforge="6258424" %}
 
 ### Tinkers' Construct
+<div class="hatnote">We released the hotfix 3.9.2.37 to fix an issue with melters, and another issue with NeoForge.</div>
 
-Download Tinkers' Construct 3.9.2.34 for 1.20.1 at the following links:
+Download Tinkers' Construct 3.9.2.37 for 1.20.1 at the following links:
 
-{% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.9.2.34" curseforge="6258596" %}
+{% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.9.2.37" curseforge="6266282" %}
 
 ### Tinkers' Things
 
