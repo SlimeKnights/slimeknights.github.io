@@ -10,7 +10,6 @@ For the specific changes coming in the next update, see [Changelog Draft](https:
 See also: [Design Documents](../design) - may contain details on future plans that fall under an existing feature.
 </div>
 
-
 {{page.description}}
 
 {% include toc.html %}
@@ -21,43 +20,18 @@ See also: [Design Documents](../design) - may contain details on future plans th
 See also [#5281](https://github.com/SlimeKnights/TinkersConstruct/issues/5281).
 </div>
 
-1.20.1 is in public Alpha. Current plan is to release a second alpha in the next couple of days, then after that work towards a beta.
+1.20.1 is in public Beta. We plan to continue adding features from the roadmap for the next couple of updates, then decide whether to add larger features or focus on another port.
 
 1.19.2 and 1.18.2 are both considered stable. Additional releases are possible but are unlikely. Anything before 1.18.2 has no releases planned.
 
-## Ichor
-
-* Ichor will be meltable using a foundry.
-* Melting ichor will produce some amount of pure liquid ichor as a byproduct, and some amount of blazing blood. This means its not 1 to 1 casting and melting.
-* Requires blazing blood to melt ichor.
-* Pure ichor can be casted like any other slime type.
-* Pure ichor is also used in alloying [King's Slime](#kings-slime).
-
-## Fluid Block Effects
-
-* Slime fluids will be given more utilitarian effects on blocks of their current potion effects.
-* Ichor will notably break blocks.
-* Enderslime will break a block and replace it with one from your hand.
-* Some fluids such as glass or obsidian will place spike blocks to damage and slow attackers. 
-
 ## Multiblock
 
-### Slimemetal Casting
+### Inverted Channels
 
-Slimesteel and King's Slime will be usable to make late game fluid mechanics.
-
-#### Cinderslime
-
-* New tier 3 material alloyed from gold, ichor, and scorched stone.
-* Trait restores overslime by consuming fuel in the tools tank.
-* Requires ichor being added as a fluid, now that plans for it are more settled.
-
-#### Inverted Channels
-
-* Slimesteel and King's Slime can make channels and faucets.
+* Slimesteel and Cinderslime can make channels and faucets.
 * They work identically to seared/scorched channels/faucet except for one small difference: downwards pouring is replaced with upwards pouring.
 
-#### Casting Tank
+### Casting Tank
 
 * Crafted from slimesteel or copper perhaps.
 * This tank has a slot that accepts an item via automation such as hoppers.
@@ -65,7 +39,7 @@ Slimesteel and King's Slime will be usable to make late game fluid mechanics.
 * After interacting with the item, its moved to the "output slot" so it won't interact again. Automation can then extract it and insert a new item.
 * Useful to automatically fill or empty buckets/copper cans.
 
-#### Tinker Tank
+### Tinker Tank
 
 * Crafted from cinderslime.
 * Tank has a single slot that can hold an item with a fluid handler.
@@ -80,7 +54,7 @@ Slimesteel and King's Slime will be usable to make late game fluid mechanics.
 
 ### Sublimery
 
-The sublimery is currently targeted for an early 1.20 build, likely before the first stable 1.20 release.
+The sublimery is currently targeted for release near the [Soul Forge](#soul-forge) build, as we do not believe its current design can stand on its own without the system it was designed to fuel.
 
 * Upside-down smeltery unlocked at the beginning of the end.
 * Created using slimestone (slime on end stone) and slimesteel/king's slime/queen's slime (undecided).
@@ -88,6 +62,16 @@ The sublimery is currently targeted for an early 1.20 build, likely before the f
 * Will support melting entities into gaseous experience instead of transitional entity melting.
 * Will likely not support alloying (smeltery exclusive) or byproducts (foundry exclusive).
 * Will likely have the same ore output rate as smelteries, though it will be configurable in case a modpack wishes it to be higher.
+
+### Soul Oven
+
+The soul oven is a reimagining of the high oven from [Tinkers' Steelworks](https://www.curseforge.com/minecraft/mc-mods/tinkers-steelworks). The oven will have many similar core mechanics, including:
+
+* Instead of being heated using liquid fuels, it will use specific solid fuels. The choice of fuel may impact the melting result.
+* The oven won't immediately heat up, rather it heats up over time. Once heated, it can easily reach temperatures and speeds higher than lava or blazing blood.
+* The oven has several additional slots for "additives". These will work on a similar system to the part builder or [soul forge](#soul-forge) to map items into "materials" for changing the melting result.
+
+We are still considering how this design best fits into the mod, and into the design of the [soul forge](#soul-forge).
 
 ### Soul Forge
 <div class="hatnote" markdown=1>
@@ -119,31 +103,6 @@ We wish to add at least 1 or 2 more variants of ranged weapons. Below are a few 
 * **Flail**: Fires a projectile that must be reeled in to fire again, sorta like a weaponized fishing rod. Will damage both on throwing and returning.
 * **Spear**: Tinker tool implementing trident like behavior. Works both as a melee weapon and a ranged weapon when thrown.
 * **Boomerangs**: Replacement for shurikens, essentially just a spear that has returning.
-
-### Ancient Tools
-
-Several new ancient tools are planned for later versions of the mod.
-
-#### Swasher
-
-The swasher is a fluid based melee weapon. It can be found in in shipwrecks, buried treasure, ocean ruins, the hands of drowned, and from fishing. It has the following behavior:
-
-* **Parts**: Tool Head (melee/harvest), Grip (ranged), Handle (melee/harvest)
-* **Model**:
-    * Visuals based on a cutlass pistol
-    * Grip/handle determines handle parts
-    * Head determines blade
-* **Modifier Slots**:
-    * 3 upgrade slots
-* **Functionality**:
-    * Melee weapon
-    * Starts with spilling
-    * Starts with spitting (uses bow stats, maybe spitting 2)
-
-#### Other Considerations
-
-* **Knight's Shovel**: the shovel wielded by one of the greatest warriors of the past, found in dungeons or in the hands of zombies.
-* **Ancient armor set**, either as 4 unique pieces with special traits or 4 pieces fitting an untouched area of armor.
 
 ### Projectiles
 
@@ -214,11 +173,9 @@ Several new material tiers are planned:
 
 * Way to upgrade small tools by granting them a non-combat ability on pressing right click
 
-### Fluid Effect Rework
+**Backstep**
 
-* Add a fluid effect that breaks blocks, add it to several key fluids for ranged mining.
-* Likely want to use said effect for water breaking plants too.
-* Redesign fluid effects other fluids to be more logical and cohesive.
+* Recreation of the rapier right click move from 1.12.
 
 ## Worldgen
 
@@ -232,3 +189,23 @@ Several new material tiers are planned:
 ### Teantium Ore
 
 New end exclusive ore used in the soul forge. See the [Soul Forge](soul-forge#teantium-ore) for more information.
+
+## API
+
+### Global tool definitions
+
+We want to add a system to allow addons to modify existing tool definitions using the [tool module](/docs/json/tool-definitions#tool-modules) system. This would allow adding any merging behavior from tool defintions to either a specific tool or a tool tag, such as a new trait or a new tool action.
+
+It may be worth making tool definitions directly have merging behavior. This might be redundant to the global tool defintions, so the better of the two designs may be better alone.
+
+### Modifier JSON merging
+
+We want a system in place that will allow addons to add new behavior to existing JSON modifiers. This would work similarly to the existing modifier module system, simply adding additional modules that will get merged in later.
+
+### Recipe Controlled Tool Parts
+
+We are considering moving the definition of tool parts to the tool recipe JSON. This would allow better control over part swapping behavior, along with allowing multiple recipes for a single tool and addons adding recipes for an existing tools without overriding resources.
+
+### Migrate Away From Tool Loot Hook
+
+We keep reconsidering whether the tool loot hook is worth having compared to modifiers just directly adding global loot modifiers.
