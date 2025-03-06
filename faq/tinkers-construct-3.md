@@ -102,12 +102,6 @@ Also, because people keep assuming things we never said, the foundry does not ha
 
 Tool leveling was added by an addon, it was never part of the base mod. The mod is not updated to 1.16+, as its main developer is no longer active. The current Tinkers' Construct team has no plans to update the mod, but we expect another author will update it in the near future. If you are interested in the idea, a couple of our developers have ideas for tool leveling we are willing to discuss [on our Discord](https://discord.gg/njGrvuh)
 
-## Where did shovels go?
-
-Shovels were replaced by the pickadze and the mattock, both of which can break dirt blocks but have an extra feature on top. Since the mattock was in the mod as effectively a stronger shovel, the shovel felt out of place. Rather than making up some arbitrary ability to justify shovels, we opted to remove the shovel in favor of shovel alternatives. If you really want a tool that looks like a big spoon, consider the excavator.
-
-No, we do not need to have shovels just because vanilla does, we can make our own design choices. And no, this is not up for debate. Dislike that there are no shovels? Write an addon that adds shovels [like we did](/projects/#tinkers-things) (to show how addons are done).
-
 ## Why did you ruin slime boots?
 
 Slime boots are not ruined. Firstly, while at first glance it may appear they are gated behind the end, you can get the bouncy modifier for your plate or travelers boots as early as the nether. Secondly, while the boot physics are a bit different than before, the primary reason for the change was to prevent bugs with infinite momentum that existed both on 1.12 and with new 1.16 features such as dolphins grace.
@@ -116,17 +110,14 @@ Slime boots are not ruined. Firstly, while at first glance it may appear they ar
 
 As of 1.18.2, datapacks have a lot more control over structures. You can find our placement settings for islands in the mod JAR, and copy them into a datapack to replace our settings. __To disable, make the structures array empty__. See [The Minecraft Wiki](https://minecraft.wiki/w/Structure_set) for more info, such as how to make them more or less common.
 
-Yes, we know there are still config options for geodes, that is because geodes are features while islands are structures. Its incredibly difficult to add config for a structure outside of datapacks, and its impossible to add config for a feature through datapacks and remain compatible with other mods. 
-
 ## What mods are compatible with Tinkers?
 
-Any mods using the Forge system for fluid pipes will automatically work with the smeltery, foundry, tanks, faucets, and channels. In addition, any mod that adds a common ore (copper, tin, lead, aluminum, etc.) will get melting and casting compatibility for the ore, and some of those will also get tools. These days the question is really not hat mods are compatible but what mods are not compatible, as Forge lets most mods work together rather seamlessly. 
+Any mods using the Forge system for fluid pipes will automatically work with the smeltery, foundry, tanks, faucets, and channels. In addition, any mod that adds a common ore (copper, tin, lead, aluminum, etc.) will get melting and casting compatibility for the ore, and some of those will also get tools. These days the question is really not what mods are compatible but what mods are not compatible, as Forge lets most mods work together rather seamlessly. 
 
 Tinkers specifically has special recipe compatibility for mods such as Ceramics, Immersive Engineering, and Create. In addition, mods such as Thermal Foundation, Immersive Engineering, and MineColonies have special compatibility for Tinkers.
 
-Note that while we add materials for some common ores, you do not need to install a mod to get the ores for the full experience. Tinkers is designed to work with what ores you have, rather than including a bunch of ores that just exist for tools and end up cluttering your inventory. If you don't care about clutter and just want the ores, literally any mod that just adds ores will work, for instance Thermal Foundation.
+## What mods do I need to get all the materials?
 
+While it is true we have compatibility materials for common ores, *none of them are required to play the mod*. We designed Tinkers' without the compatibility materials, and just added them after the fact to fill space from other mods adding ores that are not usable in tools. More ores simply to give you more materials is just clutter; add other mods if you want to play that mod, not to get 1 more material option. If despite our recommendation you still want the materials, any mod that just adds more ores will get them for you; consider Thermal Foundation as an option.
 
-## Why do fluids have no physics?
-
-For to the fluid changes Mojang made in 1.13+, we cannot add liquid physics to our blocks without declaring them 100% equivalent to water or lava, which both breaks other mods and causes some undesired behaviors to be added. As a result, we were waiting on Forge to add proper fluid support. Forge added this support in 1.19.2.
+Instead of pursuing getting every single compatibility material, instead consider installing addons that give you more material options from mods you already have installed. Alternatively, consider [designing your own material](/docs/guides/material) based on something already in your pack; you can pull traits from the disabled materials to make material design easier.

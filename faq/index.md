@@ -15,7 +15,8 @@ Because it needs to be said to our discord users for some reason, **this FAQ is 
 This FAQ page covers general questions about our mods. If you have a mod specific question that is not answered here, its possible you will find it on the following FAQ pages:
 
 * [**Tinkers' Construct 2**](tinkers-construct-2): Tinkers' Construct between 1.8 and 1.12.
-* [**Tinkers' Construct 3**](tinkers-construct-3): Tinkers' Construct since 1.16.
+* [**Tinkers' Construct 3**](tinkers-construct-3): Tinkers' Construct since 1.16
+* [**Common Suggestions**](common-suggestions): Frequently made suggestions for our mods.
 
 ## What versions of Minecraft do you support?
 
@@ -40,13 +41,13 @@ While we do not have time to make such ports, there are several ports and altern
 
 If its a future version, we are already aware that version exists and are considering the porting in the future, see the above FAQ entry. If Tinkers' Construct skipped a Minecraft version, we have no plans to backport to it, so don't ask. We additionally have no plans to backport features from newer versions of Tinkers' Construct to older versions.
 
-Note for 1.16.4 and 1.18.1 specifically, we require features from some of the latest Forge builds, which are only on newer minor versions. There is no reason you should still be on the earlier version as most mods have ported by this time. If you wish to still use 1.18.1 specifically, we have builds there, just accept that there are bugs. For 1.17, we opted to skip to 1.18 as we would rather not port the mod to 1.17 then immediately abandon it leaving users with potential bugs, we do not have time to maintain the mod for 3 versions (even 2 is a lot).
-
 ## Can I port Tinkers' Construct to X?
 
-We do not give permission to port Tinkers' Construct to any other Minecraft edition on Minecraft Java for Forge or NeoForge as long as the mod is still actively being developed. Actively being developed can be loosely defined as any activity on the mod's GitHub or Discord by the authors, including just commenting on GitHub issues. If in doubt, feel free to reach out on discord. The reason for this blanket "no permission" statement is if the mod is not currently ported, that means we have a reason it is not ported. This is often related to wanting to stabilize older versions before moving onto newer versions, along with time constraints. You are free to reach out to ask how you can help with the port, but we are not interested in people making their own forks that are not under the official project. We currently are undecided on how we will handle the Forge and NeoForge split on 1.20.1+; once we decide we may add Forge post 1.20.1 to the list of platforms we do not support that others may fork into.
+We do not give permission to port Tinkers' Construct to any future Minecraft edition on Minecraft Java for Forge or NeoForge as long as the mod is still actively being developed. Actively being developed can be loosely defined as any activity on the mod's GitHub or Discord by the authors, including just commenting on GitHub issues. If in doubt, feel free to reach out on discord. The reason for this blanket "no permission" statement is if the mod is not currently ported, that means we have a reason it is not ported. This is often related to wanting to stabilize older versions before moving onto newer versions, along with time constraints. You are free to reach out to ask how you can help with the port, but we are not interested in people making their own forks that are not under the official project. We currently are undecided on how we will handle the Forge and NeoForge split on 1.20.1+; once we decide we may add Forge post 1.20.1 to the list of platforms we do not support that others may fork into.
 
-You are free to fork the mod if you wish to port to a platform we do not support, such as Fabric, Bedrock, or alike. If you do so however, we require you to name the project something other than "Tinkers' Construct" to prevent confusion for the end users expecting it to be the same project. Existing projects with the name "Tinkers' Construct" that are not made by SlimeKnights received permission before this policy was made or otherwise have an exception due to personally knowing one of the devs. You may reuse code and assets from Tinkers' Construct to make such a fork happen, as those are under the MIT license. Additionally, if you have a public release or a code repository with significant progress, feel free to post about it on [our discord](https://discord.gg/njGrvuh) and I will add it to the spreadsheet.
+You are free to fork the mod if you wish to port to a platform we do not support, such as Fabric, Bedrock, or alike. Additionally, you are free to port to or fork an existing version for an older version we no longer support. If you do so however, we require you to name the project something other than "Tinkers' Construct" to prevent confusion for the end users expecting it to be the same project. The Bedrock Edition by Feed the Beast is an exception to this policy due to explicate permission from the devs.
+
+You may reuse code and assets from Tinkers' Construct to make such a fork happen, as those are under the MIT license. Additionally, if you have a public release or a code repository with significant progress, feel free to post about it on [our discord](https://discord.gg/njGrvuh) and I will add it to the spreadsheet.
 
 ## Where are the builds? I cannot find them on CurseForge!
 
@@ -61,17 +62,24 @@ If the bug still happens in an up to date pack, you can try searching [our issue
 If you are certain it is a bug in the latest version and it is not already reported it, you can create a new issue on [our issue tracker](/SlimeKnights/TinkersConstruct/issues).
 
 ## I have a suggestion, can I share it?
+<div class="hatnote" markdown=1>
+See also: [Common Suggestions](common-suggestions).
+</div>
 
-If you want to make a suggestion, the preferred place to do so is [our discord](https://discord.gg/njGrvuh). Note that we expect suggestions to be thought out. Do not tell us to add your random idea, tell us exactly what you want us to add and why you think it belongs in the mod. A good rule of thumb is new features should have 3 distinct uses.
+If you want to make a suggestion, the preferred place to do so is [our discord](https://discord.gg/njGrvuh). Note that we expect suggestions to be thought out. As an outline, you want to tell us:
 
-Posting your suggestion does not mean we will accept it, and in many cases we will critique your idea, so do not make suggestions if you are not open to criticism. Remember that you are asking us to take time out of our plans to work on your idea, coming up with a well thought out suggestion will make us a lot more likely to consider it. Also remember that suggestions can be a good source of addons, you could always learn to create mods by trying to create your idea.
+* What you want us to add in details. Don't just say its name; tell us what it does and how its obtained.
+* If you are suggesting a new feature, that feature should have multiple uses. Try and come up with 3 usecases for the idea.
+* If a similar feature exists in the mod (for instance, you are suggesting a new weapon or material), make sure to tell us both why you would use your new idea over the similar feature, and why you would use the similar feature over your idea.
+
+Posting your suggestion does not mean we will accept it, and in many cases we will critique your idea, so do not make suggestions if you are not open to criticism. Remember that you are asking us to take time out of our plans to work on your idea; coming up with a well thought out suggestion will make us a lot more likely to consider it. Also remember that suggestions can be a good source of addons, you could always learn to create mods by trying to create your idea.
 
 ## Will you add support for X to your mod?
 
 When it comes to mod support, it typically must meet one of three criteria to be added:
 
-* Support that works for many mods is preferred over support for a specific mod. For example, adding support for melting tin or alloying bronze supports several mods adding those ores and alloys, but support for knightmetal only helps Twilight Forest.
-    * One exception is trivial support, for example support that only requires a couple JSON files and has no balance considerations.
+* Support that works for many mods is preferred over support for a specific mod. For example, adding support for melting tin or alloying bronze supports several mods adding those ores and alloys, but support for Refined Glowstone only helps Mekanism.
+    * An exception is trivial support, for example support that only requires a couple JSON files and not direct API access. This is why Refined Glowstone has melting and casting, but no tool material.
 * If I personally play a mod, I am a lot more likely to add support than if I never use the mod.
 * If someone else pull requests support, it will typically be added as long as it does not require significant maintenance. Please talk to the devs before making the pull request to prevent wasted work.
 

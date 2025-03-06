@@ -13,8 +13,9 @@ See also the [missing features spreadsheet](https://docs.google.com/spreadsheets
 
 ## Tools
 
-* **Longswords**: Was not distinct enough from broadswords to justify another melee weapon. Leap ability has been turned into a modifier that can be added to swords or other tools.
+* **Longswords**: Was not distinct enough from broadswords to justify another melee weapon. Leap ability has been turned into the springing modifier that can be added to swords or other tools.
 * **Rapier**: Original design was completely OP in PvP and rather niche in PvE. Was replaced by the dagger (for high speed weapon) and the vein hammer/piercing modifier (for high piercing weapon in a more balanced way).
+* **Frypan**: Was not distinct enough from broadswords to justify another melee weapon. Excavators have replaced frypans as the high knockback weapon, and the special attack is an ability called bonking.
 * **Slime Boots**: Replaced with the bouncy modifier, which starts on the slime suit Slimeboots. Yeah, its the same name, but its significantly changed mechanically.
 * **Slime Slings**: Replaced with a set of modifiers that can be applied to any tool. Recommended to use a slime staff as the base.
 
