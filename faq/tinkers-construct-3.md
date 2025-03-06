@@ -57,6 +57,15 @@ First, refer back to [How do I craft X?](#how-do-i-craft-x) and actually use JEI
 
 Unlike in 1.12 where reinforced V would make a tool unbreakable, in 1.16+ unbreakable is a modifier that requires netherite, reinforced V, and an ability slot to apply. Check JEI for the recipe, and for other recipes that increase upgrade slots so you can reach the 7 upgrade slots needed for reinforced V and netherite.
 
+### What is the best tool?
+<div class="hatnote" markdown=1>
+See also: our [longer guide](../best-tool) on how to create a good tool.
+</div>
+
+To start, it is important to emphasize the fact that Tinkers' Construct by design does not have best tools. We give you a ton of options with different advantages and disadvantages to build tools, and it is up to you to choose which options are the best for you and your goal. Ultimately, its best instead of aiming for the best tool to just try and make a good tool; you can always improve it later to make a better tool. Also, do not be afraid to make mistakes; overall its pretty hard to make a bad tool unintentionally, so just about any design you make should be good.
+
+If you are not interested in exploring these options, you are honestly better off playing a different mod. The whole point of Tinkers' Construct is for you to build tools; why install a tool building mod if you are not interested in building them? If you are willing to explore the mod, we have a [longer guide](../best-tool) you can follow.
+
 
 ## Mod progression
 
