@@ -1,7 +1,7 @@
 ---
 layout: page
 title: What's New?
-description: This page is a summary of the changes in Tinkers' Construct 3 for 1.16+, as compared to Tinkers' Construct 2 from 1.8 through 1.12.
+description: This page is a summary of the changes in Tinkers' Construct 3 for 1.16+, as compared to Tinkers' Construct 2 (from 1.8 through 1.12).
 ---
 <div class="hatnote" markdown=1>
 This page is a summary of all changes since Tinkers' Construct 2. For specific build by build changes, see [the release notes](https://github.com/SlimeKnights/TinkersConstruct/releases). For future plans, see [Roadmap](../roadmap). For features removed in Tinkers' Construct 3, see [Removed Features](../removed).
@@ -18,8 +18,8 @@ This page is a summary of all changes since Tinkers' Construct 2. For specific b
 * Copper ore has been reintegrated into Tinkers' Construct
     * In 1.16, Tinkers' Construct added this ore alongside cobalt.
     * For 1.18+, Tinkers' Construct uses the new vanilla ore.
-* Cobalt returns with more uses
-    * Instead of 
+* Cobalt ore returns to the nether, but with more uses
+    * Instead of simply alloying manyullyn, it now has uses in at least 3 different alloys, plus non-alloy uses in armor.
 * Ardite ore replaced with Ancient Debris
     * Manyullyn is now made from alloying cobalt with ancient debris, making the rare vanilla ore useful for more than netherite.
     * Future plans for the end dimension will likely use of ardite.
@@ -40,6 +40,7 @@ Slime islands got reworked:
 * Slimy trees now grow slimewood.
     * Replaces previous behavior of growing congealed slime.
     * Slimewood is useful as a tool material, notably creating slimestaffs.
+    * Slimewood can also make all standard wood blocks and items, but in vibrant hues.
     * Slimeballs can still be obtained "like apples" from leaves.
 * New earthslime islands!
     * Spawn in the overworld oceans.
@@ -292,6 +293,7 @@ Other notable changes to modifiers:
 * Seared stone is no longer craftable by melting down cobblestone, but can be crafted by casting clay on stone. This was done to make it a bit more expensive to be usable as a tool material.
 * Smeltery controller now requires casting molten copper on seared bricks, can be obtained using a melter.
 * Seared drains now require copper in the recipe.
+* New and improved smeltery UI, with many new interactions for transferring fluid between items and the smeltery UI.
 
 ### Early game and automation
 
@@ -335,9 +337,10 @@ Other notable changes to modifiers:
 
 #### Melting improvements
 
-* Separated time from temperature
+* Separated time and melting rate from temperature
     * Temperature requirement remains consistent across a material, meaning if a fuel can melt nuggets it can melt ingots or blocks.
     * Time varies based on fluid volume produced plus some other factors such as ores vs. ingots.
+    * Rate determines how quickly time passes for a recipe.
 * Multiple fuel options
     * The melter can use a heater for solid fuels, producing a low temperature and rate.
     * Lava returns as the standard fuel, with 1000 C and 1.0x speed.
