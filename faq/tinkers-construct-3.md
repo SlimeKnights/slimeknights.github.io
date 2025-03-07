@@ -66,6 +66,16 @@ To start, it is important to emphasize the fact that Tinkers' Construct by desig
 
 If you are not interested in exploring these options, you are honestly better off playing a different mod. The whole point of Tinkers' Construct is for you to build tools; why install a tool building mod if you are not interested in building them? If you are willing to explore the mod, we have a [longer guide](../best-tool) you can follow.
 
+### What do staffs do?
+
+Staffs are essentially a blank slate to apply interaction ability modifiers. Useful modifiers for staffs typically falls into one of three categories:
+
+* **Ranged/projectile** - these modifiers make use of the staffs ranged stats, which can be upgraded with power and quick charge. Examples include spitting, flinging, springing, bonking, and warping.
+* **Defense/passive boosts** - these modifiers provide either active or passive defense. Includes protection modifiers and blocking.
+* **Close range** - these modifiers apply directly to an adjacent block, and often become AOE when applied with expanded. Examples include splashing, tilling, firestarter, and bucketing.
+
+Each of the different slimestaff variants is best suited to different builds. In addition, the melting pan (ancient tool) is considered a staff and can use most staff modifiers.
+
 
 ## Mod progression
 
@@ -85,15 +95,15 @@ Cobalt ore is found in the nether at lower elevations. You need a tool with a mi
 
 ### How to I craft manyullyn or other nether alloys?
 
-In order to craft manyullyn, you need to alloy cobalt with molten debris. Melting ancient debris and alloying manyullyn, hepatizon, or queens slime requires use of a hotter fuel such as molten blaze in place of lava. For best results, either create a second smeltery or remove all lava from the smeltery.
+In order to craft manyullyn, you need to alloy cobalt with molten debris. Melting ancient debris and alloying manyullyn, hepatizon, or queens slime requires use of a hotter fuel such as blazing blood in place of lava. For best results, either create a second smeltery or remove all lava from the smeltery.
 
-### How do I get molten blaze?
+### How do I get blazing blood?
 
-There are three ways to get molten blaze:
+There are three ways to get blazing blood:
 
 * Melt a blaze in a smeltery or foundry. You can do this either by carrying the blaze with tools such as the piggybackpack, or by building a smeltery or foundry under a spawner. Note you cannot have the spawner in the smeltery, it must be outside the structure.
-* Apply the melting modifier to a tool using the recipe shown below, then use it to attack blazes. This will cause the tool to fill with molten blaze, which can then be used on a seared tank or a smeltery drain to empty it.
-* When bartering with piglins, they have a chance to offer a scorched lantern filled with molten blaze. This lantern can be emptied into any regular tanks
+* Apply the melting modifier to a tool using the recipe shown below, then use it to attack blazes. This will cause the tool to fill with blazing blood, which can then be used on a seared tank or a smeltery drain to empty it.
+* When bartering with piglins, they have a chance to offer a scorched lantern filled with blazing blood. This lantern can be emptied into any regular tanks
 
 ![Melting modifier](/assets/images/docs/melting.png)
 
