@@ -13,11 +13,22 @@ See also the [missing features spreadsheet](https://docs.google.com/spreadsheets
 
 ## Tools
 
+### Weapons
+
+* **Battleaxe**, **Lumber Axe**: were merged into the broad axe.
+* **Cutlass**: does anyone actually know what the cutlass did?
 * **Longswords**: Was not distinct enough from broadswords to justify another melee weapon. Leap ability has been turned into the springing modifier that can be added to swords or other tools.
 * **Rapier**: Original design was completely OP in PvP and rather niche in PvE. Was replaced by the dagger (for high speed weapon) and the vein hammer/piercing modifier (for high piercing weapon in a more balanced way).
 * **Frypan**: Was not distinct enough from broadswords to justify another melee weapon. Excavators have replaced frypans as the high knockback weapon, and the special attack is an ability called bonking.
+
+### Equipment
+
+* **Chisel**: replaced by the vanilla stonecutter.
 * **Slime Boots**: Replaced with the bouncy modifier, which starts on the slime suit Slimeboots. Yeah, its the same name, but its significantly changed mechanically.
 * **Slime Slings**: Replaced with a set of modifiers that can be applied to any tool. Recommended to use a slime staff as the base.
+* **Glove**: Replaced by haste chestplate modifier.
+* **Heart Container**: Replaced by revitalized armor modifier.
+* **Tool Belt**: Replaced by a pants modifier.
 
 ### Moved to Tinkers' Things
 
@@ -25,6 +36,7 @@ The following tools were moved to the official addon [Tinkers' Things](/projects
 
 * **Shovels**: Just a weaker form of a mattock.
 * **Shortbows**: Not very distinct from longbows, and crossbows made a more unique early game bow.
+* **Knapsack**: Now works as a bag item in the inventory instead of a custom equipment item.
 
 ### Projectiles
 
@@ -45,13 +57,64 @@ Projectiles removed as a result:
 * **Bolts**: Was functionally just arrows with an arbitrary restriction and neat crafting which led to a lot of bugs. Replaced with standard arrows.
 * **Shurikens**: Way too easy to make a spammable unlimited weapon that outshined most melee and ranged alternatives. Currently replaced by flint and quartz shurikens for a cheap disaposable ammo, though future plans may bring new alternatives.
 
+### Ores
+
+* **Ardite**: was replaced by ancient debris in the nether. We have plans to bring back ardite later as an end ore.
+* **Aluminum**, **Tin**: replaced by automatic compatability for other mods adding those ores.
+
+### Materials
+
+**Planned return**
+
+* **Knightslime**: no longer exists as a overworld alloy since purple enderslime is now in the end. It will be brought back in the future as a late game alloy.
+
+**Replaced**
+
+* *Colored Slime*: replaced by slimewood, slimesteel, and alike. We wanted to provide unique materials for each slime type rather than simply recoloring a material mixed from slime and dirt.
+* **Netherrack**: overall felt too cheap for a good material. Was replaced with blackstone and basalt.
+* **Obsidian**: replaced with nahuatl. We wanted more variety in how melter materials were crafted.
+* **Paper**: replaced with rose gold. We wanted to make the material cost a bit more for such a strong trait.
+* **Tinkers' Bronze**: replaced with amethyst bronze. Overall the goal was a tier 3 harvest material that doesn't require other mods.
+
+**Moved to modifier**
+
+* **Cactus**: felt better as a modifier, especially with how it mostly made sense only on shields and armor.
+* **Firewood**: felt better as a modifier, autosmelt. In general in modern Tinkers we expect material traits to have multiple levels.
+* **Prismarine**: felt better as the hydraulic modifier.
+
+**Removed**
+
+* **Alumite**: was replaced by amethyst bronze. Does not make sense to provide an aluminum alloy when we don't have aluminum.
+* **Sponge**: felt too rare to make a good material; gave it a use in removing modifiers instead.
+
+
+### Modifiers
+
+**Planned return**
+
+* **Blasting** (1.12): we want to add a similar feature as a tool trait as part of an end material.
+
+**Replaced**
+
+* **Fortified**: replaced by diamond, emerald, and netherite raising mining levels. New vanilla mechanics mean lowering mining levels is hard.
+* **Height++**, **Width++**: Replaced by expanded, which works on more AOE types than rectangles.
+* **Shulking**: Replace by spilling modifier, using ichor as the fluid.
+* **Webbed**: Renamed to sticky.
+
+**Removed**
+
+* **Embossment**: planned to be replaced with a mechanic called the [Soul Forge](../roadmap#soul-forge).
+* **Flux Modifier**: too many standards exist for RF, making it hard to balance. We will leave energy based modifiers up to addons.
+* **Moss**, **Mending Moss**: Planned to be replaced by a new overslime feature.
+
+
 ## Tinker Tanks
 
 * Original purpose was to prevent alloying in mass fluid storage.
 * Smelteries now have the option to disable alloying by removing the fuel.
 * Foundries also don't alloy, and have a high capacity.
 
-## Slimes
+## Slime
 
 ### Blood
 
@@ -66,9 +129,15 @@ Projectiles removed as a result:
 * In most recipes, opted to have no fallback and make each slime variant unique.
 * When a fallback is needed, opted to use green "earthslime" since that form is less used in the mod.
 
-## Miscellaneous
+## Gadgets
 
 * **Wooden Hoppers**: I (KnightMiner) never much cared for wooden hoppers, plus many better wooden hoppers exist elsewhere.
 * **Drying Racks**: Too functionally similar to vanilla's new campfires. Additionally, was majorly underutilized in the base mod, just producing decorative blocks and a copy of all vanilla meats.
 * **Stone Ladders** and **Stone Torches**: Just felt out of place in a tool mod.
 * **Brownstone**: Too functionally similar to vanilla's soulspeed mechanic.
+* **Consecrated Soil**: Felt out of place in Tinkers', effectively replaced by punji sticks.
+
+## Miscellaneous
+
+* Gravel ores: Moved to [standalone mod](/projects#simple-gravel-ores).
+* Oreberry bushes: Felt these were imbalanced, left to other mods to implement.
