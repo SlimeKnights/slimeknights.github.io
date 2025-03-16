@@ -64,7 +64,7 @@ Notable resource pack contents include languages, textures, and block and item m
 See also: [Minecraft Wiki on Data Packs](https://minecraft.wiki/w/Data_pack)
 </div>
 
-Data packs are used to add and modify server resources under the `data` directory. They are typically loaded from `.minecraft/saves/<world>/datapacks` and are per world, however many global data pack loader mods exist to load a pack for all new worlds.
+Data packs are used to add and modify server resources under the `data` directory. They are typically loaded from `.minecraft/saves/<world>/datapacks` and are per world, however many global data pack loader mods exist to load a pack for all new worlds. You can also globally load a data pack by packaging it as a [low code mod](/docs/guides/lowcode-mod).
 
 Since data packs contain server resources, they can control gameplay but are unable to directly interact with certain visual elements such as textures or translations. When a client joins a server, any relevant data pack contents are automatically synced to the client.
 
@@ -87,7 +87,7 @@ Examples of features that can be added through thing packs are blocks, items, fl
 
 Mod `.jar` files will automatically be loaded as both a [resource pack](#resource-packs) (through their `assets` folder) and a [data pack](#data-packs) (through their `data` folder). This means that you can identify the resources of either type provided by any mod simply by opening the jar (which can be done through programs such as 7Zip or by renaming it to a `.zip` file). Mod jars are typically placed under `.minecraft/mods`.
 
-If Json Things is installed, each mod also has the ability to add [thing pack](#thing-packs) contents to the jar. Typically there is no reason to do this in Java mods; however, low code mods can use this to create full mods without writing any Java code.
+If Json Things is installed, each mod also has the ability to add [thing pack](#thing-packs) contents to the jar. Typically there is no reason to do this in Java mods; however, [low code mod](/docs/guides/lowcode-mod) can use this to create full mods without writing any Java code.
 
 ### Overriding resources
 
