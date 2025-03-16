@@ -16,13 +16,9 @@ See also: [Design Documents](../design) - may contain details on future plans th
 
 ## Next Actions
 
-<div class="hatnote" markdown=1>
-See also [#5281](https://github.com/SlimeKnights/TinkersConstruct/issues/5281).
-</div>
-
 1.20.1 is in public Beta. We plan to continue adding features from the roadmap for the next couple of updates, then decide whether to add larger features or focus on another port.
 
-1.19.2 and 1.18.2 are both considered stable. Additional releases are possible but are unlikely. Anything before 1.18.2 has no releases planned.
+1.19.2 and 1.18.2 are both considered stable. We plan at least 1 more release for each version, but its to be determined how many bug fixes make it to each which are not already coded.
 
 ## Multiblock
 
@@ -33,15 +29,18 @@ See also [#5281](https://github.com/SlimeKnights/TinkersConstruct/issues/5281).
 
 ### Casting Tank
 
-* Crafted from slimesteel or copper perhaps.
-* This tank has a slot that accepts an item via automation such as hoppers.
-* Tank will immediately fill/empty the item if possible, or wait to empty if the tank is full/unable to accept the fluid.
-* After interacting with the item, its moved to the "output slot" so it won't interact again. Automation can then extract it and insert a new item.
+* Crafted from copper and seared stone.
+* Has two item slots, an input and an output. Can insert into the input and extract from the output via automation such as hoppers.
+* Can only insert items if the output slot and input slots are both empty.
+* When inserting, will attempt to transfer fluid between the tank and the item. 
+    * If successful, the resulting item is placed in the output slot.
+    * If unsuccessful, the original item is placed in the input slot.
+    * Upon any change to the fluid contents, the transfer is tried again.
 * Useful to automatically fill or empty buckets/copper cans.
 
 ### Tinker Tank
 
-* Crafted from cinderslime.
+* Crafted from gold and scorched stone.
 * Tank has a single slot that can hold an item with a fluid handler.
 * Any interactions to the tank will interact with the item's fluid handler, essentially proxying it.
 * Useful to automatically fill or empty variable sized tanks or tools.
@@ -86,7 +85,7 @@ The soul forge is a planned multiblock for late game tool, modifier, and materia
 * Has 3 variants:
   * Overworld: crafted from copper + seared stone. Power 1.
   * Nether: crafted from cobalt + scorched stone. Power 2.
-  * End: crafted from knightmetal + slimestone. Power 4.
+  * End: crafted from ardite and shaluth, and from slimestone and soulstone. One has high power, the other high range and accuracy.
 
 ## Tools
 
