@@ -130,7 +130,7 @@ See also: [Json Things Support](/docs/json/json-things)
 * [Blocks](https://github.com/gigaherz/JsonThings/blob/master/documentation/formats/Blocks.md): While not required, its often desired to add a decorative storage block for your material's item form.
 * [Fluids](https://github.com/gigaherz/JsonThings/blob/master/documentation/formats/Fluids.md): If you wish to create your material using casting or compositing, a new fluid is required.
 * [Creative Tabs](https://github.com/gigaherz/JsonThings/blob/master/documentation/formats/CreativeModeTabs.md): If your addon or modpack adds a large number of items, you may wish to add your own creative tab. IF you only add a small number of items, you can always add your items to Tinkers' Construct or vanilla creative tabs. Items must be in a tab to show up in JEI.
-* [Item Tiers](https://github.com/gigaherz/JsonThings/blob/master/documentation/formats/ItemTiers.md): If you wish to give your material a custom {% include type.html type="mining tier" %}, you will need to define an item tier. Most of the properties will be unused by Tinkers', apart from `sort_after`, `sort_before`, and `tag`. In most cases its better to use one of the existing tiers.
+* [Item Tiers](https://github.com/gigaherz/JsonThings/blob/master/documentation/formats/ItemTiers.md): If you wish to give your material a custom {% include type.html type="mining tier" %}, you will need to define an item tier. Most of the properties will be unused by Tinkers', apart from `sort_after`, `sort_before`, and `tag`. In most cases its better to use one of the existing tiers. See [Custom Tiers](/docs/json/tool-stats#custom-tiers) for more information on the parts of that format used by Tinkers' Construct.
 
 **Examples:**
 

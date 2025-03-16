@@ -85,3 +85,25 @@ The mining tier stat supports any value from Forge's tier sorting registry, whic
 * *For a full list of tiers and their pack defined order, use the [`/mantle harvest_tiers`](/docs/commands/mantle#harvest-tiers) command.*
 
 If a tool has multiple mining tier stats, the greater mining tier is chosen, as determined by Forge's tier sorting registry.
+
+### Custom Tiers
+
+It is not possible with purely data packs to add new harvest tiers. One option is to repurpose an unused harvest tier for your design; if you install any mods that add new non-Tinkers tools, odds are they give you a new harvest tier to use. The [`/mantle harvest_tiers`](/docs/commands/mantle#harvest-tiers) command will list them; any that specify a tag can be repurposed provided you do not care about any vanilla style tools using it.
+
+A more flexible approach is to take advantage of [Thing Packs](../resource-location#thing-packs) to add new [Item Tiers](https://github.com/gigaherz/JsonThings/blob/master/documentation/formats/ItemTiers.md), which can then be used in Tinkers. To accomplish this, place a JSON under `things/<domain>/item_tier/<name>.json` for the harvest tier `<domain>:<name>`. This JSON has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The item tier JSON.
+    * {% include field.html type="block tag" name="tag" %} Tag listing blocks that this new tier can mine.
+    * {% include field.html type="list" name="sort_after" %} List of harvest tiers considered lower than this new tier. e.g. iron could specify `minecraft:stone`.
+        * {% include field.html type="harvest tier" %} A harvest tier considered lower than this new tier.
+    * {% include field.html type="list" name="sort_before" %} List of harvest tiers considered higher than this new tier. e.g. iron could specify `minecraft:diamond`.
+    * *The following fields are required for the item tier to be valid, but are ignored by Tinkers' Construct.*
+    * {% include field.html type="integer" name="uses" %} Must be greater than 0.
+    * {% include field.html type="float" name="speed" %} Must be greater than 0.
+    * {% include field.html type="float" name="attack_damage_bonus" %} Must be greater than or equal to 0.
+    * {% include field.html type="integer" name="enchantment_value" %} Must be greater than or equal to 0.
+    * {% include field.html type="ingredient" name="repair_ingredient" %} Must be a valid ingredient.
+</div>
+
+For an example custom item tier, see [Tinkers' Things](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/things/tinkers_things/item_tier/hematite.json).
