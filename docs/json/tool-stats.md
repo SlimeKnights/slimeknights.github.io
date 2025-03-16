@@ -94,10 +94,11 @@ A more flexible approach is to take advantage of [Thing Packs](../resource-locat
 
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} The item tier JSON.
-    * {% include field.html type="block tag" name="tag" %} Tag listing blocks that this new tier can mine.
+    * {% include field.html type="Block Tag" name="tag" %} Tag listing blocks that this new tier can mine.
     * {% include field.html type="list" name="sort_after" %} List of harvest tiers considered lower than this new tier. e.g. iron could specify `minecraft:stone`.
         * {% include field.html type="harvest tier" %} A harvest tier considered lower than this new tier.
     * {% include field.html type="list" name="sort_before" %} List of harvest tiers considered higher than this new tier. e.g. iron could specify `minecraft:diamond`.
+        * {% include field.html type="harvest tier" %} A harvest tier considered higher than this new tier.
     * *The following fields are required for the item tier to be valid, but are ignored by Tinkers' Construct.*
     * {% include field.html type="integer" name="uses" %} Must be greater than 0.
     * {% include field.html type="float" name="speed" %} Must be greater than 0.
