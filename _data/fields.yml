@@ -54,7 +54,7 @@ null:
 resource location:
   name: Resource Location
   icon: nbt-string
-  link: /docs/json/basic-types#resource-location
+  link: /docs/json/resource-location#format
 
 item stack:
   name: Item Stack
@@ -262,7 +262,7 @@ slot type:
 pattern:
   name: Pattern
   icon: nbt-string
-  link: /docs/json/basic-types#pattern
+  link: /docs/json/resource-location#pattern
 
 
 # Utility

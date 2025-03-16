@@ -41,7 +41,7 @@ The following commands simply post images of memes relevant to common discord co
 
 ## Remove Recipe
 
-The remove recipe command demonstrates the syntax and location for removing a recipe using a datapack. 
+The remove recipe command demonstrates the syntax and location for removing a recipe using a datapack. This information is also present at [Removing recipes](/docs/json/resource-location#removing-recipes).
 
 **Syntax:**
 ```

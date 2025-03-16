@@ -124,7 +124,7 @@ For an example fluid tooltip JSON, see [Tinkers' Construct metals](https://githu
 See also: [Json Things Support](/docs/json/json-things)
 </div> 
 
-Json Things is a mod for Minecraft that allows adding new content to the game using JSON placed under `things/<domain>`. This allows adding content types which normally require registration in Java, providing a way to register that content in low code mods and modpacks. While there are [many options](https://github.com/gigaherz/JsonThings/blob/master/documentation/Introduction.md) of things you may register, the following are directly relevant to Tinkers' Construct materials:
+[Json Things](https://www.curseforge.com/minecraft/mc-mods/json-things) is a mod for Minecraft that allows adding new content to the game using JSON placed under `things/<domain>`. This allows adding content types which normally require registration in Java, providing a way to register that content in low code mods and modpacks. While there are [many options](https://github.com/gigaherz/JsonThings/blob/master/documentation/Introduction.md) of things you may register, the following are directly relevant to Tinkers' Construct materials:
 
 * [Items](https://github.com/gigaherz/JsonThings/blob/master/documentation/formats/Items.md): While you can use an existing item, its often desired to create new items for a material, such as ingots or nuggets.
 * [Blocks](https://github.com/gigaherz/JsonThings/blob/master/documentation/formats/Blocks.md): While not required, its often desired to add a decorative storage block for your material's item form.

@@ -36,6 +36,7 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 The following pages cover pages on general JSON formats, which may be used in data packs, resource packs, or thing packs:
 
 * [**Basic Types**](json/basic-types): Common types of fields that occur in various JSON formats.
+* [**Resource Locations**](json/resource-location): Covers the common resource location format, along with how to use it to locate and modify resources in resource packs and data packs.
 * [**Conditions**](json/conditions): Format for JSON condition types added by SlimeKnights mods.
 * [**Ingredients**](json/ingredients): JSON object representing the input to a recipe, which is able to list all matching entries.
 * [**Predicates**](json/predicates): JSON object representing a condition on a part of a JSON component. Unlike ingredients, predicates do not display all matching entries.
