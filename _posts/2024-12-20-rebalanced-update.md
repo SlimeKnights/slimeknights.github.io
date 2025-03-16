@@ -4,7 +4,7 @@ title:  "Tinkers' Construct 3.8.4 for 1.19.2"
 date:   2024-12-20 2:24:00 -0400
 categories: posts
 author: KnightMiner
-update_images: tinkers/3.8.4
+image_root: updates/tinkers/3.8.4
 ---
 
 3.8.4 is the latest release of Tinkers' Construct for 1.19.2. This update is mostly bug fixes and quality of life changes, but it also features a few larger features. This update is notably enough for me to call 1.19.2 fully stable; though it will still receive a few smaller features in the future.
