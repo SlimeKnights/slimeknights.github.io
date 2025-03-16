@@ -11,13 +11,14 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 
 {% include toc.html %}
 
-## General
+## Gameplay
 
-* [**Design Docs**](design): Developer docs used to organize, balance, and plan out content in the mod.
+* [**Tinkers' Construct 2 Overview**](gameplay/tinkers-construct-2): Gives a player focused overview of Tinkers' Construct 2, which is the mod from Minecraft 1.8 to 1.12.
 * [**Online Books**](books): Links to online versions of many books from SlimeKnights mods.
 * [**What's New?**](whats-new): Covers all major changes made to Tinkers' Construct 3 compared to Tinkers' Construct 2.
     * [**Roadmap**](roadmap): Discusses various future plans for our mods, along with current work.
     * [**Removed Features**](removed): Covers features from older versions of Tinkers' Construct that were removed in the latest versions, along with some reasoning or alternatives.
+* [**Design Docs**](design): Developer docs used to organize, balance, and plan out content in the mod.
 
 ## Guides
 
