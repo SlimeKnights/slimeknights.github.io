@@ -107,7 +107,7 @@ There are three ways to get blazing blood:
 
 ![Melting modifier](/assets/images/docs/melting.png)
 
-### How do I get molten blaze out of my smeltery?
+### How do I get blazing blood out of my smeltery?
 
 You can either use a bucket on the drain, or use a faucet to fill either a casting table containing a bucket or a tank.
 
@@ -135,6 +135,8 @@ The following sections cover questions related to addons that are commonly mista
 ### Why won't my tools level up? Can I play tool leveling for Tinkers' Construct 3?
 
 Tool leveling was added by an addon, it was never part of the base mod. The mod is not updated to 1.16+, as its main developer is no longer active. The current Tinkers' Construct team has no plans to update the mod nor add leveling to the base mod. That said, there are several addons that add similar functions on the latest version.
+
+Since 1.16, there are many ways to get more modifier slots, so there is no need for more slots from leveling. Between starting slots, material traits, slotless modifiers, and turning ability slots into upgrades, its possible to get as many as 15 upgrade slots without any addons. Do you really need leveling to add even more than that?
 
 ### What does this addon feature do?
 
