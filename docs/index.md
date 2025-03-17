@@ -13,6 +13,7 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 
 ## Gameplay
 
+* [**Tinkers' Construct 3 Overview**](gameplay/tinkers-construct-3): Gives a player focused overview of Tinkers' Construct 3, which is the mod since Minecraft 1.16.
 * [**Tinkers' Construct 2 Overview**](gameplay/tinkers-construct-2): Gives a player focused overview of Tinkers' Construct 2, which is the mod from Minecraft 1.8 to 1.12.
 * [**Online Books**](books): Links to online versions of many books from SlimeKnights mods.
 * [**What's New?**](whats-new): Covers all major changes made to Tinkers' Construct 3 compared to Tinkers' Construct 2.
