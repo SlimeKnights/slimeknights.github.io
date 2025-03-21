@@ -85,7 +85,7 @@ The dyed texture supplier has the following fields:
 
 ### Material
 
-The material texture suppliers applies both textures and colors based on a material, similarly to [material models](/docs/json/material-models). Textures are loaded from `assets/<prefix domain>/textures/tinker_armor/<prefix name><texture type><suffix>.png` where `<suffix>` is one of:
+The material texture suppliers applies both textures and colors based on a material, similarly to [material models](/docs/json/models/material#tool-parts). Textures are loaded from `assets/<prefix domain>/textures/tinker_armor/<prefix name><texture type><suffix>.png` where `<suffix>` is one of:
 
 * Material: `_<material domain>_<material name>` if a material is present and the material texture exists.
 * Fallback: `_<fallback name>` if a material is present, the material texture does not exist, and the fallback exists. When the fallback is used, its tinted the material's fallback color.
