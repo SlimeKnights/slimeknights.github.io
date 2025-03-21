@@ -1,0 +1,27 @@
+<tr>
+    {% if include.suffix %}
+        <td><code>/{{include.suffix}}</code></td>
+    {% else %}
+        <td>No suffix</td>
+    {% endif %}
+    {% if include.suffix contains "u" %}
+        <td class="connected-match">Matches</td>
+    {% else %}
+        <td class="connected-no-match">No match</td>
+    {% endif %}
+    {% if include.suffix contains "d" %}
+        <td class="connected-match">Matches</td>
+    {% else %}
+        <td class="connected-no-match">No match</td>
+    {% endif %}
+    {% if include.suffix contains "l" %}
+        <td class="connected-match">Matches</td>
+    {% else %}
+        <td class="connected-no-match">No match</td>
+    {% endif %}
+    {% if include.suffix contains "r" %}
+        <td class="connected-match">Matches</td>
+    {% else %}
+        <td class="connected-no-match">No match</td>
+    {% endif %}
+</tr>

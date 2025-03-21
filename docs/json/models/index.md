@@ -24,7 +24,7 @@ The following pages cover custom model formats defined in Mantle:
 * [**Connected**](connected): Model with textures that change if the neighbor is the same block type.
 * [**Retextured**](retextured): Model that dynamically changes it's texture based on it's NBT.
 * [**NBT Key**](nbt-key): Item model that dynamically changes it's texture based on it's NBT.
-* [**Fallback**](fallback): Model loader which can conditionally redirect to a different loader based on whether a mod is loaded.
+* [**Fallback Loader**](fallback): Model loader which can conditionally redirect to a different loader based on whether a mod is loaded.
 
 ## Tinkers' Construct
 

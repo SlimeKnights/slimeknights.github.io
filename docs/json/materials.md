@@ -5,7 +5,7 @@ description: "This page covers the JSON format for defining materials in datapac
 ---
 
 <div class="hatnote" markdown=1>
-This page is about the JSON required to define a material. For the JSON to make the material craftable, see [Material Recipes](../recipes/materials). For the JSON to add textures to the material, see [Material Render Info](../material-render-info).
+This page is about the JSON required to define a material. For the JSON to make the material craftable, see [Material Recipes](../recipes/materials). For the JSON to add textures to the material, see [Material Render Info](../models/material#material-render-info).
 </div>
 <div class="hatnote" markdown=1>
 See also [Stat Types](../stat-types) for the formats for different stat types supported by materials.

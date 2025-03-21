@@ -189,3 +189,15 @@ em {
   margin:auto;
   display: block;
 }
+
+/* Table on connected models page */
+.connected-table {
+    td.connected-match {
+        background-color: LightGreen;
+        color: DarkGreen
+    }
+    td.connected-no-match {
+        background-color: coral;
+        color: maroon
+    }
+}

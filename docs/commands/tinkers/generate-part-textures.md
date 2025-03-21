@@ -58,7 +58,7 @@ Variants of the texture will be located under `assets/<mod_id>/textures/<part_na
 
 ## Materials
 
-The list of materials used for the generator will be filtered from all [material render info](/docs/json/material-render-info) with a `generator` object defined, which defines how the generator command will run for the given material, see that page for the full JSON format.
+The list of materials used for the generator will be filtered from all [material render info](/docs/json/models/material#material-render-info) with a `generator` object defined, which defines how the generator command will run for the given material, see that page for the full JSON format.
 
 Within the material render info, the `texture` determines the output location of the generated material part texture. The `fallbacks` array is used to select a texture to pass into the generator; if no fallback exists the base texture is passed to the generator. `color` and `luminosity` are ignored by the generator.
 

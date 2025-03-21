@@ -63,7 +63,7 @@ Resource packs are used to define all cosmetic appearances of materials, includi
 
 ### Render Info
 <div class="hatnote" markdown=1>
-Main page: [Material Render Info](/docs/json/material-render-info/)
+Main page: [Material Render Info](/docs/json/models/material#material-render-info/)
 </div>
 
 Material render info are located under `assets/<domain>/tinkering/materials/` and define the following:

@@ -230,6 +230,11 @@ material variant: &materialVariant
   icon: nbt-string
   link: /docs/json/materials#variants
 material variant id: *materialVariant
+
+material render info:
+  name: Material Render Info
+  icon: nbt-string
+  link: /docs/json/models/material#material-render-info
     
 modifier: &modifier
   name: Modifier ID

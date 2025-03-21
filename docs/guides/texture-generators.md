@@ -68,7 +68,7 @@ Another option (which notably works before 1.19.2) is to extend the relevant mat
 
 ### Sprite Transformers
 
-By default, Tinkers' Construct provides several sprite transformers. See [material render info](/docs/json/material-render-info#sprite-transformers) for a list of options, or look for classes extending `ISpriteTransformer`.
+By default, Tinkers' Construct provides several sprite transformers. See [material model](/docs/json/models/material#sprite-transformers) for a list of options, or look for classes extending `ISpriteTransformer`.
 
 Additional transformers can be registered by implementing `ISpriteTransformer`, allowing more complex behavior to be described. Ultimately, transformers have access to the full ARGB values of the base sprite, pixel coordinates, and any number of additional sprites you wish to include.
 
