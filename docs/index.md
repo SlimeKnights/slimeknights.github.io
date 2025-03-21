@@ -80,7 +80,6 @@ The following pages cover data pack concepts specific to in Tinkers' Construct:
 #### Tinkers' Construct
 
 * [**Armor Models**](json/armor-models): Documentation for the model format for modifiable armor from Tinkers' Construct.
-* [**Modifier Icons**](json/modifier-icons): Documentation for assigning icons to modifiers (used notably in JEI).
 
 ## Other Documentation
 

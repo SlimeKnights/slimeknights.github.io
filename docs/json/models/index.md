@@ -35,7 +35,7 @@ The following pages cover custom model formats defined in Mantle:
 ### Tools
 
 * [**Material**](material): Model for a material item such as a tool part, dynamically changing the texture based on the material.
-* [**Modifier**](modifier): JSON for defining modifier textures on tool models.
+* [**Modifier**](modifier): JSON for defining modifier textures on tool models and their display in JEI.
 * [**Tool**](tool): Model for a tool, handling tool part materials and modifier display.
 
 ## Data Models
