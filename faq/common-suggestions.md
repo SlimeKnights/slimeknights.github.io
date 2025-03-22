@@ -68,3 +68,14 @@ See also: [Removed Features](/docs/removed#tools) for more specific reasons each
 In total, we removed 4 weapons from older versions: longswords, rapiers, frypans, and shortbows. None of these weapons provided anything other than minor stat changes to their counterparts of the sword/longbow. Since all harvest tools are also weapons, we opted to merge longswords, rapiers, and frypans into existing harvest tools rather than keeping them reskins of the sword. For the shortbow, we turned that into an example ranged weapon in [Tinkers' Things](/projects/#tinkers-things).
 
 Ultimately, Minecraft's combat isn't complex enough to make too many interesting variants of melee weapons or bows beyond those we already provide. Thus, rather than adding reskins of existing melee and ranged weapons with minor stat alterations that you can already recreate with modifiers, we would rather add new and unique weapons that have different attack patterns. See [the Roadmap](/docs/roadmap#ranged) for some potential future ranged weapons.
+
+## Add a paxel
+
+The standard design for paxels is very boring tool design. They have all functionality of other tools, making standard tools like pickaxes and axes useless. Why would we provide an option that makes other features in our mod useless? Especially in a mod all about encouraging you to create more tools.
+
+That said, we do have many, many, balanced paxel alternatives that you should consider:
+
+* Mattocks allow you to mine most shovel and axe blocks. Pairing with a pickaxe lets you mine all relevant "paxel" blocks.
+* Pickadzes allow you to mine any pickaxe or shovel blocks with no harvest level, perfect for mining most non-ore blocks.
+* An amethyst bronze pickaxe can mine most common blocks faster due to its crumbling trait, which can offer up to 250% mining speed against blocks with no harvest tools.
+* The splashing and spitting modifiers can break just about any block at the cost of some molten gems for each use. For best results you will want to use molten diamond or molten netherite, but molten quartz, molten amethyst, and molten emerald are options if you are on a budget.
