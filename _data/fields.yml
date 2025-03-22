@@ -56,6 +56,11 @@ resource location:
   icon: nbt-string
   link: /docs/json/resource-location#format
 
+tag name:
+  name: Tag Name
+  icon: nbt-string
+  link: /docs/json/tags#tag-name
+
 item stack:
   name: Item Stack
   icon: nbt-compound
