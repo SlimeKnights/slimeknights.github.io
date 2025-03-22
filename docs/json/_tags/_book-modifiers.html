@@ -1,0 +1,23 @@
+{%- assign tag = include.name | downcase -%}
+**{{include.name}}**
+
+* `tconstruct:{{tag}}`: Grouping tag for all modifiers typically applied as {{tag}}.
+* `tconstruct:{{tag}}/general`: {{include.name}} applicable to multiple types of tools, or exclusive to tools that do not fall into any of the following categories.{%
+if tag == "abilities" %}
+* `tconstruct:{{tag}}/interaction`: {{include.name}} that trigger on left or right clicking with the tool.{%
+endif %}
+* `tconstruct:{{tag}}/melee`: {{include.name}} applicable to melee weapons.{%
+if tag == "upgrades" %}
+* `tconstruct:{{tag}}/damage`: Melee {{tag}} that directly increase weapon damage.{%
+endif %}
+* `tconstruct:{{tag}}/harvest`: {{include.name}} applicable to harvest tools.
+* `tconstruct:{{tag}}/ranged`: {{include.name}} applicable to ranged weapons
+* `tconstruct:{{tag}}/armor`: Grouping tag for all armor {{tag}}.
+* `tconstruct:{{tag}}/armor/general`: Armor modifiers applicable to multiple pieces.
+* `tconstruct:{{tag}}/armor/helmet`: {{include.name}} unique to helmets.
+* `tconstruct:{{tag}}/armor/chestplate`: {{include.name}} unique to chestplates.
+* `tconstruct:{{tag}}/armor/leggings`: {{include.name}} unique to leggings.
+* `tconstruct:{{tag}}/armor/boots`: {{include.name}} unique to boots.{%
+if tag == "abilities" %}
+* `tconstruct:{{tag}}/armor/shield`: {{include.name}} unique to shields.{%
+endif %}

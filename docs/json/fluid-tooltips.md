@@ -51,10 +51,4 @@ This defines two units: kilobuckets at 1000000mb, and buckets at 1000mb. The rem
 
 Since fluid units are defined on a tag basis, this means often you can use an existing tag to assign tooltips instead of defining a new tooltip JSON. The following fluid tags are defined by Tinkers' Construct as general use unit lists:
 
-* **`tconstruct:tooltips/metal`**: Tooltips for metal blocks, with 810mb blocks, 90mb ingots, and 10mb nuggets.
-* **`tconstruct:tooltips/gem_large`**: Tooltips for diamond-like gems, with 900mb blocks, 100mb gems, and 25mb "shards" (quarter gems).
-* **`tconstruct:tooltips/gem_small`**: Tooltips for quartz-like gems, with 400mb blocks, 100mb gems, and 25mb "shards" (quarter gems).
-* **`tconstruct:tooltips/clay`**: Tooltips for clay, with 1000mb blocks and 250mb bricks.
-* **`tconstruct:tooltips/slime`**: Tooltips for slime, with 2250mb blocks and 250mb slimeballs.
-* **`tconstruct:tooltips/glass`**: Tooltips for glass, with 1000mb blocks and 250mb panes.
-* **`tconstruct:tooltips/soup`**: Tooltips for soup, with 250mb bowls.
+{% include_relative _tags/_fluid-tooltips.html %}

@@ -4,7 +4,10 @@ title: Tags
 description: This page summarizes Minecraft tags, which are a merged resource across data packs that allow different mods to apply behaviors to blocks, items, and alike. This page summarizes their definition, Forge extensions, common conventions, and how they are used in Tinkers' Construct.
 ---
 <div class="hatnote" markdown=1>
-See also [the Minecraft Wiki article on tags](https://minecraft.wiki/w/Tags)
+See also: [the Minecraft Wiki article on tags](https://minecraft.wiki/w/Tags)
+</div>
+<div class="hatnote" markdown=1>
+See also: [TinkerTags.java](https://github.com/SlimeKnights/TinkersConstruct/blob/1.20.1/src/main/java/slimeknights/tconstruct/common/TinkerTags.java) for the latest list of Tinkers' Construct tags
 </div>
 
 {{page.description}}
@@ -62,7 +65,7 @@ Some shapes of vanilla resources includes:
 * `gems/`: Represents any gem-like resources, such as diamond or quartz.
 * `storage_blocks/`: For metals, represents 9 ingots of the resource. For non-metals, it is less standard, sometimes representing 4 units.
 * `nuggets/`: Represents 1/9 of an ingot.
-{% include_relative _block-tags/_material.html %}
+{% include_relative _tags/_block-material.html %}
 
 Additionally, mods define many convention shape tags, such as:
 
@@ -73,11 +76,9 @@ Additionally, mods define many convention shape tags, such as:
 
 ### Tinkers' Tags
 
-Tinkers' Construct makes use of many item tags to assign behavior and recipes. For a full list, it is best to check out [TinkerTags.java](https://github.com/SlimeKnights/TinkersConstruct/blob/1.20.1/src/main/java/slimeknights/tconstruct/common/TinkerTags.java) in an IDE or open the mod jar.
-
 #### Texture variants
 
-{% include_relative _block-tags/_texture-variants.html %}
+{% include_relative _tags/_block-texture-variants.html %}
 
 #### Tool building
 
@@ -201,11 +202,9 @@ Block tags use the same material conventions as [item tags](#material-tags), tho
 
 Some shapes of vanilla resources includes:
 
-{% include_relative _block-tags/_material.html %}
+{% include_relative _tags/_block-material.html %}
 
 ### Tinkers' Tags
-
-Tinkers' Construct makes use of many block tags to assign behavior and recipes. For a full list, it is best to check out [TinkerTags.java](https://github.com/SlimeKnights/TinkersConstruct/blob/1.20.1/src/main/java/slimeknights/tconstruct/common/TinkerTags.java) in an IDE or open the mod jar.
 
 #### General
 
@@ -228,7 +227,7 @@ Tinkers' Construct makes use of many block tags to assign behavior and recipes. 
 
 Block texture variant tags exist mostly to mirror the item tags; they are not directly used outside of datagen.
 
-{% include_relative _block-tags/_texture-variants.html %}
+{% include_relative _tags/_block-texture-variants.html %}
 
 #### Multiblock
 
@@ -274,3 +273,120 @@ Block texture variant tags exist mostly to mirror the item tags; they are not di
 * `tconstruct:harvestable/crops`: Blocks that behave like wheat or carrots, growing until max age then dropping produce plus seeds. The seeds must be in [`tconstruct:seeds`](#modifiers) for this to function.
 * `tconstruct:harvestable/interact`: Blocks that are harvested when right clicking, like berry bushes.
 * `tconstruct:harvestable/stackable`: Blocks that are harvested by breaking all but the lowest block, such as cactus or sugur cane.
+
+## Fluid Tags
+
+Block tags are located under `data/<domain>/tags/fluids/`.
+
+### Tinkers' Tags
+
+* `tconstruct:hide_in_creative_tanks`: Fluids in this tag will not be shown as a tank or copper can variant in creative or JEI.
+
+#### Fluid Tooltip Tags
+
+Tinkers' Construct adds many tags for common [fluid tooltips](../fluid-tooltips):
+
+{% include_relative _tags/_fluid-tooltips.html %}
+
+## Entity Type Tags
+
+Entity type tags are located under `data/<domain>/tags/entity_types/`.
+
+### Tinkers' Tags
+
+* `tconstruct:small_armor`: Entities in this tag have their helmet armor value multiplied by 4, as they don't have other armor slots. Automatically populated by entries from `tconstruct:slimes`.
+* `tconstruct:piggybackpack_blacklist`: Entities in this tag cannot be picked up by a piggybackpack. Non-mob entities are automatically blacklisted
+
+#### Smeltery
+
+* `tconstruct:melting/show_in_default`: Entities in this tag will show in the fallback melting recipe despite being in the mob category `MISC`.
+* `tconstruct:melting/hide_in_default`: Entities in this tag will not melt, despite normally being meltable.
+* `tconstruct:illagers`: Entities in this tag melt into emeralds (but less than villagers). They take damage from killager due to their mob category.
+
+#### Modifiers
+
+* `tconstruct:bacon_producer`: Entities in this tag may drop bacon when killed by a pig iron tool.
+* `tconstruct:creepers`: Entities in this tag may will take extra damage from bane of SSSS and other creeper related modifiers.
+* `tconstruct:villagers`: Entities in this tag melt into emeralds and take extra damage from killager.
+* `tconstruct:rare_mobs`: Entities in this tag have double changes of drops from severing.
+* `tconstruct:reflecting/blacklist`: Projectiles in this tag cannot be reflected by the reflecting modifier.
+* `tconstruct:reflecting/preserve_owner`: Projectiles in this tag will not change their owner when reflected. Prevents issues with fishing bobbers notably.
+
+## Block Entity Type Tags
+
+Block entity type tags are located under `data/<domain>/tags/block_entity_type/`.
+
+### Tinkers' Tags
+
+* `tconstruct:side_inventories`: Since 1.20.1, block entities in this tag may be used as a side chest for the crafting station, part builder, and alike.
+* `tconstruct:crafting_station_blacklist`: Until 1.19.2, block entities in this tag may not be used as a side chest for the crafting station, part builder, and alike. 1.20.1 replaced this with a whitelist.
+
+## Damage Type Tags
+<div class="hatnote">Since 1.20.1</div>
+
+Damage type tags are located under `data/<domain>/tags/damage_type/`.
+
+### Tinkers' Tags
+
+* `tconstruct:protection/melee`: Damage types in this tag are reduced by melee protection.
+* `tconstruct:protection/projectile`: Damage types in this tag are reduced by projectile protection. Automatically populated from the `minecraft:is_projectile` tag.
+* `tconstruct:protection/fire`: Damage types in this tag are reduced by fire protection. Automatically populated from the `minecraft:is_fire` tag.
+* `tconstruct:protection/blast`: Damage types in this tag are reduced by blast protection. Automatically populated from the `minecraft:is_explosion` tag.
+* `tconstruct:protection/magic`: Damage types in this tag are reduced by magic protection. Automatically populated from the `minecraft:witch_resistant_to` tag.
+* `tconstruct:protection/fall`: Damage types in this tag are reduced by feather falling. Automatically populated from the `minecraft:is_fall` tag.
+
+## Menu Type Tags
+
+Menu type tags are located under `data/<domain>/tags/menu/`.
+
+### Tinkers' Tags
+
+* `tconstruct:tool_inventory_replacements`: Menus in this tag support closing when right clicking a tool with an inventory. Should contain any tags like the vanilla inventory.
+
+## Modifier Tags
+
+Modifier tags are a custom tag type added by Tinkers' Construct to tag [modifiers](../modifiers). They are located under `data/<domain>/tinkering/tags/modifiers/`.
+
+### Tinkers' Tags
+
+* `tconstruct:gems`: Tier upgrades in this tag may randomly be applied to skyslime armor.
+* `tconstruct:slime_defense`: Modifiers in this tag may be applied to skyslime armor, costing a defense slot.
+* `tconstruct:block_while_charging`: Modifiers in this tag will handle the blocking modifier as they charge up.
+* `tconstruct:overslime_friend`: Modifiers in this tag will prevent the overslime debuff from lacking any slimy modifiers.
+* `tconstruct:aoe_interaction`: Modifiers in this tag will make their tool show AOE wireframes on non-effective blocks. Used by interaction modifiers to show their interaction area.
+* `c:hidden_from_recipe_viewers`: Modifiers that should not show in JEI.
+
+#### Modifier Worktable
+
+* `tconstruct:invisible_ink_blacklist`: Modifiers in this tag cannot be hidden by invisible ink.
+* `tconstruct:extract_blacklist/tools`: Modifiers in this tag cannot be extracted using modifier crystals.
+* `tconstruct:extract_blacklist/slotless`: Modifiers in this tag cannot be extracted as a slotless modifier using modifier crystals.
+* `tconstruct:dual_interaction`: Modifiers in this tag can be used on both left and right click, and which can be toggled using the modifier worktable on applicable tools.
+
+#### Book
+
+These tags control where a modifier shows in the books. A modifier may be in multiple tags, which will give it multiple pages.
+
+{% include_relative _tags/_book-modifiers.html name="Upgrades" %}
+
+{% include_relative _tags/_book-modifiers.html name="Abilities" %}
+
+**Defense**
+
+* `tconstruct:defense`: Grouping tag for all modifiers typically applied as defense.
+* `tconstruct:defense/protection`: Defense modifiers that increase protection directly.
+* `tconstruct:defense/special`: Defense modifiers that increase defense in ways other than protection.
+
+**Slotless**
+
+* `tconstruct:slotless`: Grouping tag for all modifiers typically applied as slotless.
+* `tconstruct:defense/general`: Slotless modifiers that do not grant bonus modifier slots.
+* `tconstruct:defense/bonus`: Slotless modifiers that grant bonus modifier slots.
+
+## Material Tags
+
+Material tags are a custom tag type added by Tinkers' Construct to tag [materials](../materials). They are located under `data/<domain>/tinkering/tags/materials/`.
+
+### Tinkers' Tags
+
+* `tconstruct:nether`: Materials available from purely nether items. Used in a future planned book.
