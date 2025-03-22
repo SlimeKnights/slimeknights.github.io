@@ -1,0 +1,6 @@
+* `storage_blocks/`: For metals, represents 9 ingots of the resource. For non-metals, it is less standard, sometimes representing 4 units.
+* `ores/`: represents an ore block. The value of the ore block is determined by its presence in one of the following common tags. The `ore_rates/` tags do not have material variants, instead relying in intersections to determine ore values.
+    * `ore_rates/singular`: Represents a standard ore block, like iron or diamond. Tinkers considers metal ore blocks in this tag to be worth 2 raw ore.
+    * `ore_rates/dense`: Represents an ore block that drops many items, such as copper or redstone. Tinkers considers metal ore blocks in this tag to be worth 6 raw ore.
+    * `ore_rates/sparse`: Represents an ore block dropping less than a standard unit, such as nether gold ore. Tinkers considers metal ore blocks in this tag to be worth 1 raw ore.
+* `storage_blocks/raw_`: storage block materials prefixed by `raw_` represents a block of raw ore items, typically 9 of them.

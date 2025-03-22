@@ -62,12 +62,7 @@ Some shapes of vanilla resources includes:
 * `gems/`: Represents any gem-like resources, such as diamond or quartz.
 * `storage_blocks/`: For metals, represents 9 ingots of the resource. For non-metals, it is less standard, sometimes representing 4 units.
 * `nuggets/`: Represents 1/9 of an ingot.
-* `raw_materials/`: Represents a raw ore item worth 1 ingot, e.g. "raw iron". Ore multiplication such as the smeltery may produce more than an ingot.
-* `ores/`: represents an ore block. The value of the ore block is determined by its presence in one of the following common tags. The `ore_rates/` tags do not have material variants, instead relying in intersections to determine ore values.
-    * `ore_rates/singular`: Represents a standard ore block, like iron or diamond. Tinkers considers metal ore blocks in this tag to be worth 2 raw ore.
-    * `ore_rates/dense`: Represents an ore block that drops many items, such as copper or redstone. Tinkers considers metal ore blocks in this tag to be worth 6 raw ore.
-    * `ore_rates/sparse`: Represents an ore block dropping less than a standard unit, such as nether gold ore. Tinkers considers metal ore blocks in this tag to be worth 1 raw ore.
-* `storage_blocks/raw_`: storage block materials prefixed by `raw_` represents a block of raw ore items, typically 9 of them.
+{% include_relative _block-tags/_material.html %}
 
 Additionally, mods define many convention shape tags, such as:
 
@@ -78,13 +73,11 @@ Additionally, mods define many convention shape tags, such as:
 
 ### Tinkers' Tags
 
-Tinkers' Construct makes use of many item tags to assign behavior and recipes. For a full list, it is best to check out [TinkerTags.java](https://github.com/SlimeKnights/TinkersConstruct/blob/1.20.1/src/main/java/slimeknights/tconstruct/common/TinkerTags.java) in an IDE or open the mod jar. Below are some tags with notable behaviors:
+Tinkers' Construct makes use of many item tags to assign behavior and recipes. For a full list, it is best to check out [TinkerTags.java](https://github.com/SlimeKnights/TinkersConstruct/blob/1.20.1/src/main/java/slimeknights/tconstruct/common/TinkerTags.java) in an IDE or open the mod jar.
 
 #### Texture variants
 
-* `tconstruct:planklike`: Wood blocks in this tag are valid options for the part builder and tinker station. Typically includes wood planks.
-* `tconstruct:workstation_rock`: Stone blocks in this tag are valid options for crafting the modifier workstation. Typically includes smooth forms of stone.
-* `tconstruct:anvil_metal`: Resource blocks in this tag are valid options for crafting the Tinkers' Anvil. Typically includes metal alloys.
+{% include_relative _block-tags/_texture-variants.html %}
 
 #### Tool building
 
@@ -197,3 +190,87 @@ These tags control recipes related to cosmetics, though the behavior of the cosm
 * `tconstruct:modifiable/embellishment/wood`: Items in this tag can receive wood embellishments.
 * `tconstruct:modifiable/embellishment/slime`: Items in this tag can receive slime embellishments.
 * `tconstruct:modifiable/armor/trim`: Items in this tag can receive the armor trim modifier.
+
+## Block Tags
+
+Block tags are located under `data/<domain>/tags/blocks/`.
+
+### Material Tags
+
+Block tags use the same material conventions as [item tags](#material-tags), though have fewer notable shapes. Typically, any item tags that contain block items will have a matching block tag.
+
+Some shapes of vanilla resources includes:
+
+{% include_relative _block-tags/_material.html %}
+
+### Tinkers' Tags
+
+Tinkers' Construct makes use of many block tags to assign behavior and recipes. For a full list, it is best to check out [TinkerTags.java](https://github.com/SlimeKnights/TinkersConstruct/blob/1.20.1/src/main/java/slimeknights/tconstruct/common/TinkerTags.java) in an IDE or open the mod jar.
+
+#### General
+
+* `tconstruct:transparent_overlay`: Blocks in this tag have a transparent block overlay rendered when the player is inside the block. Used for soul glass and its variants.
+* `tconstruct:platform_connections`: Blocks in this tag will cause the platform block to generate a solid face, used for placing levers and alike on the sides of platforms.
+
+#### Slime Spawning
+
+* `tconstruct:slime_spawn/sky`: Skyslimes may spawn on these blocks in the overworld.
+* `tconstruct:slime_spawn/earth`: Vanilla green slimes may spawn on these blocks in the overworld outside their normal spawn conditions.
+* `tconstruct:slime_spawn/ender`: Enderslimes may spawn on these blocks in the end.
+
+#### World
+
+* `tconstruct:enderbark/logs_can_grow_through`: Blocks enderbark logs can replace on sapling growth.
+* `tconstruct:enderbark/roots_can_grow_through`: Blocks enderbark roots can replace on sapling growth.
+* `tconstruct:slimy_fungus_can_grow_through`: Blocks any of the types of slimy fungus can replace on growth.
+
+#### Texture variants
+
+Block texture variant tags exist mostly to mirror the item tags; they are not directly used outside of datagen.
+
+{% include_relative _block-tags/_texture-variants.html %}
+
+#### Multiblock
+
+* `tconstruct:heater_controllers`: Blocks that pull fuel from a heater when placed above. Used to mark the heater as in a structure.
+* `tconstruct:fuel_tanks`: Blocks that provide fuel to the melter and alloyer.
+* `tconstruct:alloyer_tanks`: Blocks that may be used as a side tank for the alloyer.
+* `tconstruct:structure_air`: Blocks that are treated as air inside the smeltery or foundry.
+
+**Smeltery**
+
+* `tconstruct:smeltery`: Blocks that are a valid part of the smeltery multiblock. Generally blocks are not added to this tag directly, rather one of the sub tags is used.
+* `tconstruct:smeltery/tanks`: Blocks that provide liquid fuel to the smeltery.
+* `tconstruct:smeltery/floor`: Blocks that are valid in smeltery floors.
+* `tconstruct:smeltery/wall`: Blocks that are valid in smeltery walls.
+
+**Foundry**
+
+* `tconstruct:foundry`: Blocks that are a valid part of the foundry multiblock. Generally blocks are not added to this tag directly, rather one of the sub tags is used.
+* `tconstruct:foundry/tanks`: Blocks that provide liquid fuel to the foundry.
+* `tconstruct:foundry/floor`: Blocks that are valid in foundry floors.
+* `tconstruct:foundry/wall`: Blocks that are valid in foundry walls.
+
+#### Mineable
+
+* `tconstruct:mineable/mattock`: Blocks that the mattock is effective on. By default contains all shovel blocks and many axe blocks.
+* `tconstruct:mineable/pickadze`: Blocks that the mattock is effective on. By default contains all shovel and pickaxe blocks.
+* `tconstruct:mineable/hand_axe`: Blocks that the hand axe is effective on. Contains any vanilla axe blocks plus some additional blocks.
+* `tconstruct:mineable/scythe`: Blocks that scythe and kama is effective on. Contains blocks mineable with shears, hoes, and many plant blocks.
+* `tconstruct:mineable/sword`: Blocks that the sword is effective on. Contains all vanilla sword blocks plus a few extra.
+* `tconstruct:mineable/shears`: Blocks that shears are effective on. Mirrors the list hardcoded into the vanilla shears.
+* `tconstruct:mineable/shears`: Blocks that the dagger is effective on. Contains any sword blocks plus any hoe blocks.
+* `tconstruct:mineable/melting_blacklist`: Blocks that the melting pan cannot mine. Used mainly to prevent loss of fluid from tanks.
+* `tconstruct:unreplacable_by_liquid`: Blocks that cannot be broken by the water fluid effect despite being replacable by liquid. Mirrors a hardcoded vanilla list.
+
+#### Modifiers
+
+* `tconstruct:chrysophilite_ores`: Blocks in this tag support dropping extra gold when mined using the chrysophilite modifier.
+* `tconstruct:tree_log`: Blocks that are logs in a tree variant, for the lumber axe to chop. Automatically contains all `minecraft:logs`.
+
+**Harvestable**
+
+* `tconstruct:harvestable`: Blocks that support right click harvest. Generally blocks are only added to this tag directly if you plan to use our right click harvest event, otherwise use a nested tag.
+* `tconstruct:harvestable/crops`: Blocks that behave like wheat or carrots, growing until max age then dropping produce plus seeds. The seeds must be in [`tconstruct:seeds`](#modifiers) for this to function.
+* `tconstruct:harvestable/interact`: Blocks that are harvested when right clicking, like berry bushes.
+* `tconstruct:harvestable/stackable`: Blocks that are harvested by breaking all but the lowest block, such as cactus or sugur cane.
