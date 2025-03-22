@@ -20,3 +20,33 @@ The fallback model loader allows selecting between different model loaders on th
             * {% include field.html name="fallback_mod_id" type="string" %} Mod that must be loaded to use this model option. If unset, defaults to the namespace of the loader, or unconditional if no loader is set.
             * *All fields from the model loader.*
 </div>
+
+
+### Example
+
+The following JSON produces a [connected model](../connected) if Tinkers' Construct is loaded, and a vanilla model otherwise. Note that if fallback_mod_id was not specified, the dependency for the first model would be Mantle.
+
+```json
+{
+  "loader": "mantle:fallback",
+  "models": [
+    {
+      "fallback_mod_id": "tconstruct",
+      "loader": "mantle:connected",
+      "parent": "block/cube_all",
+      "textures": {
+        "all": "block/glass"
+      },
+      "connection": {
+        "textures": { "all": "cornerless_full" }
+      }
+    },
+    {
+      "parent": "block/cube_all",
+      "textures": {
+        "all": "block/glass"
+      }
+    }
+  ]
+}
+```
