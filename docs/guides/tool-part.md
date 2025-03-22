@@ -4,12 +4,14 @@ title: Adding a Tool Part to Tinkers' Construct
 description: This page covers all related elements for adding a new tool part or material item to Tinkers' Construct. In addition, it covers the details for adding a new cast item to the mod, which are often relevant alongside tool parts.
 ---
 <div class="hatnote" markdown=1>
-This page is about how to add a new tool part. For adding a usage to the tool part, see [Adding a Tool](../tool).
+See also: [Creating a Low Code Mod](../lowcode-mod)
 </div>
 
 {{page.description}}
 
 Adding a tool part or material item requires registering a new item. This requires either a Java mod, or [Json Things](https://www.curseforge.com/minecraft/mc-mods/json-things) to register the appropriate items. Details on each will be provided in the appropriate subsections. If you are creating a Java addon, all resources listed below can be generated using our datagen setup; the best examples of this are in Tinkers' Construct itself.
+
+The most common reason to create a new tool part is with the intention to use it in a new tool. See [Adding a Tool](../tool) for information on creating new tools.
 
 {% include toc.html %}
 
@@ -50,6 +52,8 @@ Typically, you will want to add three different cast items: one for gold casts, 
 All material items are defined using the [`tconstruct:material`](/docs/json/models/material/#tool-parts) model loader. Within that model, the main important properties are the texture, and the offset (if the texture is shared with a tool). For an example, see [shield plating](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/assets/tinkers_things/models/item/shield_plating.json) from Tinkers' Things.
 
 Casts typically use a standard `item/generated` model; details about that model can be found on the [Minecraft Wiki](https://minecraft.wiki/w/Model#Item_models). For an example, see [shield plating gold cast](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/assets/tinkers_things/models/item/shield_plating_gold_cast.json) from Tinkers' Things.
+
+{% include_relative _material-textures.html %}
 
 ### Pattern
 

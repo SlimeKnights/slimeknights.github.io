@@ -123,7 +123,9 @@ Additionally, mods define many convention shape tags, such as:
 
 **Tool Groups**
 
-* `tconstruct:modifiable/small`: Tools in this tag are considered "small tools", typically crafted from 2-3 tool parts making them available in the tinker station. They will show in puny smelting and the encyclopedia in the appropriate categories.
+Non-armor items will typically be added to one of the following groups. These determine where they are displayed in the book, plus some other behaviors.
+
+* `tconstruct:modifiable/small`: Tools in this tag are considered "small tools", typically crafted from 2-3 tool parts making them available in the tinker station. They will show in materials and you and the encyclopedia in the appropriate categories.
 * `tconstruct:modifiable/broad`: Tools in this tag are considered "large tools", typically crafted from 4-5 tool parts in the anvil. They will show in mighty smelting and the encyclopedia in the appropriate categories. In addition, broad tools have different stat debuffs applied with dual wielding.
 * `tconstruct:modifiable/special`: Non-standard tools that do not fit with small or broad. Notably includes slime staffs and unusual tools such as Tinkers' Things's knapsack.
 * `tconstruct:modifiable/ancient`: Represents uncraftable tools that are obtained through loot with a fixed material list. Receives extra slots from rebalanced.
