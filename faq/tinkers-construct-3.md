@@ -79,6 +79,16 @@ Staffs are essentially a blank slate to apply interaction ability modifiers. Use
 
 Each of the different slimestaff variants is best suited to different builds. In addition, the melting pan (ancient tool) is considered a staff and can use most staff modifiers.
 
+### How do I fill my tool with fluid?
+
+You can fill a tool with fluid in the same ways you fill a bucket or copper can with fluid:
+
+* Right click on a tank or drain with the tool.
+* Left click on a fluid in a UI.
+* Place the tool in the bucket slot in the smeltery or foundry UI.
+
+Buckets and copper cans can also be filled using a casting table, which tools do not support.
+
 
 ## Mod progression
 
