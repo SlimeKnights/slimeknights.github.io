@@ -14,7 +14,7 @@ If you are creating a Java addon, all resources listed below can be generated us
 
 ## Data Packs
 
-Data packs are used to define all gameplay behavior related to a material, including stats, traits, recipes, and behavior on fluids.
+[Data packs](/docs/json/resource-location#data-packs) are used to define all gameplay behavior related to a material, including stats, traits, recipes, and behavior on fluids.
 
 ### Materials
 
@@ -59,7 +59,7 @@ If your material includes a custom fluid, you will likely want to add a fluid ef
 
 ## Resource Packs
 
-Resource packs are used to define all cosmetic appearances of materials, including textures, colors, and localizations.
+[Resource packs](/docs/json/resource-location#resource-packs) are used to define all cosmetic appearances of materials, including textures, colors, and localizations.
 
 ### Render Info
 <div class="hatnote" markdown=1>

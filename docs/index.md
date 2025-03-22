@@ -26,6 +26,7 @@ Unless stated otherwise, all documentation pages are applicable to all versions 
 * [**Gradle Setup**](guides/gradle): Describes how to add Tinkers' Construct to a development workspace in Gradle.
 * [**Low Code Mod**](guides/lowcode-mod): Describes how to create a low code mod, which allows making mods and Tinkers' Construct addons without writing any Java.
 * [**Adding a Material**](guides/material): Describes how to add a material to Tinkers' Construct in an addon or datapack.
+* [**Adding a Tool Part**](guides/tool-part): Describes how to add a new tool part to Tinkers' Construct in an addon or low code mod.
 * [**Texture Generators**](guides/texture-generators): Details how to use the material texture generators provided by Tinkers' Construct.
 * [**Persistent Inventory Crafting Blocks**](guides/persistent-inventory): Details how to handle the crafting station in mods wanting to do weird things in their crafting recipes (like player access which is *not* available in vanilla without hacks).
 
