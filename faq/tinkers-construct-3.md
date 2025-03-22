@@ -127,6 +127,12 @@ To build the foundry, you need to use scorched blocks instead of seared blocks, 
 
 Also, because people keep assuming things we never said, the foundry does not have to be build in the nether, nor is there anything stopping you from building a smeltery in the nether. It is a smeltery alternative.
 
+### Why can't I cast using the scorched casting basin?
+
+The scorched casting table and scorched casting basin both require a cast item to perform a cast. This makes them easier to automate for "composite recipes" such as creating seared stone using clay on cobblestone, as you can guarantee you won't accidently cast terracotta. If you do want to cast using "no cast", you can use either gold bars (for the scorched casting table) or gold platforms (for the scorched casting basin).
+
+This behavior is different than the seared casting blocks, hence why it is highlighted in both [the book](/docs/books/1.20/fantastic-foundry#alloyer) and their tooltips.
+
 
 ## Addons
 
