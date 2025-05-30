@@ -27,9 +27,44 @@ Another consequence of this change is the golden modifier is no longer applied u
 
 {% include update/image.html name="ancient" alt="Various ancient tools using the ancient material." %}
 
-Not all advances are modern with the newest material: ancient. Ancient is a loot exclusive material found primarily on ancient tools (hence the name), though plate armor can also notably obtain it via bastions. It grants the tool an extra ability slot at the cost of large debuffs to several speed stats. It also reuqires ancient debris to repair.
+Not all advances are modern with the newest material: ancient. Ancient is a loot exclusive material found primarily on ancient tools (hence the name), though plate armor can also notably obtain it via bastions. You can also occasionally find ancient from piglin bartering, as they will offer high value tool parts rarely.
 
-## Fluids
+Ancient grants the tool an extra ability slot at the cost of large debuffs to several speed stats. It also reuqires ancient debris to repair.
+
+### Recycling
+
+{% include update/image.html name="recycle-ancient-tool" alt="Recycling a war pick for its head." %}
+
+Another advancement in engineering is recycling. You can now recycle ancient tools using the part builder, similarly to how you can recycle regular tools. This allows recovering some of the material from the tools for use in other tools.
+
+Keep in mind ancient tools cannot be reconconstructed once recycled; the parts are only usable on other standard tools.
+
+### Bows Improvements
+
+{% include update/image.html name="arrow-bow-model" alt="A longbow, crossbow, and warpick all showing the used arrow in the model." %}
+
+Bows have gotten many improvements to allow reengineering for new tasks. First, they now support using slinging modifiers such as warping or bonking, which will activate when the bow releases.
+
+They also now have a new modifier called "barebow" which can prevent them from using ammo from the inventory, allowing you to either make a bow for just a sling modifier, or otherwise make a bow that prefers crystalshot or its quiver.
+
+To help you keep track of how your bow is being used, the model now shows the arrow its firing instead of a generic arrow when drawn back.
+
+### Better Reading
+
+{% include update/image.html name="open-book" alt="Tooltip showing you how to open a book from the inventory." %}
+
+Engineering advancements have discovered a new way to read books! In addition to opening them in your hand and placing them in lecterns, you can also now open them from the inventory on right click using the "bundle interaction". Note this only works if the tool is in the inventory, not from a chest.
+
+### Wood Simplification
+
+{% include update/image.html name="tinkers-wood" alt="New logo for the tinkers wood mod." %}
+
+Wood no longer has variants for oak, spruce, birch, jungle, acacia, dark oak, cherry, or mangrove. Though it kept the default variant, plus crimson and warped. The reason for this is wood variants made up over 10% of generated textures for mostly subtly different brown variants, plus having those variants without modded wood always felt wrong.
+
+If you were a fan of this feature, not to fear, as we moved the textures to an addon mod called [Tinkers' Wood](/projects#tinkers-wood). Based on my motivation, I may add some modded wood types to that mod; feel free to reach out if you wish to contribute.
+
+## Slimengineering
+
 ### Slime Bottles
 
 {% include update/image.html name="slime-bottles" alt="Brewing a slimy potion and a slimy bottle." %}
@@ -43,6 +78,8 @@ In chemical engineering, slime bottles got some brand new effects, both bringing
 
 Congealed slime now also can be brewed into an awkward potion to create new potions with the matching effect, usable in fluid modifiers.
 
+Finally, slime bottles also work for applying overslime via the crafting table now. This only works on tools that already have overslime, though you can easily apply it for the first time in a tinker station.
+
 ### Slimy Cakes
 
 {% include update/image.html name="slime-cake" alt="All slimy cakes arranged." %}
@@ -54,7 +91,6 @@ Slimy cakes also got a revamp as part of food engineering (thats a real thing!).
 * Ichor cakes grant anti-gravity, causing you to fall up. Be careful that you have a way to land safely!
 * Ender cakes grant returning, causing you to teleport to the cake location after the timer runs out. Eat more ender cake to extend the timer!
 
-
 ### Improved Effects
 
 {% include update/image.html name="fluid-effects" alt="Dual wielding staffs using the new ender fluid effect." %}
@@ -65,7 +101,14 @@ Finishing up our chemical engineering is some improvements to a couple of fluid 
 * Ender now has a new interaction effect, allowing you to interact with the target of the projectile. This has a lot of potential for dual wielding staffs with splashing.
 * Enderslime now applies returning to the target before the teleport, and can be used to extend the return timer from enderslime cake.
 
+### Slimeskin
+
+{% include update/image.html name="slimeskin" alt="Slimeskin's entry in puny melting." %}
+
+Slime can now be casted on leather to make a new armor maille material called slimeskin. This material grants the overgrowth trait to armor, which was previously unavailable.
+
 ## Smeltery
+
 ### Fluid Cannon
 
 {% include update/image.html name="fluid-cannon" alt="Both types of fluid cannon ready to fire." %}
@@ -75,6 +118,8 @@ Our efforts in chemical engineering prompted the design of a new fluid delivery 
 These blocks notably are *not* players, which affects killed entities and the interactions it can perform. But they still have many useful interactions without being a player.
 
 ### Casting Tank
+
+{% include update/image.html name="casting-tank" alt="The casting tank being used to empty soup bowls." %}
 
 We managed to combine a drain with a seared tank to create a new variant of casting block. Unlike the casting table or basin, this holds a buffer of fluid which is used when an item is placed inside. It can be used to automaticaly fill or empty simple fluid containers, such as buckets, copper cans, and even potion bottles or soup bowls.
 
