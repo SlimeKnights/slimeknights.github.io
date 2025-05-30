@@ -32,8 +32,8 @@ These SlimeKnights projects are actively supported, either on the latest Minecra
       description="Official addon for Tinkers' Construct adding a variety of content written purely in JSON."
     %}
     {% include project.html
-      name="tinkers-wood" title="Tinkers' Wood" latest="1.20.1"
-      github="TinkersWood"
+      name="tinkers-wood" title="Tinkers' Wood" latest="upcoming"
+      github="TinkersWood" curseforge=false modrinth=false
       description="Adds additional wood material variants to Tinkers' Construct, including oak, spruce, and cherry."
     %}
     {% include project.html
