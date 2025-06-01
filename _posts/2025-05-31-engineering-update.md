@@ -32,7 +32,7 @@ Another consequence of this change is the golden modifier is no longer applied u
 
 Not all advances are modern with the newest material: ancient. Ancient is a loot exclusive material found primarily on ancient tools (hence the name), though plate armor can also notably obtain it via bastions. You can also occasionally find ancient from piglin bartering, as they will offer high value tool parts rarely.
 
-Ancient grants the tool an extra ability slot at the cost of large debuffs to several speed stats. It also reuqires ancient debris to repair.
+Ancient grants the tool an extra ability slot at the cost of large debuffs to several speed stats. It also requires ancient debris to repair.
 
 ### Recycling
 
@@ -152,7 +152,7 @@ Any good engineer can tell you that collaboration is important to develop the mo
 
 {% include update/image.html name="treated-wood" alt="The new treated wood tool material." %}
 
-Casting creosote oil on wood creates treated wood, a new general tool material that boosts the tool's overall durability and repair efficiency. This material is avaialble from any mod adding either treated wood or creosote oil.
+Casting creosote oil on wood creates treated wood, a new general tool material that boosts the tool's overall durability and repair efficiency. This material is available from any mod adding either treated wood or creosote oil.
 
 ### Fluid Effects
 
@@ -175,9 +175,8 @@ Update to the latest Mantle 1.11.55 for 1.20.1:
 {% include update/download.html name="mantle" version="1.11.55" curseforge="6603205" %}
 
 ### Tinkers' Construct
-<div class="hatnote">We released the hotfix 3.9.2.37 to fix an issue with melters, and another issue with NeoForge.</div>
 
-Download Tinkers' Construct 3.9.2.37 for 1.20.1 at the following links:
+Download Tinkers' Construct 3.10.0.67 for 1.20.1 at the following links:
 
 {% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.10.0.67" curseforge="6603344" %}
 
