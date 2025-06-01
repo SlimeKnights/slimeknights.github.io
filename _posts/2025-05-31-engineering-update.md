@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "Tinkers 1.20 Beta - Engineering Update"
+title:  "Tinkers 1.20 - Engineering Update"
 date:   2025-05-31 12:00:00 -0400
 categories: posts
 author: KnightMiner
 image_root: updates/tinkers/engineering
 ---
 This new update for Tinkers' Construct adds many new features related to automation, along with more compatability for [Immersive Engineering][immersive-engineering] and a ton of new datapack features giving more flexability to JSON addons.
+
+This upate also marks CurseForge and Modrinth as "release", not that the distinction means too much. Goal is to minimize addon breaking changes moving forwards, even if those addons are using non-APIs.
 
 {% include toc.html %}
 
