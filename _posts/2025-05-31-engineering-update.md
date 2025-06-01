@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Tinkers 1.20 Beta - Engineering Update"
+date:   2025-05-31 23:00:00 -0400
 categories: posts
 author: KnightMiner
 image_root: updates/tinkers/engineering
@@ -54,6 +55,14 @@ To help you keep track of how your bow is being used, the model now shows the ar
 {% include update/image.html name="open-book" alt="Tooltip showing you how to open a book from the inventory." %}
 
 Engineering advancements have discovered a new way to read books! In addition to opening them in your hand and placing them in lecterns, you can also now open them from the inventory on right click using the "bundle interaction". Note this only works if the tool is in the inventory, not from a chest.
+
+### Better Blowpipes
+
+{% include update/image.html name="bambooshot" alt="Looking at a bamboo arrow from a blowpipe." %}
+
+Blowpipes from Tinkers' Things kinda sucked, they were an "early game" bow that was debably harder to get than a regular bow. We have re-engineered them make them a proper early game bow with their new trait: bambooshot.
+
+Bambooshot works just like crystalshot, producing arrows for the blowpipe using its durability instead of looking in the inventory. This makes blowpipes ideal for an early game projectile before ammo is readily craftable. Due to this change, blowpipes can no longer use regular arrows, including from quivers.
 
 ### Wood Simplification
 
@@ -155,27 +164,38 @@ The chemthrower now supports all the latest effects from smeltery fluids, includ
 
 {% include update/end.html %}
 
-{% comment %}
 ## Download
 
 ### Mantle
 
-Update to the latest Mantle 1.11.44 for 1.20.1:
+Update to the latest Mantle 1.11.55 for 1.20.1:
 
-{% include update/download.html name="mantle" version="1.11.44" curseforge="6258424" %}
+{% include update/download.html name="mantle" version="1.11.55" curseforge="6603205" %}
 
 ### Tinkers' Construct
 <div class="hatnote">We released the hotfix 3.9.2.37 to fix an issue with melters, and another issue with NeoForge.</div>
 
 Download Tinkers' Construct 3.9.2.37 for 1.20.1 at the following links:
 
-{% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.9.2.37" curseforge="6266282" %}
+{% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.10.0.67" curseforge="6603344" %}
 
 ### Tinkers' Things
 
-Download the new Tinkers' Things 1.3.1 update for 1.20.1:
+Download Tinkers' Things 1.3.1 update for 1.20.1:
 
-{% include update/download.html name="tinkers-things-json" github="TinkersThings" modrinth="tinkers-things" version="1.3.1" curseforge="6258956" %}
+{% include update/download.html name="tinkers-things-json" github="TinkersThings" modrinth="tinkers-things" version="1.3.2" curseforge="6603376" %}
+
+### Tinkers' Wood
+
+Download the new Tinkers' Wood 1.0.0 for 1.20.1:
+
+{% include update/download.html name="tinkers-wood" github="TinkersWood" version="1.0.0" modrinth=false %}
+
+CurseForge and Modrinth coming soon!
+
+{% comment %}
+{% include update/download.html name="tinkers-wood" github="TinkersWood" version="1.0.0" curseforge="6603394" %}
 {% endcomment %}
+
 
 [immersive-engineering]: https://www.curseforge.com/minecraft/mc-mods/immersive-engineering
