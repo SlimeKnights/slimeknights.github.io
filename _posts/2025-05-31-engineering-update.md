@@ -190,8 +190,7 @@ Download Tinkers' Things 1.3.1 update for 1.20.1:
 
 Download the new Tinkers' Wood 1.0.0 for 1.20.1:
 
-{% include update/download.html name="tinkers-wood" github="TinkersWood" version="1.0.0" curseforge="6603394" modrinth=false %}
+{% include update/download.html name="tinkers-wood" github="TinkersWood" version="1.0.0" curseforge="6603394" %}
 
-Modrinth coming soon!
 
 [immersive-engineering]: https://www.curseforge.com/minecraft/mc-mods/immersive-engineering

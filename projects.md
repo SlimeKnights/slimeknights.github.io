@@ -33,7 +33,7 @@ These SlimeKnights projects are actively supported, either on the latest Minecra
     %}
     {% include project.html
       name="tinkers-wood" title="Tinkers' Wood" latest="upcoming"
-      github="TinkersWood" modrinth=false
+      github="TinkersWood"
       description="Adds additional wood material variants to Tinkers' Construct, including oak, spruce, and cherry."
     %}
     {% include project.html
