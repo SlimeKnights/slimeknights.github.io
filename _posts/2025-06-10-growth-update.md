@@ -28,6 +28,12 @@ One standout newer feature from Ceramics is the gauge, which can be placed on an
 
 As part of this update, gauges now have a tooltip that shows when looking directly at the block, displaying the fluid contents in the same style as the smeltetry GUI.
 
+### Rainbow Bricks
+
+{% include update/image.html name="rainbow-clay" ext="gif" alt="Animated rainbow bricks from Ceramics" %}
+
+Rainbow bricks were not changed by this update, but the GIF on our CurseForge page was hosted on a website that seems to no longer exist. As a result, using this update post as an excuse to reupload it. Note this GIF is sped up for visibility; the animation in game is somewhere between prismarime speeds and this.
+
 ### Download
 
 The new Ceramics 1.8.0 update can be downloaded in the following places:
