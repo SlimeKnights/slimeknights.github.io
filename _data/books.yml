@@ -1,6 +1,6 @@
 materials_and_you_20:
-  path: tinkers/3.10.0/materials_and_you
-  max_page: 26
+  path: tinkers/3.10.1/materials_and_you
+  max_page: 27
   titles:
     - index: 1
       text: Introduction
@@ -11,7 +11,7 @@ materials_and_you_20:
     - index: 11
       text: Tier 1 Ranged
       
-    - index: 15
+    - index: 16
       text: Tools
       
     - index: 22
@@ -21,8 +21,8 @@ materials_and_you_20:
       text: Further Reading
 
 puny_smelting_20:
-  path: tinkers/3.10.0/puny_smelting
-  max_page: 86
+  path: tinkers/3.10.1/puny_smelting
+  max_page: 91
   titles:
     - index: 2
       text: Melter & Moving Fluids
@@ -33,27 +33,27 @@ puny_smelting_20:
     - index: 13
       text: Tier 2 Melee Harvest
       
-    - index: 20
+    - index: 22
       text: Tier 2 Ranged
       
-    - index: 26
+    - index: 29
       text: Tier 2 Armor
       
-    - index: 35
+    - index: 40
       text: Puny Armor
       
-    - index: 41
+    - index: 46
       text: Upgrades
       
-    - index: 76
+    - index: 81
       text: Slotless Modifiers
       
-    - index: 86
+    - index: 91
       text: Further Reading
 
 mighty_smelting_20:
-  path: tinkers/3.10.0/mighty_smelting
-  max_page: 75
+  path: tinkers/3.10.1/mighty_smelting
+  max_page: 76
   titles:
     - index: 2
       text: Smeltery
@@ -73,12 +73,12 @@ mighty_smelting_20:
     - index: 38
       text: Abilities
       
-    - index: 69
+    - index: 70
       text: Defense
 
 fantastic_foundry_20:
-  path: tinkers/3.10.0/fantastic_foundry
-  max_page: 28
+  path: tinkers/3.10.1/fantastic_foundry
+  max_page: 29
   titles:      
     - index: 2
       text: Alloyer
@@ -95,11 +95,11 @@ fantastic_foundry_20:
     - index: 22
       text: Tier 4 Ranged
       
-    - index: 25
+    - index: 26
       text: Tier 4 Armor
 
 tinkers_gadgetry_20:
-  path: tinkers/3.10.0/tinkers_gadgetry
+  path: tinkers/3.10.1/tinkers_gadgetry
   max_page: 34
   titles:
     - index: 2
@@ -121,8 +121,8 @@ tinkers_gadgetry_20:
       text: Slimy Armor
 
 encyclopedia_20:
-  path: tinkers/3.10.0/encyclopedia
-  max_page: 208
+  path: tinkers/3.10.1/encyclopedia
+  max_page: 214
   titles:
     - index: 2
       text: Tools
@@ -142,19 +142,19 @@ encyclopedia_20:
     - index: 77
       text: Abilities
       
-    - index: 108
+    - index: 109
       text: Melee Harvest Materials
       
-    - index: 132
+    - index: 133
       text: Ranged Materials
       
-    - index: 150
+    - index: 154
       text: Armor Materials
       
-    - index: 168
+    - index: 174
       text: Slimeskulls
       
-    - index: 176
+    - index: 182
       text: Fluid Effects
 
 
