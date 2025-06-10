@@ -50,9 +50,19 @@ These SlimeKnights projects are actively supported, either on the latest Minecra
 
 ## Affiliated Projects
 
-These mods are made by a member of SlimeKnights, but are not directly part of the group.
+These mods are made by a member of SlimeKnights, but the projects are not part of the group's projects.
 
 <div class="project-list">
+    {% include project.html
+      name="ceramics" latest="1.20.1"
+      author="KnightMiner"
+      description="Originally inspired by the clay bucket from Iguana Tinker Tweaks, this mod simply added a clay bucket, but now it adds quite a few other features made from clay to both improve the early game and be used in long term builds."
+    %}
+    {% include project.html
+      name="inspirations" latest="1.20.1"
+      author="KnightMiner"
+      description="Inspirations is a mod for Minecraft adding various smaller features to the game. The design is targeted towards vanilla, so instead of game changing features there are many smaller changes. "
+    %}
     {% include project.html
       name="simple-gravel-ores" title="Simple Gravel Ores" latest="1.20.1"
       author="KnightMiner" github-author="elucent" github="GravelOres"
@@ -64,19 +74,9 @@ These mods are made by a member of SlimeKnights, but are not directly part of th
       description="A simple tea mod made for /u/Pickles256 on Reddit!"
     %}
     {% include project.html
-      name="inspirations" latest="1.19.2"
-      author="KnightMiner"
-      description="Inspirations is a mod for Minecraft adding various smaller features to the game. The design is targeted towards vanilla, so instead of game changing features there are many smaller changes. "
-    %}
-    {% include project.html
       name="animal-crops" title="Animal Crops" latest="1.18.2"
       author="KnightMiner" github="AnimalCrops"
       description="Adds seeds which over time grow into farm animals."
-    %}
-    {% include project.html
-      name="ceramics" latest="1.18.2"
-      author="KnightMiner"
-      description="Originally inspired by the clay bucket from Iguana Tinker Tweaks, this mod simply added a clay bucket, but now it adds quite a few other features made from clay to both improve the early game and be used in long term builds."
     %}
     {% include project.html
       name="simple-absorption" title="Simple Absorption" latest="1.18.2"
