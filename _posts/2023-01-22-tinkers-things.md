@@ -161,6 +161,8 @@ Defense wise, it is a bit below plate armor, but has 5 defense slots and 2 upgra
 
 The armor also has the unique feature of supporting both dyeing (for the wool) and embellishments (for the slimesteel) to fully personalize the armor. You have the option in addons to support one or both with any custom armor sets.
 
+{% include update/end.html %}
+
 ## Download
 
 ### Tinkers' Construct

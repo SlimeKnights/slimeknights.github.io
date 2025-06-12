@@ -178,6 +178,8 @@ Some tool stats got renamed for clarity as seen in previous screenshots, "Attack
 
 Continuing with technical changes, we also show IDs for various things in tool tooltips when advanced tooltips are on, such as modifier or material IDs. Should help with making datapacks.
 
+{% include update/end.html %}
+
 ## Download
 
 ### Tinkers' Construct
