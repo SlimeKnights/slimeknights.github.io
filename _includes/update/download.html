@@ -1,7 +1,8 @@
 {%- assign name-capitalized = include.name | capitalize -%}
 <ul>
   <li>
-    <a href="https://github.com/{{include.author | default: "SlimeKnights"}}/{{include.github | default: name-capitalized}}/releases/v{{include.version}}">
+    {%- assign default-version = include.version | prepend: "v" -%}
+    <a href="https://github.com/{{include.author | default: "SlimeKnights"}}/{{include.github | default: name-capitalized}}/releases/{{include.github-tag | default: default-version}}">
       Github: Download & full changelog
     </a>
   </li>
