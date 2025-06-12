@@ -80,11 +80,17 @@ As always, if you dislike our heart renderer, you can disable it in Mantle's cli
 
 {% include update/image.html name="freezing-hearts" alt="New freezing hearts as the player takes freezing damage." %}
 
+Another new feature is the heart renderer now will show your max health via colored heart containers behind the main one. It just shows the highest color, plus the second highest if you don't have a full 10 hearts in the highest. If you dislike the max health display, it can be disabled in the config to work as the heart renderer did before this update.
+
+{% include update/image.html name="max-health" alt="Max health is 5 hearts blue, 5 hearts green even though current health is in yellow." %}
+
 ### Download
 
-The new Mantle 1.11.61 update, required for all updates covered in this post, can be downloaded at the following:
+<div class="hatnote">Update: a hotfix was released to update the heart renderer and add some translations.</div>
 
-{% include update/download.html name="mantle" version="1.11.61" curseforge="6635380" %}
+The new Mantle 1.11.63 update, required for all updates covered in this post, can be downloaded at the following:
+
+{% include update/download.html name="mantle" version="1.11.63" curseforge="6642332" %}
 
 ## Tinkers' Construct - Growth Update
 
