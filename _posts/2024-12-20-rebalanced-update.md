@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tinkers' Construct 3.8.4 for 1.19.2"
+title:  "Tinkers' Construct Rebalanced Update"
 date:   2024-12-20 2:24:00 -0400
 categories: posts
 author: KnightMiner
