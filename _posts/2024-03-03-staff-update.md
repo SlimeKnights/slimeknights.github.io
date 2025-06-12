@@ -7,7 +7,7 @@ author: KnightMiner
 image_root: updates/tinkers/staff
 ---
 
-Welcome to the visual changelog for Tinkers' 2.7! This is last major content update for Tinkers 1.18 with a bunch of features that have been on the backlog or in development since the last 2.6 update.
+Welcome to the visual changelog for Tinkers' 3.7! This is last major content update for Tinkers 1.18 with a bunch of features that have been on the backlog or in development since the last 3.6 update.
 
 Now that the backlog has been cleanup up, next goal is some API cleanups (won't be in a 1.18 build) then a 1.19.2 port. Until then, lets talk about what is new in this update!
 
