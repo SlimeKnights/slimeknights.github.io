@@ -3,6 +3,24 @@
 @import "treeview";
 @import "texticon";
 
+/* override max width */
+.wrapper {
+  max-width: -webkit-calc(884px - (30px * 2));
+  max-width: calc(884px - 30px * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media screen and (max-width: 884px) {
+  .wrapper {
+    max-width: -webkit-calc(884px - (30px));
+    max-width: calc(884px - (30px));
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
 /* Add logo to the site title */
 .site-title {
     padding-left: 56px;
@@ -136,13 +154,13 @@ em {
     /* book covers are square, so just use the smaller dimension as the side length */
     &.book-cover {
         image-rendering: pixelated;
-        width: auto;
+        width: 824px;
         height: min(100%, 100vw);
     }
     /* book pages are a 2:1 width:height ratio, so width is 2x height or height is width/2 */
     &.book-page {
         image-rendering: pixelated;
-        width: auto;
+        width: 824px;
         height: min(100%, 50vw);
     }
 }
@@ -200,4 +218,140 @@ em {
         background-color: coral;
         color: maroon
     }
+}
+
+/* TODO: For testing */
+@font-face {
+    font-family: "minecraft-unicode";
+    src: url("../fonts/minecraft-unicode.ttf");
+}
+
+.book-pages {
+    position: relative;
+    image-rendering: pixelated;
+    width: 824px;
+    height: 400px;
+}
+
+.mc-font-gray {
+    font-family: "minecraft-unicode", monospace;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #7E7A74;
+}
+
+.mc-font-black {
+    font-family: "minecraft-unicode", monospace;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 279px;
+    height: 184px;
+    position: absolute;
+    left: 42px;
+    top: 104px;
+    text-align: center;
+    p {
+        margin: 0;
+    }
+}
+
+.link-list {
+    margin-top: 8px;
+    padding-inline-start: 16px;
+    list-style-type: "- ";
+}
+
+.link-list li::marker {
+    color: #A80000;
+}
+
+.prop-list {
+    margin-top: 8px;
+    padding-inline-start: 16px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.grid-melee-harvest {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 332px;
+    row-gap: 12px;
+    p {
+        margin: 0;
+    }
+ }
+
+.left .grid-melee-harvest {
+    padding-left: 40px;
+}
+
+.left .trait {
+    padding-left: 40px;
+}
+
+/* Book Page stuff*/
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0;
+}
+
+.title {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0;
+    align-self: center;
+}
+
+.left {
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    width: 364px;
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 16px;
+    p {
+        margin: 0;
+    }
+}
+
+.right {
+position: absolute;
+    left: 412px;
+    top: 8px;
+    width: 364px;
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 16px;
+    p {
+        margin: 0;
+    }
+}
+
+.spacing {
+    padding-top: 154px;
+}
+
+.spacing-lg {
+    padding-top: 230px;
+}
+
+.shadow {
+    filter: drop-shadow(1px 1px #000000);
 }
