@@ -81,7 +81,7 @@ h2 {
     &.uk-button-primary, &.uk-button-danger {
         color: #fff !important;
     }
-    
+
     &:not(:last-child) {
         margin-bottom: 5px;
     }
@@ -95,7 +95,7 @@ h2 {
     background-color: #32a852;
     color: #fff !important;
     border: 1px solid transparent;
-    
+
     &:hover {
         background-color: #2e994b;
     }
@@ -112,14 +112,14 @@ h2 {
 .section-list {
     ol {
       /* Creates a new instance of the section counter with each ol element */
-      counter-reset: section;                
+      counter-reset: section;
       list-style-type: none;
     }
     li:before {
       /* Increments only this instance of the section counter */
-      counter-increment: section;        
-      /* Adds the value of all instances of the section counter separated by a ".". */      
-      content: counters(section, ".") " ";   
+      counter-increment: section;
+      /* Adds the value of all instances of the section counter separated by a ".". */
+      content: counters(section, ".") " ";
     }
 }
 
@@ -127,7 +127,7 @@ h2 {
     width: max-content;
     font-size: small;
     max-width: 100%;
-    
+
     .uk-open .uk-accordion-title {
         margin-bottom: -15px;
     }
@@ -220,13 +220,12 @@ em {
     }
 }
 
-/* TODO: For testing */
 @font-face {
     font-family: "minecraft-unicode";
     src: url("../fonts/minecraft-unicode.ttf");
 }
 
-.book-pages {
+.book-page {
     position: relative;
     image-rendering: pixelated;
     width: 824px;
@@ -250,14 +249,16 @@ em {
 .grid-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 279px;
-    height: 184px;
+    width: 282px;
     position: absolute;
     left: 42px;
     top: 104px;
     text-align: center;
+    row-gap: 50px;
     p {
+        height: 40px;
         margin: 0;
+        overflow: hidden;
     }
 }
 
@@ -265,10 +266,9 @@ em {
     margin-top: 8px;
     padding-inline-start: 16px;
     list-style-type: "- ";
-}
-
-.link-list li::marker {
-    color: #A80000;
+    li::marker {
+        color: #A80000;
+    }
 }
 
 .prop-list {

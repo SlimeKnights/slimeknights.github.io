@@ -4,15 +4,15 @@
 </p>
 
 <div uk-lightbox="animation: slide; toggle: .book-page">
-    <div class="uk-child-width-1-1 uk-grid-collapse" uk-grid>
+    <div class="uk-child-width-1-1 uk-grid-collapse">
         {%- unless include.book.no_cover -%}
             {%- capture pagePath -%}
                 /assets/images/book/{{include.book.path}}/cover.png
             {%- endcapture -%}
-            <div class="uk-width-1-2 uk-width-1-6@s">
-                <a class="uk-lineline book-page" href="{{pagePath}}" data-attrs="class: book-cover">
+            <div class="uk-width-1-2">
+<!--                <a class="uk-lineline book-page" href="{{pagePath}}" data-attrs="class: book-cover">-->
                     <img src="{{pagePath}}" alt=""/>
-                </a>
+<!--                </a>-->
             </div>
         {%- endunless -%}
         {%- assign titleIndex = 0 -%}
@@ -27,15 +27,12 @@
             {%- capture pagePath -%}
                 /assets/images/book/{{include.book.path}}/page_{{pageIndex}}.png
             {%- endcapture -%}
-            <div class="mc-font-black">
+            <div class="mc-font-black book-page uk-margin">
 <!--                <a class="uk-lineline book-page" href="{{pagePath}}" data-attrs="class: book-page">-->
-                <div class="book-pages">
-                    <img src="test_{{pageIndex}}.png" alt=""/>
+                    <img src="{{pagePath}}" alt=""/>
                     {% if include.book.path == "tinkers/3.10.1/materials_and_you" %}
                         {% include book/{{include.book.path}}/page_{{pageIndex}}.html pageIndex=pageIndex %}
                     {% endif %}
-                </div>
-                <img src="{{pagePath}}" alt=""/>
 <!--                </a>-->
             </div>
         {%- endfor -%}
