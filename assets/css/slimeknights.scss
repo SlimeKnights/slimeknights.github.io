@@ -12,14 +12,6 @@
   padding-right: 30px;
   padding-left: 30px;
 }
-@media screen and (max-width: 884px) {
-  .wrapper {
-    max-width: -webkit-calc(884px - (30px));
-    max-width: calc(884px - (30px));
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
 
 /* Add logo to the site title */
 .site-title {
@@ -225,13 +217,6 @@ em {
     src: url("../fonts/minecraft-unicode.ttf");
 }
 
-.book-page {
-    position: relative;
-    image-rendering: pixelated;
-    width: 824px;
-    height: 400px;
-}
-
 .mc-font-gray {
     font-family: "minecraft-unicode", monospace;
     font-size: 13px;
@@ -249,16 +234,31 @@ em {
 .grid-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 282px;
     position: absolute;
-    left: 42px;
-    top: 104px;
+    width: 282px;
+    left: 41px;
+    top: 44px;
     text-align: center;
-    row-gap: 50px;
+    img {
+        width: 94px;
+        height: 56px;
+    }
     p {
-        height: 40px;
-        margin: 0;
+        height: 38px;
         overflow: hidden;
+    }
+}
+
+.grid-materials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    width: 240px;
+    left: 30px;
+    top: 104px;
+    img {
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -282,23 +282,12 @@ em {
     gap: 12px;
 }
 
-.grid-melee-harvest {
+.grid-melee-harvest-ranged {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 332px;
     row-gap: 12px;
-    p {
-        margin: 0;
-    }
  }
-
-.left .grid-melee-harvest {
-    padding-left: 40px;
-}
-
-.left .trait {
-    padding-left: 40px;
-}
 
 /* Book Page stuff*/
 .underline {
@@ -314,34 +303,41 @@ em {
     align-self: center;
 }
 
-.left {
-    position: absolute;
-    left: 16px;
-    top: 8px;
-    width: 364px;
-    height: 352px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 16px;
+.book-page {
+    position: relative;
+    image-rendering: pixelated;
+    width: 824px;
+    height: 400px;
+    > div {
+        position: absolute;
+        top: 8px;
+        width: 364px;
+        height: 352px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 16px;
+        p {
+            scroll-margin-top: 24px;
+        }
+    }
     p {
         margin: 0;
     }
 }
 
-.right {
-position: absolute;
-    left: 412px;
-    top: 8px;
-    width: 364px;
-    height: 352px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 16px;
-    p {
-        margin: 0;
+.left {
+    left: 16px;
+    .grid-melee-harvest-ranged {
+        padding-left: 40px;
     }
+    .trait {
+        padding-left: 40px;
+    }
+}
+
+.right {
+    left: 412px;
 }
 
 .spacing {
@@ -352,6 +348,7 @@ position: absolute;
     padding-top: 230px;
 }
 
+// TODO: remove this
 .shadow {
     filter: drop-shadow(1px 1px #000000);
 }

@@ -4,21 +4,27 @@ materials_and_you_20:
   titles:
     - index: 1
       text: Introduction
-     
+      link: intro
+
     - index: 6
       text: Tier 1 Melee Harvest
-      
+      link: melee_harvest_materials
+
     - index: 11
       text: Tier 1 Ranged
-      
+      link: ranged_materials
+
     - index: 16
       text: Tools
-      
+      link: tools
+
     - index: 22
       text: Modifiers
-      
+      link: modifiers
+
     - index: 25
       text: Further Reading
+      link: further_reading
 
 puny_smelting_20:
   path: tinkers/3.10.1/puny_smelting
