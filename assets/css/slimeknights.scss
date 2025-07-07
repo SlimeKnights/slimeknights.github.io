@@ -338,10 +338,13 @@ em {
 
 .right {
     left: 412px;
+    .trait {
+        padding-right: 40px;
+    }
 }
 
 .spacing {
-    padding-top: 154px;
+    padding-top: 166px;
 }
 
 .spacing-lg {
