@@ -249,6 +249,23 @@ em {
     }
 }
 
+.grid-content-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    width: 376px;
+    top: 48px;
+    text-align: center;
+    img {
+        width: 94px;
+        height: 56px;
+    }
+    p {
+        height: 38px;
+        overflow: hidden;
+    }
+}
+
 .grid-materials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -259,6 +276,32 @@ em {
     img {
         width: 80px;
         height: 80px;
+    }
+}
+
+.grid-materials-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: absolute;
+    width: 300px;
+    left: 30px;
+    top: 80px;
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.grid-materials-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: absolute;
+    width: 300px;
+    left: 30px;
+    top: 80px;
+    img {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -296,18 +339,16 @@ em {
     text-underline-offset: 0;
 }
 
-.title {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0;
-    align-self: center;
+.large {
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .book-page {
     position: relative;
     image-rendering: pixelated;
-    width: 824px;
     height: 400px;
+    text-size-adjust: none;
     > div {
         position: absolute;
         top: 8px;

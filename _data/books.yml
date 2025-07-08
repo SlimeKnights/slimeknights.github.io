@@ -28,34 +28,43 @@ materials_and_you_20:
 
 puny_smelting_20:
   path: tinkers/3.10.1/puny_smelting
-  max_page: 91
+  max_page: 92
   titles:
     - index: 2
       text: Melter & Moving Fluids
-      
+      link: moving_fluids
+
     - index: 9
       text: Casting
-      
+      link: casting
+
     - index: 13
       text: Tier 2 Melee Harvest
-      
+      link: melee_harvest_materials
+
     - index: 22
       text: Tier 2 Ranged
-      
+      link: ranged_materials
+
     - index: 29
       text: Tier 2 Armor
-      
-    - index: 40
+      link: armor_materials
+
+    - index: 41
       text: Puny Armor
-      
+      link: armor
+
     - index: 46
       text: Upgrades
-      
+      link: upgrades
+
     - index: 81
       text: Slotless Modifiers
-      
-    - index: 91
+      link: slotless
+
+    - index: 92
       text: Further Reading
+      link: further_reading
 
 mighty_smelting_20:
   path: tinkers/3.10.1/mighty_smelting
