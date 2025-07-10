@@ -75,12 +75,15 @@ mighty_smelting_20:
       
     - index: 13
       text: Tier 3 Melee Harvest
+      link: melee_harvest_materials
       
     - index: 20
       text: Tier 3 Ranged
+      link: ranged_materials
       
     - index: 27
       text: Tier 3 Armor
+      link: ranged_materials
       
     - index: 34
       text: Broad Tools
@@ -97,21 +100,27 @@ fantastic_foundry_20:
   titles:      
     - index: 2
       text: Alloyer
+      link: alloyer
       
     - index: 6
       text: Foundry
+      link: foundry
       
     - index: 14
       text: Blazing Blood
+      link: blazing_blood
       
     - index: 18
       text: Tier 4 Melee Harvest
+      link: melee_harvest_materials
       
     - index: 22
       text: Tier 4 Ranged
+      link: ranged_materials
       
     - index: 26
       text: Tier 4 Armor
+      link: armor_materials
 
 tinkers_gadgetry_20:
   path: tinkers/3.10.1/tinkers_gadgetry

@@ -231,7 +231,7 @@ em {
     color: #000000;
 }
 
-.grid-content {
+.grid-content-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     position: absolute;
@@ -254,7 +254,8 @@ em {
     grid-template-columns: repeat(4, 1fr);
     position: absolute;
     width: 376px;
-    top: 48px;
+    top: 46px;
+    left: -4px;
     text-align: center;
     img {
         width: 94px;
