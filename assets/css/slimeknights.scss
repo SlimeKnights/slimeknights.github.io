@@ -266,7 +266,7 @@ em {
     }
 }
 
-.grid-materials {
+.grid-materials-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     position: absolute;
@@ -276,6 +276,19 @@ em {
     img {
         width: 80px;
         height: 80px;
+    }
+}
+
+.grid-materials-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    width: 300px;
+    left: 30px;
+    top: 80px;
+    img {
+        width: 75px;
+        height: 75px;
     }
 }
 
@@ -319,18 +332,30 @@ em {
     padding-inline-start: 16px;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
 .column {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.grid-melee-harvest-ranged {
+.grid-material-stats {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 332px;
     row-gap: 12px;
- }
+}
+
+.grid-armor-traits {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 332px;
+}
 
 /* Book Page stuff*/
 .underline {
@@ -358,29 +383,33 @@ em {
         flex-direction: column;
         gap: 12px;
         margin: 16px;
-        p {
-            scroll-margin-top: 24px;
-        }
     }
     p {
+        scroll-margin-top: 24px;
         margin: 0;
     }
 }
 
+.page-material {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .left {
     left: 16px;
-    .grid-melee-harvest-ranged {
-        padding-left: 40px;
+    .page-material {
+        padding-left: 44px;
     }
     .trait {
-        padding-left: 40px;
+        padding-right: 20px;
     }
 }
 
 .right {
     left: 412px;
     .trait {
-        padding-right: 40px;
+        padding-right: 44px;
     }
 }
 
@@ -390,9 +419,4 @@ em {
 
 .spacing-lg {
     padding-top: 230px;
-}
-
-// TODO: remove this
-.shadow {
-    filter: drop-shadow(1px 1px #000000);
 }
