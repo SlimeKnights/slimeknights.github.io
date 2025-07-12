@@ -319,6 +319,20 @@ em {
     }
 }
 
+.grid-materials-7 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: absolute;
+    width: 280px;
+    left: 30px;
+    top: 56px;
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
 .link-list {
     margin-top: 8px;
     padding-inline-start: 16px;

@@ -150,15 +150,19 @@ encyclopedia_20:
   titles:
     - index: 2
       text: Tools
+      link: tools
       
     - index: 17
       text: Armor
+      link: armor
       
     - index: 25
       text: Upgrades
-      
+      link: upgrades
+
     - index: 59
       text: Defense
+      link: defense
       
     - index: 66
       text: Slotless

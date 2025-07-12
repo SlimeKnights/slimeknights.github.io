@@ -29,12 +29,12 @@
                 /assets/images/book/{{include.book.path}}/old_{{pageIndex}}.png
             {%- endcapture -%}
             <div class="uk-width uk-margin mc-font-black book-page">
-                {% if include.book.path == "tinkers/3.10.1/materials_and_you" or include.book.path == "tinkers/3.10.1/puny_smelting" or include.book.path == "tinkers/3.10.1/fantastic_foundry" %}
+                {% if include.book.path == "tinkers/3.10.1/materials_and_you" or include.book.path == "tinkers/3.10.1/puny_smelting" or include.book.path == "tinkers/3.10.1/mighty_smelting" or include.book.path == "tinkers/3.10.1/fantastic_foundry" or include.book.path == "tinkers/3.10.1/encyclopedia" %}
                     <img src="{{pagePath}}" alt=""/>
                     {% include book/{{include.book.path}}/page_{{pageIndex}}.html %}
                 {% endif %}
             </div>
-            {% if include.book.path == "tinkers/3.10.1/puny_smelting" or include.book.path == "tinkers/3.10.1/mighty_smelting" or include.book.path == "tinkers/3.10.1/fantastic_foundry" %}
+            {% if include.book.path == "tinkers/3.10.1/puny_smelting" or include.book.path == "tinkers/3.10.1/mighty_smelting" or include.book.path == "tinkers/3.10.1/fantastic_foundry" or include.book.path == "tinkers/3.10.1/encyclopedia" %}
                 <img src="{{testPath}}" alt=""/>
             {% endif %}
         {%- endfor -%}
