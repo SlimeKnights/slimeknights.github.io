@@ -414,7 +414,9 @@ em {
 .left {
     left: 16px;
     .page-material {
-        padding-left: 44px;
+        > :not(.underline) {
+            padding-left: 44px;
+        }
     }
     .trait {
         padding-right: 20px;
