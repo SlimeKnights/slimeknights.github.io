@@ -221,6 +221,7 @@ em {
     font-family: "minecraft-unicode", monospace;
     font-size: 13px;
     letter-spacing: 0.5px;
+    line-height: 19px;
     color: #7E7A74;
 }
 
@@ -228,6 +229,7 @@ em {
     font-family: "minecraft-unicode", monospace;
     font-size: 13px;
     letter-spacing: 0.5px;
+    line-height: 19px;
     color: #000000;
 }
 
@@ -337,6 +339,7 @@ em {
     margin-top: 8px;
     padding-inline-start: 16px;
     list-style-type: "- ";
+    width: 103px;
     li::marker {
         color: #A80000;
     }

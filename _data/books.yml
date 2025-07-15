@@ -146,7 +146,7 @@ tinkers_gadgetry_20:
 
 encyclopedia_20:
   path: tinkers/3.10.1/encyclopedia
-  max_page: 214
+  max_page: 218
   titles:
     - index: 2
       text: Tools
@@ -166,24 +166,31 @@ encyclopedia_20:
       
     - index: 66
       text: Slotless
+      link: slotless
       
     - index: 77
       text: Abilities
+      link: abilities
       
     - index: 109
       text: Melee Harvest Materials
-      
+      link: materials_harvest
+
     - index: 133
       text: Ranged Materials
+      link: materials_ranged
       
     - index: 154
       text: Armor Materials
-      
+      link: materials_armor
+
     - index: 174
       text: Slimeskulls
+      link: slimeskulls
       
-    - index: 182
+    - index: 185
       text: Fluid Effects
+      link: fluid_effects
 
 
 materials_and_you_19:
