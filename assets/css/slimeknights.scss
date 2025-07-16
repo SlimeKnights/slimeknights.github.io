@@ -146,13 +146,13 @@ em {
     /* book covers are square, so just use the smaller dimension as the side length */
     &.book-cover {
         image-rendering: pixelated;
-        width: 824px;
+        width: auto;
         height: min(100%, 100vw);
     }
     /* book pages are a 2:1 width:height ratio, so width is 2x height or height is width/2 */
     &.book-page {
         image-rendering: pixelated;
-        width: 824px;
+        width: auto;
         height: min(100%, 50vw);
     }
 }
@@ -212,6 +212,7 @@ em {
     }
 }
 
+/* Book Page stuff*/
 @font-face {
     font-family: "minecraft-unicode";
     src: url("../fonts/minecraft-unicode.ttf");
@@ -375,7 +376,6 @@ em {
     width: 332px;
 }
 
-/* Book Page stuff*/
 .underline {
     text-decoration: underline;
     text-decoration-thickness: 2px;
