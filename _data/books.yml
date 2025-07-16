@@ -128,21 +128,27 @@ tinkers_gadgetry_20:
   titles:
     - index: 2
       text: Gadgets
+      link: gadgets
       
     - index: 6
       text: Odd Modifiers
+      link: modifiers
       
     - index: 13
       text: Exploration
+      link: exploration
       
     - index: 19
       text: Staffs
+      link: staffs
       
     - index: 22
       text: Ancient Tools
+      link: tools
       
     - index: 24
       text: Slimy Armor
+      link: armor
 
 encyclopedia_20:
   path: tinkers/3.10.1/encyclopedia
