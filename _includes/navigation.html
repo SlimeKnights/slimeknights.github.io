@@ -6,10 +6,11 @@
           <a href="../{{include.previous.link}}">
         {%- else -%}
           <a href="../{{include.previous.title | slugify }}">
-        {%- endif -%}
-        <span class="uk-margin-small-right" uk-pagination-previous></span>
-        {{ include.previous.title | default: include.previous.link }}
-      </a></li>
+            {%- endif -%}
+            <span class="uk-margin-small-right" uk-pagination-previous></span>
+            {{ include.previous.title | default: include.previous.link }}
+          </a>
+      </li>
     {%- endif -%}
     {%- if include.next -%}
       <li class="uk-margin-auto-left">
