@@ -2,12 +2,12 @@
 <div>
     <div class="uk-child-width-1-1 uk-grid-collapse">
         {%- unless include.book.no_cover -%}
-        {%- capture pagePath -%}
-        /assets/images/book/{{include.book.path}}/cover.png
-        {%- endcapture -%}
-        <div class="uk-width-1-2 uk-margin book-page">
-            <img src="{{pagePath}}" alt=""/>
-        </div>
+            {%- capture pagePath -%}
+                /assets/images/book/{{include.book.path}}/cover.png
+            {%- endcapture -%}
+            <div class="uk-width-1-2 uk-margin book-page">
+                <img src="{{pagePath}}" alt=""/>
+            </div>
         {%- endunless -%}
         {%- assign titleIndex = 0 -%}
         {%- assign titleCount = include.book.titles | size -%}
