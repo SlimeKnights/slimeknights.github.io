@@ -64,6 +64,11 @@ These mods are made by a member of SlimeKnights, but the projects are not part o
       description="Inspirations is a mod for Minecraft adding various smaller features to the game. The design is targeted towards vanilla, so instead of game changing features there are many smaller changes. "
     %}
     {% include project.html
+      name="metalborn" latest="1.20.1"
+      author="KnightMiner" curseforge=false modrinth=false
+      description="Magic mod about storing power in metal. Inspired by Feruchemy from Brandon Sanderson's Mistborn series."
+    %}
+    {% include project.html
       name="simple-gravel-ores" title="Simple Gravel Ores" latest="1.20.1"
       author="KnightMiner" github-author="elucent" github="GravelOres"
       description="Simple Gravel Ores brings back the classic gravel ores from Tinkers' Construct 1 into modern versions, with configurability to support any mod's ores."
