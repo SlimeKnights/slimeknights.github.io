@@ -65,7 +65,7 @@ These mods are made by a member of SlimeKnights, but the projects are not part o
     %}
     {% include project.html
       name="metalborn" latest="1.20.1"
-      author="KnightMiner" curseforge=false modrinth=false
+      author="KnightMiner" modrinth=false
       description="Magic mod about storing power in metal. Inspired by Feruchemy from Brandon Sanderson's Mistborn series."
     %}
     {% include project.html

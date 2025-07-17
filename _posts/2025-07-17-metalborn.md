@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Metalborn - new mod inspired by Feruchemy"
+title:  "Metalborn - new mod for 1.20.1 inspired by Feruchemy"
+date:   2025-07-17 16:20:00 -0400
 categories: posts
 author: KnightMiner
 image_root: updates/metalborn/alpha
