@@ -335,7 +335,6 @@ em {
     }
 }
 
-
 .link-list {
     margin-top: 8px;
     padding-inline-start: 16px;
@@ -343,6 +342,9 @@ em {
     width: 103px;
     li::marker {
         color: #A80000;
+    }
+    li:hover {
+        list-style-type: "> ";
     }
 }
 
