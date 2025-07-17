@@ -9,7 +9,7 @@ image_root: updates/metalborn/alpha
 
 Just released a new mod for 1.20.1 called Metalborn. This mod is my own take on [Feruchemy](https://coppermind.net/wiki/Feruchemy) from Brandon Sanderson's [Mistborn series](https://coppermind.net/wiki/Mistborn_(series)). Feruchemy is the art of storing power in metals, which seemed to fit so well with the large amount of metals in modded Minecraft. While storing, you are temporarily weaker, but you can later draw out that power to increase your power by the same amount.
 
-This blog post will talk about some of the story of the mod and my design goals. If you simply are interested in downloading it to play it yourself, see [Downloads](#downloads). To get started with the mod, check out the in game book, which is also available [online](/docs/books/1.20/metalborn).
+This blog post will talk about some of the story of the mod and my design goals. If you simply are interested in downloading it to play it yourself, see [download](#download). To get started with the mod, check out the in game book, which is also available [online](/docs/books/1.20/metalborn).
 
 {% include toc.html %}
 
