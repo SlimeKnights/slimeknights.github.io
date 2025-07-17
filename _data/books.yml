@@ -157,6 +157,22 @@ encyclopedia_20:
     - index: 188
       text: Fluid Effects
 
+metalborn_20:
+  path: metalborn/0.1.0
+  max_page: 15
+  titles:
+    - index: 1
+      text: Metal Forge
+      
+    - index: 3
+      text: Feruchemy
+      
+    - index: 6
+      text: Hemalurgy
+      
+    - index: 7
+      text: Metal Powers
+
 
 materials_and_you_19:
   path: tinkers/3.8.5/materials_and_you
