@@ -10,7 +10,7 @@ shopt -s globstar
 for img in **/*.png; do
   colors=$(magick "$img" -format %k info:)
   if magick identify -verbose "$img" | grep -q "Class: DirectClass" && [ "$colors" -lt 256 ]; then
-    printf "Compressing: %s\n" "$img"
+    printf "Compressing: %s (%d colors)\n" "$img" "$colors"
     compress "$img" &
   fi
 done

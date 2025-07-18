@@ -19,10 +19,10 @@
         {%- assign titleIndex = titleIndex | plus: 1 -%}
         {%- endif -%}
         {%- capture pagePath -%}
-        /assets/images/book/{{include.book.path}}/page_{{pageIndex}}.png
+        /assets/images/book/{{include.book.path}}/clean_{{pageIndex}}.png
         {%- endcapture -%}
         {%- capture testPath -%}
-        /assets/images/book/{{include.book.path}}/old_{{pageIndex}}.png
+        /assets/images/book/{{include.book.path}}/page_{{pageIndex}}.png
         {%- endcapture -%}
         <div class="uk-width uk-margin mc-font-black book-page">
             <img src="{{pagePath}}" alt=""/>
