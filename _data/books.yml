@@ -8,47 +8,49 @@ materials_and_you_20:
 
     - index: 6
       text: Tier 1 Melee Harvest
-      link: melee_harvest_materials
+      link: melee-harvest-materials
 
     - index: 11
       text: Tier 1 Ranged
-      link: ranged_materials
+      link: ranged-materials
 
     - index: 16
       text: Tools
-      link: tools
 
     - index: 22
       text: Modifiers
-      link: modifiers
 
     - index: 25
       text: Further Reading
-      link: further_reading
 
 puny_smelting_20:
   path: tinkers/3.10.1/puny_smelting
   max_page: 92
   titles:
+    - index: 1
+      text: Introduction
+      link: intro
+
     - index: 2
-      text: Melter & Moving Fluids
-      link: moving_fluids
+      text: Melter
+
+    - index: 4
+      text: Moving Fluids
 
     - index: 9
       text: Casting
-      link: casting
 
     - index: 13
       text: Tier 2 Melee Harvest
-      link: melee_harvest_materials
+      link: melee-harvest-materials
 
     - index: 22
       text: Tier 2 Ranged
-      link: ranged_materials
+      link: ranged-materials
 
     - index: 29
       text: Tier 2 Armor
-      link: armor_materials
+      link: armor-materials
 
     - index: 41
       text: Puny Armor
@@ -56,7 +58,6 @@ puny_smelting_20:
 
     - index: 46
       text: Upgrades
-      link: upgrades
 
     - index: 81
       text: Slotless Modifiers
@@ -64,29 +65,36 @@ puny_smelting_20:
 
     - index: 92
       text: Further Reading
-      link: further_reading
 
 mighty_smelting_20:
   path: tinkers/3.10.1/mighty_smelting
   max_page: 76
   titles:
+    - index: 1
+      text: Introduction
+      link: intro
+
     - index: 2
       text: Smeltery
-      
+
+    - index: 11
+      text: Entity Melting
+
     - index: 13
       text: Tier 3 Melee Harvest
-      link: melee_harvest_materials
+      link: melee-harvest-materials
       
     - index: 20
       text: Tier 3 Ranged
-      link: ranged_materials
+      link: ranged-materials
       
     - index: 27
       text: Tier 3 Armor
-      link: ranged_materials
+      link: armor-materials
       
     - index: 34
       text: Broad Tools
+      link: tools
       
     - index: 38
       text: Abilities
@@ -97,30 +105,31 @@ mighty_smelting_20:
 fantastic_foundry_20:
   path: tinkers/3.10.1/fantastic_foundry
   max_page: 29
-  titles:      
+  titles:
+    - index: 1
+      text: Introduction
+      link: intro
+
     - index: 2
       text: Alloyer
-      link: alloyer
-      
+
     - index: 6
       text: Foundry
-      link: foundry
-      
+
     - index: 14
       text: Blazing Blood
-      link: blazing_blood
-      
+
     - index: 18
       text: Tier 4 Melee Harvest
-      link: melee_harvest_materials
+      link: melee-harvest-materials
       
     - index: 22
       text: Tier 4 Ranged
-      link: ranged_materials
+      link: ranged-materials
       
     - index: 26
       text: Tier 4 Armor
-      link: armor_materials
+      link: armor-materials
 
 tinkers_gadgetry_20:
   path: tinkers/3.10.1/tinkers_gadgetry
@@ -128,20 +137,17 @@ tinkers_gadgetry_20:
   titles:
     - index: 2
       text: Gadgets
-      link: gadgets
-      
+
     - index: 6
       text: Odd Modifiers
       link: modifiers
       
     - index: 13
       text: Exploration
-      link: exploration
-      
+
     - index: 19
       text: Staffs
-      link: staffs
-      
+
     - index: 22
       text: Ancient Tools
       link: tools
@@ -156,47 +162,39 @@ encyclopedia_20:
   titles:
     - index: 2
       text: Tools
-      link: tools
-      
+
     - index: 17
       text: Armor
-      link: armor
-      
+
     - index: 25
       text: Upgrades
-      link: upgrades
 
     - index: 59
       text: Defense
-      link: defense
-      
+
     - index: 66
       text: Slotless
-      link: slotless
-      
+
     - index: 77
       text: Abilities
-      link: abilities
-      
+
     - index: 109
       text: Melee Harvest Materials
-      link: materials_harvest
+      link: materials-harvest
 
     - index: 133
       text: Ranged Materials
-      link: materials_ranged
+      link: materials-ranged
       
     - index: 154
       text: Armor Materials
-      link: materials_armor
+      link: materials-armor
 
     - index: 174
       text: Slimeskulls
-      link: slimeskulls
-      
+
     - index: 185
       text: Fluid Effects
-      link: fluid_effects
 
 
 materials_and_you_19:

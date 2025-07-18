@@ -13,7 +13,7 @@
         {%- for pageIndex in (0..include.book.max_page) -%}
         {%- if titleIndex < titleCount and include.book.titles[titleIndex].index == pageIndex -%}
     </div>
-    <h3 id="{{ include.book.titles[titleIndex].link }}">{{ include.book.titles[titleIndex].text }}</h3>
+    <h3 id="{{ include.book.titles[titleIndex].link | default: include.book.titles[titleIndex].text | slugify }}">{{ include.book.titles[titleIndex].text }}</h3>
     <div class="uk-child-width-1-1 uk-grid-collapse">
         {%- assign titleIndex = titleIndex | plus: 1 -%}
         {%- endif -%}
