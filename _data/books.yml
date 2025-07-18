@@ -56,7 +56,7 @@ puny_smelting_20:
       text: Puny Armor
       link: armor
 
-    - index: 46
+    - index: 47
       text: Upgrades
 
     - index: 81
@@ -68,7 +68,7 @@ puny_smelting_20:
 
 mighty_smelting_20:
   path: tinkers/3.10.1/mighty_smelting
-  max_page: 76
+  max_page: 77
   titles:
     - index: 1
       text: Introduction
@@ -96,10 +96,10 @@ mighty_smelting_20:
       text: Broad Tools
       link: tools
       
-    - index: 38
+    - index: 39
       text: Abilities
       
-    - index: 70
+    - index: 71
       text: Defense
 
 fantastic_foundry_20:
@@ -135,6 +135,10 @@ tinkers_gadgetry_20:
   path: tinkers/3.10.1/tinkers_gadgetry
   max_page: 34
   titles:
+    - index: 1
+      text: Introduction
+      link: intro
+
     - index: 2
       text: Gadgets
 
@@ -150,11 +154,14 @@ tinkers_gadgetry_20:
 
     - index: 22
       text: Ancient Tools
-      link: tools
-      
+
     - index: 24
       text: Slimy Armor
       link: armor
+
+    - index: 26
+      text: Slimeskull
+      link: materials
 
 encyclopedia_20:
   path: tinkers/3.10.1/encyclopedia
