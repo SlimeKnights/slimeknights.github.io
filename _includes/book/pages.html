@@ -1,42 +1,3 @@
-{% if include.book.version == 2 %}
-<div>
-    <div class="uk-child-width-1-1 uk-grid-collapse">
-        {%- unless include.book.no_cover -%}
-            {%- capture pagePath -%}
-                /assets/images/book/{{include.book.path}}/cover.png
-            {%- endcapture -%}
-            <div class="uk-width-1-2 uk-margin book-page">
-                <img src="{{pagePath}}" alt=""/>
-            </div>
-        {%- endunless -%}
-        {%- assign titleIndex = 0 -%}
-        {%- assign titleCount = include.book.titles | size -%}
-        {%- for pageIndex in (0..include.book.max_page) -%}
-        {%- if titleIndex < titleCount and include.book.titles[titleIndex].index == pageIndex -%}
-    </div>
-    <h3 id="{{ include.book.titles[titleIndex].link }}">{{ include.book.titles[titleIndex].text }}</h3>
-    <div class="uk-child-width-1-1 uk-grid-collapse">
-        {%- assign titleIndex = titleIndex | plus: 1 -%}
-        {%- endif -%}
-        {%- capture pagePath -%}
-        /assets/images/book/{{include.book.path}}/clean_{{pageIndex}}.png
-        {%- endcapture -%}
-        {%- capture testPath -%}
-        /assets/images/book/{{include.book.path}}/page_{{pageIndex}}.png
-        {%- endcapture -%}
-        <div class="uk-width uk-margin mc-font-black book-page">
-            <img src="{{pagePath}}" alt=""/>
-            {% include book/{{include.book.path}}/page_{{pageIndex}}.html %}
-        </div>
-        {% if include.book.path == "tinkers/3.10.1/puny_smelting" or include.book.path == "tinkers/3.10.1/mighty_smelting" or
-        include.book.path == "tinkers/3.10.1/fantastic_foundry" or include.book.path == "tinkers/3.10.1/encyclopedia" or
-        include.book.path == "tinkers/3.10.1/tinkers_gadgetry" %}
-        <img src="{{testPath}}" alt=""/>
-        {% endif %}
-        {%- endfor -%}
-    </div>
-</div>
-{% else %}
 <p>
     See below for images of all pages in {{page.breadcrumb | default: page.title}}.
     Click a page to view in gallery mode.
@@ -73,4 +34,3 @@
         {%- endfor -%}
     </div>
 </div>
-{% endif %}

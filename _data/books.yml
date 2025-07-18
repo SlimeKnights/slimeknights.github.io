@@ -1,5 +1,4 @@
 materials_and_you_20:
-  version: 2
   path: tinkers/3.10.1/materials_and_you
   max_page: 27
   titles:
@@ -28,7 +27,6 @@ materials_and_you_20:
       link: further_reading
 
 puny_smelting_20:
-  version: 2
   path: tinkers/3.10.1/puny_smelting
   max_page: 92
   titles:
@@ -69,7 +67,6 @@ puny_smelting_20:
       link: further_reading
 
 mighty_smelting_20:
-  version: 2
   path: tinkers/3.10.1/mighty_smelting
   max_page: 76
   titles:
@@ -98,7 +95,6 @@ mighty_smelting_20:
       text: Defense
 
 fantastic_foundry_20:
-  version: 2
   path: tinkers/3.10.1/fantastic_foundry
   max_page: 29
   titles:      
@@ -127,7 +123,6 @@ fantastic_foundry_20:
       link: armor_materials
 
 tinkers_gadgetry_20:
-  version: 2
   path: tinkers/3.10.1/tinkers_gadgetry
   max_page: 34
   titles:
@@ -156,7 +151,6 @@ tinkers_gadgetry_20:
       link: armor
 
 encyclopedia_20:
-  version: 2
   path: tinkers/3.10.1/encyclopedia
   max_page: 218
   titles:
