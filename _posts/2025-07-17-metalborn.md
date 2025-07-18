@@ -4,7 +4,7 @@ title:  "Metalborn - new mod for 1.20.1 inspired by Feruchemy"
 date:   2025-07-17 16:20:00 -0400
 categories: posts
 author: KnightMiner
-image: assets/updates/metalborn/alpha/spikes.png
+image: assets/images/updates/metalborn/alpha/spikes.png
 image_root: updates/metalborn/alpha
 ---
 
