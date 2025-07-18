@@ -4,6 +4,7 @@ title:  "Tinkers' Construct Foundry Update"
 date:   2021-05-21 12:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/foundry/foundry.png
 image_root: updates/tinkers/foundry
 ---
 
