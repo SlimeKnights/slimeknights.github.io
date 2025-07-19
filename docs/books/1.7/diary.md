@@ -6,7 +6,10 @@ description: Gallery of all pages for Diary of a Tinkerer from Tinkers' Construc
 previous:
   title: Tinkers' Weaponry
 book: diary_7
-image: /assets/images/book/icons/diary.png
+image:
+  path: /assets/images/book/icons/diary.png
+  width: 64
+  height: 64
 twitter:
   card: summary
 ---

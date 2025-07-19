@@ -8,7 +8,10 @@ previous:
 next:
   title: Tinkers' Weaponry
 book: mighty_smelting_7
-image: /assets/images/book/icons/mighty-smelting-old.png
+image:
+  path: /assets/images/book/icons/mighty-smelting-old.png
+  width: 64
+  height: 64
 twitter:
   card: summary
 ---
