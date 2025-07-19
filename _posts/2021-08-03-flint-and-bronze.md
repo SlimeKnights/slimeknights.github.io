@@ -4,6 +4,7 @@ title:  "Tinkers' Construct 3.1.1 Update"
 date:   2021-12-06 12:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/3.1.1/dual-wield-broad.png
 image_root: updates/tinkers/3.1.1
 ---
 

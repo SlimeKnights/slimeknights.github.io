@@ -4,6 +4,7 @@ title:  "Tinkers' Construct 1.20 and Ancient Tool Update"
 date:   2024-12-31 22:58:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/ancient-tools/battlesign.png
 image_root: updates/tinkers/ancient-tools
 ---
 Tinkers' Construct is now available for 1.20.1! As part of this update, we have added many cool new features, most notably ancient tools. In addition, a few of these features are also available in the latest release for 1.19.2 (as many of them were coded before the port), see the note at the top of the section for supported versions.

@@ -4,6 +4,7 @@ title:  "Tinkers 1.20 Beta - Byproduct Update"
 date:   2025-03-02 23:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/byproduct-update/cinderslime.png
 image_root: updates/tinkers/byproduct-update
 ---
 Tinkers' Construct just had a beta released for 1.20.1. This means we are ready to call the API safe for addons to use, but are not yet ready to call the update content stable. If you are making a modpack, expect to need to keep an eye on the changelogs for balance changes and alike. Check out the [the update primer]({% post_url 2024-12-31-1.20-update-primer %}) for a guide on updating.

@@ -4,6 +4,7 @@ title:  "Tinkers' Construct Staff Update"
 date:   2024-04-02 12:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/staff/spitting.png
 image_root: updates/tinkers/staff
 ---
 

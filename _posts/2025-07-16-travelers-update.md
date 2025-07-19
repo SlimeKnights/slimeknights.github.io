@@ -4,6 +4,7 @@ title:  "Tinkers' Construct Traveler's Update for 1.20.1"
 date:   2025-07-16 20:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/travelers/travelers-gear.png
 image_root: updates/tinkers/travelers
 ---
 Tinkers' Construct just got a new update! The main feature in this update is more improvements to Traveler's Gear, but it also has some preparations for an new mod I am working on called Metalborn. More on that mod in a later post.

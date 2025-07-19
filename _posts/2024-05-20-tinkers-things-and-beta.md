@@ -4,6 +4,7 @@ title:  "Tinkers' Things 1.19.2 and Tinkers' Beta"
 date:   2024-05-20 12:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/things-and-beta/hematite-plate.png
 image_root: updates/tinkers/things-and-beta
 ---
 
