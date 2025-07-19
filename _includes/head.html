@@ -3,21 +3,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  {%- if page.book -%}
-    {%- assign book = site.data.books[page.book] -%}
-    {%- if book.no_cover -%}
-      {%- capture book_image -%}
-        /assets/images/book/{{book.path}}/page_0.png
-      {%- endcapture -%}
-    {%- else -%}
-      {%- capture book_image -%}
-        /assets/images/book/{{book.path}}/cover.png
-      {%- endcapture -%}
+  {%- unless page.image -%}
+    {%- if page.book -%}
+      {%- assign book = site.data.books[page.book] -%}
+      {%- unless book.no_cover -%}
+        {%- capture book_image -%}
+          /assets/images/book/{{book.path}}/cover.png
+        {%- endcapture -%}
+        {%- assign book_image = book_image | absolute_url -%}
+        <meta property="og:image" content="{{ book_image }}">
+        <meta property="twitter:image" content="{{ book_image }}">
+      {%- endunless -%}
     {%- endif -%}
-    {%- assign book_image = book_image | absolute_url -%}
-    <meta property="og:image" content="{{ book_image }}">
-    <meta property="twitter:image" content="{{ book_image }}">
-  {%- endif -%}
+  {%- endunless -%}
   
   {%- capture cache_buster -%}?{{site.time | date: '%s'}}{%- endcapture -%}
   

@@ -9,4 +9,7 @@ next:
   link: diary
   title: Diary of a Tinkerer
 book: tinkers_weaponry_7
+image: /assets/images/book/icons/tinkers-weaponry.png
+twitter:
+  card: summary
 ---
