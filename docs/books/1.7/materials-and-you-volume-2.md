@@ -10,10 +10,7 @@ next:
 redirect_from:
   - /docs/books/1.7/materials-and-you-vol-2/
 book: materials_and_you_vol_2
-image:
-  path: /assets/images/book/icons/materials-and-you-volume-2.png
-  width: 64
-  height: 64
+image: /assets/images/book/meta/materials-and-you-volume-2.png
 twitter:
   card: summary
 ---

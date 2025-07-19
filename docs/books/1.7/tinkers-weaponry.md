@@ -9,10 +9,7 @@ next:
   link: diary
   title: Diary of a Tinkerer
 book: tinkers_weaponry_7
-image:
-  path: /assets/images/book/icons/tinkers-weaponry.png
-  width: 64
-  height: 64
+image: /assets/images/book/meta/tinkers-weaponry.png
 twitter:
   card: summary
 ---
