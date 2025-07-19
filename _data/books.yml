@@ -7,7 +7,7 @@ materials_and_you_20:
       link: intro
 
     - index: 6
-      text: Tier 1 Melee Harvest
+      text: Tier 1 General
       link: melee-harvest-materials
 
     - index: 11
@@ -41,7 +41,7 @@ puny_smelting_20:
       text: Casting
 
     - index: 13
-      text: Tier 2 Melee Harvest
+      text: Tier 2 General
       link: melee-harvest-materials
 
     - index: 22
@@ -81,7 +81,7 @@ mighty_smelting_20:
       text: Entity Melting
 
     - index: 13
-      text: Tier 3 Melee Harvest
+      text: Tier 3 General
       link: melee-harvest-materials
       
     - index: 20
@@ -120,7 +120,7 @@ fantastic_foundry_20:
       text: Blazing Blood
 
     - index: 18
-      text: Tier 4 Melee Harvest
+      text: Tier 4 General
       link: melee-harvest-materials
       
     - index: 22
@@ -167,6 +167,10 @@ encyclopedia_20:
   path: tinkers/3.10.1/encyclopedia
   max_page: 218
   titles:
+    - index: 1
+      text: Introduction
+      link: intro
+
     - index: 2
       text: Tools
 
@@ -186,7 +190,8 @@ encyclopedia_20:
       text: Abilities
 
     - index: 109
-      text: Melee Harvest Materials
+      text: General Materials
+      # this is the only general materials link that\s different for some reason
       link: materials-harvest
 
     - index: 133
@@ -197,8 +202,9 @@ encyclopedia_20:
       text: Armor Materials
       link: materials-armor
 
-    - index: 174
+    - index: 178
       text: Slimeskulls
+      link: materials-skull
 
     - index: 185
       text: Fluid Effects

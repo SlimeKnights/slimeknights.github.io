@@ -276,7 +276,6 @@ em {
     position: absolute;
     width: 240px;
     left: 30px;
-    top: 104px;
     img {
         width: 80px;
         height: 80px;
@@ -289,7 +288,6 @@ em {
     position: absolute;
     width: 300px;
     left: 30px;
-    top: 80px;
     img {
         width: 75px;
         height: 75px;
@@ -302,7 +300,6 @@ em {
     position: absolute;
     width: 300px;
     left: 30px;
-    top: 80px;
     img {
         width: 60px;
         height: 60px;
@@ -315,7 +312,6 @@ em {
     position: absolute;
     width: 300px;
     left: 30px;
-    top: 80px;
     img {
         width: 50px;
         height: 50px;
@@ -328,7 +324,6 @@ em {
     position: absolute;
     width: 280px;
     left: 30px;
-    top: 56px;
     img {
         width: 40px;
         height: 40px;
@@ -336,7 +331,7 @@ em {
 }
 
 .link-list {
-    margin-top: 8px;
+    margin: 0;
     padding-inline-start: 16px;
     list-style-type: "- ";
     li::marker {
@@ -440,5 +435,5 @@ em {
 }
 
 .spacing-lg {
-    padding-top: 230px;
+    padding-top: 238px;
 }
