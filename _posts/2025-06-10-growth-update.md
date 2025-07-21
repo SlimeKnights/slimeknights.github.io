@@ -4,6 +4,7 @@ title:  "Ceramics and Inspirations on 1.20.1"
 date:   2025-06-10 02:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/general/growth/ceramics.png
 image_root: updates/general/growth
 ---
 For anyone unfamiliar, [Ceramics](/projects#ceramics) and [Inspirations](/projects#inspirations) are both mods created by KnightMiner, who is also the current lead developer for Tinkers' Construct. Ceramics is a standalone simple fluid transfer mod, both reusing the ideas of faucets and channels from Tinkers' Construct and providing various clay tools for early game. Inspirations is a variety mod adding a bunch of smaller features with a focus being on small ideas that might fit the base game.

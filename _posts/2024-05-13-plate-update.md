@@ -4,6 +4,7 @@ title:  "Tinkers' Construct Plate Update"
 date:   2024-05-13 12:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/plate/plate.png
 image_root: updates/tinkers/plate
 ---
 

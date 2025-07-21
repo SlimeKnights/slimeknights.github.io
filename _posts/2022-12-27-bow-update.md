@@ -4,6 +4,7 @@ title:  "Tinkers' Construct Bow Update"
 date:   2022-12-27 12:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/bow/crossbow.png
 image_root: updates/tinkers/bow
 ---
 

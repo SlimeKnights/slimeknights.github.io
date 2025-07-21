@@ -15,3 +15,7 @@ The following books are available online from 1.20 versions of SlimeKnights mods
     {% include book/link.html title="Tinkers' Gadgetry"         version="1.20" %}
     {% include book/link.html title="Encyclopedia of Tinkering" version="1.20" name="encyclopedia" %}
 </div>
+
+<div class="uk-child-width-1-2 uk-child-width-1-6@s uk-grid-small" uk-grid>
+    {% include book/link.html title="Metallic Arts" version="1.20" name="metalborn" mod="Metalborn" %}
+</div>

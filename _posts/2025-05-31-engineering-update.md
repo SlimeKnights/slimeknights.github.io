@@ -4,6 +4,7 @@ title:  "Tinkers 1.20 - Engineering Update"
 date:   2025-05-31 12:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/engineering/travelers-materials.png
 image_root: updates/tinkers/engineering
 ---
 This new update for Tinkers' Construct adds many new features related to automation, along with more compatability for [Immersive Engineering][immersive-engineering] and a ton of new datapack features giving more flexability to JSON addons.

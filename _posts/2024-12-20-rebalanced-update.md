@@ -4,6 +4,7 @@ title:  "Tinkers' Construct Rebalanced Update"
 date:   2024-12-20 2:24:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/3.8.4/rebalanced-pickaxe.png
 image_root: updates/tinkers/3.8.4
 ---
 

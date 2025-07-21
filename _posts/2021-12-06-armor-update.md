@@ -4,6 +4,7 @@ title:  "Tinkers' Construct Armor Update"
 date:   2021-12-06 12:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/armor/cover.png
 image_root: updates/tinkers/armor
 ---
 

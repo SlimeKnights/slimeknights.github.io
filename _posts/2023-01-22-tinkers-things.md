@@ -4,6 +4,7 @@ title:  "Introducing Tinkers' Things"
 date:   2023-01-22 12:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/tinkers-things/tinkers-things.png
 image_root: updates/tinkers/tinkers-things
 ---
 

@@ -4,6 +4,7 @@ title:  "Tinkers' Construct Book Update"
 date:   2021-07-15 12:00:00 -0400
 categories: posts
 author: KnightMiner
+image: /assets/images/updates/tinkers/book/mighty-smelting.png
 image_root: updates/tinkers/book
 ---
 

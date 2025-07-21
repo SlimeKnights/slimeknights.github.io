@@ -1,4 +1,8 @@
 <div class="uk-text-center">
+  {%- if include.mod -%}
+    <b>{{include.mod}}</b>
+    <br>
+  {%- endif -%}
   {%- if include.name -%}
     {%- assign name = include.name -%}
   {%- else -%}
