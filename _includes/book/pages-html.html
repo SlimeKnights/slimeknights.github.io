@@ -4,7 +4,7 @@
         {%- capture pagePath -%}
         /assets/images/book/{{include.book.path}}/cover.png
         {%- endcapture -%}
-        <div class="uk-width-1-2 uk-margin book-page">
+        <div class="uk-width-1-2 uk-margin book-page-html">
             <img src="{{pagePath}}" alt=""/>
         </div>
         {%- endunless -%}
@@ -20,7 +20,7 @@
         {%- capture pagePath -%}
         /assets/images/book/{{include.book.path}}/clean_{{pageIndex}}.png
         {%- endcapture -%}
-        <div class="uk-width uk-margin mc-font-black book-page">
+        <div class="uk-width uk-margin mc-font-black book-page-html">
             <img src="{{pagePath}}" alt=""/>
             {% include book/{{include.book.path}}/page_{{pageIndex}}.html %}
         </div>
