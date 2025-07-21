@@ -1,5 +1,5 @@
 materials_and_you_20:
-  path: tinkers/3.10.1/materials_and_you
+  path: tinkers/3.10.2/materials_and_you
   max_page: 27
   titles:
     - index: 1
@@ -24,8 +24,8 @@ materials_and_you_20:
       text: Further Reading
 
 puny_smelting_20:
-  path: tinkers/3.10.1/puny_smelting
-  max_page: 92
+  path: tinkers/3.10.2/puny_smelting
+  max_page: 99
   titles:
     - index: 1
       text: Introduction
@@ -63,12 +63,12 @@ puny_smelting_20:
       text: Slotless Modifiers
       link: slotless
 
-    - index: 92
+    - index: 99
       text: Further Reading
 
 mighty_smelting_20:
-  path: tinkers/3.10.1/mighty_smelting
-  max_page: 77
+  path: tinkers/3.10.2/mighty_smelting
+  max_page: 78
   titles:
     - index: 1
       text: Introduction
@@ -103,8 +103,8 @@ mighty_smelting_20:
       text: Defense
 
 fantastic_foundry_20:
-  path: tinkers/3.10.1/fantastic_foundry
-  max_page: 29
+  path: tinkers/3.10.2/fantastic_foundry
+  max_page: 30
   titles:
     - index: 1
       text: Introduction
@@ -132,8 +132,8 @@ fantastic_foundry_20:
       link: armor-materials
 
 tinkers_gadgetry_20:
-  path: tinkers/3.10.1/tinkers_gadgetry
-  max_page: 34
+  path: tinkers/3.10.2/tinkers_gadgetry
+  max_page: 29
   titles:
     - index: 1
       text: Introduction
@@ -164,8 +164,8 @@ tinkers_gadgetry_20:
       link: materials
 
 encyclopedia_20:
-  path: tinkers/3.10.1/encyclopedia
-  max_page: 218
+  path: tinkers/3.10.2/encyclopedia
+  max_page: 221
   titles:
     - index: 1
       text: Introduction
@@ -191,7 +191,7 @@ encyclopedia_20:
 
     - index: 109
       text: General Materials
-      # this is the only general materials link that\s different for some reason
+      # this is the only general materials link that's different for some reason
       link: materials-harvest
 
     - index: 133
