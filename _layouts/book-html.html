@@ -1,7 +1,9 @@
 ---
 layout: page
 ---
+{%- assign book = site.data.books[page.book] -%}
 <div class="mc-font-black book-page-html">
+    <img src="/assets/images/book/{{ book.path }}/clean_{{ page.page_num }}.png" alt=""/>
     {{ content }}
 </div>
 <script src="/assets/js/rescale.js"></script>
