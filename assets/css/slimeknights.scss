@@ -387,8 +387,10 @@ em {
 .book-page-html {
     position: relative;
     image-rendering: pixelated;
-    height: 400px;
+    width: 824px;
     text-size-adjust: none;
+    transform-origin: top left;
+    margin-bottom: 0;
     > div {
         position: absolute;
         top: 8px;
