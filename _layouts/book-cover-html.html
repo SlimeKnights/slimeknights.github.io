@@ -1,0 +1,10 @@
+---
+layout: page
+---
+{%- assign book = site.data.books[page.book] -%}
+<div class="mc-font-black book-page-html">
+    <img src="/assets/images/book/{{ book.path }}/cover.png" alt="" style="position: absolute; left: 412px"/>
+    <a href="../page-0" style="position: absolute; left: 742px; top: 350px">
+        <img src="/assets/images/book/{{ book.path }}/right.png" alt=""></a>
+</div>
+<script src="/assets/js/rescale.js"></script>

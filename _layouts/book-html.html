@@ -2,8 +2,22 @@
 layout: page
 ---
 {%- assign book = site.data.books[page.book] -%}
+{% if page.page_num == 0 %}
+    {% assign left = "../cover" %}
+{% else %}
+    {% assign temp = page.page_num | minus: 1 %}
+    {% assign left = "../page-" | append: temp %}
+{% endif %}
 <div class="mc-font-black book-page-html">
     <img src="/assets/images/book/{{ book.path }}/clean_{{ page.page_num }}.png" alt=""/>
     {{ content }}
+    {% unless book.max_page == -1 %}
+    <a href="{{ left }}" style="position: absolute; left: 44px; top: 350px">
+        <img src="/assets/images/book/{{ book.path }}/left.png" alt=""></a>
+    {% endunless %}
+    {% unless book.max_page == page.page_num %}
+    <a href="../page-{{ page.page_num | plus: 1 }}" style="position: absolute; left: 742px; top: 350px">
+        <img src="/assets/images/book/{{ book.path }}/right.png" alt=""></a>
+    {% endunless %}
 </div>
 <script src="/assets/js/rescale.js"></script>
