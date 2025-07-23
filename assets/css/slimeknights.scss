@@ -386,7 +386,6 @@ em {
 
 .book-page-html {
     position: relative;
-    image-rendering: pixelated;
     width: 824px;
     text-size-adjust: none;
     transform-origin: top left;
@@ -402,6 +401,7 @@ em {
         margin: 16px;
     }
     p  {
+        // TODO: increase this
         scroll-margin-top: 24px;
         margin: 0;
     }
