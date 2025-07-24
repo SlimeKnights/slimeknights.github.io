@@ -11,6 +11,10 @@ layout: page
 <div class="mc-font-black book-page-html">
     <img src="/assets/images/book/{{ book.path }}/clean_{{ page.page_num }}.png" alt=""/>
     {{ content }}
+    {% unless page.page_num < 1 %}
+    <a href="../page-0" style="position: absolute; left: -18px; top: 2px">
+        <img src="/assets/images/book/{{ book.path }}/back.png" alt=""></a>
+    {% endunless %}
     {% unless book.max_page == -1 %}
     <a href="{{ left }}" style="position: absolute; left: 44px; top: 350px">
         <img src="/assets/images/book/{{ book.path }}/left.png" alt=""></a>
