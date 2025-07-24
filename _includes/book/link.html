@@ -8,10 +8,9 @@
   {%- else -%}
     {%- assign name = include.title | slugify -%}
   {%- endif -%}
-
   {%- if include.html -%}
     {%- assign title = include.title | append: " (HTML)" -%}
-    {%- assign link = name | append: "-html" -%}
+    {%- assign link = name | append: "-html/cover" -%}
   {%- else -%}
     {%- assign title = include.title -%}
     {%- assign link = name -%}

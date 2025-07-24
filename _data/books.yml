@@ -1,18 +1,17 @@
 materials_and_you_20:
   path: tinkers/3.10.2/materials_and_you
   max_page: 27
+  next:
+    title: Puny Smelting
   titles:
     - index: 1
       text: Introduction
-      link: intro
 
     - index: 6
       text: Tier 1 General
-      link: melee-harvest-materials
 
     - index: 11
       text: Tier 1 Ranged
-      link: ranged-materials
 
     - index: 16
       text: Tools
@@ -26,10 +25,13 @@ materials_and_you_20:
 puny_smelting_20:
   path: tinkers/3.10.2/puny_smelting
   max_page: 99
+  previous:
+    title: Materials and You
+  next:
+    title: Mighty Smelting
   titles:
     - index: 1
       text: Introduction
-      link: intro
 
     - index: 2
       text: Melter
@@ -42,26 +44,21 @@ puny_smelting_20:
 
     - index: 13
       text: Tier 2 General
-      link: melee-harvest-materials
 
     - index: 22
       text: Tier 2 Ranged
-      link: ranged-materials
 
     - index: 29
       text: Tier 2 Armor
-      link: armor-materials
 
     - index: 41
       text: Puny Armor
-      link: armor
 
     - index: 47
       text: Upgrades
 
     - index: 81
       text: Slotless Modifiers
-      link: slotless
 
     - index: 92
       text: Modifier Worktable
@@ -72,10 +69,13 @@ puny_smelting_20:
 mighty_smelting_20:
   path: tinkers/3.10.2/mighty_smelting
   max_page: 78
+  previous:
+    title: Puny Smelting
+  next:
+    title: Fantastic Foundry
   titles:
     - index: 1
       text: Introduction
-      link: intro
 
     - index: 2
       text: Smeltery
@@ -85,15 +85,12 @@ mighty_smelting_20:
 
     - index: 13
       text: Tier 3 General
-      link: melee-harvest-materials
 
     - index: 21
       text: Tier 3 Ranged
-      link: ranged-materials
 
     - index: 28
       text: Tier 3 Armor
-      link: armor-materials
 
     - index: 36
       text: Broad Tools
@@ -108,10 +105,14 @@ mighty_smelting_20:
 fantastic_foundry_20:
   path: tinkers/3.10.2/fantastic_foundry
   max_page: 30
+  previous:
+    title: Mighty Smelting
+  next:
+    title: Tinkers' Gadgetry
   titles:
     - index: 1
       text: Introduction
-      link: intro
+
     - index: 2
       text: Alloyer
 
@@ -123,23 +124,24 @@ fantastic_foundry_20:
 
     - index: 18
       text: Tier 4 General
-      link: melee-harvest-materials
 
     - index: 22
       text: Tier 4 Ranged
-      link: ranged-materials
 
     - index: 26
       text: Tier 4 Armor
-      link: armor-materials
 
 tinkers_gadgetry_20:
   path: tinkers/3.10.2/tinkers_gadgetry
   max_page: 29
+  previous:
+    title: Fantastic Foundry
+  next:
+    title: Encyclopedia of Tinkering
+    link: encyclopedia
   titles:
     - index: 1
       text: Introduction
-      link: intro
 
     - index: 2
       text: Gadgets
@@ -148,26 +150,24 @@ tinkers_gadgetry_20:
       text: Exploration
 
     - index: 13
-      text: Staffs
 
     - index: 15
       text: Ancient Tools
 
     - index: 19
       text: Slimy Armor
-      link: armor
 
     - index: 22
       text: Slimeskull
-      link: materials
 
 encyclopedia_20:
   path: tinkers/3.10.2/encyclopedia
   max_page: 221
+  previous:
+    title: Tinkers' Gadgetry
   titles:
     - index: 1
       text: Introduction
-      link: intro
 
     - index: 2
       text: Tools
@@ -189,20 +189,15 @@ encyclopedia_20:
 
     - index: 109
       text: General Materials
-      # this is the only general materials link that's different for some reason
-      link: materials-harvest
 
     - index: 134
       text: Ranged Materials
-      link: materials-ranged
 
     - index: 157
       text: Armor Materials
-      link: materials-armor
 
     - index: 180
       text: Slimeskulls
-      link: materials-skull
 
     - index: 188
       text: Fluid Effects
