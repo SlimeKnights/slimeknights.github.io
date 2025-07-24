@@ -5,12 +5,11 @@
 
 /* override max width */
 .wrapper {
-  max-width: -webkit-calc(884px - (30px * 2));
-  max-width: calc(884px - 30px * 2);
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+    max-width: 824px;
+}
+
+.post-content {
+    margin-bottom: 0;
 }
 
 /* Add logo to the site title */
@@ -401,8 +400,7 @@ em {
         margin: 16px;
     }
     p  {
-        // TODO: increase this
-        scroll-margin-top: 24px;
+        scroll-margin-top: 240px;
         margin: 0;
     }
 }
