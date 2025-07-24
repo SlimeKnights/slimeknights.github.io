@@ -6,5 +6,7 @@ function scale(page, content) {
 }
 
 scale(page, content);
+// eliminates resize flashes
+content.style.visibility = "visible";
 
 window.addEventListener("resize", () => scale(page, content));

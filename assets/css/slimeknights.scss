@@ -384,11 +384,10 @@ em {
 }
 
 .book-page-html {
+    visibility: hidden;
     position: relative;
     width: 824px;
-    text-size-adjust: none;
     transform-origin: top left;
-    margin-bottom: 0;
     > div {
         position: absolute;
         top: 8px;
@@ -405,6 +404,8 @@ em {
     }
 }
 
+// needs to be a dup of .column for left page only padding
+// but PageData can sure out which side its on, so maybe not
 .page-material {
     display: flex;
     flex-direction: column;
@@ -428,6 +429,18 @@ em {
     .trait {
         padding-right: 44px;
     }
+}
+
+.right-arrow-1 {
+    position: absolute;
+    top: 350px;
+    left: 536px;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 350px;
+    left: 742px;
 }
 
 .spacing {
