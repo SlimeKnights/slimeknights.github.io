@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+
 {%- assign book = site.data.books[page.book] -%}
 
 {% if page.page_num == -1 %}
@@ -23,11 +24,11 @@ layout: page
 
     {{ content }}
     {% unless page.page_num < 1 %}
-    <a href="../page-0/" style="position: absolute; left: -18px; top: 2px">
+    <a href="../page-0/" class="back-arrow">
         <img src="/assets/images/book/{{ book.path }}/back.png" alt=""></a>
     {% endunless %}
     {% unless page.page_num == -1 %}
-    <a href="../{{ left_page }}/" style="position: absolute; left: 44px; top: 350px">
+    <a href="../{{ left_page }}/" class="left-arrow">
         <img src="/assets/images/book/{{ book.path }}/left.png" alt=""></a>
     {% endunless %}
     {% unless page.page_num == book.max_page %}
@@ -35,5 +36,6 @@ layout: page
         <img src="/assets/images/book/{{ book.path }}/right.png" alt=""></a>
     {% endunless %}
 </div>
+<p>Click the arrows to navigate the book.</p>
 
 <script src="/assets/js/book-html.js"></script>

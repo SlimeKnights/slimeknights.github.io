@@ -1,4 +1,5 @@
 materials_and_you_20:
+  title: Materials and You (1.20)
   path: tinkers/3.10.2/materials_and_you
   max_page: 27
   next:
@@ -23,6 +24,7 @@ materials_and_you_20:
       text: Further Reading
 
 puny_smelting_20:
+  title: Puny Smelting (1.20)
   path: tinkers/3.10.2/puny_smelting
   max_page: 99
   previous:
@@ -67,6 +69,7 @@ puny_smelting_20:
       text: Further Reading
 
 mighty_smelting_20:
+  title: Mighty Smelting (1.20)
   path: tinkers/3.10.2/mighty_smelting
   max_page: 78
   previous:
@@ -103,6 +106,7 @@ mighty_smelting_20:
       text: Defense
 
 fantastic_foundry_20:
+  title: Fantastic Foundry (1.20)
   path: tinkers/3.10.2/fantastic_foundry
   max_page: 30
   previous:
@@ -132,6 +136,7 @@ fantastic_foundry_20:
       text: Tier 4 Armor
 
 tinkers_gadgetry_20:
+  title: Tinkers' Gadgetry (1.20)
   path: tinkers/3.10.2/tinkers_gadgetry
   max_page: 29
   previous:
@@ -161,6 +166,7 @@ tinkers_gadgetry_20:
       text: Slimeskull
 
 encyclopedia_20:
+  title: Encyclopedia of Tinkering (1.20)
   path: tinkers/3.10.2/encyclopedia
   max_page: 221
   previous:

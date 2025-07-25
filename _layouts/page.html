@@ -9,7 +9,7 @@ layout: default
 
   <header class="post-header">
     {% include breadcrumbs.html %}
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <h1 class="post-title">{{ book.title | default: page.title | escape }}</h1>
     {% if prev or nxt %}
       {% if page.layout == "book-html" or page.layout == "book-cover-html" %}
         {% include navigation.html previous=prev next=nxt html=1 %}

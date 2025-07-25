@@ -265,10 +265,13 @@ em {
     }
 }
 
-.grid-materials-3 {
+.grid-materials-3, .grid-materials-4, .grid-materials-5, .grid-materials-6, .grid-materials-7 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     position: absolute;
+}
+
+.grid-materials-3 {
+    grid-template-columns: repeat(3, 1fr);
     width: 240px;
     left: 30px;
     img {
@@ -278,9 +281,7 @@ em {
 }
 
 .grid-materials-4 {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    position: absolute;
     width: 300px;
     left: 30px;
     img {
@@ -290,9 +291,7 @@ em {
 }
 
 .grid-materials-5 {
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
-    position: absolute;
     width: 300px;
     left: 30px;
     img {
@@ -302,9 +301,7 @@ em {
 }
 
 .grid-materials-6 {
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
-    position: absolute;
     width: 300px;
     left: 30px;
     img {
@@ -314,9 +311,7 @@ em {
 }
 
 .grid-materials-7 {
-    display: grid;
     grid-template-columns: repeat(7, 1fr);
-    position: absolute;
     width: 280px;
     left: 30px;
     img {
@@ -348,23 +343,23 @@ em {
     gap: 32px;
 }
 
-.column {
+.column, .page-material {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.grid-material-stats {
+.grid-material-stats, .grid-armor-traits {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 332px;
+}
+
+.grid-material-stats {
     row-gap: 22px;
 }
 
 .grid-armor-traits {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 332px;
     row-gap: 12px;
 }
 
@@ -384,6 +379,7 @@ em {
     position: relative;
     image-rendering: pixelated;
     width: 824px;
+    height: 400px;
     transform-origin: top left;
     > div {
         position: absolute;
@@ -399,14 +395,6 @@ em {
         scroll-margin-top: 240px;
         margin: 0;
     }
-}
-
-// needs to be a dup of .column for left page only padding
-// but PageData can sure out which side its on, so maybe not
-.page-material {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
 
 .left {
@@ -428,15 +416,34 @@ em {
     }
 }
 
-.right-arrow-1 {
+.back-arrow {
+    position: absolute;
+    top: 2px;
+    left: -18px;
+    > img {
+        width: 28px;
+        height: 32px;
+    }
+}
+
+.left-arrow, .right-arrow-1, .right-arrow {
     position: absolute;
     top: 350px;
+    > img {
+        width: 36px;
+        height: 20px;
+    }
+}
+
+.left-arrow {
+    left: 44px;
+}
+
+.right-arrow-1 {
     left: 536px;
 }
 
 .right-arrow {
-    position: absolute;
-    top: 350px;
     left: 742px;
 }
 

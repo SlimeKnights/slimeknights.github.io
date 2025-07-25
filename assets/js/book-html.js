@@ -8,7 +8,7 @@ content.style.visibility = "visible";
 window.addEventListener("resize", () => scale(page, content));
 
 // prefetch HTML and image
-content.querySelectorAll("a").forEach(anchor => {
+const prefetch = anchor => {
     if (!anchor.href) return;
     const listener = () => {
         const link_html = document.createElement('link');
@@ -18,8 +18,8 @@ content.querySelectorAll("a").forEach(anchor => {
         document.head.appendChild(link_html);
 
         const parts = anchor.href.split('/');
-        const book = parts[parts.length - 3].replace("-html", "").replace("-","_");
-        const image = parts[parts.length - 2].replace("-","_").replace("page", "clean");
+        const book = parts[parts.length - 3].replace("-html", "").replace("-", "_");
+        const image = parts[parts.length - 2].replace("-", "_").replace("page", "clean");
 
         const link_img = document.createElement('link');
         link_img.href = `/assets/images/book/tinkers/3.10.2/${book}/${image}.png`;
@@ -30,4 +30,8 @@ content.querySelectorAll("a").forEach(anchor => {
         anchor.removeEventListener("mouseover", listener);
     };
     anchor.addEventListener('mouseover', listener);
-});
+};
+
+const navigation = document.querySelector(".navigation");
+navigation.querySelectorAll("a").forEach(prefetch);
+content.querySelectorAll("a").forEach(prefetch);
