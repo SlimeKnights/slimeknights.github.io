@@ -23,11 +23,14 @@ To start off, hemalurgy has a couple of new ways to use spikes.
 
 {% include update/image.html name="invested-nuggets" alt="Forging spikes to create invested nuggets." %}
 
-The first new feature is the ability to craft invested nuggets, which can be consumed to change your ferring type. Invested nuggets can be crafted in a metal forge by combining a nicrosil or netherite nugget with a full metal spike. Using a nicrosil nugget will give you an invested nicrosil nugget, which randomizes your ferring type when consumed. Using a netherite nugget will give you an invested nugget matching the type of the spike, giving you the same power that spike stole; for example using a steel spike will grant you the power to store speed in steel.
+The first new feature is the ability to craft invested nuggets, which can be consumed to change your ferring type. Invested nuggets can be crafted in a metal forge by combining a nicrosil or netherite nugget with a full metal spike.
+
+* Using a nicrosil nugget will give you an invested nicrosil nugget, which randomizes your ferring type when consumed.
+* Using a netherite nugget will give you an invested nugget matching the type of the spike, giving you the same power that spike stole; for example using a steel spike will grant you the power to store speed in steel.
 
 This feature notably provides a viable way to use nicrosil metalminds in single player, along with a good late game option for selecting your power without loss of max health.
 
-If this feature seems familiar, its did existed in the previous build as an unobtainable item called "Lerasium Nuggets". I wanted to move away from Lerasium as that metal has some unknown effects in the books (and tends to be far more associated with Allomancy) and I never came up with a way I liked to obtain them. Plus, there is [some lore precedence](https://wob.coppermind.net/events/210/#e4616) for using metal spikes in this way.
+If this feature seems familiar, its did exist in the previous build as an unobtainable item called "Lerasium Nuggets". I wanted to move away from Lerasium as that metal has some unknown effects in the books (and tends to be far more associated with Allomancy) and I never came up with a way I liked to obtain them. Plus, there is [some lore precedence](https://wob.coppermind.net/events/210/#e4616) for using metal spikes in this way.
 
 ### Nicrosil Spikes
 
@@ -49,21 +52,23 @@ Zinc and nickel had their power changed to storing breath. While storing, you wi
 
 Both zinc and nickel are compatability powers, which are only enabled if the metal is present. If both are present, only zinc will have this power.
 
-### Stealth
+### Netherite
 
-{% include update/image.html name="duralumin" alt="All available duralumin items." %}
+{% include update/image.html name="netherite" alt="All available netherite items." %}
 
-The old stealth power for zinc/nickel was interesting enough to keep around, so I moved it to a new metal: duralumin. Storing stealth was vaguely inspired by storing connection, which in the books is done using duralumin.
+I wanted to keep stealth around, and at the same time I thought I should do soemthing with the last metal, netherite. Netherite ingots felt a little expensive for using for feruchemy, so I opted to use netherite scrap to craft the metalminds.
 
-Since duralumin is a very uncommon metal for mods, an alternative recipe is added for the metalmind as long as you have aluminum, which is essentially the alloy recipe but it outputs a metalmind instead of ingots. [Allomancy](https://www.curseforge.com/minecraft/mc-mods/allomancy) is the most notable mod on 1.20.1 that adds the metal, but mods such as [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering) will activate this from aluminum ore.  
+Netherite metalminds store luck, which increases mob drops when tapping (like looting), but decreases all drops when storing. I want to eventually make it work like fortune as well, though I need an event that doesn't exist until 1.21 for that. Netherite also has a special property: you will not naturally spawn as a netherite ferring.
+
+Luck used to be the power for silver, it now gets stealth (which was moved from zinc/nickel). This felt a bit nicer paired with determination and the fact silver steals power from silverfish was oddly fitting.
 
 ### Identity
 
 {% include update/image.html name="identity" alt="An identity metalmind filled with Sazed's identity." %}
 
-The next new power added is identity. This power, like nicrosil, does not have ferrings and can be used by anyone regardless of power. While storing identity, metalminds you fill are created "unkeyed", which removes the restriction that prevents other players from using it. Tapping an identity metalmind lets you borrow someone else's identity and use their metalminds (so be careful what you do with metalminds you fill with your identity!).
+The next new power added is identity. This power, like nicrosil, does not have ferrings and can be used by anyone regardless of power. While storing identity, metalminds you fill are created "unkeyed", which removes the restriction that prevents other players from using it. Tapping an identity metalmind lets you borrow someone else's identity and use their metalminds (so be careful what you do with metalminds you fill with your identity!)
 
-Identity metalminds are crafted from aluminum, though if thats not in your pack alternative recipes using quartz are enabled.
+Identity metalminds are crafted from aluminum, though if thats not in your pack alternative recipes using quartz are enabled. Since this feature is always available, nicroil metalminds now have an identity lock like other metalminds.
 
 ### Unsealed Metalminds
 
