@@ -218,10 +218,6 @@ em {
 }
 
 .mc-font-gray {
-    font-family: "minecraft-unicode", monospace;
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    line-height: 18px;
     color: #7E7A74;
 }
 
@@ -386,6 +382,7 @@ em {
 .book-page-html {
     visibility: hidden;
     position: relative;
+    image-rendering: pixelated;
     width: 824px;
     transform-origin: top left;
     > div {
