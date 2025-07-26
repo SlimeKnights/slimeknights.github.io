@@ -1,20 +1,16 @@
 ---
 layout: page
 ---
-
 {%- assign book = site.data.books[page.book] -%}
-
 {% if page.page_num == -1 %}
     {% assign cover = "-1" %}
 {% endif %}
-
 {% if page.page_num == 0 %}
     {% assign left_page = "cover" %}
 {% else %}
     {% assign sub = page.page_num | minus: 1 %}
     {% assign left_page = "page-" | append: sub %}
 {% endif %}
-
 <div class="mc-font-black book-page-html">
     {% if page.page_num == -1 %}
     <img src="/assets/images/book/{{ book.path }}/cover.png" alt="" style="padding-left: 206px; padding-right: 206px;">
@@ -36,6 +32,5 @@ layout: page
         <img src="/assets/images/book/{{ book.path }}/right.png" alt=""></a>
     {% endunless %}
 </div>
-<p>Click the arrows to navigate the book.</p>
-
+<p>Click on the arrows, icons, and links to navigate the book.</p>
 <script src="/assets/js/book-html.js"></script>
