@@ -1,15 +1,16 @@
 ---
 layout: post
 title:  "Investiture Update for Metalborn 1.20.1"
+date:   2025-07-27 19:30:00 -0400
 categories: posts
 author: KnightMiner
 image: /assets/images/updates/metalborn/investiture/nicrosil-spike.png
 image_root: updates/metalborn/investiture
 ---
 
-Metalborn just got it's second update, with some small bug fixes and improvements to a few of the power mechanics. If you did not see [the earlier post]({% post_url 2025-07-17-metalborn %}), this mod is based on [Feruchemy](https://coppermind.net/wiki/Feruchemy) - the art of storing power in metals: while storing, you are temporarily weaker, but you can later draw out that power to increase your power by the same amount. Check out the in game book for more info, which is also available [online](/docs/books/1.20/metalborn).
+Metalborn just got it's second update, with two new metal powers, more ways to change your power, ways to recycle metalminds, and some bug fixes. If you did not see [the earlier post]({% post_url 2025-07-17-metalborn %}), this mod is based on [Feruchemy](https://coppermind.net/wiki/Feruchemy) - the art of storing power in metals: while storing, you are temporarily weaker, but you can later draw out that power to increase your power by the same amount. Check out the in game book for more info, which is also available [online](/docs/books/1.20/metalborn).
 
-With this new update, mod is officially feature complete. Mod may still get a few more features in the future, notably considering some mod compatability in metals. I plan to mark this update as a Beta, and if there are no major issues this will potentially become a release build.
+With this new update, mod is officially feature complete. Mod may still get a few more features in the future, notably considering some mod compatability in metals. Mod is marked as a release so it syncs better on CurseForge, plus it is for the most part feature complete apart from some future compatability.
 
 {% include toc.html %}
 
@@ -88,10 +89,16 @@ One last new mechanic for this update is the ability to recycle metalminds. I wa
 
 {% include update/end.html %}
 
-{% comment %}
 ## Download
+
+**Metalborn**
 
 Metalborn beta 1.0.0 can be downloaded at the following:
 
-{% include update/download.html name="metalborn" author="KnightMiner" version="1.0.0" curseforge="" %}
-{% endcomment %}
+{% include update/download.html name="metalborn" author="KnightMiner" version="1.0.0" curseforge="6819390" %}
+
+**Mantle**
+
+Requires a Mantle update to 1.11.79:
+
+{% include update/download.html name="mantle" version="1.11.79" curseforge="6819217" %}
