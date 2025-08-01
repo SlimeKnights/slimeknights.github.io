@@ -1,15 +1,13 @@
 ---
 layout: default
 ---
-
-{% assign book = site.data.books[page.book] %}
-{% assign prev = book.previous | default: page.previous %}
-{% assign nxt = book.next | default: page.next %}
 <article class="post">
-
   <header class="post-header">
     {% include breadcrumbs.html %}
+    {% assign book = site.data.books[page.book] %}
     <h1 class="post-title">{{ book.title | default: page.title | escape }}</h1>
+    {% assign prev = book.previous | default: page.previous %}
+    {% assign nxt = book.next | default: page.next %}
     {% if prev or nxt %}
       {% if page.layout == "book-html" or page.layout == "book-cover-html" %}
         {% include navigation.html previous=prev next=nxt html=1 %}
@@ -18,9 +16,7 @@ layout: default
       {% endif %}
     {% endif %}
   </header>
-
   <div class="post-content">
     {{ content }}
   </div>
-
 </article>

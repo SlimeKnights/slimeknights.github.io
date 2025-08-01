@@ -17,19 +17,15 @@ layout: page
     {% else %}
     <img src="/assets/images/book/{{ book.path }}/clean_{{ page.page_num }}.png" alt="">
     {% endif %}
-
     {{ content }}
     {% unless page.page_num < 1 %}
-    <a href="../page-0/" class="back-arrow">
-        <img src="/assets/images/book/{{ book.path }}/back.png" alt=""></a>
+    <a href="../page-0/" class="back-arrow"><img src="/assets/images/book/{{ book.path }}/back.png" alt=""></a>
     {% endunless %}
     {% unless page.page_num == -1 %}
-    <a href="../{{ left_page }}/" class="left-arrow">
-        <img src="/assets/images/book/{{ book.path }}/left.png" alt=""></a>
+    <a href="../{{ left_page }}/" class="left-arrow"><img src="/assets/images/book/{{ book.path }}/left.png" alt=""></a>
     {% endunless %}
     {% unless page.page_num == book.max_page %}
-    <a href="../page-{{ page.page_num | plus: 1 }}/" class="right-arrow{{ cover }}">
-        <img src="/assets/images/book/{{ book.path }}/right.png" alt=""></a>
+    <a href="../page-{{ page.page_num | plus: 1 }}/" class="right-arrow{{ cover }}"><img src="/assets/images/book/{{ book.path }}/right.png" alt=""></a>
     {% endunless %}
 </div>
 <p>Click on the arrows, icons, and links to navigate the book.</p>
