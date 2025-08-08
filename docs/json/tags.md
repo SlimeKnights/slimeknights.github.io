@@ -44,9 +44,9 @@ Within the folder, tags have the following format:
 
 Since 1.20.1, tag removal runs based on values. This allows a tag to include all entries from one tag, except those listed in the remove field. This is different from the behavior before 1.20.
 
-#### 1.16 to 1.18
+#### Until 1.18
 
-Before 1.20, removing entries will only remove matching entries from the values of another data pack. To remove entries added via nested tags, take advantage of `replace` and the [Mantle Tags Command](/docs/commands/mantle#tags).
+In 1.18 and before, removing entries will only remove matching entries from the values of another data pack. To remove entries added via nested tags, take advantage of `replace` and the [Mantle Tags Command](/docs/commands/mantle#tags).
 
 Tag entry based removal appears to be broken in 1.19; the code to remove entries still exists but does not seem to be called anywhere.
 
