@@ -79,7 +79,7 @@ Swappable modifier recipes have the following format:
     * {% include field.html name="max_tool_size" type="integer" %} Maximum number of tools that can receive this modifier at once. Used by stackable tools such as daggers to allow applying a modifier to fewer tools at once. If unset, defaults to 16.
     * {% include field.html name="inputs" type="list" %} List of sized ingredients for the requirements to apply this recipe. All items must be present with the minimum stack size to apply.
         * {% include field.html type="sized ingredient" %} A single sized ingredient.
-    * {% include field.html name="slots" %} Modifier slots required to apply this recipe, will be removed when applied, or produce a valuation error if the tool has too few slots. If unset, no slots are required.
+    * {% include field.html name="slots" type="Slot Count" %} Modifier slots required to apply this recipe, will be removed when applied, or produce a valuation error if the tool has too few slots. If unset, no slots are required.
         * {% include field.html name="\<slot\>" type="integer" %} Number of slots required of the [slot type](/docs/json/slot-types) `<slot>`. Only one slot type may be specified.
     * {% include field.html name="result" type="object" %} Result object.
         * {% include field.html name="name" type="Modifier ID" %} Modifier applied by this recipe. In addition to other validations, the tool will be validated after applying this modifier to check modifier requirements.
