@@ -57,9 +57,9 @@ CurseForge is not great about displaying alpha builds on CurseForge. To ensure y
 
 Start by updating your mods to the latest version, as your bug is possibly fixed in a later version. Also try testing with just Tinkers' Construct installed to determine if its a mod conflict, as that can be valuable information for fixing the issue.
 
-If the bug still happens in an up to date pack, you can try searching [our issue tracker](/SlimeKnights/TinkersConstruct/issues) to see if its a known issue, then ask on [our discord](https://discord.gg/njGrvuh) for help debugging it.
+If the bug still happens in an up to date pack, you can try searching [our issue tracker](https://github.com/SlimeKnights/TinkersConstruct/issues) to see if its a known issue, then ask on [our discord](https://discord.gg/njGrvuh) for help debugging it.
 
-If you are certain it is a bug in the latest version and it is not already reported it, you can create a new issue on [our issue tracker](/SlimeKnights/TinkersConstruct/issues).
+If you are certain it is a bug in the latest version and it is not already reported it, you can create a new issue on [our issue tracker](https://github.com/SlimeKnights/TinkersConstruct/issues).
 
 ## I have a suggestion, can I share it?
 <div class="hatnote" markdown=1>
