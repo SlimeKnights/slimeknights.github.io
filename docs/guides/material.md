@@ -27,7 +27,7 @@ Materials require 3 different JSON located under `data/<domain>/tinkering/materi
 For examples of these files, see [Tinkers' Things](https://github.com/SlimeKnights/TinkersThings/tree/1.20/src/data/tinkers_things/tinkering/materials), which adds 3 materials:
 
 * Hematite: a castable alloy material used for melee/harvest and armor plating.
-* Veinline: a composite material used as a binding and a bowstring.
+* Magmaskin: a composite material used as a binding, bowstring, armor maille, and traveler's curiass.
 * Silky Cloth: a part builder material used as armor maille.
 
 ### Recipes
@@ -48,7 +48,8 @@ Note that casting, composite, and melting all require creating a fluid associate
 
 **Example recipes:**
 * [Silky Cloth](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/data/tinkers_things/recipes/silky_cloth_material.json): minimal material example with just a material recipe for the part builder. Uses an existing item.
-* [Hematite](https://github.com/SlimeKnights/TinkersThings/tree/1.20/src/data/tinkers_things/recipes/hematite): recipe examples for hematite and veinline. Includes some material adjacent recipes, such as alloying hematite, casting hematite blocks and items, and crafting the block from the item.
+* [Hematite](https://github.com/SlimeKnights/TinkersThings/tree/1.20/src/data/tinkers_things/recipes/hematite): recipe examples for hematite, a caated material. Includes some material adjacent recipes, such as alloying hematite, casting hematite blocks and items, and crafting the block from the item.
+* [Magmaskin](https://github.com/SlimeKnights/TinkersThings/tree/1.20/src/data/tinkers_things/recipes/magmaskin): recipe examples for magmaskin, a composite material from an existing fluid.
 
 ### Fluid Effects
 <div class="hatnote" markdown=1>
@@ -138,5 +139,5 @@ See also: [Json Things Support](/docs/json/json-things)
 * *Hematite*
     * [Item](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/things/tinkers_things/item/hematite.json): Item form of hematite, used for repairing hematite tools.
     * [Block](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/things/tinkers_things/block/hematite_block.json): Storage block for the hematite item. Used for mass repair of hematite tools.
-    * [Fluid](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/things/tinkers_things/fluid/molten_hematite.json): Fluid form of hematite, used to cast tool parts and composite veinline.
+    * [Fluid](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/things/tinkers_things/fluid/molten_hematite.json): Fluid form of hematite, used to cast tool parts for hematite.
     * [Harvest Tier](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/things/tinkers_things/item_tier/hematite.json): adds a new harvest tier for the hematite material between diamond and netherite.
