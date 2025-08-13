@@ -308,11 +308,13 @@ em {
     }
 }
 
-a, a:visited, a:active {
-    color: inherit;
-}
-a:hover {
-    color: #A80000;
+.book-page-html {
+    a, a:visited, a:active {
+        color: inherit;
+    }
+    a:hover {
+        color: #A80000;
+    }
 }
 
 .link-list {
