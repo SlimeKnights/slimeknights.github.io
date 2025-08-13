@@ -229,43 +229,36 @@ em {
     color: #000000;
 }
 
-.grid-content-3 {
+.grid-content-3, .grid-content-4 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     position: absolute;
+    text-align: center;
+    img {
+        width: 94px;
+        height: 56px;
+    }
+    p {
+        height: 38px;
+        overflow: hidden;
+    }
+}
+
+.grid-content-3 {
+    grid-template-columns: repeat(3, 1fr);
     width: 282px;
     left: 41px;
     top: 44px;
-    text-align: center;
-    img {
-        width: 94px;
-        height: 56px;
-    }
-    p {
-        height: 38px;
-        overflow: hidden;
-    }
 }
 
 .grid-content-4 {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    position: absolute;
     width: 376px;
     top: 46px;
     left: -4px;
-    text-align: center;
-    img {
-        width: 94px;
-        height: 56px;
-    }
-    p {
-        height: 38px;
-        overflow: hidden;
-    }
 }
 
 .grid-materials-3, .grid-materials-4, .grid-materials-5, .grid-materials-6, .grid-materials-7 {
+    left: 30px;
     display: grid;
     position: absolute;
 }
@@ -273,7 +266,6 @@ em {
 .grid-materials-3 {
     grid-template-columns: repeat(3, 1fr);
     width: 240px;
-    left: 30px;
     img {
         width: 80px;
         height: 80px;
@@ -283,7 +275,6 @@ em {
 .grid-materials-4 {
     grid-template-columns: repeat(4, 1fr);
     width: 300px;
-    left: 30px;
     img {
         width: 75px;
         height: 75px;
@@ -293,7 +284,6 @@ em {
 .grid-materials-5 {
     grid-template-columns: repeat(5, 1fr);
     width: 300px;
-    left: 30px;
     img {
         width: 60px;
         height: 60px;
@@ -303,7 +293,6 @@ em {
 .grid-materials-6 {
     grid-template-columns: repeat(6, 1fr);
     width: 300px;
-    left: 30px;
     img {
         width: 50px;
         height: 50px;
@@ -313,11 +302,17 @@ em {
 .grid-materials-7 {
     grid-template-columns: repeat(7, 1fr);
     width: 280px;
-    left: 30px;
     img {
         width: 40px;
         height: 40px;
     }
+}
+
+a, a:visited, a:active {
+    color: inherit;
+}
+a:hover {
+    color: #A80000;
 }
 
 .link-list {
@@ -363,7 +358,7 @@ em {
     row-gap: 12px;
 }
 
-.underline {
+.underline, .book-page-html a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 0;
