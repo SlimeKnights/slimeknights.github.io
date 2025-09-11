@@ -105,25 +105,30 @@ content.querySelectorAll("a").forEach(prefetch);
                 return;
             }
 
-            var content = '<span class="minetip-title">' + escape(title) + '&r</span>';
-
-            var description = $.trim($elem.attr('data-minetip-text'));
-            if (description) {
-                // Apply normal escaping plus "/"
-                description = escape(description).replace(/\\\//g, '&#47;');
-                content += '<span class="minetip-description">' + description.replace(/\//g, '<br>') + '&r</span>';
-            }
-
-            // Add classes for minecraft formatting codes
-            while (content.search(/&(?:[0-9a-jl-qs-vyz]|#[0-9a-fA-F]{6}|\$[0-9a-fA-F]{3})/) > -1) {
-                content = content.replace(/&([0-9a-jl-qs-vyz])(.*?)(&r|$)/g, '<span class="format-$1">$2</span>&r');
-                content = content.replace(/&(?:#([0-9a-fA-F]{6})|\$([0-9a-fA-F]{3}))(.*?)(&r|$)/g, '<span class="format-custom" style="color: #$1$2;">$3</span>&r');
-            }
-            // Remove reset formatting
-            content = content.replace(/&r/g, '');
-
             $tooltip = $('<div id="minetip-tooltip">');
-            $tooltip.html(content).appendTo('body');
+
+            if (title.charAt(0) === '<') {
+                $tooltip.html(title.replaceAll("\n", "<br>")).appendTo(".post-content");
+            } else {
+                var content = '<span class="minetip-title">' + escape(title) + '&r</span>';
+
+                var description = $.trim($elem.attr('data-minetip-text'));
+                if (description) {
+                    // Apply normal escaping plus "/"
+                    description = escape(description).replace(/\\\//g, '&#47;');
+                    content += '<span class="minetip-description">' + description.replace(/\//g, '<br>') + '&r</span>';
+                }
+
+                // Add classes for minecraft formatting codes
+                while (content.search(/&(?:[0-9a-jl-qs-vyz]|#[0-9a-fA-F]{6}|\$[0-9a-fA-F]{3})/) > -1) {
+                    content = content.replace(/&([0-9a-jl-qs-vyz])(.*?)(&r|$)/g, '<span class="format-$1">$2</span>&r');
+                    content = content.replace(/&(?:#([0-9a-fA-F]{6})|\$([0-9a-fA-F]{3}))(.*?)(&r|$)/g, '<span class="format-custom" style="color: #$1$2;">$3</span>&r');
+                }
+                // Remove reset formatting
+                content = content.replace(/&r/g, '');
+
+                $tooltip.html(content).appendTo(".post-content");
+            }
 
             // Cache current window and tooltip size
             winWidth = $win.width();

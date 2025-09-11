@@ -445,86 +445,89 @@ em {
 }
 
 /* from https://minecraft.wiki/w/MediaWiki:common.css */
+
+// TODO: these can probably be removed as I dont use the formatting codes
+
 .format-0 {
     color: #000;
-    text-shadow: 0.125em 0.125em 0 #000;
+    text-shadow: 1px 1px 0 #000;
 }
 .format-1 {
     color: #0000A8;
-    text-shadow: 0.125em 0.125em 0 #00002A;
+    text-shadow: 1px 1px 0 #00002A;
 }
 .format-2 {
     color: #00A800;
-    text-shadow: 0.125em 0.125em 0 #002A00;
+    text-shadow: 1px 1px 0 #002A00;
 }
 .format-3 {
     color: #00A8A8;
-    text-shadow: 0.125em 0.125em 0 #002A2A;
+    text-shadow: 1px 1px 0 #002A2A;
 }
 .format-4 {
     color: #A80000;
-    text-shadow: 0.125em 0.125em 0 #2A0000;
+    text-shadow: 1px 1px 0 #2A0000;
 }
 .format-5 {
     color: #A800A8;
-    text-shadow: 0.125em 0.125em 0 #2A002A;
+    text-shadow: 1px 1px 0 #2A002A;
 }
 .format-6 {
     color: #FBA800;
-    text-shadow: 0.125em 0.125em 0 #3E2A00;
+    text-shadow: 1px 1px 0 #3E2A00;
 }
 .format-7 {
     color: #A8A8A8;
-    text-shadow: 0.125em 0.125em 0 #2A2A2A;
+    text-shadow: 1px 1px 0 #2A2A2A;
 }
 .format-8 {
     color: #545454;
-    text-shadow: 0.125em 0.125em 0 #151515;
+    text-shadow: 1px 1px 0 #151515;
 }
 .format-9 {
     color: #5454FB;
-    text-shadow: 0.125em 0.125em 0 #15153E;
+    text-shadow: 1px 1px 0 #15153E;
 }
 .format-a {
     color: #54FB54;
-    text-shadow: 0.125em 0.125em 0 #153E15;
+    text-shadow: 1px 1px 0 #153E15;
 }
 .format-b {
     color: #54FBFB;
-    text-shadow: 0.125em 0.125em 0 #153E3E;
+    text-shadow: 1px 1px 0 #153E3E;
 }
 .format-c {
     color: #FB5454;
-    text-shadow: 0.125em 0.125em 0 #3E1515;
+    text-shadow: 1px 1px 0 #3E1515;
 }
 .format-d {
     color: #FB54FB;
-    text-shadow: 0.125em 0.125em 0 #3E153E;
+    text-shadow: 1px 1px 0 #3E153E;
 }
 .format-e {
     color: #FBFB54;
-    text-shadow: 0.125em 0.125em 0 #3E3E15;
+    text-shadow: 1px 1px 0 #3E3E15;
 }
 .format-f,
 #minetip-tooltip {
     color: #FBFBFB;
-    text-shadow: 0.125em 0.125em 0 #3E3E3E;
+    text-shadow: 1px 1px 0 #3E3E3E;
 }
 .format-g {
     color: #DDD605;
-    text-shadow: 0.125em 0.125em 0 #373501;
+    text-shadow: 1px 1px 0 #373501;
 }
 .format-h {
     color: #E3D4D1;
-    text-shadow: 0.125em 0.125em 0 #383534;
+    text-shadow: 1px 1px 0 #383534;
 }
 .format-i {
     color: #CECACA;
-    text-shadow: 0.125em 0.125em 0 #333232;
+    text-shadow: 1px 1px 0 #333232;
 }
 .format-j {
     color: #443A3B;
-    text-shadow: 0.125em 0.125em 0 #110E0E;
+    text-shadow: 1px 1px 0 #110E0E;
 }
 .format-l {
     font-weight: bold;
@@ -541,40 +544,40 @@ em {
 }
 .format-p {
     color: #DEB12D;
-    text-shadow: 0.125em 0.125em 0 #372C0B;
+    text-shadow: 1px 1px 0 #372C0B;
 }
 .format-q {
     color: #47A036;
-    text-shadow: 0.125em 0.125em 0 #04280D;
+    text-shadow: 1px 1px 0 #04280D;
 }
 .format-s {
     color: #2CBAA8;
-    text-shadow: 0.125em 0.125em 0 #0B2E2A;
+    text-shadow: 1px 1px 0 #0B2E2A;
 }
 .format-t {
     color: #21497B;
-    text-shadow: 0.125em 0.125em 0 #08121E;
+    text-shadow: 1px 1px 0 #08121E;
 }
 .format-u {
     color: #9A5CC6;
-    text-shadow: 0.125em 0.125em 0 #261731;
+    text-shadow: 1px 1px 0 #261731;
 }
 .format-v {
     color: #EB7114;
-    text-shadow: 0.125em 0.125em 0 #3B1D05;
+    text-shadow: 1px 1px 0 #3B1D05;
 }
 /* Custom color codes because §m and §n are used twice. */
 .format-y {
     color: #971607;
-    text-shadow: 0.125em 0.125em 0 #250501;
+    text-shadow: 1px 1px 0 #250501;
 }
 .format-z {
     color: #B4684D;
-    text-shadow: 0.125em 0.125em 0 #2D1A13;
+    text-shadow: 1px 1px 0 #2D1A13;
 }
 /* Class for &#123456 and &$123 adding custom hex colors. */
 .format-custom {
-    text-shadow: 0.125em 0.125em 0 color-mix(in srgb, currentColor 25%, #000 75%);
+    text-shadow: 1px 1px 0 color-mix(in srgb, currentColor 25%, #000 75%);
 }
 
 /* Styling for minecraft style tooltip */
@@ -588,10 +591,13 @@ em {
     font-family: "minecraft-unicode", monospace;
     font-size: 13px;
     white-space: nowrap;
-    line-height: 1.25em;
+    line-height: 20px;
     margin: 0.125em 0.25em;
     pointer-events: none;
     z-index: 9999;
+    > p {
+        margin: 0;
+    }
 }
 
 #minetip-tooltip::before {
