@@ -1,0 +1,172 @@
+html.dark {
+  --bg-color: #1a1a1a;
+  --text-color: #f2f2f2;
+  --link-color: #58a6ff;
+  --header-bg-color: #111;
+  --header-text-color: #f2f2f2;
+  --footer-bg-color: #111;
+  --footer-text-color: #f2f2f2;
+  --border-color: #333;
+}
+
+html, body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+html.dark a {
+  color: var(--link-color);
+}
+
+html.dark .site-header {
+  background-color: var(--header-bg-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+html.dark .site-title,
+html.dark .page-link {
+  color: var(--header-text-color);
+}
+
+html.dark .site-footer {
+  background-color: var(--footer-bg-color);
+  border-top: 1px solid var(--border-color);
+}
+
+html.dark .post-list-heading {
+  color: var(--text-color);
+}
+
+html.dark .post-link {
+  color: var(--link-color);
+}
+
+html.dark .post-meta {
+  color: #828282;
+}
+
+html.dark .post-content h1, 
+html.dark .post-content h2, 
+html.dark .post-content h3, 
+html.dark .post-content h4, 
+html.dark .post-content h5, 
+html.dark .post-content h6 {
+  color: var(--text-color);
+}
+
+html.dark pre, 
+html.dark code {
+  background-color: #222;
+  border-color: var(--border-color);
+  color: #ccc;
+}
+
+html.dark blockquote {
+  border-left-color: var(--border-color);
+  color: #999;
+}
+
+html.dark th, 
+html.dark td {
+  border-color: var(--border-color);
+  color: #fff;
+}
+
+html.dark th {
+  background-color: #222;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6,
+html.dark .uk-h1,
+html.dark .uk-h2,
+html.dark .uk-h3,
+html.dark .uk-h4,
+html.dark .uk-h5,
+html.dark .uk-h6,
+html.dark .uk-heading-large,
+html.dark .uk-heading-medium,
+html.dark .uk-heading-small,
+html.dark .uk-heading-xlarge,
+html.dark .uk-heading-2xlarge,
+html.dark .uk-heading-3xlarge {
+  color: #fff;
+}
+
+html.dark .toc, 
+html.dark .toc li, 
+html.dark .toc a {
+    color: #fff;
+}
+
+html.dark .uk-table-striped tbody tr:nth-of-type(even) {
+    background: #222 !important;
+}
+
+html.dark .uk-table-striped tbody tr:nth-of-type(odd) {
+    background: #1a1a1a !important;
+}
+
+html.dark .slimeknights-table tbody tr:nth-of-type(even) {
+  background: #222 !important;
+}
+
+html.dark .slimeknights-table tbody tr:nth-of-type(odd) {
+  background: #1a1a1a !important;
+}
+
+/* Added styles for all tables in dark mode */
+html.dark table {
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+}
+
+html.dark table th,
+html.dark table td {
+  border-color: #333;
+  color: #f2f2f2;
+}
+
+html.dark table th {
+  background-color: #222;
+}
+
+html.dark table tbody tr:nth-of-type(even) {
+  background-color: #222;
+}
+
+html.dark table tbody tr:nth-of-type(odd) {
+  background-color: #1a1a1a;
+}
+
+html.dark .uk-table tbody tr.uk-active {
+  background-color: #333;
+  color: #fff;
+}
+
+html.dark .uk-card-default {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+html.dark .uk-accordion-title {
+  color: var(--text-color);
+}
+
+html.dark .uk-icon {
+  fill: var(--text-color);
+}
+
+html.dark .uk-button {
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
