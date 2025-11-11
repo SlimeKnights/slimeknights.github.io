@@ -105,8 +105,6 @@ description: The soul forge is a multiblock made from all the dimensions. Allows
     * Temporarily boosts mining speed after attacking, and boosts attack speed after mining.
 * Alexandrite
     * Tier 5 special material made by forging the souls of diamond, emerald, and shaluth into an ender pearl.
-* ????
-    * Trait is raging (previously belonging to bloodbone) which increases tool damage at low player health.
 
 ## Modifiers
 
