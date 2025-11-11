@@ -50,7 +50,7 @@ No, we do not need to have shovels just because vanilla does, we can make our ow
 
 ### Bring back modifiable ammo
 <div class="hatnote" markdown=1>
-See also: [Potential future plan](/docs/roadmap#projectiles), [Removed Features](/docs/removed#projectiles)
+See also: [Next update](/docs/roadmap#projectiles), [Removed Features](/docs/removed#projectiles)
 </div>
 
 The design of ammo in Tinkers' Construct 1 and 2 was problematic due to two issues:
@@ -58,7 +58,7 @@ The design of ammo in Tinkers' Construct 1 and 2 was problematic due to two issu
 * The first issue with this design is how modifiers were handled between bows and arrows. Since both ammo and bows were modifiable, this generated a lot of confusion about which of the two tools needed to receive which upgrades, in part as some worked on bows only for melee combat. Additionally, this meant bows and arrows effectively had twice as many modifier slots as other tools, which threw off the power scaling compared to vanilla bows even more than material bows already did. Limiting modifiers to just bows makes the design easier to parse and easier to balance.
 * The second issue with ammo was the fact durability was treated as ammo. The reason for this was to fix a problem where modifying ammo was way too expensive for a single use projectile, requiring us to give you a way to repair it to avoid repaying the modifier cost. This led to a lot of exploits with other durability related modifiers which rendered a lot of the ammo costs meaningless, and removed most of the cost associated with using projectile weapons, which discourages many interesting vanilla mechanics such as arrow farms.
 
-We are considering bringing back ammo using a simpler design to address these two issues. Ammo would still be crafted from a variety of materials, but would not be modifiable after creating. Crafting arrows would work much like vanilla where you get multiple for a combination of materials (instead of using durability), and the lack of modifiers keeps the cost down so it is not a problem if they are single use. Material choices gives you some interesting options, while ultimately leaving most of the complexity in tool design to bows.
+We have a reworked design coming in the next update. Ammo is still crafted from a variety of materials, but would not be modifiable after creating. Crafting arrows would work much like vanilla where you get multiple for a combination of materials (instead of using durability), and the lack of modifiers keeps the cost down so it is not a problem if they are single use. Material choices gives you some interesting options, while ultimately leaving most of the complexity in tool design to bows.
 
 ### Bring back removed weapons
 <div class="hatnote" markdown=1>
