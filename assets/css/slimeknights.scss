@@ -334,10 +334,9 @@ em {
     padding-inline-start: 16px;
 }
 
-.row {
+.row, .row-material-stats {
     display: flex;
     flex-direction: row;
-    gap: 32px;
 }
 
 .column, .page-material {
@@ -346,17 +345,20 @@ em {
     gap: 12px;
 }
 
-.grid-material-stats, .grid-armor-traits {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 332px;
-}
-
-.grid-material-stats {
-    row-gap: 22px;
+.row-material-stats {
+    width: 332px; // really 324px is more correct, but I can't get things to line up
+    > .column {
+        row-gap: 22px;
+    }
+    > div {
+        width: 100%
+    }
 }
 
 .grid-armor-traits {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 332px;
     row-gap: 12px;
 }
 
