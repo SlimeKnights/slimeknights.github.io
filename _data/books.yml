@@ -1,7 +1,7 @@
 materials_and_you_20:
   title: Materials and You (1.20)
   path: tinkers/3.10.2/materials_and_you
-  max_page: 27
+  max_page: 47
   next:
     title: Puny Smelting
   titles:
@@ -11,22 +11,25 @@ materials_and_you_20:
     - index: 6
       text: Tier 1 General
 
-    - index: 11
+    - index: 12
       text: Tier 1 Ranged
 
     - index: 16
+      text: Ammo Materials
+
+    - index: 34
       text: Tools
 
-    - index: 22
+    - index: 43
       text: Modifiers
 
-    - index: 25
+    - index: 46
       text: Further Reading
 
 puny_smelting_20:
   title: Puny Smelting (1.20)
   path: tinkers/3.10.2/puny_smelting
-  max_page: 99
+  max_page: 103
   previous:
     title: Materials and You
   next:
@@ -47,10 +50,10 @@ puny_smelting_20:
     - index: 13
       text: Tier 2 General
 
-    - index: 22
+    - index: 21
       text: Tier 2 Ranged
 
-    - index: 29
+    - index: 28
       text: Tier 2 Armor
 
     - index: 41
@@ -59,19 +62,19 @@ puny_smelting_20:
     - index: 47
       text: Upgrades
 
-    - index: 81
+    - index: 84
       text: Slotless Modifiers
 
-    - index: 92
+    - index: 96
       text: Modifier Worktable
 
-    - index: 99
+    - index: 103
       text: Further Reading
 
 mighty_smelting_20:
   title: Mighty Smelting (1.20)
   path: tinkers/3.10.2/mighty_smelting
-  max_page: 78
+  max_page: 84
   previous:
     title: Puny Smelting
   next:
@@ -92,23 +95,23 @@ mighty_smelting_20:
     - index: 21
       text: Tier 3 Ranged
 
-    - index: 28
+    - index: 29
       text: Tier 3 Armor
 
-    - index: 36
+    - index: 38
       text: Broad Tools
       link: tools
 
-    - index: 40
+    - index: 43
       text: Abilities
 
-    - index: 72
+    - index: 78
       text: Defense
 
 fantastic_foundry_20:
   title: Fantastic Foundry (1.20)
   path: tinkers/3.10.2/fantastic_foundry
-  max_page: 30
+  max_page: 34
   previous:
     title: Mighty Smelting
   next:
@@ -129,16 +132,16 @@ fantastic_foundry_20:
     - index: 18
       text: Tier 4 General
 
-    - index: 22
+    - index: 23
       text: Tier 4 Ranged
 
-    - index: 26
+    - index: 28
       text: Tier 4 Armor
 
 tinkers_gadgetry_20:
   title: Tinkers' Gadgetry (1.20)
   path: tinkers/3.10.2/tinkers_gadgetry
-  max_page: 29
+  max_page: 28
   previous:
     title: Fantastic Foundry
   next:
@@ -151,10 +154,11 @@ tinkers_gadgetry_20:
     - index: 2
       text: Gadgets
 
-    - index: 6
+    - index: 5
       text: Exploration
 
-    - index: 13
+    - index: 12
+      text: Staffs
 
     - index: 15
       text: Ancient Tools
@@ -162,51 +166,51 @@ tinkers_gadgetry_20:
     - index: 19
       text: Slimy Armor
 
-    - index: 22
+    - index: 21
       text: Slimeskull
 
 encyclopedia_20:
   title: Encyclopedia of Tinkering (1.20)
   path: tinkers/3.10.2/encyclopedia
-  max_page: 221
+  max_page: 259
   previous:
     title: Tinkers' Gadgetry
   titles:
-    - index: 1
-      text: Introduction
-
     - index: 2
       text: Tools
 
-    - index: 17
-      text: Armor
-
-    - index: 25
-      text: Upgrades
-
-    - index: 59
-      text: Defense
-
-    - index: 66
-      text: Slotless
-
-    - index: 77
-      text: Abilities
-
-    - index: 109
+    - index: 120
       text: General Materials
 
-    - index: 134
+    - index: 46
       text: Ranged Materials
 
-    - index: 157
+    - index: 69
+      text: Ammo Materials
+
+    - index: 88
+      text: Armor
+
+    - index: 96
       text: Armor Materials
 
-    - index: 180
+    - index: 124
       text: Slimeskulls
 
-    - index: 188
+    - index: 131
       text: Fluid Effects
+
+    - index: 169
+      text: Upgrades
+
+    - index: 206
+      text: Defense
+
+    - index: 213
+      text: Slotless
+
+    - index: 225
+      text: Abilities
 
 metalborn_20:
   path: metalborn/0.1.0
