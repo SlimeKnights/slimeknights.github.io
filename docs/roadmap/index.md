@@ -14,11 +14,45 @@ See also: [Design Documents](../design) - may contain details on future plans th
 
 {% include toc.html %}
 
-## Next Actions
+## Next Update
 
-1.20.1 is offically marked "release". We plan to continue adding features from the roadmap for the next couple of updates, then decide whether to add larger features or focus on another port.
+Working on a new 1.20.1 update adding quite a few roadmap items. After that update, focus will shift to the next port, likely to 1.21.1 NeoForge. Subsections cover some notable new features in that update.
 
-1.19.2 and 1.18.2 are both considered stable. We plan at least 1 more release for each version, but its to be determined how many bug fixes make it to each which are not already coded.
+1.19.2 and 1.18.2 are both considered stable. We plan at least 1 more bugfix release for each version, but its to be determined how many bug fixes make it to each which are not already coded.
+
+### Fishing rods
+
+* Ranged weapon with reusable projectile.
+* Deals damage when reeling in a mob.
+* Can be used for fishing.
+* Can be turned into a grappling hook or a tool to retrieve drops.
+
+### Throwing
+
+* New modifier allowing tools to be thrown like tridents.
+* Javelins start with throwing.
+* Longbows can fire tools using ballista.
+* Thrown and fired tools can damage mobs and break applicable blocks.
+
+### Projectiles
+
+Bringing bringing back projectiles with tool materials:
+
+* Projectiles will contain typically 2 materials, but will not support most modifier recipes.
+* Projectiles have no durability and are single use, but are stackable.
+* Some traits allow further modification, such as tipping flint or filling glass with fluid effects.
+
+Variants:
+
+* **Shuriken**: Throwable projectile item with 2 head traits.
+* **Throwing Axe**: Throwable projectile with a head and shaft trait.
+* **Arrow**: Launched in bows, with a head trait and a shaft trait, plus a negative fletching trait.
+
+### New modifiers
+
+* **Minimap**: Allows exploring a map in your helmet.
+* **Sleeves**: Allows throwing many items from your chestplate by right clicking with an empty hand.
+
 
 ## Multiblock
 
@@ -63,33 +97,6 @@ The soul forge is a planned multiblock for late game tool, modifier, and materia
 
 ## Tools
 
-### Slimeshields
-
-* The missing shield type
-* Lean into the bouncy aspect of slime with knockback and bouncing?
-
-### Ranged
-
-We wish to add at least 1 or 2 more variants of ranged weapons. Below are a few potential ideas:
-
-* **Sling**: Can fire throwable objects such as snowballs or potions. Potentially can fire metal nuggets as well.
-* **Flail**: Fires a projectile that must be reeled in to fire again, sorta like a weaponized fishing rod. Will damage both on throwing and returning.
-* **Spear**: Tinker tool implementing trident like behavior. Works both as a melee weapon and a ranged weapon when thrown.
-* **Boomerangs**: Replacement for shurikens, essentially just a spear that has returning.
-
-### Projectiles
-
-Considering bringing back projectiles with tool materials:
-
-* Projectiles will contain typically 2 materials, but will not support modifiers from recipes.
-* Crafting will produce a stack of projectiles instead of just 1. Durability will not be ammo.
-* May support modifications after the fact, such as tipping with a potion or filling with a fluid.
-
-Variants:
-
-* **Shuriken**: Throwable projectile item with 2 head traits.
-* **Arrow**: Launched in bows, with a head trait and a handle trait.
-
 ### Materials
 
 Several new material tiers are planned:
@@ -112,6 +119,12 @@ Several new material tiers are planned:
 * Chestplates use bones to boost melee effects, or elytra for flight.
 * Leggings and boots do other neat stuff, will write more on it here later.
 
+### Slimeshields
+
+* The missing shield type
+* Lean into the bouncy aspect of slime with knockback and bouncing?
+* Likely will hold off until after the slimesuit rework.
+
 ### Modifiers
 
 **Mending**
@@ -125,12 +138,6 @@ Several new material tiers are planned:
 * Consumes experience orbs to fill the tool's tank with XP
 * Pairs well with mendings, hint hint
 * You may also wish to pair some tanks with mending, goal is for mending to take fewer slots than unbreakable but more than overslime
-
-**Throwing**
-
-* Shiny is obsessed with this modifier
-* Will be cool, but will never live up to Shiny's expectations
-* Ideally will have different effects based on the tool
 
 **Dual Harvesting**
 
@@ -149,6 +156,13 @@ Several new material tiers are planned:
 **Backstep**
 
 * Recreation of the rapier right click move from 1.12.
+
+**Dash**
+
+* Leggings modifier allowing you to dash forwards on keypress.
+* Either by default or when upgraded, dash will deal damage like trident riptide.
+* Can be used once in midair before needing to land.
+* Purely horizontal movement.
 
 ## Worldgen
 

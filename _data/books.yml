@@ -213,8 +213,8 @@ encyclopedia_20:
       text: Abilities
 
 metalborn_20:
-  path: metalborn/0.1.0
-  max_page: 15
+  path: metalborn/1.0.0
+  max_page: 18
   titles:
     - index: 1
       text: Metal Forge
@@ -222,10 +222,10 @@ metalborn_20:
     - index: 3
       text: Feruchemy
 
-    - index: 6
+    - index: 7
       text: Hemalurgy
 
-    - index: 7
+    - index: 9
       text: Metal Powers
 
 

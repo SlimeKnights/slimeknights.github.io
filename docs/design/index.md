@@ -14,6 +14,10 @@ In general, design docs are updated to the latest 1.20 build with the addition o
 
 {% include toc.html %}
 
+## General
+
+* [**Mod Material Usage**](https://docs.google.com/spreadsheets/d/1m9R4WtC5HVwBC_Bd0sjCrKmaf6e3F13Cq8kvbms9HVA/edit?usp=sharing): Spreadsheet of common ores and alloys in mods. Includes tag suffixes, mods adding ores, and alloy compositions.
+
 ## Tinkers' Construct 3
 
 ### Tools
