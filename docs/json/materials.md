@@ -52,12 +52,16 @@ Tiers can be defined as part of the material definition. In addition to determin
 
 | Tier | Book | Vanilla Baseline | Crafting |
 | :--- | :--- | :--------------- | :------- |
-| 1  | Materials and You | Wood<br>Stone | Materials that require only the part builder to craft. |
-| 2  | Puny Smelting     | Iron          | Materials that require melting and casting to create.<br><br>Some Nether or End only part builder materials are in tier 2. |
-| 3  | Mighty Smelting   | Diamond       | Materials that require alloys to create.<br><br>Some Nether or End only melting and casting materials are in tier 3. |
-| 4 (Blazing Blood) | Fantastic Foundry  | Netherite | Materials that require blazing blood to create. |
-| 4 (Soul Forge)    | *Unnamed book*     | Netherite | Materials that require the soul forge to create.<br><br>*Not yet implemented in the mod.* |
-| 5  | *Unnamed book*    | Netherite+    | Materials in this tier represent the pinacle of the material list, requiring combining several crafting methods and using end exclusive components.<br><br>*Not yet implemented in the mod.* |
+| 0          | Materials and You | Wood    | Like tier 1, but used to make a material show first in the stat type.<br><br>Generally should not be used by addons outside of new stat types. |
+| 1          | Materials and You | Stone<br>Copper | Materials that require only the part builder to craft. |
+| 2          | Puny Smelting     | Iron    | Materials that require melting and casting to create. |
+| 2 (Nether) | Puny Smelting     | *None*  | Nether or End part builder materials. |
+| 3          | Mighty Smelting   | Diamond | Materials that require alloys to create. |
+| 3 (Nether) | Mighty Smelting   | *None*  | Nether or End material requiring only melting and casting to create. |
+| 4 (Blazing Blood) | Fantastic Foundry | Netherite | Materials that require blazing blood to create. |
+| 4 (Exploration)   | *Unnamed book*    | *None*    | Materials that are obtained from late game exploration, primarily the end. |
+| 4 (Soul Forge)    | *Unnamed book*    | *None*    | Materials that require the soul forge to create.<br><br>*Not yet implemented in the mod.* |
+| 5 | *Unnamed book*    | Netherite+   | Materials in this tier represent the pinacle of the material list, requiring combining several crafting methods and using end exclusive components.<br><br>*Not yet implemented in the mod.* |
 
 ### Sort orders
 
