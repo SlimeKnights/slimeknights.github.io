@@ -122,7 +122,14 @@ There are three ways to get blazing blood:
 
 ### How do I get blazing blood out of my smeltery?
 
-You can either use a bucket on the drain, or use a faucet to fill either a casting table containing a bucket or a tank.
+Fluid can be moved in many ways. Most methods use fluid containers such as buckets, copper cans, or seared tanks:
+
+* Place a seared tank below a faucet from the smeltery.
+* Using fluid cotainers on a drain.
+* Right click the fluid in the UI with the fluid container.
+* Place a fluid container in a casting table then cast onto it. Seared tanks can also be placed in a casting basin.
+* Place a bucket or copper in a casting tank then cast into it.
+* Place a seared tank in a tinker tank then cast into it.
 
 ### How to I use the alloyer?
 
