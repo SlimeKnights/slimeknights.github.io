@@ -190,6 +190,13 @@ em {
   display: block;
 }
 
+/* Keep update images from getting too tall */
+.update-video video {
+  height: 300px;
+  margin: auto;
+  display: block;
+}
+
 /* Table on connected models page */
 .connected-table {
     td.connected-match {

@@ -1,0 +1,10 @@
+{%- assign ext = include.ext | default: "mp4" -%}
+{%- capture image_url -%}
+  /assets/images/{{page.image_root}}/{{include.name}}.{{ext}}
+{%- endcapture -%}
+<div class="update-video">
+  <video controls>
+    <source src="{{image_url}}" type="video/{{ext}}">
+    {{include.alt}}
+  </video>
+</div>
