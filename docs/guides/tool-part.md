@@ -57,7 +57,7 @@ Casts typically use a standard `item/generated` model; details about that model 
 
 ### Pattern
 
-Typically, you will want to define a {% include type.html type="pattern" %} for crafting your tool part in the part builder. By convention, the pattern follows the same name as the part item. For the pattern `<domain>:<name>`, it is necessary to define a texture under `assets/<domain>/textures/gui/tinker_pattern/<name>/.png`. For an example, see [shield plating](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/assets/tinkers_things/textures/gui/tinker_pattern/shield_plating.png) from Tinkers' Things.
+Typically, you will want to define a {% include type.html type="pattern" %} for crafting your tool part in the part builder. By convention, the pattern follows the same name as the part item. For the pattern `<domain>:<name>`, it is necessary to define a texture under `assets/<domain>/textures/gui/tinker_pattern/<name>.png`. For an example, see [shield plating](https://github.com/SlimeKnights/TinkersThings/blob/1.20/src/assets/tinkers_things/textures/gui/tinker_pattern/shield_plating.png) from Tinkers' Things.
 
 ### Localization
 
