@@ -43,7 +43,7 @@ Modifiers are divided into 4 major types:
 There are 5 ways to get additional upgrade slots:
 
 * All small tools start with 3 upgrade slots, as opposed to large tools which start with only 2.
-* Adding a book an quill, a music disc, a mob head, or a end crystal to a tool will each give you +1 upgrade slot for a total of +4 upgrade slots.
+* Adding a book an quill, a music disc, a mob head, or a rare ore block to a tool will each give you +1 upgrade slot for a total of +4 upgrade slots.
 * Rose gold grants +1 upgrade slot per rose gold tool part
 * The gilded modifier uses a golden apple to trade 1 ability slot for 2 upgrade slots. This can be done multiple times.
 * The rebalanced modifier grants an extra slot type of your choice, terms and conditions apply.
@@ -175,7 +175,7 @@ The following sections cover questions related to configuring Tinkers' Construct
 
 ### How do I configure slime islands?
 
-As of 1.18.2, datapacks have a lot more control over structures. You can find our placement settings for islands in the mod JAR, and copy them into a datapack to replace our settings. __To disable, make the structures array empty__. See [The Minecraft Wiki](https://minecraft.wiki/w/Structure_set) for more info, such as how to make them more or less common.
+As of 1.18.2, datapacks have a lot more control over structures. You can find our placement settings for islands in the mod JAR, and copy them into a datapack to replace our settings. __To disable, make the structures array empty__, or use [the Mantle command](/docs/commands/mantle#structure-set). See [The Minecraft Wiki](https://minecraft.wiki/w/Structure_set) for more info, such as how to make them more or less common.
 
 ### What mods are compatible with Tinkers?
 
