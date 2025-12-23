@@ -24,6 +24,9 @@ A common application of resource locations is an ID of a value in a registry. Un
 <div class="hatnote" markdown=1>
 See also [the Minecraft Wiki article on tags](https://minecraft.wiki/w/Tags)
 </div>
+<div class="hatnote" markdown=1>
+Main: [Tags](../tags)
+</div>
 
 Another common application of resource locations is an ID of a tag for a registry. Tags typically exist under `data/<domain>/tags/<registry name>/<name>.json`, though material and modifier tags exist under `data/<domain>/tinkering/tags/<materials|modifiers>/<name>.json`.
 
