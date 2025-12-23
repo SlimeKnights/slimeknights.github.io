@@ -399,3 +399,46 @@ Removes a structure set by replacing it with a set disabled using a `forge:false
 ```
 
 * {% include field.html name="\<id\>" type="Structure Set ID" %} ID of the structure set to remove.
+
+## Sources
+<div class="hatnote">Since 1.20.1</div>
+
+The sources command is used to list which resource packs or data packs are modifying a given resource.
+
+### Path
+
+Checks sources on a complete path (including file extension). The file `<domain>:<name>` will look for a resource under `<source>/<domain>/<name>`.
+
+**Syntax:**
+```
+/mantle sources <pack> path <file>
+```
+
+* {% include field.html name="\<pack\>" type="String" %} Can be either `assets` to check resource packs, or `data` to check data packs.
+* {% include field.html name="\<file\>" type="Resource Location" %} File to check sources, global and including extension.
+
+### Common resource types
+
+In addition to the generic path variant of the command, this command supports many specific useful resources, which will include autocomplete suggestions for resources.
+
+**Syntax:**
+```
+/mantle sources <pack> <type> <file>
+```
+* {% include field.html name="\<pack\>" type="String" %} Can be either `assets` to check resource packs, or `data` to check data packs.
+* {% include field.html name="\<type\>" type="String" %} Resource type to check. See below for options for both resource and data packs.
+* {% include field.html name="\<file\>" type="Resource Location" %} File to check sources, relative to the source folder and excluding extension.
+
+
+**Resource packs:**
+
+The following types are available using the `assets` source:
+
+* `atlases`: Texture atlases, used to add new sources to the block atlas and alike.
+* `blockstates`: Blockstate JSON files, assigning models to blocks.
+* `item_models`: Item model JSON files, assigning models to items.
+
+**Data packs:**
+
+* `loot_tables`: Loot table JSONs, used to assign drops to blocks and entities along with chest loot and other gameplay elements.
+* `recipes`: Recipe JSONs, used to define crafting recipes for most machines, vanilla and modded.
