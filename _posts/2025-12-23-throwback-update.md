@@ -63,7 +63,9 @@ Back to Twilight Forest compatability is a new slotless modifier granting +1 upg
 
 {% include update/image.html name="minotaur" alt="A minotaur spawned with a Tinkers' axe." %}
 
-The final new feature from our new compatability is the Minotaur's Axe, which is a new ancient tool found in the labyrinth. Minotaurs have a chance to spawn with this tool instead of their golden axes, and it can also be found in the loot chests in the dungeon. The weapon is similar to a hand axe, though it has two tool heads and gives you a large damage bonus when attacking while sprinting. 
+The final new feature from our new compatability is the Minotaur's Axe, which is a new ancient tool found in the labyrinth. Minotaurs have a chance to spawn with this tool instead of their golden axes, and it can also be found in the loot chests in the dungeon. The weapon is similar to a hand axe, though it has two tool heads and gives you a large damage bonus when attacking while sprinting.
+
+Also, don't worry that these axes may end up as a nerf to the minotaurs. As part of this update, we improved the ability of monsters to use modifiers from our melee weapons, so minotaurs can use most of the material traits they spawn with!
 
 ## Ranged
 
