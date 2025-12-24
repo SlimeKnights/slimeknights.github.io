@@ -196,7 +196,7 @@ Tinkers' Construct has quite a bit of compatability for common ores and alloys s
 
 To solve this problem, I decided to drop compatibility for platinum and tungsten as materials. Lead is now a harvest material, receiving parts of tungsten's old trait - boosting mining speed at the cost of your movement speed. Invar received the combat side of that trait that was previously on lead - boosting melee damage at the cost of movement speed. I feel this gives you a much more polished set of compatability materials.
 
-Note that we still support melting and casting for platinum and tungsten, and they still have their fluid effects. Additionally, we created a quick lowcode mod that restores in case its needed for a pack. We do not plan to maintain the mod past this release so we recommend incorporating it into your modpack or addon if you need those materials.
+Note that we still support melting and casting for platinum and tungsten, and they still have their fluid effects. Additionally, we created a quick lowcode mod that restores in case its needed for a pack, available on the [release page](https://github.com/SlimeKnights/TinkersConstruct/releases/tag/v3.11.0.148) ([direct link](https://github.com/SlimeKnights/TinkersConstruct/releases/download/v3.11.0.148/Tinkers-Platinum-Tungsten-1.0.0.jar)). We do not plan to maintain the mod past this release so we recommend incorporating it into your modpack or addon if you need those materials.
 
 ### Better Electrum
 
