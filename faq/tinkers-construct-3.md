@@ -43,7 +43,7 @@ Modifiers are divided into 4 major types:
 There are 5 ways to get additional upgrade slots:
 
 * All small tools start with 3 upgrade slots, as opposed to large tools which start with only 2.
-* Adding a book an quill, a music disc, a mob head, or a rare ore block to a tool will each give you +1 upgrade slot for a total of +4 upgrade slots.
+* Adding a book an quill, a music disc, a mob head, or a rare ore block (end crystal in 1.19 and before) to a tool will each give you +1 upgrade slot for a total of +4 upgrade slots.
 * Rose gold grants +1 upgrade slot per rose gold tool part
 * The gilded modifier uses a golden apple to trade 1 ability slot for 2 upgrade slots. This can be done multiple times.
 * The rebalanced modifier grants an extra slot type of your choice, terms and conditions apply.
@@ -181,7 +181,7 @@ As of 1.18.2, datapacks have a lot more control over structures. You can find ou
 
 Any mods using the Forge system for fluid pipes will automatically work with the smeltery, foundry, tanks, faucets, and channels. In addition, any mod that adds a common ore (copper, tin, lead, aluminum, etc.) will get melting and casting compatibility for the ore, and some of those will also get tools. These days the question is really not what mods are compatible but what mods are not compatible, as Forge lets most mods work together rather seamlessly. 
 
-Tinkers specifically has special recipe compatibility for mods such as Ceramics, Immersive Engineering, and Create. In addition, mods such as Thermal Foundation, Immersive Engineering, and MineColonies have special compatibility for Tinkers.
+Tinkers specifically has special recipe compatibility for mods such as Ceramics, Immersive Engineering, Twilight Forest, and Create. In addition, mods such as Thermal Foundation, Immersive Engineering, and MineColonies have special compatibility for Tinkers.
 
 ### What mods do I need to get all the materials?
 

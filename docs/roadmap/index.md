@@ -16,43 +16,9 @@ See also: [Design Documents](../design) - may contain details on future plans th
 
 ## Next Update
 
-Working on a new 1.20.1 update adding quite a few roadmap items. After that update, focus will shift to the next port, likely to 1.21.1 NeoForge. Subsections cover some notable new features in that update.
+We just finished a new 1.20.1 update adding quite a few roadmap items. We plan to focus on bug fixes for a short time along with some other projects, then after that will shift focus to 1.21.1 NeoForge.
 
 1.19.2 and 1.18.2 are both considered stable. We plan at least 1 more bugfix release for each version, but its to be determined how many bug fixes make it to each which are not already coded.
-
-### Fishing rods
-
-* Ranged weapon with reusable projectile.
-* Deals damage when reeling in a mob.
-* Can be used for fishing.
-* Can be turned into a grappling hook or a tool to retrieve drops.
-
-### Throwing
-
-* New modifier allowing tools to be thrown like tridents.
-* Javelins start with throwing.
-* Longbows can fire tools using ballista.
-* Thrown and fired tools can damage mobs and break applicable blocks.
-
-### Projectiles
-
-Bringing bringing back projectiles with tool materials:
-
-* Projectiles will contain typically 2 materials, but will not support most modifier recipes.
-* Projectiles have no durability and are single use, but are stackable.
-* Some traits allow further modification, such as tipping flint or filling glass with fluid effects.
-
-Variants:
-
-* **Shuriken**: Throwable projectile item with 2 head traits.
-* **Throwing Axe**: Throwable projectile with a head and shaft trait.
-* **Arrow**: Launched in bows, with a head trait and a shaft trait, plus a negative fletching trait.
-
-### New modifiers
-
-* **Minimap**: Allows exploring a map in your helmet.
-* **Sleeves**: Allows throwing many items from your chestplate by right clicking with an empty hand.
-
 
 ## Multiblock
 
@@ -96,6 +62,13 @@ Main page: [Soul Forge](soul-forge).
 The soul forge is a planned multiblock for late game tool, modifier, and material crafting. The soul forge at earliest will come in 1.20, though 1.21 or later is more likely. For more information, see [Soul Forge](soul-forge).
 
 ## Tools
+
+### Plate Armor slots
+
+* Give plate armor +1 defense slot and -1 upgrade slot.
+* Brings protection modifiers more in line with vanilla armor, making it easier to reach > 64% protection.
+* Makes plate armor more distinct from travelers, which is a little bit too good by comparison currently (as 1 defense slot does not quite compare to 1 ability slot).
+* Likely will target 1.21 with this change.
 
 ### Materials
 
