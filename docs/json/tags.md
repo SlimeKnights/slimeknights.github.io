@@ -32,21 +32,35 @@ Within the folder, tags have the following format:
         * {% include field.html type="object" %} An entry with additional options.
             * {% include field.html name="id" type="resource location" %} Either a registry entry, or a `#` prefixed tag name.
             * {% include field.html name="required" type="boolean" %} If true (default), generates an error if the entry is missing. If false, the missing entry will be ignored; useful for optional compat.
-    * {% include field.html name="values" type="list" %} List of entries to remove from the tag. Will only remove entries directly defined in the tag values from another pack. For example, a registry ID entry will not remove a the ID if it was added via another tag.
+    * {% include field.html name="remove" type="list" %} List of entries to remove from the tag. Will remove all values matching those in the expanded entry, meaning a tag entry will remove all values in the specified tag.
         * {% include field.html type="resource ID" %} A registry entry to remove from the tag.
         * {% include field.html type="tag name" %} A tag entry to remove from the tag. Must be prefixed by `#` or it will be interpreted as a registry entry.
         * {% include field.html type="object" %} An entry with additional options.
             * {% include field.html name="id" type="resource location" %} Either a registry entry, or a `#` prefixed tag name.
-            * {% include field.html name="required" type="boolean" %} If true (default), generates an error if the entry is missing. If false, the missing entry will be ignored; useful for optional compat.
+            * {% include field.html name="required" type="boolean" %} If true (default), generates an error if the entry is missing. If false, the missing entry will be ignored; useful for optional compat. Generally, tag removal does not error on missing entries.
 </div>
 
-To reiterate, removing entries will only remove matching entries from the values of another data pack. To remove entries added via nested tags, take advantage of `replace` and the [Mantle Tags Command](/docs/commands/mantle#tags).
+### Tag Removal
+
+Since 1.20.1, tag removal runs based on values. This allows a tag to include all entries from one tag, except those listed in the remove field. This is different from the behavior before 1.20.
+
+#### Until 1.18
+
+In 1.18 and before, removing entries will only remove matching entries from the values of another data pack. To remove entries added via nested tags, take advantage of `replace` and the [Mantle Tags Command](/docs/commands/mantle#tags).
+
+Tag entry based removal appears to be broken in 1.19; the code to remove entries still exists but does not seem to be called anywhere.
 
 ## Tag Name
 
-Many JSON formats will make use of tag names as a way to reference a list of values from a registry. Tag names are a standard [resource location]{../resource-location) in most contexts, with the registry type inferred by context in the JSON. Some select contexts will prefix them with `#` to distinguish them from registry IDs, though in most cases the field name distinguishes registry entries from tags. For JSON tag fields, if the requested tag does not exist the behavior is the same as if the tag is empty.
+Many JSON formats will make use of tag names as a way to reference a list of values from a registry. Tag names are a standard [resource location]{../resource-location) in most contexts, with the registry type inferred by context in the JSON. For JSON tag fields, if the requested tag does not exist the behavior is the same as if the tag is empty.
 
 By convention, mods should only use the `minecraft` domain for adding entries to [vanilla tags](https://minecraft.wiki/w/Tag#List_of_tag_types). Up until 1.20.1, the `forge` domain is commonly used by mods for tagging common resources shared by mods. Since 1.20.2, the `c` domain is instead used for common tags.
+
+### Resource or Tag
+
+Some contexts support both registry IDs and tag names, prefixing tag names with `#` to distinguish them. Anything prefixed with `#` will signify tag name, and will intepret anything not starting with `#` as a value.
+
+For example, in an item context `minecraft:iron_ingot` will be a value while `#forge:ingots/iron` is an item tag.
 
 ## Item Tags
 <div class="hatnote" markdown=1>

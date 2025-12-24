@@ -19,7 +19,7 @@ The retextured model loader is a model loader from Mantle that allows blocks wit
     * *All fields from {% include type.html type="colored block model" %}.*
     * {% include field.html name="retextured" type="string" %} Name of the texture from `textures` to retexture.
     * {% include field.html name="retextured" type="list" %} List of names to retexture.
-        * {% include field.html name="retextured" type="string" %} A name from `textures` to retexture.
+        * {% include field.html type="string" %} A name from `textures` to retexture.
 </div>
 
 ## Fluid Texture

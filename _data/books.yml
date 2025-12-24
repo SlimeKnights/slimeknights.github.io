@@ -1,7 +1,7 @@
 materials_and_you_20:
   title: Materials and You (1.20)
-  path: tinkers/3.10.2/materials_and_you
-  max_page: 27
+  path: tinkers/3.11.0/materials_and_you
+  max_page: 33
   next:
     title: Puny Smelting
   titles:
@@ -13,78 +13,69 @@ materials_and_you_20:
 
     - index: 11
       text: Tier 1 Ranged
+      
+    - index: 15
+      text: Basic Ammo
 
-    - index: 16
+    - index: 20
       text: Tools
-
-    - index: 22
+      
+    - index: 28
       text: Modifiers
-
-    - index: 25
+      
+    - index: 31
       text: Further Reading
 
 puny_smelting_20:
   title: Puny Smelting (1.20)
-  path: tinkers/3.10.2/puny_smelting
-  max_page: 99
+  path: tinkers/3.11.0/puny_smelting
+  max_page: 101
   previous:
     title: Materials and You
   next:
     title: Mighty Smelting
   titles:
-    - index: 1
-      text: Introduction
-
     - index: 2
-      text: Melter
-
-    - index: 4
-      text: Moving Fluids
+      text: Melter & Moving Fluids
 
     - index: 9
       text: Casting
 
     - index: 13
       text: Tier 2 General
-
-    - index: 22
+      
+    - index: 20
       text: Tier 2 Ranged
-
-    - index: 29
+      
+    - index: 27
       text: Tier 2 Armor
-
-    - index: 41
+      
+    - index: 39
       text: Puny Armor
-
-    - index: 47
+      
+    - index: 45
       text: Upgrades
-
-    - index: 81
+      
+    - index: 83
       text: Slotless Modifiers
-
-    - index: 92
+      
+    - index: 95
       text: Modifier Worktable
-
-    - index: 99
+      
+    - index: 101
       text: Further Reading
 
 mighty_smelting_20:
   title: Mighty Smelting (1.20)
-  path: tinkers/3.10.2/mighty_smelting
-  max_page: 78
+  path: tinkers/3.11.0/mighty_smelting
+  max_page: 83
   previous:
     title: Puny Smelting
   next:
     title: Fantastic Foundry
   titles:
-    - index: 1
-      text: Introduction
-
     - index: 2
       text: Smeltery
-
-    - index: 11
-      text: Entity Melting
 
     - index: 13
       text: Tier 3 General
@@ -94,29 +85,25 @@ mighty_smelting_20:
 
     - index: 28
       text: Tier 3 Armor
-
-    - index: 36
+      
+    - index: 37
       text: Broad Tools
-      link: tools
-
-    - index: 40
+      
+    - index: 42
       text: Abilities
-
-    - index: 72
+      
+    - index: 76
       text: Defense
 
 fantastic_foundry_20:
   title: Fantastic Foundry (1.20)
-  path: tinkers/3.10.2/fantastic_foundry
-  max_page: 30
+  path: tinkers/3.11.0/fantastic_foundry
+  max_page: 29
   previous:
     title: Mighty Smelting
   next:
     title: Tinkers' Gadgetry
   titles:
-    - index: 1
-      text: Introduction
-
     - index: 2
       text: Alloyer
 
@@ -131,97 +118,104 @@ fantastic_foundry_20:
 
     - index: 22
       text: Tier 4 Ranged
-
-    - index: 26
+      
+    - index: 25
       text: Tier 4 Armor
 
 tinkers_gadgetry_20:
   title: Tinkers' Gadgetry (1.20)
-  path: tinkers/3.10.2/tinkers_gadgetry
-  max_page: 29
+  path: tinkers/3.11.0/tinkers_gadgetry
+  max_page: 55
   previous:
     title: Fantastic Foundry
   next:
     title: Encyclopedia of Tinkering
     link: encyclopedia
   titles:
-    - index: 1
-      text: Introduction
-
     - index: 2
       text: Gadgets
+      
+    - index: 5
+      text: Staffs
 
-    - index: 6
+    - index: 7
       text: Exploration
 
-    - index: 13
-
     - index: 15
-      text: Ancient Tools
-
+      text: General Materials
+      
     - index: 19
-      text: Slimy Armor
+      text: Ranged Materials
 
     - index: 22
-      text: Slimeskull
+      text: Armor Materials
+
+    - index: 27
+      text: Advanced Ammo Materials
+
+    - index: 41
+      text: Ancient Tools
+
+    - index: 45
+      text: Slimy Armor
 
 encyclopedia_20:
   title: Encyclopedia of Tinkering (1.20)
-  path: tinkers/3.10.2/encyclopedia
-  max_page: 221
+  path: tinkers/3.11.0/encyclopedia
+  max_page: 260
   previous:
     title: Tinkers' Gadgetry
   titles:
-    - index: 1
-      text: Introduction
-
     - index: 2
       text: Tools
+      
+    - index: 20
+      text: General Materials
+      
+    - index: 46
+      text: Ranged Materials
+      
+    - index: 69
+      text: Ammo Materials
 
-    - index: 17
+    - index: 88
       text: Armor
 
-    - index: 25
-      text: Upgrades
-
-    - index: 59
-      text: Defense
-
-    - index: 66
-      text: Slotless
-
-    - index: 77
-      text: Abilities
-
-    - index: 109
-      text: General Materials
-
-    - index: 134
-      text: Ranged Materials
-
-    - index: 157
+    - index: 97
       text: Armor Materials
-
-    - index: 180
+      
+    - index: 125
       text: Slimeskulls
-
-    - index: 188
+      
+    - index: 132
       text: Fluid Effects
 
+    - index: 170
+      text: Upgrades
+
+    - index: 208
+      text: Defense
+
+    - index: 214
+      text: Slotless
+
+    - index: 226
+      text: Abilities
+
 metalborn_20:
-  path: metalborn/0.1.0
-  max_page: 15
+  path: metalborn/1.0.0
+  max_page: 18
   titles:
     - index: 1
       text: Metal Forge
-
+      
     - index: 3
       text: Feruchemy
 
-    - index: 6
+    - index: 7
       text: Hemalurgy
 
-    - index: 7
+    - index: 9
       text: Metal Powers
 
 
@@ -231,19 +225,19 @@ materials_and_you_19:
   titles:
     - index: 1
       text: Introduction
-
+     
     - index: 6
       text: Tier 1 Melee Harvest
-
+      
     - index: 11
       text: Tier 1 Ranged
-
+      
     - index: 15
       text: Tools
-
+      
     - index: 22
       text: Modifiers
-
+      
     - index: 25
       text: Further Reading
 
@@ -253,28 +247,28 @@ puny_smelting_19:
   titles:
     - index: 2
       text: Melter & Moving Fluids
-
+      
     - index: 8
       text: Casting
-
+      
     - index: 12
       text: Tier 2 Melee Harvest
-
+      
     - index: 19
       text: Tier 2 Ranged
-
+      
     - index: 25
       text: Tier 2 Armor
-
+      
     - index: 33
       text: Puny Armor
-
+      
     - index: 39
       text: Upgrades
-
+      
     - index: 73
       text: Slotless Modifiers
-
+      
     - index: 82
       text: Further Reading
 
@@ -284,44 +278,44 @@ mighty_smelting_19:
   titles:
     - index: 2
       text: Smeltery
-
+      
     - index: 13
       text: Tier 3 Melee Harvest
-
+      
     - index: 20
       text: Tier 3 Ranged
-
+      
     - index: 27
       text: Tier 3 Armor
-
+      
     - index: 34
       text: Broad Tools
-
+      
     - index: 38
       text: Abilities
-
+      
     - index: 68
       text: Defense
 
 fantastic_foundry_19:
   path: tinkers/3.8.5/fantastic_foundry
   max_page: 25
-  titles:
+  titles:      
     - index: 2
       text: Alloyer
-
+      
     - index: 4
       text: Foundry
-
+      
     - index: 13
       text: Blazing Blood
-
+      
     - index: 16
       text: Tier 4 Melee Harvest
-
+      
     - index: 20
       text: Tier 4 Ranged
-
+      
     - index: 23
       text: Tier 4 Armor
 
@@ -331,19 +325,19 @@ tinkers_gadgetry_19:
   titles:
     - index: 2
       text: Gadgets
-
+      
     - index: 6
       text: Odd Modifiers
-
+      
     - index: 13
       text: Exploration
-
+      
     - index: 19
       text: Staffs
-
+      
     - index: 22
       text: Ancient Tools
-
+      
     - index: 26
       text: Slimy Armor
 
@@ -353,31 +347,31 @@ encyclopedia_19:
   titles:
     - index: 2
       text: Tools
-
+      
     - index: 16
       text: Armor
-
+      
     - index: 25
       text: Upgrades
-
+      
     - index: 59
       text: Defense
-
+      
     - index: 66
       text: Slotless
-
+      
     - index: 76
       text: Abilities
-
+      
     - index: 106
       text: Melee Harvest Materials
-
+      
     - index: 127
       text: Ranged Materials
-
+      
     - index: 145
       text: Armor Materials
-
+      
     - index: 162
       text: Slimeskulls
 
@@ -387,7 +381,7 @@ mechworks_19:
   titles:
     - index: 2
       text: Machines
-
+      
     - index: 5
       text: Upgrades
 
@@ -398,19 +392,19 @@ materials_and_you_18:
   titles:
     - index: 1
       text: Introduction
-
+     
     - index: 6
       text: Tier 1 Melee Harvest
-
+      
     - index: 11
       text: Tier 1 Ranged
-
+      
     - index: 15
       text: Tools
-
+      
     - index: 22
       text: Modifiers
-
+      
     - index: 25
       text: Further Reading
 
@@ -420,25 +414,25 @@ puny_smelting_18:
   titles:
     - index: 2
       text: Melter & Moving Fluids
-
+      
     - index: 8
       text: Casting
-
+      
     - index: 12
       text: Tier 2 Melee Harvest
-
+      
     - index: 20
       text: Tier 2 Ranged
-
+      
     - index: 26
       text: Puny Armor
-
+      
     - index: 29
       text: Upgrades
-
+      
     - index: 62
       text: Slotless Modifiers
-
+      
     - index: 72
       text: Further Reading
 
@@ -448,41 +442,41 @@ mighty_smelting_18:
   titles:
     - index: 2
       text: Smeltery
-
+      
     - index: 13
       text: Tier 3 Melee Harvest
-
+      
     - index: 20
       text: Tier 3 Ranged
-
+      
     - index: 27
       text: Broad Tools
-
+      
     - index: 32
       text: Abilities
-
+      
     - index: 60
       text: Defense
 
 fantastic_foundry_18:
   path: tinkers/3.7.2.167/fantastic_foundry
   max_page: 25
-  titles:
+  titles:      
     - index: 2
       text: Alloyer
-
+      
     - index: 4
       text: Foundry
-
+      
     - index: 13
       text: Blazing Blood
-
+      
     - index: 16
       text: Tier 4 Melee Harvest
-
+      
     - index: 20
       text: Tier 4 Ranged
-
+      
     - index: 23
       text: Fantastic Armor
 
@@ -492,16 +486,16 @@ tinkers_gadgetry_18:
   titles:
     - index: 2
       text: Gadgets
-
+      
     - index: 7
       text: Odd Modifiers
-
+      
     - index: 13
       text: Exploration
-
+      
     - index: 20
       text: Staffs
-
+      
     - index: 22
       text: Slimy Armor
 
@@ -511,28 +505,28 @@ encyclopedia_18:
   titles:
     - index: 2
       text: Tools
-
+      
     - index: 14
       text: Armor
-
+      
     - index: 22
       text: Upgrades
-
+      
     - index: 55
       text: Defense
-
+      
     - index: 62
       text: Slotless
-
+      
     - index: 72
       text: Abilities
-
+      
     - index: 100
       text: Melee Harvest Materials
-
+      
     - index: 122
       text: Ranged Materials
-
+      
     - index: 141
       text: Slimeskulls
 
@@ -542,7 +536,7 @@ mechworks_18:
   titles:
     - index: 2
       text: Machines
-
+      
     - index: 5
       text: Upgrades
 
@@ -553,19 +547,19 @@ materials_and_you_16:
   titles:
     - index: 1
       text: Introduction
-
+     
     - index: 6
       text: Tier 1 Materials
-
+      
     - index: 11
       text: Tools
-
+      
     - index: 16
       text: Travelers' Gear
-
+      
     - index: 18
       text: Modifiers
-
+      
     - index: 21
       text: Further Reading
 
@@ -575,22 +569,22 @@ puny_smelting_16:
   titles:
     - index: 2
       text: Melter & Moving Fluids
-
+      
     - index: 8
       text: Casting
-
+      
     - index: 12
       text: Tier 2 Materials
-
+      
     - index: 20
       text: Upgrades
-
+      
     - index: 41
       text: Slotless Modifiers
-
+      
     - index: 26
       text: Puny Armor
-
+      
     - index: 72
       text: Further Reading
 
@@ -600,35 +594,35 @@ mighty_smelting_16:
   titles:
     - index: 2
       text: Smeltery
-
+      
     - index: 12
       text: Tier 3 Materials
-
+      
     - index: 19
       text: Broad Tools
-
+      
     - index: 24
       text: Abilities
-
+      
     - index: 45
       text: Defense
 
 fantastic_foundry_16:
   path: tinkers/3.3.4/fantastic_foundry
   max_page: 21
-  titles:
+  titles:      
     - index: 2
       text: Alloyer
-
+      
     - index: 4
       text: Foundry
-
+      
     - index: 11
       text: Blazing Blood
-
+      
     - index: 15
       text: Plate Armor
-
+      
     - index: 18
       text: Tier 4 Materials
 
@@ -638,13 +632,13 @@ tinkers_gadgetry_16:
   titles:
     - index: 2
       text: Gadgets
-
+      
     - index: 7
       text: Odd Modifiers
-
+      
     - index: 8
       text: Exploration
-
+      
     - index: 13
       text: Slimy Armor
 
@@ -654,25 +648,25 @@ encyclopedia_16:
   titles:
     - index: 1
       text: Tools
-
+      
     - index: 9
       text: Armor
-
+      
     - index: 16
       text: Materials
-
+      
     - index: 39
       text: Slimeskulls
-
+      
     - index: 47
       text: Upgrades
-
+      
     - index: 70
       text: Defense
-
+      
     - index: 77
       text: Slotless
-
+      
     - index: 85
       text: Abilities
 
@@ -682,27 +676,27 @@ mechworks_16:
   titles:
     - index: 2
       text: Machines
-
+      
     - index: 5
       text: Upgrades
-
+      
 
 materials_and_you_12:
   path: tinkers/2.13.0.183
   max_page: 55
-  titles:
+  titles:     
     - index: 2
       text: Tools
-
+      
     - index: 15
       text: Tool Materials
-
+      
     - index: 29
       text: Bow Materials
-
+      
     - index: 39
       text: Modifiers
-
+      
     - index: 51
       text: Multiblock
 
@@ -714,10 +708,10 @@ materials_and_you_vol_1:
   titles:
     - index: 0
       text: Getting Started
-
+      
     - index: 2
       text: Recipes
-
+      
     - index: 14
       text: Armor Modifiers
 
@@ -728,10 +722,10 @@ materials_and_you_vol_2:
   titles:
     - index: 1
       text: Tools
-
+      
     - index: 11
       text: Materials
-
+      
     - index: 23
       text: Modifiers
 
@@ -742,10 +736,10 @@ mighty_smelting_7:
   titles:
     - index: 0
       text: Introduction
-
+      
     - index: 2
       text: Smeltery
-
+      
     - index: 4
       text: Recipes
 
@@ -753,13 +747,13 @@ tinkers_weaponry_7:
   path: tinkers/1.8.8/tinkers_weaponry
   no_cover: true
   max_page: 5
-  titles:
+  titles:      
     - index: 2
       text: Throwing Weapons
-
+      
     - index: 3
       text: Projectile Weapons
-
+      
     - index: 4
       text: Projectiles
 

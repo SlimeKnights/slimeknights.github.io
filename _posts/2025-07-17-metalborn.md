@@ -132,9 +132,7 @@ Ultimately, I've been wanting to write this mod for awhile, so I'd have likely w
 
 Metalborn alpha 0.1.0 can be downloaded at the following:
 
-{% include update/download.html name="metalborn" author="KnightMiner" version="0.1.0" curseforge="6777563" modrinth=false %}
-
-Will be on Modrinth as soon as they approve it, probably in about 2 weeks.
+{% include update/download.html name="metalborn" author="KnightMiner" version="0.1.0" curseforge="6777563" %}
 
 **Mantle**
 

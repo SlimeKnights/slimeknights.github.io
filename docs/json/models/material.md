@@ -31,6 +31,30 @@ Tool parts and repair kits both use the material item model loader to automatica
         * {% include field.html type="integer" %} Second value in the list is the Y offset, where negative is up and positive is down.
 </div>
 
+## Material Block
+<div class="hatnote">Upcoming 1.20.1</div>
+
+The material block model allows using the block model format with dynamic material textures. This model has 3 different modes depending on whether you want to use it for a tool, a tool part, or a [retexturable](../retextured) block.
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} Retextured model JSON.
+    * {% include field.html name="loader" type="resource location" %} Always `tconstruct:material_block`.
+    * *All fields from {% include type.html type="simple block model" %}.*
+    * ***Fields for tool parts.*** *Will fetch the material using `IMaterialItem`.*
+    * {% include field.html name="material" type="string" %} Name of the texture from `textures` to apply material.
+    * {% include field.html name="material" type="list" %} List of names to apply material.
+        * {% include field.html type="string" %} A name from `textures` to apply material.
+    * ***Fields for tools.*** *Will fetch the material using `MaterialIdNBT`.*
+    * {% include field.html name="parts" type="list" %} List of parts on the tool. Index in the list matches index of the material on the tool.
+        * {% include field.html type="string" %} A name from `textures` to retexture for this part.
+        * {% include field.html type="list" %} List of names to retexture for this part.
+            * {% include field.html type="string" %} A name from `textures` to retexture for this part.
+    * ***Fields for retextured block.*** *Will fetch the material using `IMaterialItem` and `RetexturedHelper`.*
+    * {% include field.html name="retextured" type="string" %} Name of the texture from `textures` to apply material.
+    * {% include field.html name="retextured" type="list" %} List of names to apply material.
+        * {% include field.html type="string" %} A name from `textures` to apply material.
+</div>
+
 ## Material Render Info
 
 To define textures for material items and tool models, it is necessary to define a material render info. Material render info is defined under `assets/<domain>/tinkering/materials/`. For a material ID `<domain>:<name>`, the render info will be located at `assets/<domain>/tinkering/materials/<name>.json`. For a material variant `<domain>:<name>#<variant>`, the render info will be located at `assets/<domain>/tinkering/materials/<name>/<variant>.json`.

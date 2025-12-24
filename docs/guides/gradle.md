@@ -29,14 +29,33 @@ Make sure to add it to the root repositories, not the buildscript repositories.
 
 Then you need to tell Gradle to get Tinkers' Construct from the repository.
 
+{% comment %}
+### For 1.21.1+
+```gradle
+dependencies {
+    implementation "slimeknights.mantle:Mantle:${minecraft_version}-${mantle_build}"
+    implementation "slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}"
+}
+```
+{% endcomment %}
+
 ### For 1.16+
 
+With ForgeGradle:
 ```gradle
 dependencies {
     implementation fg.deobf("slimeknights.mantle:Mantle:${minecraft_version}-${mantle_build}")
     implementation fg.deobf("slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}")
 }
 ```
+With ModDevGradle in legacy forge mode:
+```gradle
+dependencies {
+    modImplementation "slimeknights.mantle:Mantle:${minecraft_version}-${mantle_build}"
+    modImplementation "slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}"
+}
+```
+
 
 ### For 1.12
 

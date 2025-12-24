@@ -61,6 +61,11 @@ tag name:
   icon: nbt-string
   link: /docs/json/tags#tag-name
 
+resource or tag:
+  name: Resource or Tag
+  icon: nbt-string
+  link: /docs/json/tags#resource-or-tag
+
 item stack:
   name: Item Stack
   icon: nbt-compound

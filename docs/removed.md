@@ -19,7 +19,7 @@ See also the [missing features spreadsheet](https://docs.google.com/spreadsheets
 * **Cutlass**: does anyone actually know what the cutlass did?
 * **Longswords**: Was not distinct enough from broadswords to justify another melee weapon. Leap ability has been turned into the springing modifier that can be added to swords or other tools.
 * **Rapier**: Original design was completely OP in PvP and rather niche in PvE. Was replaced by the dagger (for high speed weapon) and the vein hammer/piercing modifier (for high piercing weapon in a more balanced way).
-* **Frypan**: Was not distinct enough from broadswords to justify another melee weapon. Excavators have replaced frypans as the high knockback weapon, and the special attack is an ability called bonking.
+* **Frypan**: Was not distinct enough from broadswords to justify another melee weapon. Excavators have replaced frypans as the high knockback weapon, and the special attack is an ability called bonking. The concept of "funny pan" has come back as the melting pan ancient tool.
 
 ### Equipment
 
@@ -40,22 +40,22 @@ The following tools were moved to the official addon [Tinkers' Things](/projects
 
 ### Projectiles
 
-<div class="hatnote" markdown=1>
-See also: [Potential future plan](../roadmap#projectiles) reimplementing projectiles in a new way.
+<div class="hatnote">
+Note projectiles exist in a new way in current versions.
 </div>
 
-In general, projectile in Tinkers' 1 and 2 had several flaws, leading to the following reasons for their removal:
+In general, projectiles in Tinkers' 1 and 2 had several flaws, leading to the following reasons for their redesign:
 
 * Durability as ammo was incredibly awkward. Either it led to confusing behavior or just unlimited ammo. Ammo should use stack sizes.
 * The way modifiers function is large material costs for permanent boosts, while ammo is meant to be cheap and disposable.
 * When bows were involved, was unclear to players whether a modifier belonged on the arrow or the bow.
 * Vanilla arrows got much more interesting, and mods have a ton of flexibility to add cool arrow types.
 
-Projectiles removed as a result:
+Projectiles reworked as a result:
 
-* **Arrows**: Alternatives include vanilla arrows, mods such as [archer's paradox](https://www.curseforge.com/minecraft/mc-mods/archers-paradox), many new bow modifiers
+* **Arrows**: We have reworked these to just have material traits, with minimal crafted modifiers.
+* **Shurikens**: Reworked to be less spammable, with some strict limits on how much damage they can deal.
 * **Bolts**: Was functionally just arrows with an arbitrary restriction and neat crafting which led to a lot of bugs. Replaced with standard arrows.
-* **Shurikens**: Way too easy to make a spammable unlimited weapon that outshined most melee and ranged alternatives. Currently replaced by flint and quartz shurikens for a cheap disaposable ammo, though future plans may bring new alternatives.
 
 ### Ores
 
