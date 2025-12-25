@@ -221,7 +221,7 @@ em {
 /* Book Page stuff*/
 @font-face {
     font-family: "minecraft-unicode";
-    src: url("../fonts/subset-MinecraftUnicode.woff2");
+    src: url("/assets/fonts/MinecraftUnicode.woff2");
 }
 
 .mc-font-gray {
@@ -236,43 +236,36 @@ em {
     color: #000000;
 }
 
-.grid-content-3 {
+.grid-content-3, .grid-content-4 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     position: absolute;
+    text-align: center;
+    img {
+        width: 94px;
+        height: 56px;
+    }
+    p {
+        height: 38px;
+        overflow: hidden;
+    }
+}
+
+.grid-content-3 {
+    grid-template-columns: repeat(3, 1fr);
     width: 282px;
     left: 41px;
     top: 44px;
-    text-align: center;
-    img {
-        width: 94px;
-        height: 56px;
-    }
-    p {
-        height: 38px;
-        overflow: hidden;
-    }
 }
 
 .grid-content-4 {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    position: absolute;
     width: 376px;
     top: 46px;
     left: -4px;
-    text-align: center;
-    img {
-        width: 94px;
-        height: 56px;
-    }
-    p {
-        height: 38px;
-        overflow: hidden;
-    }
 }
 
 .grid-materials-3, .grid-materials-4, .grid-materials-5, .grid-materials-6, .grid-materials-7 {
+    left: 30px;
     display: grid;
     position: absolute;
 }
@@ -280,7 +273,6 @@ em {
 .grid-materials-3 {
     grid-template-columns: repeat(3, 1fr);
     width: 240px;
-    left: 30px;
     img {
         width: 80px;
         height: 80px;
@@ -290,7 +282,6 @@ em {
 .grid-materials-4 {
     grid-template-columns: repeat(4, 1fr);
     width: 300px;
-    left: 30px;
     img {
         width: 75px;
         height: 75px;
@@ -300,7 +291,6 @@ em {
 .grid-materials-5 {
     grid-template-columns: repeat(5, 1fr);
     width: 300px;
-    left: 30px;
     img {
         width: 60px;
         height: 60px;
@@ -310,7 +300,6 @@ em {
 .grid-materials-6 {
     grid-template-columns: repeat(6, 1fr);
     width: 300px;
-    left: 30px;
     img {
         width: 50px;
         height: 50px;
@@ -320,10 +309,18 @@ em {
 .grid-materials-7 {
     grid-template-columns: repeat(7, 1fr);
     width: 280px;
-    left: 30px;
     img {
         width: 40px;
         height: 40px;
+    }
+}
+
+.book-page-html {
+    a, a:visited, a:active {
+        color: inherit;
+    }
+    a:hover {
+        color: #A80000;
     }
 }
 
@@ -344,10 +341,9 @@ em {
     padding-inline-start: 16px;
 }
 
-.row {
+.row, .row-material-stats {
     display: flex;
     flex-direction: row;
-    gap: 32px;
 }
 
 .column, .page-material {
@@ -356,21 +352,24 @@ em {
     gap: 12px;
 }
 
-.grid-material-stats, .grid-armor-traits {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 332px;
-}
-
-.grid-material-stats {
-    row-gap: 22px;
+.row-material-stats {
+    width: 332px; // really 324px is more correct, but I can't get things to line up
+    > .column {
+        row-gap: 22px;
+    }
+    > div {
+        width: 100%
+    }
 }
 
 .grid-armor-traits {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 332px;
     row-gap: 12px;
 }
 
-.underline {
+.underline, .book-page-html a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 0;
@@ -452,6 +451,192 @@ em {
 
 .right-arrow {
     left: 742px;
+}
+
+/* from https://minecraft.wiki/w/MediaWiki:common.css */
+
+// TODO: these can probably be removed as I dont use the formatting codes
+
+.format-0 {
+    color: #000;
+    text-shadow: 1px 1px 0 #000;
+}
+.format-1 {
+    color: #0000A8;
+    text-shadow: 1px 1px 0 #00002A;
+}
+.format-2 {
+    color: #00A800;
+    text-shadow: 1px 1px 0 #002A00;
+}
+.format-3 {
+    color: #00A8A8;
+    text-shadow: 1px 1px 0 #002A2A;
+}
+.format-4 {
+    color: #A80000;
+    text-shadow: 1px 1px 0 #2A0000;
+}
+.format-5 {
+    color: #A800A8;
+    text-shadow: 1px 1px 0 #2A002A;
+}
+.format-6 {
+    color: #FBA800;
+    text-shadow: 1px 1px 0 #3E2A00;
+}
+.format-7 {
+    color: #A8A8A8;
+    text-shadow: 1px 1px 0 #2A2A2A;
+}
+.format-8 {
+    color: #545454;
+    text-shadow: 1px 1px 0 #151515;
+}
+.format-9 {
+    color: #5454FB;
+    text-shadow: 1px 1px 0 #15153E;
+}
+.format-a {
+    color: #54FB54;
+    text-shadow: 1px 1px 0 #153E15;
+}
+.format-b {
+    color: #54FBFB;
+    text-shadow: 1px 1px 0 #153E3E;
+}
+.format-c {
+    color: #FB5454;
+    text-shadow: 1px 1px 0 #3E1515;
+}
+.format-d {
+    color: #FB54FB;
+    text-shadow: 1px 1px 0 #3E153E;
+}
+.format-e {
+    color: #FBFB54;
+    text-shadow: 1px 1px 0 #3E3E15;
+}
+.format-f,
+#minetip-tooltip {
+    color: #FBFBFB;
+    text-shadow: 1px 1px 0 #3E3E3E;
+}
+.format-g {
+    color: #DDD605;
+    text-shadow: 1px 1px 0 #373501;
+}
+.format-h {
+    color: #E3D4D1;
+    text-shadow: 1px 1px 0 #383534;
+}
+.format-i {
+    color: #CECACA;
+    text-shadow: 1px 1px 0 #333232;
+}
+.format-j {
+    color: #443A3B;
+    text-shadow: 1px 1px 0 #110E0E;
+}
+.format-l {
+    font-weight: bold;
+    letter-spacing: 0.125em;
+}
+.format-m {
+    text-decoration: line-through;
+}
+.format-n {
+    text-decoration: underline;
+}
+.format-o {
+    font-style: italic;
+}
+.format-p {
+    color: #DEB12D;
+    text-shadow: 1px 1px 0 #372C0B;
+}
+.format-q {
+    color: #47A036;
+    text-shadow: 1px 1px 0 #04280D;
+}
+.format-s {
+    color: #2CBAA8;
+    text-shadow: 1px 1px 0 #0B2E2A;
+}
+.format-t {
+    color: #21497B;
+    text-shadow: 1px 1px 0 #08121E;
+}
+.format-u {
+    color: #9A5CC6;
+    text-shadow: 1px 1px 0 #261731;
+}
+.format-v {
+    color: #EB7114;
+    text-shadow: 1px 1px 0 #3B1D05;
+}
+/* Custom color codes because §m and §n are used twice. */
+.format-y {
+    color: #971607;
+    text-shadow: 1px 1px 0 #250501;
+}
+.format-z {
+    color: #B4684D;
+    text-shadow: 1px 1px 0 #2D1A13;
+}
+/* Class for &#123456 and &$123 adding custom hex colors. */
+.format-custom {
+    text-shadow: 1px 1px 0 color-mix(in srgb, currentColor 25%, #000 75%);
+}
+
+/* Styling for minecraft style tooltip */
+#minetip-tooltip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #100010;
+    background-color: rgba(16, 0, 16, 0.94);
+    padding: 0.375em;
+    font-family: "minecraft-unicode", monospace;
+    font-size: 13px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin: 0.125em 0.25em;
+    pointer-events: none;
+    z-index: 9999;
+    > p {
+        margin: 0;
+    }
+}
+
+#minetip-tooltip::before {
+    content: "";
+    position: absolute;
+    top: 0.125em;
+    right: -0.125em;
+    bottom: 0.125em;
+    left: -0.125em;
+    border: 0.15em solid #100010;
+    border-style: none solid;
+    border-color: rgba(16, 0, 16, 0.94);
+}
+
+#minetip-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 0.125em;
+    right: 0;
+    bottom: 0.125em;
+    left: 0;
+    border: 0.125em solid #2D0A63;
+    border-image: -webkit-linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
+    border-image: linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
+}
+
+#minetip-tooltip > .description,
+#minetip-tooltip > .minetip-description {
+    display: block;
+    margin-top: 0.25em;
 }
 
 .spacing {

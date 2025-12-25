@@ -25,5 +25,5 @@
         {% endif %}
       {%- endif -%}
     {% endfor %}
-    / {{ page.breadcrumb | default: page.title }}
+    / {{ page.breadcrumb | default: site.data.books[page.book].title | default: page.title }}
 </div>
