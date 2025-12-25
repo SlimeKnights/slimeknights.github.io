@@ -99,7 +99,7 @@ One notable ability modifier for fishing rods is grapple, which will pull you to
 
 ### Drill Attack
 
-{% include update/image.html name="drill" alt="Encyclopedia page about the drill attack." %}
+{% include update/video.html name="drill-attack" alt="Demonstrating drill attack on a test dummy with an axe." %}
 
 Maybe the best projectile is actually yourself. Combining the drill attack ability with springing, flinging, or grapple, you will perform a spin attack in the direction of the ability, performing a melee attack on the first collided monster (kinda like riptide). 
 
