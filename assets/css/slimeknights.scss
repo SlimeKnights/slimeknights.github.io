@@ -349,6 +349,9 @@ em {
 .column, .page-material {
     display: flex;
     flex-direction: column;
+}
+
+.page-material {
     gap: 12px;
 }
 
