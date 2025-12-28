@@ -233,6 +233,7 @@ em {
     font-size: 13px;
     letter-spacing: 0.5px;
     line-height: 18px;
+    word-spacing: -1px;
     color: #000000;
 }
 
@@ -336,12 +337,18 @@ em {
     }
 }
 
+.content-list-links {
+    > div {
+        width: 100%;
+    }
+}
+
 .prop-list {
     margin-top: 8px;
     padding-inline-start: 16px;
 }
 
-.row, .row-material-stats {
+.row, .row-material-stats, .content-list-links {
     display: flex;
     flex-direction: row;
 }
