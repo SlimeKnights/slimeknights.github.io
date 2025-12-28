@@ -1,10 +1,6 @@
----
-layout: null
----
-
 $(function() {
-    // Header permalink and back to top links
-    // Credit: https://github.com/CoFH/cofh.github.io/blob/master/assets/js/cofh.js#L21C1-L22C46
+    /* Header permalink and back to top links
+    Credit: https://github.com/CoFH/cofh.github.io/blob/master/assets/js/cofh.js#L21C1-L22C46 */
     $(':header').each(function() {
         var id = $(this).attr('id');
         if (typeof(id) === 'undefined') return;
