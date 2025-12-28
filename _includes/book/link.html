@@ -8,9 +8,16 @@
   {%- else -%}
     {%- assign name = include.title | slugify -%}
   {%- endif -%}
-  <a class="uk-inline book-link" href="/docs/books/{{include.version}}/{{name}}">
+  {%- if include.html -%}
+    {%- assign title = include.title | append: " (HTML)" -%}
+    {%- assign link = name | append: "-html/cover" -%}
+  {%- else -%}
+    {%- assign title = include.title -%}
+    {%- assign link = name -%}
+  {%- endif -%}
+  <a class="uk-inline book-link" href="/docs/books/{{include.version}}/{{link}}/">
     <img src="/assets/images/book/icons/{{include.icon | default: name}}.png" alt=""/>
     <br>
-    {{include.title | default: name}}
+    {{title | default: include.title | default: name}}
   </a>
 </div>

@@ -1,0 +1,32 @@
+---
+layout: page
+---
+{%- assign book = site.data.books[page.book] -%}
+{% if page.page_num == -1 %}
+    {% assign cover = "-1" %}
+{% endif %}
+{% if page.page_num == 0 %}
+    {% assign left_page = "cover" %}
+{% else %}
+    {% assign sub = page.page_num | minus: 1 %}
+    {% assign left_page = "page-" | append: sub %}
+{% endif %}
+<div class="mc-font-black book-page-html">
+    {% if page.page_num == -1 %}
+    <img src="/assets/images/book/{{ book.path }}/cover.png" alt="" style="padding-left: 206px; padding-right: 206px;">
+    {% else %}
+    <img src="/assets/images/book/{{ book.path }}/clean_{{ page.page_num }}.png" alt="">
+    {% endif %}
+    {{ content }}
+    {% unless page.page_num < 1 %}
+    <a href="../page-0/" class="back-arrow"><img src="/assets/images/book/{{ book.path }}/back.png" alt=""></a>
+    {% endunless %}
+    {% unless page.page_num == -1 %}
+    <a href="../{{ left_page }}/" class="left-arrow"><img src="/assets/images/book/{{ book.path }}/left.png" alt=""></a>
+    {% endunless %}
+    {% unless page.page_num == book.max_page %}
+    <a href="../page-{{ page.page_num | plus: 1 }}/" class="right-arrow{{ cover }}"><img src="/assets/images/book/{{ book.path }}/right.png" alt=""></a>
+    {% endunless %}
+</div>
+<p>Click on the arrows, icons, and links to navigate the book.</p>
+<script src="/assets/js/book-html.js"></script>
