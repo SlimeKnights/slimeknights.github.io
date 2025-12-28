@@ -218,7 +218,7 @@ em {
     }
 }
 
-/* Book Page stuff*/
+/* Book Page stuff */
 @font-face {
     font-family: "minecraft-unicode";
     src: url("/assets/fonts/MinecraftUnicode.woff2");
@@ -349,9 +349,6 @@ em {
 .column, .page-material {
     display: flex;
     flex-direction: column;
-}
-
-.page-material {
     gap: 12px;
 }
 
@@ -649,3 +646,5 @@ em {
 .spacing-lg {
     padding-top: 238px;
 }
+
+/* Book Page stuff END */
