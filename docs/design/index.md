@@ -36,6 +36,7 @@ In general, design docs are updated to the latest 1.20 build with the addition o
   [1.19](https://docs.google.com/spreadsheets/d/1c8SOET2_i82slCiay_Cn0NNmoGBYn-IhmIl9PePwqEY/edit?usp=sharing),
   [1.20](https://docs.google.com/spreadsheets/d/1WMK9s_e27o4YTdBvPQYa3ifloobjVLwK2qljL2ozPXM/edit?usp=sharing)):
   Classification of materials into tiers and stat types, along with a listing of tool stats.
+* [**Modifier Numbers**](modifier-numbers): Notes on how to select numbers for traits that adjust tool stats (both flat and conditional).
 * [**Modifiers vs. Enchantments**](enchantments): Discussion on what makes modifiers different from enchantments, and how they are balanced. Useful for considering how to adapt an enchantment into a modifier or vice versa.
 
 ### Smeltery
