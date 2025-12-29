@@ -59,16 +59,32 @@ We are still considering how this design best fits into the mod, and into the de
 Main page: [Soul Forge](soul-forge).
 </div>
 
-The soul forge is a planned multiblock for late game tool, modifier, and material crafting. The soul forge at earliest will come in 1.20, though 1.21 or later is more likely. For more information, see [Soul Forge](soul-forge).
+The soul forge is a planned multiblock for late game tool, modifier, and material crafting. The soul forge at earliest will come in 1.21. For more information, see [Soul Forge](soul-forge).
 
 ## Tools
 
 ### Plate Armor slots
+<div class="hatnote">Earliest 1.21</div>
 
 * Give plate armor +1 defense slot and -1 upgrade slot.
 * Brings protection modifiers more in line with vanilla armor, making it easier to reach > 64% protection.
 * Makes plate armor more distinct from travelers, which is a little bit too good by comparison currently (as 1 defense slot does not quite compare to 1 ability slot).
 * Likely will target 1.21 with this change.
+
+### Sword Guard and Stat Averaging
+<div class="hatnote">Earliest 1.21</div>
+
+* Swords and cleavers will get a new tool part, sword guards, which replaces one of their handles.
+    * Sword guards are a shield plating, allowing defensive material traits instead of offensive.
+    * This notably gates swords to tier 2 outside of maybe copper, but given we have both daggers and hand axes in tier 1 I think that is fine.
+* From there, many tools will get some stat adjustments with a focus on reducing tool part stat averaging. In most cases, we will just add up heads directly.
+* Broad tool multipliers may get reduced a bit as a result. In particular, broad weapon durability is way higher than you need other than on scythes.
+
+### Better Slime Staffs
+<div class="hatnote">Earliest 1.21</div>
+
+* Slimestaffs could benefit from ranged materials rather than the rather random stats they currently have.
+* Likely keep around the crystal options for different slot choices.
 
 ### Materials
 
