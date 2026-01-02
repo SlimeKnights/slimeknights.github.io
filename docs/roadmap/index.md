@@ -33,6 +33,20 @@ We just finished a new 1.20.1 update adding quite a few roadmap items. We plan t
 * Comparator signal for tank level
 * On pulse, switches fluid order (bottom to top? Top to bottom?)
 
+### Smeltery Tank Cleanup
+<div class="hatnote">Earliest 1.21</div>
+
+* Instead of fuel and ingot tanks, just have tanks and gauges.
+* Smeltery will have 4000mb tank volume.
+* Foundry will have the ingot tank volume.
+
+### Scorched Faucet Tweaks
+<div class="hatnote">Earliest 1.21</div>
+
+* To better distinguish scorched from seared, planned to make it opaque as a more efficient on rendering pipe.
+* Pair with obsidian gauges to see your fluid if needed.
+* Not fully sold on this idea.
+
 ### Sublimery
 
 The sublimery is currently targeted for release near the [Soul Forge](#soul-forge) build, as we do not believe its current design can stand on its own without the system it was designed to fuel.
@@ -181,6 +195,8 @@ We want a system in place that will allow addons to add new behavior to existing
 ### Recipe Controlled Tool Parts
 
 We are considering moving the definition of tool parts to the tool recipe JSON. This would allow better control over part swapping behavior, along with allowing multiple recipes for a single tool and addons adding recipes for an existing tools without overriding resources.
+
+The first step for this change will be to move the part swapping code to the tool building recipe. This will reduce the number of recipes needed for things such as ammo to work.
 
 ### Migrate Away From Tool Loot Hook
 
