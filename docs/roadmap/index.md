@@ -77,6 +77,15 @@ The soul forge is a planned multiblock for late game tool, modifier, and materia
 
 ## Tools
 
+### Halberds
+<div class="hatnote">Earliest 1.21, may wait for 1.21.11</div>
+
+* Tinkers' Construct implementation of the new vanilla spears.
+  * Can dash.
+  * Can jab.
+* Crafted from a broad axe head, 2 tough handles, and likely a sword guard.
+* Moved from Tinkers' Things as the reach halberd is made redundant by [dual wielding rework](#dual-wielding-rework)
+
 ### Plate Armor slots
 <div class="hatnote">Earliest 1.21</div>
 
