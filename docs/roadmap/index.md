@@ -97,8 +97,17 @@ The soul forge is a planned multiblock for late game tool, modifier, and materia
 ### Better Slime Staffs
 <div class="hatnote">Earliest 1.21</div>
 
-* Slimestaffs could benefit from ranged materials rather than the rather random stats they currently have.
-* Likely keep around the crystal options for different slot choices.
+* Slimestaffs could benefit from materials rather than the rather random stats they currently have.
+* Give them 2 bowlimbs, a [sword guard](#sword-guard-and-stat-averaging), and possibly a bowstring. Depends on whether I want 5 materials or 4.
+* Likely keep around the crystal as a material, to apply different slot types.
+
+### Dual Wielding rework
+<div class="hatnote">Earliest 1.21</div>
+
+* Dual wielding will be limited to small tools again.
+* Dual wielding will no longer apply it's stat debuff.
+* This allows broad tools to get a level of reach, which is not compatible with dual wielding.
+* Consider letting broad tools get a second level of reach via ability slot.
 
 ### Materials
 
