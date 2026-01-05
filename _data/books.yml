@@ -1,5 +1,5 @@
 materials_and_you_20:
-  path: tinkers/3.11.0/materials_and_you
+  path: tinkers/3.11.1/materials_and_you
   max_page: 33
   titles:
     - index: 1
@@ -24,8 +24,8 @@ materials_and_you_20:
       text: Further Reading
 
 puny_smelting_20:
-  path: tinkers/3.11.0/puny_smelting
-  max_page: 101
+  path: tinkers/3.11.1/puny_smelting
+  max_page: 102
   titles:
     - index: 2
       text: Melter & Moving Fluids
@@ -36,7 +36,7 @@ puny_smelting_20:
     - index: 13
       text: Tier 2 General
       
-    - index: 20
+    - index: 21
       text: Tier 2 Ranged
       
     - index: 27
@@ -51,15 +51,15 @@ puny_smelting_20:
     - index: 83
       text: Slotless Modifiers
       
-    - index: 95
+    - index: 96
       text: Modifier Worktable
       
-    - index: 101
+    - index: 102
       text: Further Reading
 
 mighty_smelting_20:
-  path: tinkers/3.11.0/mighty_smelting
-  max_page: 83
+  path: tinkers/3.11.1/mighty_smelting
+  max_page: 82
   titles:
     - index: 2
       text: Smeltery
@@ -83,7 +83,7 @@ mighty_smelting_20:
       text: Defense
 
 fantastic_foundry_20:
-  path: tinkers/3.11.0/fantastic_foundry
+  path: tinkers/3.11.1/fantastic_foundry
   max_page: 29
   titles:      
     - index: 2
@@ -105,8 +105,8 @@ fantastic_foundry_20:
       text: Tier 4 Armor
 
 tinkers_gadgetry_20:
-  path: tinkers/3.11.0/tinkers_gadgetry
-  max_page: 55
+  path: tinkers/3.11.1/tinkers_gadgetry
+  max_page: 56
   titles:
     - index: 2
       text: Gadgets
@@ -123,21 +123,21 @@ tinkers_gadgetry_20:
     - index: 19
       text: Ranged Materials
       
-    - index: 22
+    - index: 23
       text: Armor Materials
       
     - index: 27
       text: Advanced Ammo Materials
       
-    - index: 41
+    - index: 42
       text: Ancient Tools
       
-    - index: 45
+    - index: 46
       text: Slimy Armor
 
 encyclopedia_20:
-  path: tinkers/3.11.0/encyclopedia
-  max_page: 260
+  path: tinkers/3.11.1/encyclopedia
+  max_page: 262
   titles:
     - index: 2
       text: Tools
@@ -148,31 +148,31 @@ encyclopedia_20:
     - index: 46
       text: Ranged Materials
       
-    - index: 69
+    - index: 70
       text: Ammo Materials
       
-    - index: 88
+    - index: 89
       text: Armor
       
-    - index: 97
+    - index: 98
       text: Armor Materials
       
-    - index: 125
+    - index: 126
       text: Slimeskulls
       
-    - index: 132
+    - index: 133
       text: Fluid Effects
       
-    - index: 170
+    - index: 171
       text: Upgrades
       
-    - index: 208
+    - index: 209
       text: Defense
       
-    - index: 214
+    - index: 216
       text: Slotless
       
-    - index: 226
+    - index: 228
       text: Abilities
 
 metalborn_20:
