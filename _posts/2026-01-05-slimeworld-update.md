@@ -116,6 +116,8 @@ Slimestaffs now all start with reach, helping to distinguish them from bows a bi
 
 Sling modifiers such as springing, flinging, bonking, and warping now have modifier hooks, letting traits such as insatiable, momentum, valiant, or crystalshot interact with them.
 
+As part of this update, we also fixed a bug where knockback resistance was not properly syncing to client, causing it to be ignored by slings. This update restores the intended functionality where too much knockback resistance stops you from moving from flinging and springing.
+
 ### Rebalances
 
 {% include update/image.html name="rebalances" alt="Fishing rod hitting a test dummy." %}
