@@ -14,11 +14,70 @@ See also: [Design Documents](../design) - may contain details on future plans th
 
 {% include toc.html %}
 
-## Next Update
+## Next Tasks
 
-We just finished a new 1.20.1 update adding quite a few roadmap items. We plan to focus on bug fixes for a short time along with some other projects, then after that will shift focus to 1.21.1 NeoForge.
+We just finished a new 1.20.1 update adding quite a few roadmap items, plus a bug fix release making it stable. Next project is to work on another project briefly before starting 1.21 NeoForge ports.
 
 1.19.2 and 1.18.2 are both considered stable. We plan at least 1 more bugfix release for each version, but its to be determined how many bug fixes make it to each which are not already coded.
+
+## 1.21 Changes
+
+This section contains various tweaks to tools that came up during the design or discussion of the Throwback update, but felt too large to make in 1.20. They will most likely happen in the first 1.21 release, though these features are subject to change.
+
+### Smeltery
+
+#### Smeltery Tank Cleanup
+
+* Instead of fuel and ingot tanks, just have tanks and gauges.
+* Smeltery will have 4000mb tank volume.
+* Foundry will have the ingot tank volume.
+
+#### Scorched Faucet Tweaks
+
+* To better distinguish scorched from seared, planned to make it opaque as a more efficient on rendering pipe.
+* Pair with obsidian gauges to see your fluid if needed.
+* Not fully sold on this idea.
+
+
+### Tools
+
+#### Sword Guard and Stat Averaging
+
+* Swords and cleavers will get a new tool part, sword guards, which replaces one of their handles.
+    * Sword guards are a shield plating, allowing defensive material traits instead of offensive.
+    * This notably gates swords to tier 2 outside of maybe copper, but given we have both daggers and hand axes in tier 1 I think that is fine.
+* From there, many tools will get some stat adjustments with a focus on reducing tool part stat averaging. In most cases, we will just add up heads directly.
+* Broad tool multipliers may get reduced a bit as a result. In particular, broad weapon durability is way higher than you need other than on scythes.
+
+#### Better Slime Staffs
+
+* Slimestaffs could benefit from materials rather than the rather random stats they currently have.
+* Give them 2 bowlimbs, a [sword guard](#sword-guard-and-stat-averaging), and possibly a bowstring. Depends on whether I want 5 materials or 4.
+* Likely keep around the crystal as a material, to apply different slot types.
+
+#### Dual Wielding rework
+
+* Dual wielding will be limited to small tools again.
+* Dual wielding will no longer apply it's stat debuff.
+* This allows broad tools to get a level of reach, which is not compatible with dual wielding.
+* Consider letting broad tools get a second level of reach via ability slot.
+
+#### Plate Armor slots
+
+* Give plate armor +1 defense slot and -1 upgrade slot.
+* Brings protection modifiers more in line with vanilla armor, making it easier to reach > 64% protection.
+* Makes plate armor more distinct from travelers, which is a little bit too good by comparison currently (as 1 defense slot does not quite compare to 1 ability slot).
+* Likely will target 1.21 with this change.
+
+#### Jeweled Hide
+
+* With the introduction of many new types of maille, ancient hide feels a little redundant, just granting +1 defense slot.
+* With the introduction of the ancient tool material, ancient hide is a bit confusing.
+* To solve this, plan to replace ancient hide with jeweled hide, swapping the molten debris for molten diamond.
+* On pickaxes, will continue to grant fortune.
+* On armor, will grant revitalized.
+* On ranged weapons, will grant a boost to use item speed, letting you move more quickly while drawing back.
+
 
 ## Multiblock
 
@@ -32,20 +91,6 @@ We just finished a new 1.20.1 update adding quite a few roadmap items. We plan t
 * Allows accessing the UI fluid tank
 * Comparator signal for tank level
 * On pulse, switches fluid order (bottom to top? Top to bottom?)
-
-### Smeltery Tank Cleanup
-<div class="hatnote">Earliest 1.21</div>
-
-* Instead of fuel and ingot tanks, just have tanks and gauges.
-* Smeltery will have 4000mb tank volume.
-* Foundry will have the ingot tank volume.
-
-### Scorched Faucet Tweaks
-<div class="hatnote">Earliest 1.21</div>
-
-* To better distinguish scorched from seared, planned to make it opaque as a more efficient on rendering pipe.
-* Pair with obsidian gauges to see your fluid if needed.
-* Not fully sold on this idea.
 
 ### Sublimery
 
@@ -85,38 +130,6 @@ The soul forge is a planned multiblock for late game tool, modifier, and materia
   * Can jab.
 * Crafted from a broad axe head, 2 tough handles, and likely a sword guard.
 * Moved from Tinkers' Things as the reach halberd is made redundant by [dual wielding rework](#dual-wielding-rework)
-
-### Plate Armor slots
-<div class="hatnote">Earliest 1.21</div>
-
-* Give plate armor +1 defense slot and -1 upgrade slot.
-* Brings protection modifiers more in line with vanilla armor, making it easier to reach > 64% protection.
-* Makes plate armor more distinct from travelers, which is a little bit too good by comparison currently (as 1 defense slot does not quite compare to 1 ability slot).
-* Likely will target 1.21 with this change.
-
-### Sword Guard and Stat Averaging
-<div class="hatnote">Earliest 1.21</div>
-
-* Swords and cleavers will get a new tool part, sword guards, which replaces one of their handles.
-    * Sword guards are a shield plating, allowing defensive material traits instead of offensive.
-    * This notably gates swords to tier 2 outside of maybe copper, but given we have both daggers and hand axes in tier 1 I think that is fine.
-* From there, many tools will get some stat adjustments with a focus on reducing tool part stat averaging. In most cases, we will just add up heads directly.
-* Broad tool multipliers may get reduced a bit as a result. In particular, broad weapon durability is way higher than you need other than on scythes.
-
-### Better Slime Staffs
-<div class="hatnote">Earliest 1.21</div>
-
-* Slimestaffs could benefit from materials rather than the rather random stats they currently have.
-* Give them 2 bowlimbs, a [sword guard](#sword-guard-and-stat-averaging), and possibly a bowstring. Depends on whether I want 5 materials or 4.
-* Likely keep around the crystal as a material, to apply different slot types.
-
-### Dual Wielding rework
-<div class="hatnote">Earliest 1.21</div>
-
-* Dual wielding will be limited to small tools again.
-* Dual wielding will no longer apply it's stat debuff.
-* This allows broad tools to get a level of reach, which is not compatible with dual wielding.
-* Consider letting broad tools get a second level of reach via ability slot.
 
 ### Materials
 
