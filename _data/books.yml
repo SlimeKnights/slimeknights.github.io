@@ -24,7 +24,7 @@ materials_and_you_20:
       text: Further Reading
 
 puny_smelting_20:
-  path: tinkers/3.11.1/puny_smelting
+  path: tinkers/3.11.2/puny_smelting
   max_page: 102
   titles:
     - index: 2
@@ -36,7 +36,7 @@ puny_smelting_20:
     - index: 13
       text: Tier 2 General
       
-    - index: 21
+    - index: 20
       text: Tier 2 Ranged
       
     - index: 27
@@ -58,8 +58,8 @@ puny_smelting_20:
       text: Further Reading
 
 mighty_smelting_20:
-  path: tinkers/3.11.1/mighty_smelting
-  max_page: 82
+  path: tinkers/3.11.2/mighty_smelting
+  max_page: 83
   titles:
     - index: 2
       text: Smeltery
@@ -76,10 +76,10 @@ mighty_smelting_20:
     - index: 37
       text: Broad Tools
       
-    - index: 42
+    - index: 44
       text: Abilities
       
-    - index: 76
+    - index: 77
       text: Defense
 
 fantastic_foundry_20:
@@ -105,7 +105,7 @@ fantastic_foundry_20:
       text: Tier 4 Armor
 
 tinkers_gadgetry_20:
-  path: tinkers/3.11.1/tinkers_gadgetry
+  path: tinkers/3.11.2/tinkers_gadgetry
   max_page: 56
   titles:
     - index: 2
@@ -117,26 +117,26 @@ tinkers_gadgetry_20:
     - index: 7
       text: Exploration
       
-    - index: 15
+    - index: 16
       text: General Materials
       
-    - index: 19
+    - index: 20
       text: Ranged Materials
       
     - index: 23
       text: Armor Materials
       
-    - index: 27
+    - index: 28
       text: Advanced Ammo Materials
       
     - index: 42
       text: Ancient Tools
       
-    - index: 46
+    - index: 47
       text: Slimy Armor
 
 encyclopedia_20:
-  path: tinkers/3.11.1/encyclopedia
+  path: tinkers/3.11.2/encyclopedia
   max_page: 262
   titles:
     - index: 2
