@@ -62,12 +62,18 @@ This section contains various tweaks to tools that came up during the design or 
 * This allows broad tools to get a level of reach, which is not compatible with dual wielding.
 * Consider letting broad tools get a second level of reach via ability slot.
 
-#### Plate Armor slots
+### Defense Rework
 
-* Give plate armor +1 defense slot and -1 upgrade slot.
-* Brings protection modifiers more in line with vanilla armor, making it easier to reach > 64% protection.
-* Makes plate armor more distinct from travelers, which is a little bit too good by comparison currently (as 1 defense slot does not quite compare to 1 ability slot).
-* Likely will target 1.21 with this change.
+Following sections contain a couple of changes to make plate armor more distinct from travelers, which is a little bit too good by comparison currently (as 1 defense slot does not quite compare to 1 ability slot).
+
+After the changes, traveler's potential before rebalanced will be 3 defense slots plus 1 defensive material trait (gained 1 slot but lost 1 potential trait). Plate will have 4 defense slots plus 2 defensive material traits (gained 1 slot).
+
+#### Slotless Defense slot
+
+* To keep armor from scaling too quickly, give +1 defense slot from a slotless modifier.
+* Most likely will do this using the armor trim modifier.
+  * Different trim variants will still be cosmetic. But applying any variant grants a defense slot.
+  * For armor like travelers goggles that do not fit trims, include an alternative form of trim that has no shapes, just materials. Crafted using any trim template.
 
 #### Jeweled Hide
 
@@ -232,3 +238,15 @@ The first step for this change will be to move the part swapping code to the too
 ### Migrate Away From Tool Loot Hook
 
 We keep reconsidering whether the tool loot hook is worth having compared to modifiers just directly adding global loot modifiers.
+
+### Slots in crafted modifiers
+
+* Crafted modifiers will now store slots instea of just modifier ID and level.
+* Will be stored as a list based on the order they were applied.
+  * For example, luck will be stored as "ability, 1; slotless, 2".
+  * A modifier that alternates ability than upgrade would be stored as "ability, 1; upgrade, 1; ability, 1". Order is important.
+* Benefits:
+  * Simplifies modifier removal as the tool specifies how to remove them, no need to define extra recipes.
+  * If a modifier changes types, you can remove the old application to recover the old slot.
+  * If a modifier can be obtained in multiple ways, in theory this is usable to allow both to be mixed with the right type removing.
+  * No need to track used modifiers in persistent data, making it easier to drop should it be impractical with components.
