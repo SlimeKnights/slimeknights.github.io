@@ -131,10 +131,11 @@ Many materials, traits, and tools got some small rebalances in this update to br
 ## Download
 
 **Tinkers' Construct**
+<div class="hatnote">Update: 3.11.2.165 was released to fix bugs and improve documentation compared to 3.11.1.158.</div>
 
-The new Tinkers' Construct 3.11.1.158 update can be downloaded at the following:
+The new Tinkers' Construct 3.11.2.165 update can be downloaded at the following:
 
-{% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.11.1.158" curseforge="7419961" %}
+{% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.11.2.165" curseforge="7443615" %}
 
 **Mantle**
 
