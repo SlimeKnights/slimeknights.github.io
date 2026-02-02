@@ -16,7 +16,9 @@ See also: [Design Documents](../design) - may contain details on future plans th
 
 ## Next Tasks
 
-We just finished a new 1.20.1 update adding quite a few roadmap items, plus a bug fix release making it stable. Next project is to work on another project briefly before starting 1.21 NeoForge ports.
+We just finished a new 1.20.1 update for Tinkers' adding quite a few roadmap items, plus a bug fix release making it stable. Tinkers' will likely get another 1.20.1 update in the near future, though that update is less pressing.
+
+Next project is to work on HTML books for the docs website, then focus efforts on a 1.21.1 port of Mantle and Metalborn. Once those ports are done, we will select the next project to port; high chance it is Tinkers' Construct.
 
 1.19.2 and 1.18.2 are both considered stable. We plan at least 1 more bugfix release for each version, but its to be determined how many bug fixes make it to each which are not already coded.
 
