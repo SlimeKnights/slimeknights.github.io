@@ -56,7 +56,8 @@ This section contains various tweaks to tools that came up during the design or 
 #### Sword Guard and Stat Averaging
 
 * Swords and cleavers will get a new tool part, sword guards, which replaces one of their handles.
-    * Sword guards are a shield plating, allowing defensive material traits instead of offensive.
+    * Sword guards are a new part type, though they are similar to shield plating.
+    * Materails will come from shield cores and shield plating options, using their traits.
     * This notably gates swords to tier 2 outside of maybe copper, but given we have both daggers and hand axes in tier 1 I think that is fine.
 * From there, many tools will get some stat adjustments with a focus on reducing tool part stat averaging. In most cases, we will just add up heads directly.
 * Broad tool multipliers may get reduced a bit as a result. In particular, broad weapon durability is way higher than you need other than on scythes.
