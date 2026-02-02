@@ -22,6 +22,16 @@ Next project is to work on HTML books for the docs website, then focus efforts o
 
 1.19.2 and 1.18.2 are both considered stable. We plan at least 1 more bugfix release for each version, but its to be determined how many bug fixes make it to each which are not already coded.
 
+## 1.20 or 1.21
+
+These features may come on a later 1.20 build or on 1.21, depending on how complete the design feels.
+
+### Knightslime
+
+* Alloyed from enderslime, cobalt, and obsidian.
+* Trait: overmending - like mending but for overslime.
+* I am not entirely sold on this trait, since it puts it in a box fighting cinderslime and slimewood. But it will be overslime related and not capacity based.
+
 ## 1.21 Changes
 
 This section contains various tweaks to tools that came up during the design or discussion of the Throwback update, but felt too large to make in 1.20. They will most likely happen in the first 1.21 release, though these features are subject to change.
