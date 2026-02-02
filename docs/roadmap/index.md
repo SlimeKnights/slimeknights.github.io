@@ -54,8 +54,8 @@ This section contains various tweaks to tools that came up during the design or 
 #### Better Slime Staffs
 
 * Slimestaffs could benefit from materials rather than the rather random stats they currently have.
-* Give them 2 bowlimbs, a [sword guard](#sword-guard-and-stat-averaging), and possibly a bowstring. Depends on whether I want 5 materials or 4.
-* Likely keep around the crystal as a material, to apply different slot types.
+* Give them 2 bowlimbs, a [sword guard](#sword-guard-and-stat-averaging), and a staff crystal. Depends on whether I want 5 materials or 4.
+* Staff crystals grant slot types.
 
 #### Dual Wielding rework
 
@@ -85,6 +85,67 @@ After the changes, traveler's potential before rebalanced will be 3 defense slot
 * On pickaxes, will continue to grant fortune.
 * On armor, will grant revitalized.
 * On ranged weapons, will grant a boost to use item speed, letting you move more quickly while drawing back.
+
+### Slimesuit Slimy 2.0
+
+* Reworking the slimesuit to be earlier game instead of end gated.
+
+**More Slime:**
+* Instead of enderslime, any slime type will be usable. Lets you craft it earlier game!
+* Slime stats include durability, overslime, knockback resistance, and movement speed.
+* Slime variants:
+  * Earthslime: grants overgrowth
+  * Skyslime: grants skyfall
+  * Ichor: grants overshield
+  * Enderslime: grants enderclearance
+  * Clay: grants armor
+  * Honey: ???
+  * Magma: ??? (fire related)  
+
+**Improved Skulls:**
+
+* *Materials*: skulls
+  * Each skull will grant a unique and strong trait (will want to revamp the skull list to be roughly ability level).
+  * May want to simplify stats, dropping the unique repair materials (as its just hard to remember).
+* *Traits*: *none* (all from skulls)
+* *Function*: varies.
+
+**New Chestplate - Slimecage:**
+
+* *Materials*: bone
+  * Material list will be similar to bones in shield cores.
+  * Traits will be similar to bones in melee, might grant 2 levels.
+  * Undecided on whether wood will be included here, it does break the mob drop theme.
+  * May or may not do attack damage on the bones.
+* *Traits*: ambidextrous, reach
+* *Function*: unarmed attack, building.
+
+**Slimelytra Will Return:**
+
+* *Materials*: none (just elytra)
+* *Traits*: Wings
+* *Function*:
+  * Flying is basically a shield, right? Still goes in chestplate slot.
+  * Probably needs 1 more thing to set it apart from slimecage, maybe stats are sufficient.
+
+**Slimeshell more Shells:**
+
+* *Materials*: shells
+  * Material list will be similar to unique mailles.
+  * Options such as turtle shell, dragon scale, shulker shell, couple more overworld options.
+  * Traits will match maille, defensive. Possibly give 2 levels.
+* *Traits*: Pockets
+  * Likely will be reduced to just 9 slots instead of 18 since this comes much earlier.
+* *Function*: Storage, best defensive slimesuit option.
+
+**Slimeboots get Laces:**
+
+* *Materials*: laces
+  * Material list is similar to bowstrings.
+  * Options such as string, vines, nether vines, slime vines.
+  * Slime vine traits will be unique to slimeboots, with sky granting leaping.
+* *Traits*: Bouncy
+* *Function*: Bouncy
 
 
 ## Multiblock
@@ -146,26 +207,6 @@ Several new material tiers are planned:
 * **Tier 4F**: Tier 4 materials requiring the [Soul Forge](#soul-forge) instead of advanced alloying.
 * **Tier 4E**: Tier 4 materials requiring early end access.
 * **Tier 5**: Ultimate materials requiring combining severlal methods of material crafting.
-
-### Slimesuit Slimy 2.0
-
-**More Slime:**
-
-* Instead of making the slimesuit from enderslime, make it from any slime type
-* Use the soul forge to craft it.
-* Each slime has different effects! Like clay for armor!
-
-**More Materials:**
-
-* All parts will work like slimeskulls, having multiple bases!
-* Chestplates use bones to boost melee effects, or elytra for flight.
-* Leggings and boots do other neat stuff, will write more on it here later.
-
-### Slimeshields
-
-* The missing shield type
-* Lean into the bouncy aspect of slime with knockback and bouncing?
-* Likely will hold off until after the slimesuit rework.
 
 ### Modifiers
 
