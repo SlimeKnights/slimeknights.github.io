@@ -64,7 +64,7 @@ Bendalloy, chromium, and cadmium are all now available as metal powers if anothe
 * Cadmium replaces silver for stealth.
 * Bendalloy replaces rose gold for energy.
 
-On the chance this disables a metal in your pack, you can always use the `/metalborn metal set` and `/metalborn ferring set` commands to migrate. Or a datapack to force enable those now disabled powers.
+If this disables a metal in your pack, players and metalminds should automatically migrate to the new metal. On the chance it does not work, you can use the `/metalborn metal set` and `/metalborn ferring set` commands to migrate. Alternatively, if you preferred the old metal you can use a datapack to change the conditions on the metals.
 
 ## Changes
 
@@ -92,7 +92,13 @@ The limit on the number of unsealed rings you can use at once has been dropped. 
 
 {% include update/image.html name="rebalance" alt="Updated effects of pewter after the rebalance." %}
 
-Pewter, constantan/brass, and iron all had adjustments to their powers. Pewter has the most notable changes as tapping grants less damage, but also grants some temporary instant health. Constantan/brass is notably more viable for combat, while iron is more useful when tapped.
+Several metals had power adjustments:
+
+* Pewter has the most notable changes as tapping grants less damage, but also grants some temporary instant health.
+* Constantan/brass is notably more viable for combat as it no longer constantly ignites you, though it deals less damage when you are not on fire.
+* Iron grants more knockback resistance when tapped.
+* Gold heals a bit faster, so it outpaces normal hunger healing.
+* Rose gold no longer grants saturation, ensuring you don't get fast hunger healing from it (which made it better than gold).
 
 ### Fireproof Items
 
@@ -107,9 +113,9 @@ Items crafted using netherite including invested nuggets, unsealed metalminds, a
 
 **Metalborn**
 
-Metalborn update 1.0.1 can be downloaded at the following:
+Metalborn update 1.0.2 can be downloaded at the following:
 
-{% include update/download.html name="metalborn" author="KnightMiner" version="1.0.1" curseforge="7564375" %}
+{% include update/download.html name="metalborn" author="KnightMiner" version="1.0.2" curseforge="7578655" %}
 
 **Mantle**
 
