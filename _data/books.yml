@@ -176,7 +176,7 @@ encyclopedia_20:
       text: Abilities
 
 metalborn_20:
-  path: metalborn/1.0.1
+  path: metalborn/1.0.2
   max_page: 23
   titles:
     - index: 1
