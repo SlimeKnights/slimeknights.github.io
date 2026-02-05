@@ -8,7 +8,7 @@ See also: [the Minecraft Wiki on recipes](https://minecraft.wiki/w/Recipe).
 </div>
 
 {{page.description}}
-Recipes are defined in `data/<domain>/recipe/`. The name of the recipe along with sub-folders beyond `recipe` does not matter unless your goal is to override a specific recipe.
+Recipes are defined in `data/<domain>/recipes/`. The name of the recipe along with sub-folders beyond `recipe` does not matter unless your goal is to override a specific recipe.
 
 ## Vanilla
 
