@@ -22,15 +22,35 @@ Next project is to work on HTML books for the docs website, then focus efforts o
 
 1.19.2 and 1.18.2 are both considered stable. We plan at least 1 more bugfix release for each version, but its to be determined how many bug fixes make it to each which are not already coded.
 
-## 1.20 or 1.21
+## 1.20
 
-These features may come on a later 1.20 build or on 1.21, depending on how complete the design feels.
+These features will come on a later 1.20 build.
 
 ### Knightslime
 
 * Alloyed from enderslime, cobalt, and obsidian.
-* Trait: overmending - like mending but for overslime.
-* I am not entirely sold on this trait, since it puts it in a box fighting cinderslime and slimewood. But it will be overslime related and not capacity based.
+* Traits:
+  * General and ranged: Overwield. Grants a small boost to melee speed, mining speed, velocity, and drawpseed by consuming extra overslime.
+  * Armor: Overshield. Grants a small boost to protection by consuming extra overslime.
+
+### Manyullyn Rework
+
+* Manyullyn's traits while potentially strong only worked in pretty niche situations.
+* We wanted manyullyn to be a bit more general use and be more competitive with knightmetal steel.
+* New trait is ambush, which grants +1 damage when at full health, and +0.6 damage against targets at full health.
+* On armor, grants warded, which does a flat damage reduction after armor when you are at full health.
+* Manyullyn's previous traits are now on a new compat material: nicrosil. Available from tin, nickel, or chromium.
+
+### Slimeskull Rework
+
+* Many slimeskull effects are very niche and not too useful.
+* Plan is to rework the effects by taking advantage of compatability traits or traits not normally available on helmets.
+* The best traits will remain unchanged.
+* As part of this, also adding the dragon head slimeskull.
+
+### Redstone Arrows
+
+* They go fast.
 
 ## 1.21 Changes
 
@@ -115,7 +135,7 @@ After the changes, traveler's potential before rebalanced will be 3 defense slot
 **Improved Skulls:**
 
 * *Materials*: skulls
-  * Each skull will grant a unique and strong trait (will want to revamp the skull list to be roughly ability level).
+  * Each skull grants a unique and strong trait (revamping the list will likely target 1.20).
   * May want to simplify stats, dropping the unique repair materials (as its just hard to remember).
 * *Traits*: *none* (all from skulls)
 * *Function*: varies.
@@ -158,50 +178,48 @@ After the changes, traveler's potential before rebalanced will be 3 defense slot
 * *Function*: Bouncy
 
 
-## Multiblock
+## Untargeted
 
-### Inverted Channels
+This content is ideas that we may want to implement in the future, but there is no set version targeted.
+
+### Smeltery
+
+New features related to the smeltery, foundry, and fluids.
+
+#### Inverted Channels
 
 * Slimesteel and Cinderslime can make channels and faucets.
 * They work identically to seared/scorched channels/faucet except for one small difference: downwards pouring is replaced with upwards pouring.
 
-### Smeltery interface
+#### Smeltery interface
 
 * Allows accessing the UI fluid tank
 * Comparator signal for tank level
 * On pulse, switches fluid order (bottom to top? Top to bottom?)
-
-### Sublimery
-
-The sublimery is currently targeted for release near the [Soul Forge](#soul-forge) build, as we do not believe its current design can stand on its own without the system it was designed to fuel.
-
-* Upside-down smeltery unlocked at the beginning of the end.
-* Created using slimestone (slime on end stone) and slimesteel/king's slime/queen's slime (undecided).
-* Third variant of the multiblock melting structure, after the smeltery and foundry.
-* Will support melting entities into gaseous experience instead of transitional entity melting.
-* Will likely not support alloying (smeltery exclusive) or byproducts (foundry exclusive).
-* Will likely have the same ore output rate as smelteries, though it will be configurable in case a modpack wishes it to be higher.
-
-### Soul Oven
-
-The soul oven is a reimagining of the high oven from [Tinkers' Steelworks](https://www.curseforge.com/minecraft/mc-mods/tinkers-steelworks). The oven will have many similar core mechanics, including:
-
-* Instead of being heated using liquid fuels, it will use specific solid fuels. The choice of fuel may impact the melting result.
-* The oven won't immediately heat up, rather it heats up over time. Once heated, it can easily reach temperatures and speeds higher than lava or blazing blood.
-* The oven has several additional slots for "additives". These will work on a similar system to the part builder or [soul forge](#soul-forge) to map items into "materials" for changing the melting result.
-
-We are still considering how this design best fits into the mod, and into the design of the [soul forge](#soul-forge).
 
 ### Soul Forge
 <div class="hatnote" markdown=1>
 Main page: [Soul Forge](soul-forge).
 </div>
 
-The soul forge is a planned multiblock for late game tool, modifier, and material crafting. The soul forge at earliest will come in 1.21. For more information, see [Soul Forge](soul-forge).
+The soul forge is a planned multiblock for late game tool, modifier, and material crafting. We currently plan to turn this concept into an official addon after most of the core features are done in the base mod. As such, at earliest this will target 1.21.1 if not 26.1. For more information, see [Soul Forge](soul-forge).
 
-## Tools
+### Sublimery
 
-### Halberds
+The sublimery has gone through a few iterations, most recently as a multiblock to get XP for the [Soul Forge](#soul-forge), as its current design may not stand on its own without the system it was designed to fuel. It is undecided whether to keep it as part of the soul forge, revamp it for Tinkers' or scrap it entirely.
+
+Features of the sublimery:
+
+* Upside-down smeltery unlocked at the beginning of the end.
+* Created using slimestone (slime on end stone) and slimesteel/cinderslime/queen's slime/knightslime (undecided).
+* Third variant of the multiblock melting structure, after the smeltery and foundry.
+* Will support melting entities into gaseous experience instead of transitional entity melting.
+* Will likely not support alloying (smeltery exclusive) or byproducts (foundry exclusive).
+* Will likely have the same ore output rate as smelteries, though it will be configurable in case a modpack wishes it to be higher.
+
+### Tools
+
+#### Halberds
 <div class="hatnote">Earliest 1.21, may wait for 1.21.11</div>
 
 * Tinkers' Construct implementation of the new vanilla spears.
@@ -210,27 +228,14 @@ The soul forge is a planned multiblock for late game tool, modifier, and materia
 * Crafted from a broad axe head, 2 tough handles, and likely a sword guard.
 * Moved from Tinkers' Things as the reach halberd is made redundant by [dual wielding rework](#dual-wielding-rework)
 
-### Materials
+#### Modifiers
 
-Several new material tiers are planned:
+**Overmending**
 
-* **Tier 4F**: Tier 4 materials requiring the [Soul Forge](#soul-forge) instead of advanced alloying.
-* **Tier 4E**: Tier 4 materials requiring early end access.
-* **Tier 5**: Ultimate materials requiring combining severlal methods of material crafting.
-
-### Modifiers
-
-**Mending**
-
-* Consumes experience fluid from the tools tank to repair the tool
-* Replaces mending moss
-* May end up being a trait of one of the tier 4 or 5 materials
-
-**Some modifier with a cool name**
-
-* Consumes experience orbs to fill the tool's tank with XP
-* Pairs well with mendings, hint hint
-* You may also wish to pair some tanks with mending, goal is for mending to take fewer slots than unbreakable but more than overslime
+* Consumes experience fluid from the tools tank to restore overslime.
+* Requires 3 levels of "slime friend" modifiers on the tool, either using overforced or slimy traits.
+* Crafted using 1 ingot of each slime alloy, plus some dragon's breath.
+* Replaces mending moss.
 
 **Dual Harvesting**
 
@@ -257,20 +262,19 @@ Several new material tiers are planned:
 * Can be used once in midair before needing to land.
 * Purely horizontal movement.
 
-## Worldgen
+### Worldgen
 
-### Ichor Islands
+#### Inverted Bloodshroom Trees
 
-* Ichor slimes?
-* Ichor slime islands?
-* Would all be on the ceiling
-* Geodes may partially replace this, not sure.
+* Bloodshroom will be found on the nether ceiling instead of bloodshroom islands.
+* Trees grow downwards instead of upwards.
+* May also include an ichor lake near tree spawns.
+* Undecided which variant of sapling mechanics to use, given the lack of slimy foliage on the ceiling.
 
-### Teantium Ore
-
-New end exclusive ore used in the soul forge. See the [Soul Forge](soul-forge#teantium-ore) for more information.
 
 ## API
+
+Various technical changes planned for some point in the future.
 
 ### Global tool definitions
 
