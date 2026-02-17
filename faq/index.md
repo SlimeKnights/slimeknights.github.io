@@ -22,9 +22,9 @@ This FAQ page covers general questions about our mods. If you have a mod specifi
 
 ### What versions do you support?
 
-We currently are primarily focused on 1.20.1, working on a final major update, see the [roadmap](/docs/roadmap) for more details. After that, 1.20.1 will be put in support, possibly just receiving bug fix updates. 1.18.2 and 1.19.2 may both receive a bug fix update as well. 
+We currently are primarily focused on 1.20.1 working on smaller bug fixes and features to complete the version; see the [roadmap](/docs/roadmap) for more details. After that, 1.20.1 will be put in long-term support, possibly just receiving bug fix updates. 1.18.2 and 1.19.2 may both receive a bug fix update as well. 
 
-1.21.1 NeoForge is the next target after the major 1.20.1 update.
+After finishing that, we will focus on a 1.21.1 NeoForge port for [Mantle](/projects#mantle) and [Metalborn](/projects#metalborn), before working on Tinkers' Construct for 1.21.1.
 
 If you want help with gameplay, you are free to ask on [our discord](https://discord.gg/njGrvuh), though note help with 1.7.10 or 1.12 may be limited due to how old those versions are (its been years, details are forgotten). Additionally, anything older than 1.7.10 and any version between 1.8 and 1.11 are entirely unsupported. Make sure to mention what version you are talking about if asking about any version other than 1.20.1, as otherwise we will answer for 1.20.1.
 
@@ -52,9 +52,9 @@ You may reuse code and assets from Tinkers' Construct to make such a fork happen
 In general, none of us see much point in supporting multiple modloaders; Forge has served us well enough for years and contains many systems we rely upon, and the NeoForge team continues to support those systems after 1.20. Supporting multiple mod loaders requires significant additional work which we lack time for.
 
 A few notable platforms:
-* NeoForge is maintained by many members of the team who used to run Forge, come 1.21 we will switch to NeoForge.
+* NeoForge is maintained by many members of the team who used to run Forge, come 1.21 we will switch to NeoForge. On 1.20.1, NeoForge is offiically unsupported.
 * Forge is used on 1.20.1 and below. We will likely drop support for Forge in 1.21.1 as most of the mods we are interested in are NeoForge exclusive.
-* Fabric is missing many systems that we rely upon, including models, events, Forge's fluid API, and the capability system. Replacing any of these or migrating to a Fabric version of the API would take significant effort for very little gain.
+* Fabric is missing many systems that we rely upon, including models, events, Forge's fluid API, and the capability system. Replacing any of these or migrating to a Fabric version of the API would take significant effort for very little gain. [Hephaestus](https://modrinth.com/mod/hephaestus) is an unofficial Fabric port you can use.
 
 While we do not have time to make such ports, we allow others to make forks as long as they do not call the fork "Tinkers' Construct". You can find many such forks and alternatives on [this spreadsheet](https://docs.google.com/spreadsheets/d/1gOxPm37wu8Y9vVewNYv8JAxfkPQmkUfvnSjsk_sMiBo/edit#gid=0).
 
