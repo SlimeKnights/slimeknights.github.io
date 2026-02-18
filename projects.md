@@ -54,6 +54,11 @@ These mods are made by a member of SlimeKnights, but the projects are not part o
 
 <div class="project-list">
     {% include project.html
+      name="simple-gravel-ores" title="Simple Gravel Ores" latest="1.21.11"
+      author="KnightMiner" github-author="elucent" github="GravelOres"
+      description="Simple Gravel Ores brings back the classic gravel ores from Tinkers' Construct 1 into modern versions, with configurability to support any mod's ores."
+    %}
+    {% include project.html
       name="ceramics" latest="1.20.1"
       author="KnightMiner"
       description="Originally inspired by the clay bucket from Iguana Tinker Tweaks, this mod simply added a clay bucket, but now it adds quite a few other features made from clay to both improve the early game and be used in long term builds."
@@ -72,11 +77,6 @@ These mods are made by a member of SlimeKnights, but the projects are not part o
       name="simple-absorption" title="Simple Absorption" latest="1.20.1"
       author="KnightMiner" github="SimpleAbsorption"
       description="This is a simple mod giving the player absorption hearts to make a world without natural regeneration less punishing."
-    %}
-    {% include project.html
-      name="simple-gravel-ores" title="Simple Gravel Ores" latest="1.20.1"
-      author="KnightMiner" github-author="elucent" github="GravelOres"
-      description="Simple Gravel Ores brings back the classic gravel ores from Tinkers' Construct 1 into modern versions, with configurability to support any mod's ores."
     %}
     {% include project.html
       name="simply-tea" title="Simply Tea" latest="1.20.1"
