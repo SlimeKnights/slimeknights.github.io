@@ -1,6 +1,9 @@
 materials_and_you_20:
   path: tinkers/3.11.1/materials_and_you
+  arrows: tinkers/materials_and_you
   max_page: 33
+  next:
+    title: Puny Smelting
   titles:
     - index: 1
       text: Introduction
@@ -25,7 +28,12 @@ materials_and_you_20:
 
 puny_smelting_20:
   path: tinkers/3.11.2/puny_smelting
+  arrows: tinkers/puny_smelting
   max_page: 102
+  previous:
+    title: Materials and You
+  next:
+    title: Mighty Smelting
   titles:
     - index: 2
       text: Melter & Moving Fluids
@@ -59,7 +67,12 @@ puny_smelting_20:
 
 mighty_smelting_20:
   path: tinkers/3.11.2/mighty_smelting
+  arrows: tinkers/mighty_smelting
   max_page: 83
+  previous:
+    title: Puny Smelting
+  next:
+    title: Fantastic Foundry
   titles:
     - index: 2
       text: Smeltery
@@ -84,8 +97,13 @@ mighty_smelting_20:
 
 fantastic_foundry_20:
   path: tinkers/3.11.1/fantastic_foundry
+  arrows: tinkers/fantastic_foundry
   max_page: 29
-  titles:      
+  previous:
+    title: Mighty Smelting
+  next:
+    title: Tinkers' Gadgetry
+  titles:
     - index: 2
       text: Alloyer
       
@@ -106,7 +124,13 @@ fantastic_foundry_20:
 
 tinkers_gadgetry_20:
   path: tinkers/3.11.2/tinkers_gadgetry
+  arrows: tinkers/tinkers_gadgetry
   max_page: 56
+  previous:
+    title: Fantastic Foundry
+  next:
+    title: Encyclopedia of Tinkering
+    link: encyclopedia
   titles:
     - index: 2
       text: Gadgets
@@ -137,7 +161,10 @@ tinkers_gadgetry_20:
 
 encyclopedia_20:
   path: tinkers/3.11.2/encyclopedia
+  arrows: tinkers/encyclopedia
   max_page: 262
+  previous:
+    title: Tinkers' Gadgetry
   titles:
     - index: 2
       text: Tools
