@@ -78,12 +78,17 @@ Currently, plate and travelers have a little bit too much overlap when it comes 
   * This also means that travelers gear in this update has a net gain of 0 defense slots (lost 1 from ancient hide, gained one from trimmed).
 
 Results of this change:
-* **Travelers:** 5 defense slots (2 base, 1 material trait, 1 armor trim, 1 rebalanced)
-* **Plate:** 7 defense slots (3 base, 2 material traits, 1 armor trim, 1 rebalanced)
-* **Slime:** 2 defense slots (0 base, 0 material traits, 1 armor trim, 1 rebalanced)
-* **Battle Sign:** 5 defense slots (3 base, 1 material trait, 0 armor trim, 1 rebalanced)
-* **Earth Staff:** 4 defense slots (3 base, 0 material traits, 0 armor trim, 1 rebalanced)
-* **Melting Pan:** 3 defense slots (1 base, 1 material trait, 0 armor trim, 1 rebalanced)
+
+| Name | Defense Slots | Starting | Material Trait | Armor Trim | Rebalanced |
+|:-|:-|:-|:-|:-|:-|
+| Travelers        | 5 | 2 | 1 | 1 | 1 |
+| Plate            | 7 | 3 | 2 | 1 | 1 |
+| Slime            | 2 | 0 | 0 | 1 | 1 |
+| Travelers Shield | 4 | 2 | 0 | 1 | 1 |
+| Plate Shield     | 6 | 3 | 1 | 1 | 1 |
+| Battle Sign      | 5 | 3 | 1 | 0 | 1 |
+| Earth Staff      | 4 | 3 | 0 | 0 | 1 |
+| Melting Pan      | 3 | 1 | 1 | 0 | 1 |
 
 ### Turtle Maille
 
