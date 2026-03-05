@@ -41,16 +41,72 @@ These features will come on a later 1.20 build.
 * On armor, grants warded, which does a flat damage reduction after armor when you are at full health.
 * Manyullyn's previous traits are now on a new compat material: nicrosil. Available from tin, nickel, or chromium.
 
+### Knightmetal Fluid Cannon
+
+* End fluid cannon variant crafted from knightmetal and shulker shells.
+* Higher capacity than other cannon variants, with faster fluid.
+* Power between cobalt and copper.
+
 ### Slimeskull Rework
 
 * Many slimeskull effects are very niche and not too useful.
 * Plan is to rework the effects by taking advantage of compatability traits or traits not normally available on helmets.
 * The best traits will remain unchanged.
-* As part of this, also adding the dragon head slimeskull.
+* As part of this also adding several new slimeskulls:
+  * Dragonskull: protects you from fatal damage
+  * Knightmetal: crafted from the knightmetal fluid cannon, grants spitting on helmet keybind
+  * Venombone, blazing bone, necronium: grant immunity to the relevant effect
 
 ### Redstone Arrows
 
 * They go fast.
+
+### Defense Rework
+
+Currently, plate and travelers have a little bit too much overlap when it comes to modifier slots. The next update makes them a bit more didstinct using a few changes:
+
+* Ancient hide removal:
+  * With the introduction of many new types of maille, ancient hide feels a little redundant, just granting +1 defense slot.
+  * With the introduction of the ancient tool material, ancient hide is a bit confusing.
+  * Removing notably prevents turning curiass into +1 defense slot, making the difference in effective defense slots between plate and travelers 2 instead of 1.
+  * See [Jeweled Hide](#jeweled-hide) for the harvest replacement.
+  * For migration, the material will still exist on 1.20, just be hidden and uncraftable.
+* Slotless defense slot:
+  * Using armor trim on armor or shield will grant it +1 defense slot alongside the cosmetic.
+  * This modifier also now works on shields and travelers goggles. It was chosen to not work on current ancient tools.
+  * This change gives plate a needed boost to make better-than-vanilla protection possible pre-end.
+  * This also means that travelers gear in this update has a net gain of 0 defense slots (lost 1 from ancient hide, gained one from trimmed).
+
+Results of this change:
+* **Travelers:** 5 defense slots (2 base, 1 material trait, 1 armor trim, 1 rebalanced)
+* **Plate:** 7 defense slots (3 base, 2 material traits, 1 armor trim, 1 rebalanced)
+* **Slime:** 2 defense slots (0 base, 0 material traits, 1 armor trim, 1 rebalanced)
+* **Battle Sign:** 5 defense slots (3 base, 1 material trait, 0 armor trim, 1 rebalanced)
+* **Earth Staff:** 4 defense slots (3 base, 0 material traits, 0 armor trim, 1 rebalanced)
+* **Melting Pan:** 3 defense slots (1 base, 1 material trait, 0 armor trim, 1 rebalanced)
+
+### Turtle Maille
+
+* Grants turtle shell trait.
+
+### Jeweled Hide
+
+* Crafted from pouring molten diamond on leather. Melting diamonds requires blazing blood making this tier 4.
+* On harvest tools, grants fortune, replacing ancient hide. 
+* On ranged tools, grants fortune, which now grants fishing luck to fishing rods (plus is useful on war picks).
+* On armor, grants revitalized. This is the last defense slot option that was not previously available as armor maille.
+
+### Slimeball
+
+* New staff exclusive modifier.
+* Allows the tool to shoot slimeball projectiles, which deal damage based on ranged stats.
+* Each slimeball has a different effect:
+  * Earth: drawback, pure projectile damage, lower damage.
+  * Sky: cold damage, freezing
+  * Ichor: fire damage, fiery
+  * Enderslime: magic damage, enderclearance
+  * Magma: explosion damage, explosive
+
 
 ## 1.21 Changes
 
@@ -69,7 +125,6 @@ This section contains various tweaks to tools that came up during the design or 
 * To better distinguish scorched from seared, planned to make it opaque as a more efficient on rendering pipe.
 * Pair with obsidian gauges to see your fluid if needed.
 * Not fully sold on this idea.
-
 
 ### Tools
 
@@ -93,28 +148,6 @@ This section contains various tweaks to tools that came up during the design or 
 * Dual wielding will no longer apply it's stat debuff.
 * This allows broad tools to get a level of reach, which is not compatible with dual wielding.
 * Consider letting broad tools get a second level of reach via ability slot.
-
-### Defense Rework
-
-Following sections contain a couple of changes to make plate armor more distinct from travelers, which is a little bit too good by comparison currently (as 1 defense slot does not quite compare to 1 ability slot).
-
-After the changes, traveler's potential before rebalanced will be 3 defense slots plus 1 defensive material trait (gained 1 slot but lost 1 potential trait). Plate will have 4 defense slots plus 2 defensive material traits (gained 1 slot).
-
-#### Slotless Defense slot
-
-* To keep armor from scaling too quickly, give +1 defense slot from a slotless modifier.
-* Most likely will do this using the armor trim modifier.
-  * Different trim variants will still be cosmetic. But applying any variant grants a defense slot.
-  * For armor like travelers goggles that do not fit trims, include an alternative form of trim that has no shapes, just materials. Crafted using any trim template.
-
-#### Jeweled Hide
-
-* With the introduction of many new types of maille, ancient hide feels a little redundant, just granting +1 defense slot.
-* With the introduction of the ancient tool material, ancient hide is a bit confusing.
-* To solve this, plan to replace ancient hide with jeweled hide, swapping the molten debris for molten diamond.
-* On pickaxes, will continue to grant fortune.
-* On armor, will grant revitalized.
-* On ranged weapons, will grant a boost to use item speed, letting you move more quickly while drawing back.
 
 ### Slimesuit Slimy 2.0
 
