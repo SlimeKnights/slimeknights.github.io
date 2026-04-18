@@ -1,26 +1,33 @@
+{% if include.html %}
+  {% assign prefix = "../" %}
+  {% assign suffix = " (HTML)" %}
+  {% assign link_suffix = "-html/cover" %}
+{%- endif -%}
 <nav class="navigation">
   <ul class="uk-pagination">
     {%- if include.previous -%}
       <li>
         {%- if include.previous.link -%}
-          <a href="../{{include.previous.link}}">
+          <a href="../{{ prefix | append: include.previous.link | append: link_suffix }}/">
         {%- else -%}
-          <a href="../{{include.previous.title | slugify }}">
+          <a href="../{{ prefix }}{{ include.previous.title | slugify | append: link_suffix }}/">
         {%- endif -%}
-        <span class="uk-margin-small-right" uk-pagination-previous></span>
-        {{ include.previous.title | default: include.previous.link }}
-      </a></li>
+            <span class="uk-margin-small-right" uk-pagination-previous></span>
+            {{ include.previous.title | default: include.previous.link | append: suffix }}
+          </a>
+      </li>
     {%- endif -%}
     {%- if include.next -%}
       <li class="uk-margin-auto-left">
         {%- if include.next.link -%}
-          <a href="../{{include.next.link}}">
+          <a href="../{{ prefix | append: include.next.link | append: link_suffix }}/">
         {%- else -%}
-          <li><a href="../{{include.next.title | slugify }}">
+          <a href="../{{ prefix }}{{ include.next.title | slugify | append: link_suffix }}/">
         {%- endif -%}
-        {{ include.next.title | default: include.next.link }}
-        <span class="uk-margin-small-left" uk-pagination-next></span>
-      </a></li>
+            {{ include.next.title | default: include.next.link | append: suffix }}
+            <span class="uk-margin-small-left" uk-pagination-next></span>
+          </a>
+      </li>
     {%- endif -%}
     </ul>
 </nav>
