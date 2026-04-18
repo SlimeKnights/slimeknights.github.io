@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    {% include breadcrumbs.html %}
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    
+    {%- assign book = site.data.books[page.book] -%}
+    {%- if book.previous or book.next -%}
+      {% include navigation.html previous=book.previous next=book.next prefix="../" %}
+    {%- endif -%}
+  </header>
+  <div class="post-content">
+    <div class="mc-font-black book-page-html">
+      <img src="/assets/images/book/{{ book.path }}/clean_{{ page.page_num }}.png" alt="">
+      {{ content }}
+      
+      {% unless page.page_num == 0 %}
+        <a href="../page-0/" class="back-arrow"><img src="/assets/images/book/arrows/{{ book.arrows }}/back.png" alt=""></a>
+      {% endunless %}
+      
+      {% if page.page_num == 0 %}
+        {% assign left_page = ".." %}
+      {% else %}
+        {% assign sub = page.page_num | minus: 1 %}
+        {% assign left_page = "../page-" | append: sub %}
+      {% endif %}
+      <a href="{{ left_page }}/" class="left-arrow"><img src="/assets/images/book/arrows/{{ book.arrows }}/left.png" alt=""></a>
+      
+      {% unless page.page_num == book.max_page %}
+        <a href="../page-{{ page.page_num | plus: 1 }}/" class="right-arrow"><img src="/assets/images/book/arrows/{{ book.arrows }}/right.png" alt=""></a>
+      {% endunless %}
+    </div>
+    <p>Click on the arrows, icons, and links to navigate the book.</p>
+  </div>
+</article>
+
+<link rel="stylesheet" href="{{ "/assets/css/book-html.css" | relative_url }}{{cache_buster}}"/>
+<script src="{{ "/assets/js/book-html.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/minetip.js" | relative_url }}"></script>

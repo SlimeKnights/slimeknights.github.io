@@ -1,5 +1,19 @@
 ---
-layout: page
+layout: default
 ---
-{%- assign book = site.data.books[page.book] -%}
-{%include book/pages.html book=book %}
+<article class="post">
+  <header class="post-header">
+    {% include breadcrumbs.html %}
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    
+    {%- assign book = site.data.books[page.book] -%}
+    {%- assign prev = book.previous | default: page.previous -%}
+    {%- assign next = book.next     | default: page.next -%}
+    {%- if prev or next -%}
+      {% include navigation.html previous=prev next=next prefix=page.link_prefix %}
+    {%- endif -%}
+  </header>
+  <div class="post-content">  
+    {% include book/pages.html book=book %}
+  </div>
+</article>

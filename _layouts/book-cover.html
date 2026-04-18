@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    {% include breadcrumbs.html %}
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    
+    {%- assign book = site.data.books[page.book] -%}
+    {%- if book.previous or book.next -%}
+      {% include navigation.html previous=book.previous next=book.next %}
+    {%- endif -%}
+  </header>
+  <div class="post-content">
+    <div class="mc-font-black book-page-html">
+      <img src="/assets/images/book/{{ book.path }}/cover.png" alt="" style="padding-left: 206px; padding-right: 206px;">
+      {{ content }}
+      <a href="page-0/" class="right-arrow-1"><img src="/assets/images/book/arrows/{{ book.arrows }}/right.png" alt=""></a>
+    </div>
+    <p>Click on the arrows, icons, and links to navigate the book.</p>
+  </div>
+</article>
+
+<link rel="stylesheet" href="{{ "/assets/css/book-html.css" | relative_url }}{{cache_buster}}"/>
+<script src="{{ "/assets/js/book-html.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/minetip.js" | relative_url }}"></script>
