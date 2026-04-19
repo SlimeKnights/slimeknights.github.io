@@ -1,3 +1,55 @@
+materials_and_you_20_pre:
+  path: tinkers/3.11.3-pre/materials_and_you
+  arrows: tinkers/materials_and_you
+  max_page: 33
+  next:
+    title: Puny Smelting
+
+puny_smelting_20_pre:
+  path: tinkers/3.11.3-pre/puny_smelting
+  arrows: tinkers/puny_smelting
+  max_page: 97
+  previous:
+    title: Materials and You
+  next:
+    title: Mighty Smelting
+
+mighty_smelting_20_pre:
+  path: tinkers/3.11.3-pre/mighty_smelting
+  arrows: tinkers/mighty_smelting
+  max_page: 75
+  previous:
+    title: Puny Smelting
+  next:
+    title: Fantastic Foundry
+
+fantastic_foundry_20_pre:
+  path: tinkers/3.11.3-pre/fantastic_foundry
+  arrows: tinkers/fantastic_foundry
+  max_page: 29
+  previous:
+    title: Mighty Smelting
+  next:
+    title: Tinkers' Gadgetry
+
+tinkers_gadgetry_20_pre:
+  path: tinkers/3.11.3-pre/tinkers_gadgetry
+  arrows: tinkers/tinkers_gadgetry
+  max_page: 55
+  previous:
+    title: Fantastic Foundry
+  next:
+    title: Encyclopedia of Tinkering
+    link: encyclopedia
+
+encyclopedia_20_pre:
+  path: tinkers/3.11.3-pre/encyclopedia
+  arrows: tinkers/encyclopedia
+  max_page: 231
+  previous:
+    title: Tinkers' Gadgetry
+      
+
 materials_and_you_20:
   path: tinkers/3.11.1/materials_and_you
   arrows: tinkers/materials_and_you
