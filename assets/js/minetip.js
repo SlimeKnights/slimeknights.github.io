@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 /**
  * Creates minecraft style tooltips
  *
@@ -5,7 +9,7 @@
  *
  * from https://minecraft.wiki/w/MediaWiki:common.js
  */
-(function () {
+$(function () {
     var escapeChars = {'\\&': '&#38;', '<': '&#60;', '>': '&#62;'};
     var escape = function (text) {
         // "\" must be escaped first
@@ -143,4 +147,4 @@
             $tooltip = $();
         }
     }, '[data-minetip-title]');
-}());
+});
