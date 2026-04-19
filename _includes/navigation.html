@@ -3,9 +3,9 @@
     {%- if include.previous -%}
       <li>
         {%- if include.previous.link -%}
-          <a href="../{{ include.prefix | append: include.previous.link }}/">
+          <a href="../{{ include.prefix | append: include.previous.link | append: include.suffix }}/">
         {%- else -%}
-          <a href="../{{ include.prefix }}{{ include.previous.title | slugify }}/">
+          <a href="../{{ include.prefix }}{{ include.previous.title | slugify }}{{ include.suffix }}/">
         {%- endif -%}
             <span class="uk-margin-small-right" uk-pagination-previous></span>
             {{ include.previous.title | default: include.previous.link }}
@@ -15,9 +15,9 @@
     {%- if include.next -%}
       <li class="uk-margin-auto-left">
         {%- if include.next.link -%}
-          <a href="../{{ include.prefix | append: include.next.link }}/">
+          <a href="../{{ include.prefix | append: include.next.link | append: include.suffix }}/">
         {%- else -%}
-          <a href="../{{ include.prefix }}{{ include.next.title | slugify }}/">
+          <a href="../{{ include.prefix }}{{ include.next.title | slugify }}{{ include.suffix }}/">
         {%- endif -%}
             {{ include.next.title | default: include.next.link }}
             <span class="uk-margin-small-left" uk-pagination-next></span>

@@ -10,7 +10,7 @@ layout: default
     {%- assign prev = book.previous | default: page.previous -%}
     {%- assign next = book.next     | default: page.next -%}
     {%- if prev or next -%}
-      {% include navigation.html previous=prev next=next prefix=page.link_prefix %}
+      {% include navigation.html previous=prev next=next prefix=page.link_prefix suffix=page.link_suffix %}
     {%- endif -%}
   </header>
   <div class="post-content">  
