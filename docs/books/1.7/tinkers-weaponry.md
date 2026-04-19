@@ -1,5 +1,5 @@
 ---
-layout: book
+layout: book-gallery
 title: Tinkers' Weaponry (1.7)
 breadcrumb: Tinkers' Weaponry
 description: Gallery of all pages for Tinkers' Weaponry from Tinkers' Construct in Minecraft 1.7.10.

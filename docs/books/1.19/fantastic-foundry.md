@@ -1,5 +1,5 @@
 ---
-layout: book
+layout: book-gallery
 title: Fantastic Foundry (1.19)
 breadcrumb: Fantastic Foundry
 description: Gallery of all pages for Fantastic Foundry from Tinkers' Construct in Minecraft 1.19.2.

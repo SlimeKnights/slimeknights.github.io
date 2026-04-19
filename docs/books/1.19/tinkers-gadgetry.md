@@ -1,5 +1,5 @@
 ---
-layout: book
+layout: book-gallery
 title: Tinkers' Gadgetry (1.19)
 breadcrumb: Tinkers' Gadgetry
 description: Gallery of all pages for Tinkers' Gadgetry from Tinkers' Construct in Minecraft 1.19.2.

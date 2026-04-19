@@ -1,5 +1,5 @@
 ---
-layout: book
+layout: book-gallery
 title: Puny Smelting (1.18)
 breadcrumb: Puny Smelting
 description: Gallery of all pages for Puny Smelting from Tinkers' Construct in Minecraft 1.18.2.

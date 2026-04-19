@@ -1,5 +1,5 @@
 ---
-layout: book
+layout: book-gallery
 title: "Materials and You: Volume 1 (1.7)"
 breadcrumb: "Materials and You: Volume 1"
 description: "Gallery of all pages for Materials and You: Volume 1 from Tinkers' Construct in Minecraft 1.7.10."

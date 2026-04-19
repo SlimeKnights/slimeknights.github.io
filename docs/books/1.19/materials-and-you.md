@@ -1,5 +1,5 @@
 ---
-layout: book
+layout: book-gallery
 title: Materials and You (1.19)
 breadcrumb: Materials and You
 description: Gallery of all pages for Materials and You from Tinkers' Construct in Minecraft 1.19.2.
