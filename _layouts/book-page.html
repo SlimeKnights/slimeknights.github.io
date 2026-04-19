@@ -4,8 +4,7 @@ layout: default
 <article class="post">
   <header class="post-header">
     {% include breadcrumbs.html %}
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-    
+    <br/>
     {%- assign book = site.data.books[page.book] -%}
     {%- if book.previous or book.next -%}
       {% include navigation.html previous=book.previous next=book.next prefix="../" %}
