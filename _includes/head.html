@@ -6,14 +6,22 @@
   {%- unless page.image -%}
     {%- if page.book -%}
       {%- assign book = site.data.books[page.book] -%}
-      {%- unless book.no_cover -%}
+      {%- if page.page_num -%}
         {%- capture book_image -%}
-          /assets/images/book/{{book.path}}/cover.png
+          /assets/images/book/{{book.path}}/page_{{page.page_num}}.png
         {%- endcapture -%}
+      {%- else -%}
+        {%- unless book.no_cover -%}
+          {%- capture book_image -%}
+            /assets/images/book/{{book.path}}/cover.png
+          {%- endcapture -%}
+        {%- endunless -%}
+      {%- endif -%}
+      {%- if book_image -%}
         {%- assign book_image = book_image | absolute_url -%}
         <meta property="og:image" content="{{ book_image }}">
         <meta property="twitter:image" content="{{ book_image }}">
-      {%- endunless -%}
+      {%- endif -%}
     {%- endif -%}
   {%- endunless -%}
   
