@@ -9,16 +9,10 @@ scale(page, content);
 content.style.visibility = "visible";
 window.addEventListener("resize", () => scale(page, content));
 
-
+// fetch current image path
 const img_link = content.querySelector("img").src;
-
-let i = img_link.length - 1;
-for (let counter = 0; counter < 2 && i > 0; i--) {
-    if (img_link.charAt(i) === '/') counter++;
-}
-
-const path_prefix = img_link.substring(0, i+1);
-
+// trim to root for this book
+const path_prefix = img_link.substring(0, img_link.lastIndexOf('/'));
 
 /* prefetch HTML and img for links hovered */
 const prefetch = anchor => {
@@ -31,11 +25,20 @@ const prefetch = anchor => {
         document.head.appendChild(link_html);
 
         const parts = anchor.href.split('/');
-        const book = parts[parts.length - 3].replace("-html", "").replaceAll("-", "_");
-        const image = parts[parts.length - 2].replace("page", "clean").replaceAll("-", "_");
+        // figure out target page number
+        const subpage = parts[parts.length - 2]
+        let image;
+        if (subpage.includes("page")) {
+            image = subpage.replace("page-", "clean_");
+        } else {
+            // if no page, we are linking the cover
+            image = "cover";
+        }
+        console.log(parts)
+        console.log(image)
 
         const link_img = document.createElement('link');
-        link_img.href = `${path_prefix}/${book}/${image}.png`;
+        link_img.href = `${path_prefix}/${image}.png`;
         link_img.rel = "prefetch";
         link_img.type = "image";
         document.head.appendChild(link_img);
@@ -45,6 +48,4 @@ const prefetch = anchor => {
     anchor.addEventListener('mouseover', listener);
 };
 
-const navigation = document.querySelector(".navigation");
-navigation.querySelectorAll("a").forEach(prefetch);
 content.querySelectorAll("a").forEach(prefetch);
