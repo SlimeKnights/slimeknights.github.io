@@ -24,7 +24,7 @@
     position: absolute;
     top: 44px;
     text-align: center;
-    div {
+    .grid-icon {
         width: 94px;
         height: 94px;
         p {
@@ -56,7 +56,7 @@
 .grid-icon-list-3 {
     grid-template-columns: repeat(3, 1fr);
     width: 270px;
-    > a div {
+    .grid-icon {
         width: 90px;
         height: 90px;
     }
@@ -65,7 +65,7 @@
 .grid-icon-list-4 {
     grid-template-columns: repeat(4, 1fr);
     width: 300px;
-    > a div {
+    .grid-icon {
         width: 75px;
         height: 75px;
     }
@@ -74,7 +74,7 @@
 .grid-icon-list-5 {
     grid-template-columns: repeat(5, 1fr);
     width: 300px;
-    > a div {
+    .grid-icon {
         width: 60px;
         height: 60px;
     }
@@ -83,7 +83,7 @@
 .grid-icon-list-6 {
     grid-template-columns: repeat(6, 1fr);
     width: 300px;
-    > a div {
+    .grid-icon {
         width: 50px;
         height: 50px;
     }
@@ -92,7 +92,7 @@
 .grid-icon-list-7 {
     grid-template-columns: repeat(7, 1fr);
     width: 280px;
-    > a div {
+    .grid-icon {
         width: 40px;
         height: 40px;
     }
