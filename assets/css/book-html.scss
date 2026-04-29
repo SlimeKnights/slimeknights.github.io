@@ -22,14 +22,16 @@
 .grid-content-3, .grid-content-4 {
     display: grid;
     position: absolute;
+    top: 44px;
     text-align: center;
-    img {
+    div {
         width: 94px;
-        height: 56px;
-    }
-    p {
-        height: 38px;
-        overflow: hidden;
+        height: 94px;
+        p {
+            padding-top: 56px;
+            height: 38px;
+            overflow: hidden;
+        }
     }
 }
 
@@ -37,13 +39,11 @@
     grid-template-columns: repeat(3, 1fr);
     width: 282px;
     left: 41px;
-    top: 44px;
 }
 
 .grid-content-4 {
     grid-template-columns: repeat(4, 1fr);
     width: 376px;
-    top: 46px;
     left: -4px;
 }
 
@@ -56,7 +56,7 @@
 .grid-icon-list-3 {
     grid-template-columns: repeat(3, 1fr);
     width: 270px;
-    img {
+    > a div {
         width: 90px;
         height: 90px;
     }
@@ -65,7 +65,7 @@
 .grid-icon-list-4 {
     grid-template-columns: repeat(4, 1fr);
     width: 300px;
-    img {
+    > a div {
         width: 75px;
         height: 75px;
     }
@@ -74,7 +74,7 @@
 .grid-icon-list-5 {
     grid-template-columns: repeat(5, 1fr);
     width: 300px;
-    img {
+    > a div {
         width: 60px;
         height: 60px;
     }
@@ -83,7 +83,7 @@
 .grid-icon-list-6 {
     grid-template-columns: repeat(6, 1fr);
     width: 300px;
-    img {
+    > a div {
         width: 50px;
         height: 50px;
     }
@@ -92,7 +92,7 @@
 .grid-icon-list-7 {
     grid-template-columns: repeat(7, 1fr);
     width: 280px;
-    img {
+    > a div {
         width: 40px;
         height: 40px;
     }
