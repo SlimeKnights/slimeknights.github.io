@@ -59,6 +59,11 @@ These mods are made by a member of SlimeKnights, but the projects are not part o
       description="Simple Gravel Ores brings back the classic gravel ores from Tinkers' Construct 1 into modern versions, with configurability to support any mod's ores."
     %}
     {% include project.html
+      name="tag-stacker" title="Tag Stacker" latest="26.1"
+      author="KnightMiner" github="TagStacker" curseforge=false modrinth=false
+      description="Allows stacking items together if they share one of a whitelist of tags, for easy conversion between common mod items like ingots and nuggets."
+    %}
+    {% include project.html
       name="ceramics" latest="1.20.1"
       author="KnightMiner"
       description="Originally inspired by the clay bucket from Iguana Tinker Tweaks, this mod simply added a clay bucket, but now it adds quite a few other features made from clay to both improve the early game and be used in long term builds."
