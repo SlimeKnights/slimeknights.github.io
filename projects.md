@@ -60,7 +60,7 @@ These mods are made by a member of SlimeKnights, but the projects are not part o
     %}
     {% include project.html
       name="tag-stacker" title="Tag Stacker" latest="26.1"
-      author="KnightMiner" github="TagStacker" modrinth=false
+      author="KnightMiner" github="TagStacker"
       description="Allows stacking items together if they share one of a whitelist of tags, for easy conversion between common mod items like ingots and nuggets."
     %}
     {% include project.html
