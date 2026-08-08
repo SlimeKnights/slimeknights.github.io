@@ -250,16 +250,19 @@ This content is ideas that we may want to implement in the future, but there is 
 
 New features related to the smeltery, foundry, and fluids.
 
-#### Inverted Channels
-
-* Slimesteel and Cinderslime can make channels and faucets.
-* They work identically to seared/scorched channels/faucet except for one small difference: downwards pouring is replaced with upwards pouring.
-
 #### Smeltery interface
 
 * Allows accessing the UI fluid tank
 * Comparator signal for tank level
 * On pulse, switches fluid order (bottom to top? Top to bottom?)
+
+### Sublimery
+
+<div class="hatnote" markdown=1>
+Main page: [Sublimery](sublimery).
+</div>
+
+The sublimery is a major content update planned for either the end of 1.20 or the start of 1.21. It is the end variant of the smeltery, designed to fill some gaps related to how Tinkers works with XP from the base game and provide a way to draw more value out of ores late game.
 
 ### Soul Forge
 <div class="hatnote" markdown=1>
@@ -267,19 +270,6 @@ Main page: [Soul Forge](soul-forge).
 </div>
 
 The soul forge is a planned multiblock for late game tool, modifier, and material crafting. We currently plan to turn this concept into an official addon after most of the core features are done in the base mod. As such, at earliest this will target 1.21.1 if not 26.1. For more information, see [Soul Forge](soul-forge).
-
-### Sublimery
-
-The sublimery has gone through a few iterations, most recently as a multiblock to get XP for the [Soul Forge](#soul-forge), as its current design may not stand on its own without the system it was designed to fuel. It is undecided whether to keep it as part of the soul forge, revamp it for Tinkers' or scrap it entirely.
-
-Features of the sublimery:
-
-* Upside-down smeltery unlocked at the beginning of the end.
-* Created using slimestone (slime on end stone) and slimesteel/cinderslime/queen's slime/knightslime (undecided).
-* Third variant of the multiblock melting structure, after the smeltery and foundry.
-* Will support melting entities into gaseous experience instead of transitional entity melting.
-* Will likely not support alloying (smeltery exclusive) or byproducts (foundry exclusive).
-* Will likely have the same ore output rate as smelteries, though it will be configurable in case a modpack wishes it to be higher.
 
 ### Tools
 
