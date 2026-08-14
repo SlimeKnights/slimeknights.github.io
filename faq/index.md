@@ -38,9 +38,9 @@ If Tinkers' Construct skipped a Minecraft version, we have no plans to backport 
 
 We do not give permission to port our mods to any future Minecraft edition on Minecraft Java for Forge or NeoForge as long as the mod is still actively being developed. Actively being developed can be loosely defined as any activity on the mod's GitHub or Discord by the authors, including just commenting on GitHub issues. If in doubt, feel free to reach out on [our discord](https://discord.gg/njGrvuh). The reason for this blanket "no permission" statement is unofficial forks of our mod tend to just cause a maintenance burden that falls on us once we port to that version. Additionally, we often have a good reason for not porting yet, such as wanting to stablize or add content to the current version before porting to the next or having limited time to work on the mod.
 
-You are free to reach out to ask how you can help with the port, but we are not interested in people making their own forks that are not under the official project. We currently are undecided on how we will handle the Forge and NeoForge split on 1.20.1+; once we decide we may add Forge post 1.20.1 to the list of platforms we do not support that others may fork into.
+You are free to reach out to ask how you can help with the port, but we are not interested in people making their own forks that are not under the official project. Additionally, we are not interested in people making a pull request for an entire port of our mod; it is generally more effort to review a port than it is to just port ourselves. If you are interested in helping with smaller tasks for a port, reach out to us on [our discord](https://discord.gg/njGrvuh) first.
 
-You may fork to port to a platform we do not support such as Fabric, or for older versions we no longer support (curently includes anything before 1.18). If you do so however, we require you to name the project something other than "Tinkers' Construct" to prevent confusion for the end users expecting it to be the same project.
+You may fork to port to a platform we do not support such as Fabric, or for older versions we no longer support (curently includes anything before 1.18). If you do so however, we require you to name the project something other than "Tinkers' Construct" to prevent confusion for the end users expecting it to be the same project. Note that while we plan to port to NeoForge on 1.21 over Forge, given both are future versions we ask you do not make a fork for Forge 1.21 until we release a version for Neo 1.21 to prevent the misinformation such a release would cause.
 
 You may reuse code and assets from Tinkers' Construct to make such a fork happen, as those are under the MIT license. Additionally, if you have a public release or a code repository with significant progress, feel free to post about it on [our discord](https://discord.gg/njGrvuh) and I will add it to the spreadsheet.
 
@@ -52,7 +52,7 @@ You may reuse code and assets from Tinkers' Construct to make such a fork happen
 In general, none of us see much point in supporting multiple modloaders; Forge has served us well enough for years and contains many systems we rely upon, and the NeoForge team continues to support those systems after 1.20. Supporting multiple mod loaders requires significant additional work which we lack time for.
 
 A few notable platforms:
-* NeoForge is maintained by many members of the team who used to run Forge, come 1.21 we will switch to NeoForge. On 1.20.1, NeoForge is offiically unsupported.
+* NeoForge is maintained by many members of the team who used to run Forge, come 1.21 we will switch to NeoForge. On 1.20.1, NeoForge is officially unsupported.
 * Forge is used on 1.20.1 and below. We will likely drop support for Forge in 1.21.1 as most of the mods we are interested in are NeoForge exclusive.
 * Fabric is missing many systems that we rely upon, including models, events, Forge's fluid API, and the capability system. Replacing any of these or migrating to a Fabric version of the API would take significant effort for very little gain. [Hephaestus](https://modrinth.com/mod/hephaestus) is an unofficial Fabric port you can use.
 
@@ -139,14 +139,19 @@ You can request new APIs either through [our discord](https://discord.gg/njGrvuh
 
 ### Can you add compatability with another mod?
 
-When it comes to mod support, it typically must meet one of three criteria to be added:
+When it comes to mod support, it typically must meet one of four criteria to be added:
 
-* Support that works for many mods is preferred over support for a specific mod. For example, adding support for melting tin or alloying bronze supports several mods adding those ores and alloys, but support for Refined Glowstone only helps Mekanism.
-    * An exception is trivial support, for example support that only requires a couple JSON files and not direct API access. This is why Refined Glowstone has melting and casting, but no tool material.
-* If I personally play a mod, I am a lot more likely to add support than if I never use the mod. Twilight Forest having Tinkers' Construct compatability is an example.
-* If someone else pull requests support, it will typically be added as long as it does not require significant maintenance.
-  * Anything that requires new dependencies in dev will likely not be accepted.
-  * Please talk to the devs before making the pull request to prevent wasted work.
-  * Support that requires a lot of gameplay decisions notably needs discussion before making a pull request so we can ensure it fits our vision for the mod.
+* **It must support many mods:** For example, adding support for melting tin or alloying bronze supports several mods adding those ores and alloys, but support for Refined Glowstone only helps Mekanism.
+* **It is trivial to add and maintain:** For example, support that only requires a couple JSON files and not direct API access. This is why Refined Glowstone has melting and casting, but no tool material.
+* **If I personally play a mod:** If I do not play the mod, I am a bad choice to design gameplay compatability with it; you are far better off using one of the many addons for that.
+* **If I collaborate with the mod's developer:** There is some leeway with mods I do not play as long as I work with the developer of the mod to make the compatability happen. Working with a fan of the mod is not the same.
+
+Twilight Forest having Tinkers' Construct compatability is an example of both a mod I play and a collaboration with that mod's developers.
+
+If you are interested in making a pull request for compatability, it generally must fall in one of the first two categories. That is, supporting many mods or being easy to maintain. I am willing to consider pull requests for other types, but they should first consider the following criteria:
+
+* Anything that requires new dependencies in dev will likely not be accepted.
+* Talk to the devs before making the pull request to prevent wasted work.
+* Support that requires a lot of gameplay decisions notably needs discussion before making a pull request so we can ensure it fits our vision for the mod.
 
 Note that these criteria are just guidelines, just because something meets these guidelines does not mean it will definitely be added.
