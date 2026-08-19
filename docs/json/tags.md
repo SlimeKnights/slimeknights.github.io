@@ -396,8 +396,9 @@ These tags control where a modifier shows in the books. A modifier may be in mul
 **Slotless**
 
 * `tconstruct:slotless`: Grouping tag for all modifiers typically applied as slotless.
-* `tconstruct:defense/general`: Slotless modifiers that do not grant bonus modifier slots.
-* `tconstruct:defense/bonus`: Slotless modifiers that grant bonus modifier slots.
+* `tconstruct:slotless/general`: Slotless modifiers that do not grant bonus modifier slots.
+* `tconstruct:slotless/bonus`: Slotless modifiers that grant bonus modifier slots.
+* `tconstruct:slotless/cosmetic`: Slotless modifiers that have no gameplay behavior, just change appearances.
 
 ## Material Tags
 
