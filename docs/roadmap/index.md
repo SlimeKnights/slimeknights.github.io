@@ -26,41 +26,6 @@ Next project is to work on HTML books for the docs website, then focus efforts o
 
 These features will come on a later 1.20 build.
 
-### Knightslime
-
-* Alloyed from enderslime, cobalt, and obsidian.
-* Traits:
-  * General and ranged: Overwield. Grants a small boost to melee speed, mining speed, velocity, and drawpseed by consuming extra overslime.
-  * Armor: Overshield. Grants a small boost to protection by consuming extra overslime.
-
-### Manyullyn Rework
-
-* Manyullyn's traits while potentially strong only worked in pretty niche situations.
-* We wanted manyullyn to be a bit more general use and be more competitive with knightmetal steel.
-* New trait is ambush, which grants +1 damage when at full health, and +0.6 damage against targets at full health.
-* On armor, grants warded, which does a flat damage reduction after armor when you are at full health.
-* Manyullyn's previous traits are now on a new compat material: nicrosil. Available from tin, nickel, or chromium.
-
-### Knightmetal Fluid Cannon
-
-* End fluid cannon variant crafted from knightmetal and shulker shells.
-* Higher capacity than other cannon variants, with faster fluid.
-* Power between cobalt and copper.
-
-### Slimeskull Rework
-
-* Many slimeskull effects are very niche and not too useful.
-* Plan is to rework the effects by taking advantage of compatability traits or traits not normally available on helmets.
-* The best traits will remain unchanged.
-* As part of this also adding several new slimeskulls:
-  * Dragonskull: protects you from fatal damage
-  * Knightmetal: crafted from the knightmetal fluid cannon, grants spitting on helmet keybind
-  * Venombone, blazing bone, necronium: grant immunity to the relevant effect
-
-### Redstone Arrows
-
-* They go fast.
-
 ### Defense Rework
 
 Currently, plate and travelers have a little bit too much overlap when it comes to modifier slots. The next update makes them a bit more didstinct using a few changes:
@@ -90,18 +55,44 @@ Results of this change:
 | Earth Staff      | 4 | 3 | 0 | 0 | 1 |
 | Melting Pan      | 4 | 1 | 1 | 0 | 2 |
 
-### Turtle Maille
+### Materials
+
+#### Knightslime
+
+* Alloyed from enderslime, cobalt, and obsidian.
+* Traits:
+  * General and ranged: Overwield. Grants a small boost to melee speed, mining speed, velocity, and drawpseed by consuming extra overslime.
+  * Armor: Overshield. Grants a small boost to protection by consuming extra overslime.
+
+#### Manyullyn Rework
+
+* Manyullyn's traits while potentially strong only worked in pretty niche situations.
+* We wanted manyullyn to be a bit more general use and be more competitive with knightmetal steel.
+* New trait is ambush, which grants +1 damage when at full health, and +0.6 damage against targets at full health.
+* On armor, grants warded, which does a flat damage reduction after armor when you are at full health.
+* Manyullyn's previous traits are now on a new compat material: nicrosil. Available from tin, nickel, or chromium.
+
+#### Redstone Arrow Heads
+
+* They go fast.
+* Fast is more damage on arrows, but is just fast on shurikens.
+
+#### Turtle Maille
 
 * Grants turtle shell trait.
+* Makes up for removal of ancient hide
+    * Now the only defense modifier that lacks a maille is knockback resistance, which is single level.
 
-### Jeweled Hide
+#### Jeweled Hide
 
 * Crafted from pouring molten diamond on leather. Melting diamonds requires blazing blood making this tier 4.
 * On harvest tools, grants fortune, replacing ancient hide. 
 * On ranged tools, grants fortune, which now grants fishing luck to fishing rods (plus is useful on war picks).
 * On armor, grants revitalized. This is the last defense slot option that was not previously available as armor maille.
 
-### Slimeball
+### Modifiers
+
+#### Slimeball
 
 * New staff exclusive modifier.
 * Allows the tool to shoot slimeball projectiles, which deal damage based on ranged stats.
@@ -111,56 +102,16 @@ Results of this change:
   * Ichor: fire damage, fiery
   * Enderslime: magic damage, enderclearance
   * Magma: explosion damage, explosive
+* Exists purely because I was converting an old slimeskull trait to JSON (firebreath), but ended up scrapping it from the final design.
 
-### Banner
+#### Banner
 
 * New slotless cosmetic modifier for plate shields.
+    * Will allow on travelers shield if someone is willing to make textures for it.
 * Apply using a banner in the tinker station or anvil.
-* Copies the patterns using shield style.
+* Copies the patterns using vanilla shield style.
 * Held form should automatically support modded banner patterns. GUI form unfortunately is limited to vanilla patterns unless a resource pack adds more textures.
 * Addons can add banner to their own shields, though will need to provide the proper textures.
-
-
-## 1.21 Changes
-
-This section contains various tweaks to tools that came up during the design or discussion of the Throwback update, but felt too large to make in 1.20. They will most likely happen in the first 1.21 release, though these features are subject to change.
-
-### Smeltery
-
-#### Smeltery Tank Cleanup
-
-* Instead of fuel and ingot tanks, just have tanks and gauges.
-* Smeltery will have 4000mb tank volume.
-* Foundry will have the ingot tank volume.
-
-#### Scorched Faucet Tweaks
-
-* To better distinguish scorched from seared, planned to make it opaque as a more efficient on rendering pipe.
-* Pair with obsidian gauges to see your fluid if needed.
-* Not fully sold on this idea.
-
-### Tools
-
-#### Sword Guard and Stat Averaging
-
-* Swords and cleavers will get a new tool part, sword guards, which replaces one of their handles.
-    * Sword guards are a new part type, though they are similar to shield plating.
-    * Materails will come from shield cores and shield plating options, using their traits.
-* From there, many tools will get some stat adjustments with a focus on reducing tool part stat averaging. In most cases, we will just add up heads directly.
-* Broad tool multipliers may get reduced a bit as a result. In particular, broad weapon durability is way higher than you need other than on scythes.
-
-#### Better Slime Staffs
-
-* Slimestaffs could benefit from materials rather than the rather random stats they currently have.
-* Give them 2 bowlimbs, a [sword guard](#sword-guard-and-stat-averaging), and a staff crystal. Depends on whether I want 5 materials or 4.
-* Staff crystals grant slot types.
-
-#### Dual Wielding rework
-
-* Dual wielding will be limited to small tools again.
-* Dual wielding will no longer apply it's stat debuff.
-* This allows broad tools to get a level of reach, which is not compatible with dual wielding.
-* Consider letting broad tools get a second level of reach via ability slot.
 
 ### Slimesuit Slimy 2.0
 
@@ -175,8 +126,9 @@ This section contains various tweaks to tools that came up during the design or 
   * Ichor: grants overshield
   * Enderslime: grants enderclearance
   * Clay: grants armor
-  * Honey: ???
-  * Magma: ??? (fire related)  
+  * Honey: Tasty
+  * Magma: Fire Protection
+  * Ender Pearl: Magic Protection
 
 **Improved Skulls:**
 
@@ -185,6 +137,13 @@ This section contains various tweaks to tools that came up during the design or 
   * May want to simplify stats, dropping the unique repair materials (as its just hard to remember).
 * *Traits*: *none* (all from skulls)
 * *Function*: varies.
+* Trait rework:
+    * Many slimeskull effects are very niche and not too useful.
+    * Rework the effects by taking advantage of compatability traits or traits not normally available on helmets.
+    * The best traits will remain unchanged.
+    * As part of this also adding several new slimeskulls:
+        * Dragonskull: protects you from fatal damage
+        * Knightmetal: crafted from the knightmetal fluid cannon, grants spitting on helmet keybind
 
 **New Chestplate - Slimecage:**
 
@@ -223,6 +182,65 @@ This section contains various tweaks to tools that came up during the design or 
 * *Traits*: Bouncy
 * *Function*: Bouncy
 
+### Smeltery
+
+* In preparation for [sublimery](#sublimery) plans, the smeltery will become a bit more fuel efficient.
+
+#### Knightmetal Fluid Cannon
+
+* End fluid cannon variant crafted from knightmetal and shulker shells.
+* Higher capacity than other cannon variants, with faster fluid.
+* Power between cobalt and copper.
+
+
+## 1.21 Changes
+
+This section contains various tweaks to tools that came up during the design or discussion of the Throwback update, but felt too large to make in 1.20. They will most likely happen in the first 1.21 release, though these features are subject to change.
+
+### Smeltery
+
+#### Smeltery Tank Cleanup
+
+* Instead of fuel and ingot tanks, just have tanks and gauges.
+* Smeltery will have 4000mb tank volume.
+* Foundry will have the ingot tank volume.
+* Endery is undecided, but will likely lean towards 4000mb.
+* This is largely as the two sizes are a lot less distinct since the ingot volume rework in 1.18.
+
+#### Scorched Faucet Tweaks
+
+* To better distinguish scorched from seared, planned to make it opaque as a more efficient on rendering pipe.
+* Pair with obsidian gauges to see your fluid if needed.
+* Not fully sold on this idea, may ditch after further considering 1.21 plans.
+
+### Tools
+
+#### Sword Guard and Stat Averaging
+
+* Swords and cleavers will get a new tool part, sword guards, which replaces one of their handles.
+    * Sword guards are a new part type, though they are similar to shield plating.
+    * Materails will come from shield cores and shield plating options, using their traits.
+* From there, many tools will get some stat adjustments with a focus on reducing tool part stat averaging. In most cases, we will just add up heads directly.
+* Broad tool multipliers may get reduced a bit as a result. In particular, broad weapon durability is way higher than you need other than on scythes.
+
+#### Better Slime Staffs
+
+* Slimestaffs could benefit from materials rather than the rather random stats they currently have.
+* Give them 2 bowlimbs, a [sword guard](#sword-guard-and-stat-averaging), and a staff crystal. Depends on whether I want 5 materials or 4.
+* Staff crystals grant slot types and some unqiue traits mimicing their previous unique functions:
+    * Earth will grant defense stats and defense slots.
+    * Sky will grant a boost to drawspeed and upgrade slots.
+    * Ichor will grant more velocity and ability slots.
+    * Enderslime grants more reach and more levels of the tool part traits.
+    * Glass is a new crystal, granting a balance of slots, reduced power, and a boost to tank capacity. This replaces the usage of earthslime staffs for utility spitting.
+
+#### Dual Wielding rework
+
+* Dual wielding will be limited to small tools again.
+* Dual wielding will no longer apply it's stat debuff.
+* This allows broad tools to get a level of reach, which is not compatible with dual wielding due to how Minecraft reach mechanics work.
+* Consider letting broad tools get a second level of reach via ability slot.
+
 
 ## Untargeted
 
@@ -232,16 +250,19 @@ This content is ideas that we may want to implement in the future, but there is 
 
 New features related to the smeltery, foundry, and fluids.
 
-#### Inverted Channels
-
-* Slimesteel and Cinderslime can make channels and faucets.
-* They work identically to seared/scorched channels/faucet except for one small difference: downwards pouring is replaced with upwards pouring.
-
 #### Smeltery interface
 
 * Allows accessing the UI fluid tank
 * Comparator signal for tank level
 * On pulse, switches fluid order (bottom to top? Top to bottom?)
+
+### Sublimery
+
+<div class="hatnote" markdown=1>
+Main page: [Sublimery](sublimery).
+</div>
+
+The sublimery is a major content update planned for either the end of 1.20 or the start of 1.21. It is the end variant of the smeltery, designed to fill some gaps related to how Tinkers works with XP from the base game and provide a way to draw more value out of ores late game.
 
 ### Soul Forge
 <div class="hatnote" markdown=1>
@@ -249,19 +270,6 @@ Main page: [Soul Forge](soul-forge).
 </div>
 
 The soul forge is a planned multiblock for late game tool, modifier, and material crafting. We currently plan to turn this concept into an official addon after most of the core features are done in the base mod. As such, at earliest this will target 1.21.1 if not 26.1. For more information, see [Soul Forge](soul-forge).
-
-### Sublimery
-
-The sublimery has gone through a few iterations, most recently as a multiblock to get XP for the [Soul Forge](#soul-forge), as its current design may not stand on its own without the system it was designed to fuel. It is undecided whether to keep it as part of the soul forge, revamp it for Tinkers' or scrap it entirely.
-
-Features of the sublimery:
-
-* Upside-down smeltery unlocked at the beginning of the end.
-* Created using slimestone (slime on end stone) and slimesteel/cinderslime/queen's slime/knightslime (undecided).
-* Third variant of the multiblock melting structure, after the smeltery and foundry.
-* Will support melting entities into gaseous experience instead of transitional entity melting.
-* Will likely not support alloying (smeltery exclusive) or byproducts (foundry exclusive).
-* Will likely have the same ore output rate as smelteries, though it will be configurable in case a modpack wishes it to be higher.
 
 ### Tools
 
@@ -278,10 +286,11 @@ Features of the sublimery:
 
 **Overmending**
 
-* Consumes experience fluid from the tools tank to restore overslime.
+* New ability modifier for all types of tools.
+* Converts picked up XP orbs into overslime on the tool.
 * Requires 3 levels of "slime friend" modifiers on the tool, either using overforced or slimy traits.
 * Crafted using 1 ingot of each slime alloy, plus some dragon's breath.
-* Replaces mending moss.
+* Replaces mending moss/mending.
 
 **Dual Harvesting**
 
@@ -316,6 +325,7 @@ Features of the sublimery:
 * Trees grow downwards instead of upwards.
 * May also include an ichor lake near tree spawns.
 * Undecided which variant of sapling mechanics to use, given the lack of slimy foliage on the ceiling.
+* Will replace the blood islands that barely function as the nether ocean was hard to detect.
 
 
 ## API
@@ -344,7 +354,7 @@ We keep reconsidering whether the tool loot hook is worth having compared to mod
 
 ### Slots in crafted modifiers
 
-* Crafted modifiers will now store slots instea of just modifier ID and level.
+* Crafted modifiers will now store slots instead of just modifier ID and level.
 * Will be stored as a list based on the order they were applied.
   * For example, luck will be stored as "ability, 1; slotless, 2".
   * A modifier that alternates ability than upgrade would be stored as "ability, 1; upgrade, 1; ability, 1". Order is important.
