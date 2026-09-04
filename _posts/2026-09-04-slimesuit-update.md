@@ -264,7 +264,12 @@ As it is commonly useful to test tools at either broken states or low durability
 **Tinkers' Construct**
 The new Tinkers' Construct 3.12.0.220 update can be downloaded at the following:
 
+{% comment %}
 {% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.12.0.220" curseforge="8809959" %}
+{% endcomment %}
+{% include update/download.html name="tinkers-construct" github="TinkersConstruct" version="3.12.0.220" curseforge=false %}
+
+CurseForge is coming soon (waiting on file approval).
 
 **Mantle**
 
