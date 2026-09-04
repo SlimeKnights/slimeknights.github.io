@@ -241,6 +241,13 @@ This section contains various tweaks to tools that came up during the design or 
 * This allows broad tools to get a level of reach, which is not compatible with dual wielding due to how Minecraft reach mechanics work.
 * Consider letting broad tools get a second level of reach via ability slot.
 
+#### Throwing Modifiers
+
+* Throwing tools will be able to run left click modifiers upon hitting a block or enitty.
+* This will work largely like left click modifiers on regular tools, running them replacing the regular attack or block mining.
+* Will likely treat separately from standard left click for the sake of the modifier hooks, so a tool has the option to skip running if its a projectile.
+* Cannot implement on 1.20 without a lot of breaking changes/hook migrations, plus addons have not had a chance to consider the gameplay implications for their modifiers.
+
 
 ## Untargeted
 
