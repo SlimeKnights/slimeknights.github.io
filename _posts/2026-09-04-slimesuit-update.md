@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tinkers' Construct Slimesuit Update for 1.20.1"
-date2:   2026-01-05 1:30:00 -0400
+date:   2026-09-04 19:00:00 -0400
 categories: posts
 author: KnightMiner
 image: /assets/images/updates/tinkers/slimesuit/slimesuit.png
