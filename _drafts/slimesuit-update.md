@@ -204,6 +204,9 @@ This system notably allows us to much more easily reuse textures for modifiers, 
 ## Documentation
 
 ### Interactive Online Books
+<div class="hatnote" markdown=1>
+Main Page: [Interactive Books](/docs/books/1.20)
+</div>
 
 {% include update/image.html name="html_books" alt="Showcasing tooltips on an online book." %}
 
