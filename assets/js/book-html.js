@@ -26,7 +26,7 @@ const prefetch = anchor => {
 
         const parts = anchor.href.split('/');
         // figure out target page number
-        const subpage = parts[parts.length - 2]
+        const subpage = parts[parts.length - 2];
         let image;
         if (subpage.includes("page")) {
             image = subpage.replace("page-", "clean_");
@@ -34,8 +34,6 @@ const prefetch = anchor => {
             // if no page, we are linking the cover
             image = "cover";
         }
-        console.log(parts)
-        console.log(image)
 
         const link_img = document.createElement('link');
         link_img.href = `${path_prefix}/${image}.png`;
