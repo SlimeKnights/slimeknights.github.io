@@ -191,6 +191,21 @@ We actually had some unused textures for knightslime since a lot of the texture 
 
 Additionally, knightmetal and slimesteel got small tweaks to their textures.
 
+### Material Rarity
+
+{% include update/image.html name="rarity-tooltips" alt="Showing rarity of an unmodified hepatizon pickaxe." %}
+
+Tool materials now have rarity which can be defined in their mateiral definitions. A tool's rarity is made up of the largest rarity from its parts.
+
+By default, materials have the following rarity:
+
+* Tiers 0-2: Common
+* Tier 3: Uncommon
+* Tier 4: Rare
+* Tier 5 (ancient): Epic
+
+But rarity can be overridden by explicately setting it.
+
 ### More Modifier Textures
 
 Thanks to work by CreepingCreeper and wearespeedcome/Frozen_Ender, we now have many additional modifier textures for crossbows, plate armor, longbows and fishing rods. Note that armor modifier textures only show on the item form as we have not found an efficient way to include them on the full armor model; though [dyed](#more-dyeing) can give you some additional options for the model visuals.
