@@ -52,7 +52,7 @@ Tag entry based removal appears to be broken in 1.19; the code to remove entries
 
 ## Tag Name
 
-Many JSON formats will make use of tag names as a way to reference a list of values from a registry. Tag names are a standard [resource location]{../resource-location) in most contexts, with the registry type inferred by context in the JSON. For JSON tag fields, if the requested tag does not exist the behavior is the same as if the tag is empty.
+Many JSON formats will make use of tag names as a way to reference a list of values from a registry. Tag names are a standard [resource location](../resource-location) in most contexts, with the registry type inferred by context in the JSON. For JSON tag fields, if the requested tag does not exist the behavior is the same as if the tag is empty.
 
 By convention, mods should only use the `minecraft` domain for adding entries to [vanilla tags](https://minecraft.wiki/w/Tag#List_of_tag_types). Up until 1.20.1, the `forge` domain is commonly used by mods for tagging common resources shared by mods. Since 1.20.2, the `c` domain is instead used for common tags.
 
