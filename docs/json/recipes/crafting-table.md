@@ -11,6 +11,42 @@ This page is about the format for custom crafting table recipes added by SlimeKn
 
 {% include toc.html %}
 
+## Common Shaped Fields
+<div class="hatnote" markdown=1>
+See also: [Minecraft Wiki on Shaped Recipes](https://minecraft.wiki/w/Recipe_(Java_Edition)#crafting_shaped)
+</div>
+
+Most shaped crafting table recipes share the following fields:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The recipe object.
+    * {% include field.html name="category" type="string" version="since 1.20" %} Recipe book category for this recipe, may be `equipment`, `building`, `redstone`, or `misc` (default).
+    * {% include field.html name="show_notification" type="boolean" version="since 1.20" %} If true (default), a notification will be shown when unlocking this recipe.
+    * {% include field.html name="group" type="string" %} If set, this recipe will be grouped in the recipe book with other recipes that have the same `group`.
+    * {% include field.html name="pattern" type="list" %} A list of strings representing the shaped pattern in the crafting table for this recipe.
+        * {% include field.html type="string" %} A single row in the shaped pattern. Each character represents an input, matching a character from `key`.
+    * {% include field.html name="key" type="object" %} A mapping from single character keys to the corresponding ingredients for `pattern`. 
+        * {% include field.html name="\<character\>" type="ingredient" %} Ingredient corresponding to the character `<character>` in `pattern`.
+    * {% include field.html name="result" type="item stack" %} Resulting item stack for this recipe.
+</div>
+
+## Common Shapeless Fields
+<div class="hatnote" markdown=1>
+See also: [Minecraft Wiki on Shapeless Recipes](https://minecraft.wiki/w/Recipe_(Java_Edition)#crafting_shapeless)
+</div>
+
+Most shapeless crafting table recipes share the following fields:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The recipe object.
+    * {% include field.html name="category" type="string" version="since 1.20" %} Recipe book category for this recipe, may be `equipment`, `building`, `redstone`, or `misc` (default).
+    * {% include field.html name="show_notification" type="boolean" version="since 1.20" %} If true (default), a notification will be shown when unlocking this recipe.
+    * {% include field.html name="group" type="string" %} If set, this recipe will be grouped in the recipe book with other recipes that have the same `group`.
+    * {% include field.html name="ingredients" type="list" %} A list of ingredients for this recipe. Each one matches a distinct item that must appear in the crafting grid.
+        * {% include field.html type="ingredient" %} A single ingredient to match.
+    * {% include field.html name="result" type="item stack" %} Resulting item stack for this recipe.
+</div>
+
 ## Shaped Retextured
 
 The shaped retextured recipe from Mantle defines a shaped crafting table recipe where the output has it's texture set based on one of the inputs. This is notably used in Tinkers' Construct to texture the legs of tables and the metal of the anvil, along with in Inspirations to texture bookshelves and enlightened bushes.
@@ -20,17 +56,7 @@ Shaped retextured recipes have the following format:
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} The recipe object.
     * {% include field.html name="type" type="resource location" %} Always `mantle:crafting_shaped_retextured`.
-    {%- comment -%}
-    1.20 stuff
-    * {% include field.html name="category" type="string" %} Recipe book category for this recipe, may be `equipment`, `building`, `redstone`, or `misc` (default).
-    * {% include field.html name="show_notification" type="boolean" %} If true (default), a notification will be shown when unlocking this recipe.
-    {% endcomment %}
-    * {% include field.html name="group" type="string" %} If set, this recipe will be grouped in the recipe book with other recipes that have the same `group`.
-    * {% include field.html name="pattern" type="list" %} A list of strings representing the shaped pattern in the crafting table for this recipe.
-        * {% include field.html type="string" %} A single row in the shaped pattern. Each character represents an input, matching a character from `key`.
-    * {% include field.html name="key" type="object" %} A mapping from single character keys to the corresponding ingredients for `pattern`. 
-        * {% include field.html name="\<character\>" type="ingredient" %} Ingredient corresponding to the character `<character>` in `pattern`.
-    * {% include field.html name="result" type="item stack" %} Resulting item stack for this recipe.
+    * *All [common shaped fields](#common-shaped-fields)*.
     * {% include field.html name="texture" type="ingredient" %} Ingredient determining the texture to apply to the output. Typically should match a single entry in `key`, if it matches multiple behavior may be unpredictable.
     * {% include field.html name="match_all" type="boolean" %}
         * If true, all inputs matching `texture` must be the same item. If any mismatch, the output will be created with no texture (effectively using the default from it's block model).
@@ -46,17 +72,7 @@ The shaped fallback recipe has the following format:
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} The recipe object.
     * {% include field.html name="type" type="resource location" %} Always `mantle:crafting_shaped_fallback`.
-    {%- comment -%}
-    1.20 stuff
-    * {% include field.html name="category" type="string" %} Recipe book category for this recipe, may be `equipment`, `building`, `redstone`, or `misc` (default).
-    * {% include field.html name="show_notification" type="boolean" %} If true (default), a notification will be shown when unlocking this recipe.
-    {% endcomment %}
-    * {% include field.html name="group" type="string" %} If set, this recipe will be grouped in the recipe book with other recipes that have the same `group`.
-    * {% include field.html name="pattern" type="list" %} A list of strings representing the shaped pattern in the crafting table for this recipe.
-        * {% include field.html type="string" %} A single row in the shaped pattern. Each character represents an input, matching a character from `key`.
-    * {% include field.html name="key" type="object" %} A mapping from single character keys to the corresponding ingredients for `pattern`. 
-        * {% include field.html name="\<character\>" type="ingredient" %} Ingredient corresponding to the character `<character>` in `pattern`.
-    * {% include field.html name="result" type="item stack" %} Resulting item stack for this recipe.
+    * *All [common shaped fields](#common-shaped-fields)*.
     * {% include field.html name="alternatives" type="list" %} List of alternative recipes IDs. If any of them match the input, this recipe will not match.
         * {% include field.html type="resource location" %} An alternative recipe ID. Must be the ID of either a `minecraft:crafting_shaped` or `minecraft:crafting_shapeless` recipe.
 </div>
@@ -69,3 +85,63 @@ Tinkers' Construct adds several custom recipes related to tool repairing, which 
 * **`tconstruct:specialized_repair_kit`**: Recipe format from before 1.19.2 for repairing tools without materials using repair kits in the crafting table. See [tool recipes](../tools#specialized-tool-repair) for more information.
 * **`tconstruct:crafting_modifier_repair`**: Defines repairing a tool with a specific modifier in the crafting table using a standard ingredient. See [modifier repair recipes](../modifier-repair#item-repair) for more information.
 * **`tconstruct:crafting_modifier_material_repair`**: Defines repairing a tool with a specific modifier in the crafting table using a repair kit with a specific material. See [modifier repair recipes](../modifier-repair#material-repair) for more information.
+
+## Material
+
+These recipes are used to craft tools or tool parts in the crafting table, setting materials based on the inputs. They are notbably used to craft travelers gear.
+
+### Shaped Material
+<div class="hatnote">Since 1.20.1</div>
+
+The shaped materials recipe allows combining 1 or more tool parts or material items to craft a tool with materials. As a shaped recipe, the arrangement of items is important. Additionally, it allows a single material to show up multiple times, making it more ideal for non-tool parts.
+
+It has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The recipe object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:crafting_shaped_materials`.
+    * *All [common shaped fields](#common-shaped-fields)*.
+    * {% include field.html name="result" type="item stack" %} Resulting item stack for this recipe. Expected to be an `IModifiable` or `IMaterialItem`
+    * {% include field.html name="parts" type="string" %} Each character represents a part, matching a character from `key`. The order of the parts matches the order of materials on the item. Must be length 1 if `result` is an `IMaterialItem`.
+    * {% include field.html name="extra_materials" type="list" %} Additional materials to add to the item after the part materials. If unset, defaults to an empty list. Cannot be set if `result` is an `IMaterialItem`.
+      * {% include field.html type="material variant" %} A material to add to the tool.
+</div>
+
+Typically, the [material](../../ingredients#material) or [material value](../../ingredients#material-value) ingredients should be used for any ingredients listed in `parts`.
+
+### Shapeless Material
+<div class="hatnote">Since 1.20.1</div>
+
+The shapeless materials recipe allows combining 1 or more tool parts or material items to craft a tool with materials. As a shapeless recipe, the parts may be placed anywhere in the crafting grid. Importantly, this means if there are duplicate parts, the first to appear in the grid will set an early material index.
+
+It has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The recipe object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:crafting_shapeless_materials`.
+    * *All [common shapeless fields](#common-shapeless-fields)*.
+    * {% include field.html name="result" type="item stack" %} Resulting item stack for this recipe. Expected to be an `IModifiable` or `IMaterialItem`
+    * {% include field.html name="parts" type="integer" %} Number of parts present in this recipe. Parts will be selected from the start of `ingredients`. For example, if `parts` is 2, the first 2 ingredients will be parts. Must be 1 if `result` is an `IMaterialItem`.
+    * {% include field.html name="extra_materials" type="list" %} Additional materials to add to the item after the part materials. If unset, defaults to an empty list. Cannot be set if `result` is an `IMaterialItem`.
+      * {% include field.html type="material variant" %} A material to add to the tool.
+</div>
+
+Typically, the [material](../../ingredients#material) or [material value](../../ingredients#material-value) ingredients should be used for any ingredients up to the number in `parts`.
+
+### Legacy Shaped Material
+<div class="hatnote">Until 1.21</div>
+
+The legacy shaped material recipe allows combining a number of [material value](../../ingredients#material-value) ingredients to set the materials on a tool. The way it worked was too restrictive, so [Shaped Material](#shaped-material) was written to replace it.
+
+To choose the material, 1 or more [material value](../../ingredients#material-value) ingredients should be used, which will automatically be selected and used to set the first material.
+
+It has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The recipe object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:crafting_shaped_material`.
+    * *All [common shaped fields](#common-shaped-fields)*.
+    * {% include field.html name="result" type="item stack" %} Resulting item stack for this recipe. Expected to be an `IModifiable`.
+    * {% include field.html name="extra_materials" type="list" %} Additional materials to add to the item after the ingredient material. If unset, defaults to an empty list. Cannot be set if `result` is an `IMaterialItem`.
+      * {% include field.html type="material variant" %} A material to add to the tool.
+</div>
