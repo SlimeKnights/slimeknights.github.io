@@ -307,6 +307,16 @@ slot count:
 
 # Predicate
     
+material predicate:
+  name: Material Predicate
+  icon: nbt-compound
+  link: /docs/json/predicates#material-predicates
+
+compact material predicate:
+  name: Compact Material Predicate
+  icon: nbt-compound
+  link: /docs/json/predicates#compact
+    
 modifier predicate:
   name: Modifier Predicate
   icon: nbt-compound
