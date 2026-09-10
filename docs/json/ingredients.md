@@ -165,11 +165,29 @@ Material ingredients have the following format:
     * {% include field.html name="item" type="Item ID" %} If set, this ingredient matches the specified item.
     * {% include field.html name="tag" type="Item tag" %} If set, this ingredient matches the specified tag.
     * {% include field.html name="match" type="ingredient" %} Item ingredient to match.
-    * {% include field.html name="material" type="material variant" %} If set, item's material must match the specified material.
-    * {% include field.html name="material_tag" type="material tag" %} If set, the item's material must match any of the materials in the tag.
+    * {% include field.html name="material" type="compact material predicate" version="since 1.20" %} If set, item's material must match the specified material predicate.
+    * {% include field.html name="material_tag" type="Material Tag" version="until 1.21" %} If set, the item's material must match any of the materials in the tag.
+    * {% include field.html name="material" type="material variant" version="until 1.19" %} If set, item's material must match the specified material predicate.
 </div>
 
-Note that a material ingredient may only set one of `item`, `tag`, and `match`. In addition, it is never useful to set both `material` and `material_tag`. 
+Note that a material ingredient may only set one of `item`, `tag`, and `match`. In addition, it is never useful to set both `material` and `material_tag` as `material` supports predicates.
+
+#### Material Value
+<div class="hatnote">Since 1.20.1</div>
+
+Material value ingredients are an ingredient added by Tinkers' Construct, matching [material](../materials) items defined by [material recipes](../recipes/materials/#items) which have a particular value. They are notably used in [material crafting table recipes](../recipes/crafting-table#material) to define which ingredients are the material items.
+
+Material value ingredients have the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} The ingredient object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:material_value`.
+    * {% include field.html name="material" type="compact material predicate" %} If set, item's material must match the specified material.
+    * {% include field.html name="value" type="float" %} Exact cost value the material item must match.
+    * {% include field.html name="value" type="object" %} Object containing range of cost values the material item must match.
+      * {% include field.html name="min" type="float" %} Minimum cost value the material item must match. If unset, defaults to 0.
+      * {% include field.html name="max" type="float" %} Maximum cost value the material item must match. If unset, defaults to infinity.
+</div>
 
 #### Tool Hook
 
