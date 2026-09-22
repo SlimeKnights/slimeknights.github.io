@@ -48,17 +48,33 @@ There are 5 ways to get additional upgrade slots:
 * The gilded modifier uses a golden apple to trade 1 ability slot for 2 upgrade slots. This can be done multiple times.
 * The rebalanced modifier grants an extra slot type of your choice, terms and conditions apply.
 
-Ability slots can only be increased in 2 ways: the draconic modifier and the rebalanced modifier. Note draconic has two recipes.
+Ability slots can only be increased in 2 ways: the draconic modifier and the rebalanced modifier. Note draconic has multiple recipes.
+
+Defense slots can either be increased by balanced, or on armor using armor trim. Otherwise, you are limited to the armor's starting defense slots.
 
 This means most melee, harvest and ranged tools have a maximum of 10 upgrade slots, 2 ability slots, and rebalanced's bonus. This in total grants up to 15 upgrade slots if gilded is used.
 
 ### How do I add luck to my tool?
 
-First, refer back to [How do I craft X?](#how-do-i-craft-x) and actually use JEI to look up recipes. If you are still confused, check JEI for usages of lapis blocks, the recipe will show under the modifiers tab. There is a different recipe for each level, so its easiest to refer to JEI.
+Tinkers' Construct has very good JEI integration, every recipe is included. Additionally, recipes are all shown in the books. Either check out Mighty Smelting for the Luck ability modifier, or search JEI for "Luck Modifiers" and check its recipes. There is a different recipe for each level, so its easiest to refer to JEI.
 
 ### How do I make a tool unbreakable?
 
-Unlike in 1.12 where reinforced V would make a tool unbreakable, in 1.16+ unbreakable is a modifier that requires netherite, reinforced V, and an ability slot to apply. Check JEI for the recipe, and for other recipes that increase upgrade slots so you can reach the 7 upgrade slots needed for reinforced V and netherite.
+Unlike in 1.12 where reinforced V would make a tool unbreakable, in 1.16+ unbreakable is a modifier that requires netherite, reinforced V, and an ability slot to apply. Check JEI for the recipe, and for other recipes that increase upgrade slots so you can reach the 6 upgrade slots needed for reinforced V and netherite.
+
+### How does the armor work?
+
+There are 3 different armor sets. Plate is the pure defense set, which is the most comparable to vanilla armor. Slimesuit is pure utility with very limited defense opportinuties but a lot of powerful modifiers. Travelers is a middleground between the two sets, allowing a mix of both defense and utility but more limited.
+
+Most armor materials on plate cap at 16 armor points and start granting toughness at higher tiers. The diamond modifier is required to achieve the full 20 armor points to max standard defense.
+
+### How do I make my armor as good as Netherite?
+
+For protection, vanilla armor caps at 64% against all sources using protection IV on each piece. You can put standard protection on plate, but that costs an ability slot (requiring either rebalanced or draconic on plate) and is limited to 1 level per piece granting 5% each (so 20% for the whole set). That said, you can make up the difference with defense slots.
+
+There are 5 major types of protection: melee, projectile, blast, fire, and magic which each grant 8-10% protection for their respective types. If you divide your defense slots evenly, you effectively get about 9% protection per 5 slots. Plate starts with 3 defense slots and gains a 4th from trim; combined with the 2 material traits gives you an effective 24 defense slots, so roughly 43% against all giving 63% with protection.
+
+While that is lower at a glance, tinkers defense slots also provide secondary bonuses based on the max level on a single piece of each modifier. Additionally, you are not required to go in on all 5 types; if you drop magic for instance you can achieve 54% protection (74% with protection). Finally, these numbers assume pre-end. Once you have end access, plate is easily 28 defense slots, giving 70% protection against all or 83% against 4 types (3% above the cap).
 
 ### What is the best tool?
 <div class="hatnote" markdown=1>
