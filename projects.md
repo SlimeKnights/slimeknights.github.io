@@ -28,7 +28,7 @@ These SlimeKnights projects are actively supported, either on the latest Minecra
     %}
     {% include project.html
       name="tinkers-things" title="Tinkers' Things" latest="1.20.1"
-      github="TinkersThings" curseforge="tinkers-json-things"
+      github="TinkersThings" curseforge="tinkers-things-json"
       description="Official addon for Tinkers' Construct adding a variety of content written purely in JSON."
     %}
     {% include project.html
