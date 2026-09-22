@@ -1,5 +1,5 @@
 materials_and_you_20:
-  path: tinkers/3.12.0/materials_and_you
+  path: tinkers/3.12.1/materials_and_you
   arrows: tinkers/materials_and_you
   max_page: 34
   next:
@@ -27,9 +27,9 @@ materials_and_you_20:
       text: Further Reading
 
 puny_smelting_20:
-  path: tinkers/3.12.0/puny_smelting
+  path: tinkers/3.12.1/puny_smelting
   arrows: tinkers/puny_smelting
-  max_page: 104
+  max_page: 105
   previous:
     title: Materials and You
   next:
@@ -50,23 +50,23 @@ puny_smelting_20:
     - index: 27
       text: Tier 2 Armor
       
-    - index: 40
+    - index: 41
       text: Puny Armor
       
-    - index: 46
+    - index: 47
       text: Upgrades
       
-    - index: 84
+    - index: 85
       text: Slotless Modifiers
       
-    - index: 97
+    - index: 98
       text: Modifier Worktable
       
-    - index: 104
+    - index: 105
       text: Further Reading
 
 mighty_smelting_20:
-  path: tinkers/3.12.0/mighty_smelting
+  path: tinkers/3.12.1/mighty_smelting
   arrows: tinkers/mighty_smelting
   max_page: 85
   previous:
@@ -96,7 +96,7 @@ mighty_smelting_20:
       text: Defense
 
 fantastic_foundry_20:
-  path: tinkers/3.12.0/fantastic_foundry
+  path: tinkers/3.12.1/fantastic_foundry
   arrows: tinkers/fantastic_foundry
   max_page: 30
   previous:
@@ -123,9 +123,9 @@ fantastic_foundry_20:
       text: Tier 4 Armor
 
 tinkers_gadgetry_20:
-  path: tinkers/3.12.0/tinkers_gadgetry
+  path: tinkers/3.12.1/tinkers_gadgetry
   arrows: tinkers/tinkers_gadgetry
-  max_page: 80
+  max_page: 81
   previous:
     title: Fantastic Foundry
   next:
@@ -162,7 +162,7 @@ tinkers_gadgetry_20:
 encyclopedia_20:
   path: tinkers/3.12.0/encyclopedia
   arrows: tinkers/encyclopedia
-  max_page: 290
+  max_page: 292
   previous:
     title: Tinkers' Gadgetry
   titles:
@@ -184,22 +184,22 @@ encyclopedia_20:
     - index: 102
       text: Armor Materials
       
-    - index: 132
+    - index: 133
       text: Slimesuit Materials
       
-    - index: 159
+    - index: 160
       text: Fluid Effects
       
-    - index: 197
+    - index: 199
       text: Upgrades
       
-    - index: 235
+    - index: 238
       text: Defense
       
-    - index: 242
+    - index: 244
       text: Slotless
       
-    - index: 255
+    - index: 257
       text: Abilities
 
 metalborn_20:
