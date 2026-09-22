@@ -22,7 +22,9 @@ In general, design docs are updated to the latest 1.20 build with the addition o
 
 ### Tools
 
-* [**Tools**](https://docs.google.com/spreadsheets/d/1SLqUg2Rg3HxTaJD97gXw3fipkz-jTY78k8JrunJhFic/edit#gid=0): Contains information on tools, tool parts, armor, and projectile added by the mod.
+* <b id="tools">Tools</b>
+  ([**1.19**](https://docs.google.com/spreadsheets/d/1aJHIn6DkXw6NqTewbJIO-Af_CtDsp1HMQ7tokXeHXZI/edit#gid=0),
+  [**1.20**](https://docs.google.com/spreadsheets/d/1SLqUg2Rg3HxTaJD97gXw3fipkz-jTY78k8JrunJhFic/edit#gid=0)): Contains information on tools, tool parts, armor, and projectile added by the mod.
 * [**Tool upgrades**](https://docs.google.com/drawings/d/1OjAT9ySZ3pXVbgXZY5RpfNkpVWJ5ectsqEbYELlU7OQ/edit): Visual chart connecting related tools and their upgrades.
 * <b id="modifiers">Modifiers and Traits</b>
   ([1.16](https://docs.google.com/spreadsheets/d/18duuzGfy3-AF9zUTsl_wg-osdjykvkZzpJT2EiR5UuM/edit),
