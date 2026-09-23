@@ -125,11 +125,25 @@ h2 {
     }
 }
 
-.sk-card-info {
+/* Info box card */
+.sk-card {
     --uk-inverse: dark;
     background-color: #f5da42;
     color: #000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+    
+    /* Standard info box color */
+    &.sk-info {
+      background-color: #f5da42;
+    }
+    /* Incomplete pages */
+    &.sk-construction {
+      background-color: #fa8d07;
+    }
+    /* Content from older versions */
+    &.sk-legacy {
+      background-color: #07fae2;
+    }
 }
 
 /* Make code inside links still blue */

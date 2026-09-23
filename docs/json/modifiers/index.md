@@ -4,7 +4,7 @@ title: Modifiers
 description: This page describes the modifier module system added in late 1.18 which allows much more flexibility for adding modifiers to Tinkers' Construct.
 ---
 <div class="hatnote" markdown=1>
-This page is about defining modifiers using modifier modules. For the deprecated modifier serializer system, see [Modifiers Serializers](serializers).
+This page is about defining modifiers using modifier modules. For the legacy modifier serializer system used in 1.18, see [Modifiers Serializers](serializers).
 </div>
 
 {{page.description}}
