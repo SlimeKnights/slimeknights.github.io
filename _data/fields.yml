@@ -190,6 +190,11 @@ item predicate:
   icon: nbt-compound
   link: /docs/json/predicates#item-predicates
     
+fluid predicate:
+  name: Fluid Predicate
+  icon: nbt-compound
+  link: /docs/json/predicates#fluid-predicates
+    
 entity predicate:
   name: Entity Predicate
   icon: nbt-compound
@@ -303,6 +308,34 @@ slot count:
   name: Slot Count
   icon: nbt-compound
   link: /docs/json/slot-types#slot-count
+  
+
+# Formula
+
+formula:
+  name: Formula
+  icon: nbt-list
+  link: /docs/json/formula
+
+variable:
+  name: Formula Variable
+  icon: nbt-compound
+  link: /docs/json/formula/variables
+
+block variable:
+  name: Block Variable
+  icon: nbt-compound
+  link: /docs/json/formula/variables#block
+
+entity variable:
+  name: Entity Variable
+  icon: nbt-compound
+  link: /docs/json/formula/variables#entity
+
+tool variable:
+  name: Tool Variable
+  icon: nbt-compound
+  link: /docs/json/formula/variables#tool
 
 
 # Predicate

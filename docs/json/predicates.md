@@ -84,11 +84,35 @@ Tag predicates have the following format:
     * {% include field.html name="tag" type="Tag" %} ID of a tag in the registry associated with the predicate type.
 </div>
 
+## Variable Predicate
+<div class="hatnote">Since 1.20</div>
+
+Some predicate types can leverage the Tinkers' Construct {% include type.html type="variable" %} system to check if a value from the world is within the given range. Supporting predicates have the following fields:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A predicate object.
+    * {% include field.html name="type" type="resource location" %} Typically `tconstruct:variable_range`.
+    * {% include field.html name="variable" type="variable" %} Variable to fetch.
+    * {% include field.html name="min" type="float" %} Minimum value. If unset, defaults to negative infinity (effectively any).
+    * {% include field.html name="max" type="float" %} Maximum value. If unset, defaults to positive infinity (effectively any).
+    * {% include field.html name="interval" type="string" %} Specifies the type of interval to match. Options are:
+        * `closed` (default): `min` and `max` are both inside the range and will match.
+        * `open`: `min` and `max` are both outside the range and will not match.
+        * `left_open`: `max` will match but `min` will not match.
+        * `right_open`: `min` will match but `max` will not match.
+</div>
+
+
 ## Block Predicates
 
 Block predicates match block state values. They support all [common predicate](#common-predicates) serializers (including tag predicates), along with the following serializers which have no extra fields:
 
 * **`mantle:requires_tool`**: Matches any block which requires mining with the correct tool to drop items from it's loot table.
+* **`mantle:blocks_motion`** (since 1.20): Matches any block which prevents an entity from moving through it.
+* **`mantle:can_be_replaced`** (since 1.20): Matches any block which is replaced upon placing a block.
+* **`tconstruct:bush`** (since 1.20): Matches any block which extends `BushBlock`.
+* **`tconstruct:can_melt`** (since 1.19): Matches any block which has a melting recipe.
+* **`tconstruct:can_be_replaced`** (since 1.20): Matches any block which is replaced upon placing a block.
 
 In addition, the following sections discuss serializers with additional fields.
 
@@ -117,28 +141,90 @@ The block properties predicate matches a given block state on a list of block pr
             * {% include field.html name="max" type="string" %} Maximum value for `<name>`. If unset, property matches with no maximum value.
 </div>
 
+### Harvest Tier
+
+The harvest tier block predicate matches any blocks which can be harvested using the given harvest tier. It has the following fields:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A block predicate object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:harvest_tier`.
+    * {% include field.html name="tier" type="Tier ID" %} Harvest tier to match.
+</div>
+
+### Block Variable
+<div class="hatnote">Since 1.20</div>
+
+The block variable predicate is a [variable predicate](#variable-predicate) that matches using {% include type.html type="block variable" %}. See that section for more information on the JSON format.
+
+
 ## Item Predicates
 
-Item predicates match item values (notably not item stacks, meaning no count or NBT). They are used in some contexts where items are present but not item stacks, preventing usage of standard [item ingredients](../ingredients#item-ingredients). Item predicates support all [common predicate](#common-predicates) (including tag predicates), plus the serializers discussed in the following subsections.
+Item predicates match item values (notably not {% include type.html type="item stack" %}, meaning no count or NBT). They are used in some contexts where items are present but not item stacks, preventing usage of a standard {% include type.html type="item ingredient" %}. Item predicates support all [common predicate](#common-predicates) (including tag predicates), along with the following serializers which have no extra fields:
+
+* **`mantle:has_container`** (since 1.20): Matches any item that has a container item.
+* **`mantle:may_have_transfer`** (since 1.20): Matches any item which has a registered fluid transfer recipe. Note it may still lack a transfer due to its NBT.
+* **`tconstruct:arrow`** (since 1.19): Matches any item that extends `ArrowItem`.
+* **`tconstruct:bucket`** (since 1.20): Matches any item that extends `BucketItem`.
+* **`tconstruct:map`** (since 1.20): Matches any item that extends `MapItem`.
+* **`tconstruct:can_melt`** (since 1.19): Matches any item that has a melting recipe.
+* **`tconstruct:castable`** (since 1.20): Matches any item that has a casting recipe.
+
+In addition, the following sections discuss serializers with additional fields.
 
 ### Item Set
 
 {% include_relative _set-predicate.html name="Item" %}
+
+
+## Fluid Predicates
+<div class="hatnote">Since 1.20</div>
+
+Fluid predicates match fluid values (notably not {% include type.html type="fluid stack" %}, meaning no count or NBT). They are used in some contexts where fluids are present but not fluid stacks, preventing usage of standard {% include type.html type="fluid ingredient" %}. Fluid predicates support all [common predicate](#common-predicates) (including tag predicates), along with the following serializers which have no extra fields:
+
+* **`mantle:is_source`**: Matches the "source" form of fluids, but not the "flowing" form.
+* **`mantle:has_bucket`**: Matches fluids that have a bucket form.
+* **`mantle:lighter_than_air`**: Matches fluids with a negative density, suggesting they should flow upwards.
+* **`tconstruct:fuel`**: Matches fluids that function as a smeltery fuel.
+
+In addition, the following sections discuss serializers with additional fields.
+
+### Fluid Set
+
+{% include_relative _set-predicate.html name="Fluid" %}
+
+### Fluid Type
+
+The fluid type predicate matches any fluid with the given fluid type. Fluid types are a Forge feature that contain shared properties between the source and flowing forms of a fluid. It has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A fluid predicate object.
+    * {% include field.html name="type" type="resource location" %} Always `mantle:fluid_type`.
+    * {% include field.html name="fluid_types" type="list" %} List of fluid types to match. Will be true if the fluid has any type in the list.
+        * {% include field.html type="Fluid Type ID" %} A single fluid type to match.
+</div>
+
 
 ## Entity Predicates
 
 Entity predicates match living entity instances, allowing matching properties of active entities in the world. They support all [common predicate](#common-predicates) serializers (including tag predicates), along with the following serializers which have no extra fields:
 
 * **`mantle:fire_immune`**: Matches any entity that is immune to fire damage.
+* **`mantle:can_freeze`** (since 1.20): Matches any entity that can take cold damage. Generally defined as not wearing leather armor.
 * **`mantle:water_sensitive`**: Matches any entity that takes damage from water.
 * **`mantle:on_fire`**: Matches any entity that is on fire.
+* **`mantle:is_freezing`** (since 1.20): Matches any entity that is frozen, like from powder snow.
 * **`mantle:on_ground`**: Matches any entity that is currently on the ground.
 * **`mantle:crouching`**: Matches any entity that is actively sneaking.
+* **`mantle:sprinting`** (since 1.20): Matches any entity that is actively sprinting.
+* **`mantle:blocking`** (since 1.20): Matches any entity that is actively blocking with a shield.
+* **`mantle:elytra_flying`** (since 1.20): Matches any entity that is flying with an elytra or an elytra alternative.
 * **`mantle:eyes_in_water`**: Matches any entity which has it's head underwater.
 * **`mantle:feet_in_water`**: Matches any entity that has it's feet in water.
 * **`mantle:underwater`**: Matches any entity that with both it's head and feet underwater.
 * **`mantle:raining_at`**: Matches if it's raining and the entity has line of sight to the sky in a biome that supports rain.
 * **`tconstruct:airborne`**: Matches any entity that is not on the ground, not on a climbable block, not swimming, and not riding another entity.
+* **`tconstruct:targeting_block`** (since 1.20): Matches any entity currently targeting a block. This requires them to be looking at a block that is within their reach distance. This predicate is somewhat expensive to compute so should not be used in any intensive environments.
+* **`tconstruct:full_health`** (since 1.20): Matches any entity that is at full health. That is, their current health is equal to or exceeds their max health.
 
 In addition, the following sections discuss entity predicate serializers with additional fields.
 
@@ -149,7 +235,7 @@ In 1.18, some uses of entity predicates used a legacy version defined by Tinkers
 {% include_relative _set-predicate.html name="Entity" key="entities" %}
 
 ### Has Enchantment
-<div class="hatnote">Not available in legacy Tinkers' Construct entity predicate.</div>
+<div class="hatnote">Since 1.19</div>
 
 The "has enchantment" entity predicate matches any entity that is wearing a piece of equipment with the given enchantment. This predicate only considers equipment slots that are normally allowed to contain the given enchantment, meaning armor enchantments will only consider armor slots for instance.
 
@@ -177,6 +263,36 @@ The has enchantment entity predicate has the following format:
         * **`minecraft:water`**: Any entities that typically live underwater.
         * **`minecraft:undefined`**: Any entities that don't belong to another type.
 </div>
+
+### Has Mob Effect
+<div class="hatnote">Since 1.20</div>
+
+The has mob effect predicate matches any entity that has the given effect. It the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A entity predicate object.
+    * {% include field.html name="type" type="resource location" %} Always `mantle:has_effect`.
+    * {% include field.html name="effect" type="Effect ID" %} ID of the mob effect the mob must have.
+</div>
+
+### Block At Entity
+<div class="hatnote">Since 1.20</div>
+
+The block at feet predicate matches any entity that has the given block at the given location relative to their feet. It the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A entity predicate object.
+    * {% include field.html name="type" type="resource location" %} Always `mantle:block_at_entity`.
+    * {% include field.html name="offset" type="integer" %} Vertical offset for the block. 0 (default) is inside the entity's feet. -1 is below their feet.
+    * {% include field.html name="block_type" type="Effect ID" %} ID of a {% include type.html type="block predicate" %} matching the blocks expected near the entity's feet.
+    * *All fields from the block predicate*.
+</div>
+
+### Entity Variable
+<div class="hatnote">Since 1.20</div>
+
+The entity variable predicate is a [variable predicate](#variable-predicate) that matches using {% include type.html type="entity variable" %}. See that section for more information on the JSON format.
+
 
 ## Damage Predicates
 
@@ -308,7 +424,7 @@ The material tier predicate matches materials with tiers in the given range. It 
 
 ## Modifier Predicates
 
-Modifier predicates are a predicate type added by Tinkers' Construct, matching modifiers. They support all [common predicate](#common-predicates) serializers, though tag predicates are registered with a `type` of `tconstruct:tag` instead of `mantle:tag`. Additional modifier predicate serializers are discussed in the following sections.
+Modifier predicates are a predicate type added by Tinkers' Construct, matching modifiers. They support all [common predicate](#common-predicates) serializers, though tag predicates are registered with a `type` of `tconstruct:tag` instead of `mantle:tag` until 1.21. Additional modifier predicate serializers are discussed in the following sections.
 
 In 1.18, all [common predicate](#common-predicates) were registered under a domain of `tconstruct` instead of `mantle`.
 
@@ -385,27 +501,81 @@ The has stat type tool context predicate matches tools that require a particular
     * {% include field.html name="index" type="integer" %} Index expected to contain the tool material. If unset, will check the entire material list.
 </div>
 
+### Has Persistent Key
+<div class="hatnote">Since 1.20</div>
+<div class="hatnote" markdown=1>
+See also: [Has Volatile Key](#has-volatile-key)
+</div>
+
+The has persistent key tool context predicate matches tools that have the given key set in their persistent data in NBT. It has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A tool context predicate object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:has_persistent_key`.
+    * {% include field.html name="key" type="Resource Location" %} Key to check for in data.
+</div>
+
+### Has Hook
+<div class="hatnote">Since 1.20</div>
+
+The has hool tool context predicate matches tools that expose the given {% include type.html type="tool hook" %} in any of their modules in their [tool definition](../tool-definitions). It has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A tool context predicate object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:has_hook`.
+    * {% include field.html name="hook" type="tool hook" %} Hook to check for on the [tool definition](../tool-definitions).
+</div>
+
 ### Stat in Range
 
 The stat in range tool stack predicate matches tools that have a given numeric tool stat with a value within the passed range. It has the following format:
 
 <div class="treeview" markdown=1>
-* {% include field.html type="object" %} A tool context predicate object.
+* {% include field.html type="object" %} A tool stack predicate object.
     * {% include field.html name="type" type="resource location" %} Always `tconstruct:stat_in_range`.
     * {% include field.html name="stat" type="Tool Stat" %} Numeric tool stat to match.
     * {% include field.html name="min" type="float" %} Minimum allowed value. If unset, there is no minimum.
     * {% include field.html name="max" type="float" %} Maximum allowed value. If unset, there is no maximum.
 </div>
 
-
 ### Stat in Set
 
 The stat in set tool stack predicate matches tools that have a given tool stat within the set of values. It has the following format:
 
 <div class="treeview" markdown=1>
-* {% include field.html type="object" %} A tool context predicate object.
+* {% include field.html type="object" %} A tool stack predicate object.
     * {% include field.html name="type" type="resource location" %} Always `tconstruct:stat_in_set`.
     * {% include field.html name="stat" type="Tool Stat" %} Tool stat to match.
     * {% include field.html name="values" type="list" %} List of allowed values for the stat.
         * {% include field.html type="any" %} Allowed stat value. JSON type varies based on the tool stat.
 </div>
+
+### Has Volatile Key
+<div class="hatnote">Since 1.20</div>
+<div class="hatnote" markdown=1>
+See also: [Has Persistent Key](#has-persistent-key)
+</div>
+
+The has volatile key tool stack predicate matches tools that have the given key set in their volatile data in NBT. It has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A tool stack predicate object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:has_volatile_key`.
+    * {% include field.html name="key" type="Resource Location" %} Key to check for in data.
+</div>
+
+### Tool Action
+<div class="hatnote">Since 1.20</div>
+
+The has tool action tool stack predicate matches tools that can perform the given tool action. It has the following format:
+
+<div class="treeview" markdown=1>
+* {% include field.html type="object" %} A tool stack predicate object.
+    * {% include field.html name="type" type="resource location" %} Always `tconstruct:tool_action`.
+    * {% include field.html name="action" type="Tool Action" %} Tool action to check.
+</div>
+
+### Tool Variable
+<div class="hatnote">Since 1.20</div>
+
+The tool variable predicate is a tool stacks [variable predicate](#variable-predicate) that matches using {% include type.html type="tool variable" %}. See that section for more information on the JSON format.
