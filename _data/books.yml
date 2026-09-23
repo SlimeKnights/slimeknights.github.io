@@ -160,7 +160,7 @@ tinkers_gadgetry_20:
       text: Slimy Armor
 
 encyclopedia_20:
-  path: tinkers/3.12.0/encyclopedia
+  path: tinkers/3.12.1/encyclopedia
   arrows: tinkers/encyclopedia
   max_page: 292
   previous:
