@@ -315,17 +315,17 @@ slot count:
 formula:
   name: Formula
   icon: nbt-list
-  link: /docs/json/formula
+  link: /docs/json/formulas
 
 variable:
   name: Formula Variable
   icon: nbt-compound
-  link: /docs/json/formula/variables
+  link: /docs/json/formulas/variables
 
 block variable:
   name: Block Variable
   icon: nbt-compound
-  link: /docs/json/formula/variables#block
+  link: /docs/json/formulas/variables#block
 
 entity variable:
   name: Entity Variable
@@ -335,7 +335,7 @@ entity variable:
 tool variable:
   name: Tool Variable
   icon: nbt-compound
-  link: /docs/json/formula/variables#tool
+  link: /docs/json/formulas/variables#tool
 
 
 # Predicate
