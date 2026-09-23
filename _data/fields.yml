@@ -183,27 +183,27 @@ entity ingredient:
 block predicate:
   name: Block Predicate
   icon: nbt-compound
-  link: /docs/json/predicates#block-predicates
+  link: /docs/json/predicates/#block
     
 item predicate:
   name: Item Predicate
   icon: nbt-compound
-  link: /docs/json/predicates#item-predicates
+  link: /docs/json/predicates/item
     
 fluid predicate:
   name: Fluid Predicate
   icon: nbt-compound
-  link: /docs/json/predicates#fluid-predicates
+  link: /docs/json/predicates/fluid
     
 entity predicate:
   name: Entity Predicate
   icon: nbt-compound
-  link: /docs/json/predicates#entity-predicates
+  link: /docs/json/predicates/entity
     
 damage predicate:
   name: Damage Predicate
   icon: nbt-compound
-  link: /docs/json/predicates#damage-predicates
+  link: /docs/json/predicates/damage
 
 
 # Utility
@@ -343,25 +343,25 @@ tool variable:
 material predicate:
   name: Material Predicate
   icon: nbt-compound
-  link: /docs/json/predicates#material-predicates
+  link: /docs/json/predicates/material
 
 compact material predicate:
   name: Compact Material Predicate
   icon: nbt-compound
-  link: /docs/json/predicates#compact
+  link: /docs/json/predicates/material#compact
     
 modifier predicate:
   name: Modifier Predicate
   icon: nbt-compound
-  link: /docs/json/predicates#modifier-predicates
+  link: /docs/json/predicates/modifier
   
 tool predicate: &toolPredicate
   name: Tool Predicate
   icon: nbt-compound
-  link: /docs/json/predicates#tool-predicates
+  link: /docs/json/predicates/tool
 tool stack predicate: *toolPredicate
     
 tool context predicate:
   name: Tool Context Predicate
   icon: nbt-compound
-  link: /docs/json/predicates#tool-predicates
+  link: /docs/json/predicates/tool
