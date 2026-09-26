@@ -205,3 +205,9 @@ While it is true we have compatibility materials for common ores, *none of them 
 
 Instead of pursuing getting every single compatibility material, instead consider installing addons that give you more material options from mods you already have installed. Alternatively, consider [designing your own material](/docs/guides/material) based on something already in your pack; you can pull traits from the disabled materials to make material design easier.
 
+### Why are my fluids invisible with shaders?
+
+The [most popular shader](https://www.curseforge.com/minecraft/mc-mods/oculus) mod for Forge is broken, and whenever it encounters a custom shader added by a mod simply deletes it instead of rendering it properly. They have had [a pull request](https://github.com/Asek3/Oculus/pull/809) for the fix open since May 2025 and still have not fixed it, despite the fact [the Fabric version](https://www.curseforge.com/minecraft/mc-mods/irisshaders) of that mod fixed this issue years ago.
+
+One potential workaround is installing [Oculus Unlocked](https://modrinth.com/mod/oculus-unlocked), which implements the fix as an addon.
+For Tinkers' fluids specifically, there is a config option in the mantle client config that disables some bug fixes causing our fluid renderer to work better with Oculus at the cost of some visual bugs.
