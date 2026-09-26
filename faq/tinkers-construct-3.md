@@ -161,7 +161,7 @@ To build the foundry, you need to use scorched blocks instead of seared blocks, 
 
 ![Foundry structure](/assets/images/docs/foundry.png)
 
-Also, because people keep assuming things we never said, the foundry does not have to be build in the nether, nor is there anything stopping you from building a smeltery in the nether. It is a smeltery alternative.
+Also, because people keep assuming things we never said, the foundry does not have to be built in the nether, nor is there anything stopping you from building a smeltery in the nether. It is a smeltery alternative.
 
 ### Why can't I cast using the scorched casting basin?
 
@@ -193,6 +193,11 @@ The following sections cover questions related to configuring Tinkers' Construct
 
 As of 1.18.2, datapacks have a lot more control over structures. You can find our placement settings for islands in the mod JAR, and copy them into a datapack to replace our settings. __To disable, make the structures array empty__, or use [the Mantle command](/docs/commands/mantle#structure-set). See [The Minecraft Wiki](https://minecraft.wiki/w/Structure_set) for more info, such as how to make them more or less common.
 
+
+## Compatability
+
+The following sections cover questions about compatability between Tinkers' Construct and other mods.
+
 ### What mods are compatible with Tinkers?
 
 Any mods using the Forge system for fluid pipes will automatically work with the smeltery, foundry, tanks, faucets, and channels. In addition, any mod that adds a common ore (copper, tin, lead, aluminum, etc.) will get melting and casting compatibility for the ore, and some of those will also get tools. These days the question is really not what mods are compatible but what mods are not compatible, as Forge lets most mods work together rather seamlessly. 
@@ -204,6 +209,12 @@ Tinkers specifically has special recipe compatibility for mods such as Ceramics,
 While it is true we have compatibility materials for common ores, *none of them are required to play the mod*. We designed Tinkers' without the compatibility materials, and just added them after the fact to fill space from other mods adding ores that are not usable in tools. More ores simply to give you more materials is just clutter; add other mods if you want to play that mod, not to get 1 more material option. If despite our recommendation you still want the materials, any mod that just adds more ores will get them for you; consider Thermal Foundation as an option.
 
 Instead of pursuing getting every single compatibility material, instead consider installing addons that give you more material options from mods you already have installed. Alternatively, consider [designing your own material](/docs/guides/material) based on something already in your pack; you can pull traits from the disabled materials to make material design easier.
+
+### Why can I not see recipes in my recipe viewer?
+
+Tinkers' Construct only supports [Just Enough Items](https://www.curseforge.com/minecraft/mc-mods/jei) as a recipe viewer. Compatability bridges to use JEI integration on other recipe viewers such as REI or EMI are likely to cause errors which should be reported to the other recipe viewer.
+
+There is no reason we should have competiting standards for recipe viewers. All it accomplishes is preventing modders from taking advantage of new features in recipe viewers for fear of breaking compatability with the competiting standard. We opted to support newer JEI features over trying to support addons that work off an outdated API.
 
 ### Why are my fluids invisible with shaders?
 
