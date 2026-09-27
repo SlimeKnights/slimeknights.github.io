@@ -64,6 +64,7 @@ The has enchantment entity predicate has the following format:
 </div>
 
 ## Mob Type
+<div class="hatnote">Until 1.20</div>
 
 The mob type entity predicate matches any entity with an entity type belonging to the given mob type. 
 
@@ -79,6 +80,8 @@ The has enchantment entity predicate has the following format:
         * **`minecraft:water`**: Any entities that typically live underwater.
         * **`minecraft:undefined`**: Any entities that don't belong to another type.
 </div>
+
+In 1.21, mob types have been replaced with tags.
 
 ## Has Mob Effect
 <div class="hatnote">Since 1.20</div>
