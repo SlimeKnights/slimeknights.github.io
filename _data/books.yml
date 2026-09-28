@@ -203,7 +203,7 @@ encyclopedia_20:
       text: Abilities
 
 metalic_arts_20:
-  path: metalborn/1.0.3
+  path: metalborn/1.0.3b
   arrows: metalborn
   max_page: 23
   titles:
