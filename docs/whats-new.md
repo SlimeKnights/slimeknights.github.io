@@ -41,19 +41,18 @@ Slime islands got reworked:
     * Replaces previous behavior of growing congealed slime.
     * Slimewood is useful as a tool material, notably creating slimestaffs.
     * Slimewood can also make all standard wood blocks and items, but in vibrant hues.
-    * Slimeballs can still be obtained "like apples" from leaves.
+    * Slimeballs can still be obtained "like apples" from leaves.  
 * New earthslime islands!
     * Spawn in the overworld oceans.
-    * Loaded with earthslimes (vanilla slimes) and the new greenheart slimy trees (a bright green wood).
-    * Spawn with either blue or green slimy dirt variants, with green foliage.
+    * Loaded with earthslimes (vanilla slimes).
+    * Come with either earth or sky slimy dirt, and either greenheart or skyroot slimy trees.
 * Skyslime islands return!
     * Spawn in the sky as before, though may be less common.
-    * Tree variant is skyroot, a bright blue wood.
-    * Spawn with blue or green slimy dirt and blue foliage.
+    * Come with either earth or sky slimy dirt, and either greenheart or skyroot slimy trees.
     * Skyslimes no longer die when jumping off the island, bouncing instead.
     * Skyslimes may occasionally spawn wearing armor from Tinkers' Construct.
 * Clay islands add variety to the overworld!
-    * Skyslime islands may rarely spawn as a clay island.
+    * Sky islands may rarely spawn as a clay island.
     * Contains a random overworld tree variant.
     * Filled with dirt, grass, sand, clay, and water.
     * Regularly spawns terracubes, a clay slime variant that may randomly wear vanilla armor.
@@ -70,8 +69,7 @@ Slime islands got reworked:
 Since 1.18, slimy geodes can now be found as the main source of slime crystals:
 
 * Slime crystals are used in many modifiers, though can also be smelted from slimy dirt.
-* Giant earthslime geodes spawn at low elevation in the overworld.
-* Tiny skyslime geodes spawn at high elevations in the overworld, sometimes reaching the surface.
+* Giant earthslime and midsized skyslime geodes spawn at low elevation in the overworld.
 * Ichor geodes spawn near the nether ceiling, providing the primary source of ichor.
 * Enderslime geodes spawn among the outer end islands, appearing as giant endstone rocks from the outside.
 
@@ -80,14 +78,15 @@ Since 1.18, slimy geodes can now be found as the main source of slime crystals:
 Tool tables received many improvements, notably:
 
 * Crafting stations are now crafted using a log and a pattern, allowing different leg variants.
-* Any two table blocks together will now form tabs instead of requiring a crafting station. In addition, multiple tables of the same type can be on tabs, up to 6 selected by distance.
+* Any two table blocks together will now form tabs instead of requiring a crafting station.
+* Multiple tables of the same type can be on tabs, up to 6 selected by distance.
 
 ### Part Builder Rework
 
 * The stencil table and part builder were merged into a single block.
 * Instead of crafting stencils, you simply place a pattern and a material into the part builder to make a tool part.
 * Patterns are consumed upon crafting a tool part, though a gold cast can be as the pattern to prevent this.
-* In addition to tool parts, can also be used to create sand casts and to recycle parts from tools that lack modifiers.
+* In addition to tool parts, can also be used to create sand casts and to recycle parts from tools.
 * Part builders now show a side inventory similar to the crafting station.
 
 ### Tool Crafting
@@ -118,12 +117,12 @@ Tool tables received many improvements, notably:
 
 * The cast chest returns, though is now crafted using seared bricks and a gold cast.
 * Part chest also returns, for mass storage of tool parts.
-* New Tinkers' Chest contains many slots with a limited stack size, perfect for storing large amounts of tools, and is also dyeable.
+* New Tinkers' Chest contains many slots with a limited stack size, perfect for storing large amounts of tools or rarer modifier items. Its also dyeable!
 
 ## Materials
 
 <div class="hatnote" markdown=1>
-For a full list of materials in the mod, see [Design Docs](../design#materials).
+For a full list of materials in the mod, see [Design Docs](../design#materials) or [Online Books](/docs/books).
 </div>
 
 Tool materials have been rebalanced and divided into both tiers and classes. In addition, there are now separate material lists for different tool types.
@@ -133,7 +132,7 @@ Materials have the following tiers:
 * **Tier 1**: Starting tier, comparable to wood or stone. These materials may be used in the part builder.
 * **Tier 2**: Comparable to iron, these materials require melter access or early nether/end access.
 * **Tier 3**: Comparable to diamond, these materials require alloying or nether ores.
-* **Tier 4**: Comparable to netherite, these materials require advanced alloying.
+* **Tier 4**: Comparable to netherite, these materials require advanced alloying or end access.
 
 ### Melee and Harvest
 
@@ -142,7 +141,6 @@ The melee and harvest set of materials is used to create harvest tools such as p
 * **General**: All-around materials with no particular focus.
 * **Melee**: Most useful on melee weapons, may have diminished effectiveness on harvest tools.
 * **Harvest**: Most useful on harvest tools, may have diminished effectiveness on melee weapons.
-* **Special**: Contain more powerful traits or more unusual traits.
 * **Binding**: May only be used to construct tool bindings.
 
 Compared to Tinkers' 2, melee and harvest materials got several major reworks:
@@ -169,13 +167,7 @@ Compared to Tinkers' 2, ranged materials got several major reworks:
 
 ### Armor
 
-Ranged materials are used to create plate armor and shields. They have the following classes:
-
-* **General**: All-around materials with no particular focus.
-* **Defense**: Materials focused on high protection.
-* **Knockback**: Materials focused on high knockback resistance.
-* **Maille**: May only be used to construct maille.
-* **Shield Core**: May be used to construct shield cores, contain a unique list of materials.
+Now are natively in the mod instead of requiring addons.
 
 ### Part Cleanup
 
@@ -192,7 +184,8 @@ For a full list of material traits in the mod, see the [Design Docs](../design#m
 
 * All material traits have been redesigned from the ground up.
 * Notably, in most cases a material only has 1 trait for a particular tool type, instead of heads and handles/bindings having different traits.
-* Low tier material traits on average are a bit weaker than in Tinkers' 2 to make it easier to select traits early game. High tier material traits tend to be more extreme.
+* Low tier material traits on average are a bit weaker than in Tinkers' 2 to make it easier to select traits early game, though they often have some method of scaling into latet game tools.
+* High tier material traits tend to be more tool defining or have easier conditions to make them strong.
 * Some material traits from Tinkers 2 are now modifier recipes and vice versa.
 
 ## Tools
@@ -234,22 +227,38 @@ These weapons make use of [ranged materials](#ranged) to fire projectiles.
 
 * **Crossbow**: Small variant of bows, firing vanilla and mod added arrows along with fireworks. Supports dual wielding.
 * **Longbow**: Large variant of bows, with higher potential velocity and drawspeed.
+* **Fishing Rod** (1.20+): Short ranged wepon akin to a meteor hammer. Can also be used for fishing!
+* **Javelin** (1.20+): Hybrid melee and ranged weapon, able to perform quick attacks or be thrown for long distance melee. Like a trident.
+
+### Ammo
+
+Ammo has been reworked to be single use items with stack size instead of based off durability. The following options are available:
+
+* **Shuriken**: Quick throwable ammo with higher range and lower damage, produced in stacks of 4.
+* **Throwing Axe**: Heavier throwable ammo with lower range and higher damage, produced in stacks of 2.
+* **Arrow**: Ammo for crossbows and longbows, produced stacks of 4.
+
+Based on the materials used on construction, the damage and behavior of the ammo may change.
 
 ### Armor
+<div class="hatnote" markdown=1>
+See [Modifiers](#modifiers) for more information on slot types.
+</div>
 
 Armor has several sets providing different functionality:
 
-* **Travelers**:
-    * Crafted using leather and copper.
-    * All around set, with starting defense slots, upgrade slots, and ability slots.
 * **Plate**:
     * Crafted using molten metals or ceramics.
     * Defensive set, starting with high defense slots, low upgrade slots, and no ability slots.
     * Contains 2 material parts granting defensive material traits.
     * Before 1.19, did not have material variants and was crafted from cobalt.
 * **Slime**
-    * Crafted using enderslime and mob parts.
+    * Crafted using slime and mob parts.
     * Utility set, with no starting defense slots, but high upgrade slots, ability slots, and strong starting traits.
+* **Travelers**:
+    * Crafted with a mix of metals or ceramics and cloth such as leather or vines.
+    * Hybrid defense and utility  
+    * All around set, with starting defense slots, upgrade slots, and ability slots.
 
 In addition, several shields are available:
 * **Travelers Shield**: Low defense shield that does not significantly hinder movement speed when blocking.
@@ -259,8 +268,16 @@ In addition, several shields are available:
 
 * **Flint and Brick**: Modifiable variant of flint and steel, for a Tinkers only tool set.
 * **Slime Staffs**: Highly modifiable tool with 4 variants (for each slime type). Starts with 2 ability slots and no functionality, but can receive many useful abilities turning it into a shield alternative, a sling replacement, a ranged weapon, or even a fancy bucket.
-* **Shurikens**: Single use throwable item with low damage and mid knockback. Has flint and quartz variant.
 * **Copper Cans**: Stackable fluid container holding exactly 1 ingot.
+
+### Ancient Tools
+
+Ancient tools are unique hybrid weapons that are found in loot instead of being crafted. Each contains the functionality of multiple different tool classes:
+
+* **War Pick**: Hybrid pickaxe and crossbow, which can increase arrow damage from mining blocks. Found from mineshafts, zombie villagers, illagers, or from hero of the village weaponsmith rewards.
+* **Melting Pan**: Hybrid [staff](#special) and harvest tool acting like a melter on a stick. Found from dungeons, igloos, zombie variants, or from hero of the village armorsmith rewards.
+* **Swasher**: Hybrid melee and ranged weapon which can fire molten metals as projectiles. Found from shipwrecks, drowned, wither skeletons, or sometimes caught when fishing.
+* **Battle Sign**: Hybrid melee weapon or shield, which performs a powerful knockback attack. Found in the hands of piglins, bastions, or sometimes given from bartering.
 
 ### Modifiers
 
@@ -314,8 +331,9 @@ Other notable changes to modifiers:
 * Nether smeltery variant, made from scorched bricks.
 * Controller requires casting molten obsidian on a scorched brick, can obtain via a alloyer.
 * Aids in nether survival.
-* Does not alloy, but can produce byproducts from ores.
+* Does not alloy, but can produce useful byproducts from ores (which are often more valuable than the original ore).
 * Requires a solid cube (cannot leave out corners) but has increases capacity.
+* Less fuel efficient than the smeltery.
 
 ### New Peripherals
 
