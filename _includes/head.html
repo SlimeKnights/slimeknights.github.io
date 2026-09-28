@@ -21,7 +21,9 @@
         {%- assign book_image = book_image | absolute_url -%}
         <meta name="og:image" content="{{ book_image }}">
         <meta name="twitter:image" content="{{ book_image }}">
-        <meta name="twitter:card" content="summary_large_image" />
+        {%- if page.page_num -%}
+          <meta name="twitter:card" content="summary_large_image" />
+        {%- endif -%}
       {%- endif -%}
     {%- endif -%}
   {%- endunless -%}
