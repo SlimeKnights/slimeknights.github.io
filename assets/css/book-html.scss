@@ -233,7 +233,7 @@
 }
 
 .right-arrow-1 {
-    left: 536px;
+    left: 560px;
 }
 
 .right-arrow {
@@ -246,4 +246,70 @@
 
 .spacing-lg {
     padding-top: 238px;
+}
+
+
+/* Metalborn */
+.page-metalborn {
+  display: flex;
+  flex-direction: column;
+  
+  /* Title with the metal name */
+  .title {
+    margin-bottom: 12px;
+  }
+    
+  /* Tooltips on ingot and nugget at page top */
+  .metal-ingot, .metal-nugget {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0px;
+  }
+  .metal-ingot {
+    left: -4px;
+  }
+  .metal-nugget {
+    left: 336px;
+  }
+  
+  /* Sections with info on the metalmind and spike */
+  .metalmind, .spike {
+    position: relative;
+    height: 64px;
+  
+    .item {
+      display: inline-block;
+      position: relative;
+      width: 64px;
+      height: 64px;
+      left: -4px;
+    }
+    .item-text {
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      height: 64px;
+    }
+  }
+  .metalmind .item-text {
+      top: 10px;
+  }
+  .spike .item-text {
+      top: 20px;
+  }
+  
+  /* Storing and tapping info */
+  .row {
+    gap: 12px;
+    
+    .column {
+      flex: 1;
+      
+      ul {
+        margin-top: 0;
+        padding-left: 20px;
+      }
+    }
+  }
 }

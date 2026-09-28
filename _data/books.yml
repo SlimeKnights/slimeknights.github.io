@@ -202,8 +202,9 @@ encyclopedia_20:
     - index: 257
       text: Abilities
 
-metalborn_20:
-  path: metalborn/1.0.2
+metalic_arts_20:
+  path: metalborn/1.0.3
+  arrows: metalborn
   max_page: 23
   titles:
     - index: 1
