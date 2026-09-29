@@ -4,6 +4,7 @@ title: Tinkers' Construct 3 Ancient Tools
 breadcrumb: Ancient Tools
 description: Ancient tools are a new group of tools added to Tinkers' Construct 3. They cannot be crafted unlike other tools, and are instead found in loot in the world. Since you have less control over their materials and they are harder to obtain, they tend to be a bit stronger on average, though are often geared towards a hybrid functionality.
 image_root: docs/tinkers-construct-3
+image: /assets/images/docs/tinkers-construct-3/battlesign.png
 ---
 
 {{page.description}}

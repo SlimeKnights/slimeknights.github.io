@@ -3,6 +3,7 @@ layout: page
 title: Tinkers' Construct 3 Overview
 description: Tinkers' Construct is a mod about creating tools, then modifying them to make them better. The tools will never permanently break, allowing you to tinker with a design until you are satisfied, or recycle them into new tools. After creating your first tools, create a smeltery to upgrade your tool creation, and explore the world to unlock more powerful materials and modifiers.
 image_root: docs/tinkers-construct-3
+image: /assets/images/docs/tinkers-construct-3/tables.png
 ---
 <div class="hatnote" markdown=1>
 This page is about the mod since 1.16. For 1.8 to 1.12, see [Tinkers' Construct 2 Overview](../tinkers-construct-2).

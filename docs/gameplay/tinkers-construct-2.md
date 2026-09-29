@@ -3,6 +3,7 @@ layout: page
 title: Tinkers' Construct 2 Overview
 description: Tinkers' Construct is a mod about putting tools together in a wide variety of ways, then modifying them until they turn into something else. The tools never disappear and can be named and changed to your heart's desire. Once you make them, they're yours forever. Many different materials can be used to make your tools.
 image_root: docs/tinkers-construct-2
+image: /assets/images/docs/tinkers-construct-2/tables.png
 ---
 <div class="hatnote" markdown=1>
 This page is about the mod from 1.8 to 1.12. For 1.16+, see [Tinkers' Construct 3 Overview](../tinkers-construct-3).

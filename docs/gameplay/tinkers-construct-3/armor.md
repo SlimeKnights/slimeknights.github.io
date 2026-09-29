@@ -4,6 +4,7 @@ title: Tinkers' Construct 3 Armor
 breadcrumb: Armor
 description: Tinkers' Construct 3 natively provides armor, though it works a bit different from how Traveller's Gear worked in Tinkers' Construct 1, or how the addon worked in Tinkers' Construct 2. This page gives an overview of the major mechanics to help you make your best armor.
 image_root: docs/tinkers-construct-3
+image: /assets/images/docs/tinkers-construct-3/plate-armor.png
 ---
 
 {{page.description}}
