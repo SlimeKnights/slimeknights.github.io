@@ -94,6 +94,10 @@ Another way to obtain blazing blood is by melting down ichor. You will need a bi
 
 ## More to Explore
 
-There is a ton more to explore in Tinkers' Construct. For a full guide on the mod, check out the in game books, which are also [available online](/docs/books/1.20). It is also recommended to install [Just Enough Items](https://www.curseforge.com/minecraft/mc-mods/jei) to make it easier to look up recipes in game.
+Additional guides have been created for some key areas of the mod:
+
+* [**Armor**](armor): Covers the different armor types available in the mod.
+
+Beyond those, there is a ton more to explore in Tinkers' Construct. For a full guide on the mod, check out the in game books, which are also [available online](/docs/books/1.20). It is also recommended to install [Just Enough Items](https://www.curseforge.com/minecraft/mc-mods/jei) to make it easier to look up recipes in game.
 
 {% include update/end.html %}
