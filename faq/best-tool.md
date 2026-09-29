@@ -9,7 +9,7 @@ To start, it is important to emphasize the fact that Tinkers' Construct by desig
 
 ## Decide your goals
 
-The first step to making a tool is identifying the tool's purpose. Be as specific as possible; "the best weapon" gives you noting to go off, as opposed to:
+The first step to making a tool is identifying the tool's purpose. Be as specific as possible; "the best weapon" gives you nothing to go off, as opposed to:
 * A sword for quickly killing the wither.
 * A pickaxe with fortune that will last for a long mining expedition.
 * A bow that maximizes damage output per arrow.

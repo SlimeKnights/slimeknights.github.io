@@ -7,7 +7,7 @@ description: Loot injectors are a JSON format added by Mantle in 1.19.2 which al
 
 ## Injector Format
 
-Fluid texture JSON are defined under `data/<domain>/mantle/loot_injectors/<name>.json`, though the name `<name>` is arbitrary. They have the following format:
+Loot injector JSON are defined under `data/<domain>/mantle/loot_injectors/<name>.json`, though the name `<name>` is arbitrary. They have the following format:
 
 <div class="treeview" markdown=1>
 * {% include field.html type="object" %} The loot injector object.
