@@ -252,6 +252,44 @@
     padding-top: 238px;
 }
 
+/* Pairing of an 2x scale item with text on its right. */
+.item-with-text {
+  position: relative;
+  width: 370px;
+  height: 64px;
+  
+  .item-icon {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    left: -4px;
+  }
+  .item-text {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 64px;
+    width: 290px;
+  }
+}
+
+
+/* Tinkers' Construct */
+
+.fluid-effect {
+  .title {
+    margin-bottom: 12px;
+  }
+  .effect-list {
+    height: 128px;
+    
+    .prop-list {
+      margin-top: 8px;
+    }
+  }
+}
+
 
 /* Metalborn */
 .page-metalborn {
