@@ -77,6 +77,32 @@ This section contains various tweaks to tools that came up during the design or 
 * Will likely treat separately from standard left click for the sake of the modifier hooks, so a tool has the option to skip running if its a projectile.
 * Cannot implement on 1.20 without a lot of breaking changes/hook migrations, plus addons have not had a chance to consider the gameplay implications for their modifiers.
 
+### Ichor Rename
+
+* Moajng decided to name an upcoming feature "ichor", which will be a little confusing with our ichor.
+* We figure its best to rename our slime variant to something more unique.
+* Current plan is to rename "Ichor" to "Globin".
+* Name has a similar blood connotation, though different blood part.
+* Globin is known for transporting oxygen. The orange nether slime is known for transporting you by making you float or reversing gravity.
+* Will likely use "glob" as the prefix for globin things, like "globskin", "globskull", and "globilytra".
+
+### Armodillo Scute material
+
+* Armadillo scutes will be a new material, used anywhere turtle scutes are.
+* Will inherit a renamed version of shulker's trait, protection when sneaking.
+* Shulker will likely get shulker box as its new trait, letting your plate armor hold some items.
+* Would like to add shulker to travelers gear in some way, but its not a cuirass and it can't be a plating. Perhaps a shulker box ability modifier for any armor piece as part of the pockets rework.
+
+### Pockets Rework
+
+* Inclined to make pockets grant fewer slots per level as 9 per ability slot feels more inline.
+* Not 100% set on this idea, may leave the slot count alone.
+
+### More Skulls
+
+* There are new skeleton variants, who need new skulls.
+* Traits will be "immune to 1 level of effect" + "arrows grant effect".
+
 
 ## Untargeted
 
