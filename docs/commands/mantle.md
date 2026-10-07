@@ -31,9 +31,11 @@ Searches all loaded datapacks for all enabled [global loot modifiers](https://mc
     * `save`: saves the result to a json file in `<gameDirectory>/mantle_data_dump`. The link in the output of save is clickable.
 
 ## Harvest Tiers
-<div class="hatnote">Since 1.18.1</div>
+<div class="hatnote">From 1.18.1 to 1.20.1</div>
 
 Prints the contents of the Forge tier sorting registry, optionally dumping the list as A JSON file for reordering tiers.
+
+No longer exists in 1.21 as Mojang reworked how harvest tiers work.
 
 **Syntax:**
 ```
@@ -82,17 +84,44 @@ Opens the given book. This is equivalent to opening the book by other means such
 ### Export Book Images
 <div class="hatnote">Since 1.18.2</div>
 
-Exports all pages of a book as static images in the screenshots folder. Used to generate images for [pages on this website](/docs/books). Export will be located at `screenshots/mantle_book/<domain>/<name>` for a book with ID `<domain>:<name>`.
+Exports all pages of a book as static images in the screenshots folder. Used to generate images for [pages on this website](/docs/books) in gallery view. Export will be located at `screenshots/mantle_book/<domain>/<name>` for a book with ID `<domain>:<name>`.
 
 **Syntax:**
 ```
 /mantle book export_images <id> [scale]
+/mantle book export_images <domain> [scale]
 ```
 
 **Arguments:**
 
-* {% include field.html name="\<id\>" type="resource location" %} Book ID to export.
+* {% include field.html name="\<id\>" type="resource location" %} Specific book ID to export. Used if it contains a `:` symbol.
+* {% include field.html name="\<domain\>" type="string" version="since 1.20" %} Book domain to export. All books under this domain will be exported.
 * {% include field.html name="[scale]" type="number" %} GUI scale for export. If unset, defaults to 1.
+
+### Export Book HTML
+<div class="hatnote">Since 1.20.1</div>
+
+Exports all pages of a book as blank images with no text in the screenshots folder, along with HTML containing text and tooltip information. Used to generate images for [pages on this website](/docs/books). Export will be located at `screenshots/mantle_book/<domain>/<name>` and `mantle_book/<domain>/<name>` for a book with ID `<domain>:<name>`.
+
+**Syntax:**
+```
+/mantle book export_html <id> [version]
+/mantle book export_html <domain> [version]
+```
+
+**Syntax: (upcoming 1.21)**
+```
+/mantle book export_html <domain> [book_key]
+```
+
+**Arguments:**
+
+* {% include field.html name="\<id\>" type="resource location" %} Specific book ID to export. Used if it contains a `:` symbol.
+* {% include field.html name="\<domain\>" type="string" %} Book domain to export. All books under this domain will be exported.
+* {% include field.html name="[version]" type="string" %} Suffix for the book key in generated files. Defaults to the major version number (for example, "20" for 1.20.1).
+* {% include field.html name="[book_key]" type="string" %} Book key in generated files. Defaults to the book ID with the version suffix (for example, "encyclopedia_20" for the Encyclopedia of Tinkering in 1.20.1). 
+
+`[version]` and `[book_key]` are both useful if the desired name of the book on the website does not match the default name. Notably is useful for testing to have multiple copies of a book for testing differences during an update.
 
 ### Clear Book Cache
 <div class="hatnote">Since 1.18.2</div>
