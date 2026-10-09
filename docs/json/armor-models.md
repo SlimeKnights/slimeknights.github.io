@@ -5,17 +5,13 @@ description: Since 1.19.2, Tinkers' Construct armors have their textures control
 ---
 {{page.description}}
 
-Armor models are located at `assets/<domain>/tinkering/armor_models/<name>.json`, for armor with the ID `<domain>:<name>`. In the base mod, there are three armor models:
-
-* `tconstruct:travelers`: controls all 4 pieces in the travelers gear set.
-* `tconstruct:plate`: controls all 4 pieces in the plate armor set.
-* `tconstruct:slime`: controls all 4 pieces in the slime suit set. Note for the slimeskull, this model controls the textures for the non-skull part only.
-
 When using [JSON Things](/docs/json/json-things#armor) to add armor using the type `tconstruct:multilayer_armor`, this ID is set by the field `name`.
 
 {% include toc.html %}
 
 ## JSON Format
+
+Armor models are located at `assets/<domain>/tinkering/armor_models/<name>.json`, for armor with the ID `<domain>:<name>`.
 
 Armor models have the following format:
 
@@ -26,6 +22,23 @@ Armor models have the following format:
             * {% include field.html name="type" type="resource location" %} Texture supplier ID.
             * *Other fields based on the texture supplier type.*
 </div>
+
+## Model list
+
+In the base mod, there are 5 armor models:
+
+* `tconstruct:travelers`: controls all 4 pieces in the travelers gear set.
+* `tconstruct:plate`: controls all 4 pieces in the plate armor set.
+
+The following models were added in 1.20.1:
+
+* `tconstruct:slime`: controls the slimecage, slimeshell, and slimeboots in the slime suit set. Note the same texture layer is used for all 3 mob parts.
+* `tconstruct:slimeskull`: controls the slimeskull model, used to skip the mob part layer which is hardcoded in Java.
+* `tconstruct:slime_wings`: controls all the slimelyra model which, unlike other slimesuit pieces, has just slime as material.
+
+The following model existed in 1.19.2:
+
+* `tconstruct:slime`: controls all 4 pieces in the slime suit set. Note for the slimeskull, this model controls the textures for the non-skull part only.
 
 ## Armor Textures
 
