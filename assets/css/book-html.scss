@@ -223,7 +223,17 @@
     }
 }
 
-.left-arrow, .right-arrow-1, .right-arrow {
+.start-arrow {
+    position: absolute;
+    top: 383px;
+    left: 394px;
+    > img {
+        width: 36px;
+        height: 20px;
+    }
+}
+
+.left-arrow, .right-arrow-cover, .right-arrow {
     position: absolute;
     top: 350px;
     > img {
@@ -236,7 +246,7 @@
     left: 44px;
 }
 
-.right-arrow-1 {
+.right-arrow-cover {
     left: 560px;
 }
 

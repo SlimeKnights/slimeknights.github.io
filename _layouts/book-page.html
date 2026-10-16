@@ -30,6 +30,9 @@ layout: default
       {% unless page.page_num == book.max_page %}
         <a href="../page-{{ page.page_num | plus: 1 }}/" class="right-arrow"><img src="/assets/images/book/arrows/{{ book.arrows }}/right.png" alt=""></a>
       {% endunless %}
+      {% if page.section_start %}
+        <a href="../page-{{page.section_start}}/" class="start-arrow"><img src="/assets/images/book/arrows/{{ book.arrows }}/start.png" alt=""></a>
+      {% endif %}
     </div>
     <p>Click on the arrows, icons, and links to navigate the book.</p>
     <p>Having trouble interacting? View the book using the <a href="../gallery">gallery</a>.</p>
