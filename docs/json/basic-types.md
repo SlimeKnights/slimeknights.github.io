@@ -14,7 +14,7 @@ See also: [Resource Locations](../resource-location), [Conditions](../conditions
 
 Many JSON contain colors expressed as 6 or 8 digit hex color strings. 6 digit RGB strings use the format of `"RRGGBB"`, while 8 digit ARGB strings use the format of `"AARRGGBB"`. `AA`, `RR`, `GG`, and `BB` are hex numbers between 0 (`00`) and 255 (`FF`) representing the intensity of the color in (case insensitive) hexadecimal, with higher values meaning more of that color is present. On ARGB strings, if only 6 digits are provided then `AA` is set to 255.
 
-For example, `"FF00000"` represents a bright red, as `RR` is 255 and both `GG` and `BB` are 0. If this was an ARGB color, then `AA` would be set to 255 (fully opaque).
+For example, `"FF0000"` represents a bright red, as `RR` is 255 and both `GG` and `BB` are 0. An equivalent ARGB color would be `"FFFF0000"`, because here `AA`, `RR`, `GG`, `BB` are `FF`, `FF`, `00`, and `00` respectively.
 
 ### Text Color
 
