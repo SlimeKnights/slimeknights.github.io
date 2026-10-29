@@ -21,10 +21,11 @@ This FAQ page covers general questions about our mods. If you have a mod specifi
 ## Minecraft Versions
 
 ### What versions do you support?
+<div class="
 
-We currently are primarily focused on 1.20.1 working on smaller bug fixes and features to complete the version; see the [roadmap](/docs/roadmap) for more details. After that, 1.20.1 will be put in long-term support, possibly just receiving bug fix updates. 1.18.2 and 1.19.2 may both receive a bug fix update as well. 
+We just finished a major 1.20.1 update, and are now focused on 1.21.1 NeoForge ports for [Mantle](/projects#mantle) and [Metalborn](/projects#metalborn), before working on Tinkers' Construct for 1.21.1.
 
-After finishing that, we will focus on a 1.21.1 NeoForge port for [Mantle](/projects#mantle) and [Metalborn](/projects#metalborn), before working on Tinkers' Construct for 1.21.1.
+1.20.1 is currently labeled long-term support, with only small features and bug fixes planned for the near future. 1.18.2 and 1.19.2 may both receive a bug fix update as well. 
 
 If you want help with gameplay, you are free to ask on [our discord](https://discord.gg/njGrvuh), though note help with 1.7.10 or 1.12 may be limited due to how old those versions are (its been years, details are forgotten). Additionally, anything older than 1.7.10 and any version between 1.8 and 1.11 are entirely unsupported. Make sure to mention what version you are talking about if asking about any version other than 1.20.1, as otherwise we will answer for 1.20.1.
 
