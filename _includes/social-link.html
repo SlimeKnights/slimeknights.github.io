@@ -1,0 +1,14 @@
+{%- if include.name -%}
+  {%- assign social = site.data.social[include.site] -%}
+  <a href="{{social.link}}{{include.name}}" title="{{social.title}}">
+    {%- if social.custom_icon -%}
+      {%- include custom-icon.html name=social.icon -%}
+    {%- else -%}
+      <i uk-icon="{{social.icon}}"></i>
+    {%- endif -%}
+  </a>
+{%- else -%}
+  <a href="{{include.site}}" title="Website">
+    <i uk-icon="world"></i>
+  </a>
+{%- endif -%}

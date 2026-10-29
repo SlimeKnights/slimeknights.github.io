@@ -18,6 +18,7 @@ If you wish to contribute towards improving this site you can create a pull requ
             <th>Name</th>
             <th>Role</th>
             <th>Projects</th>
+            <th>Links</th>
         </tr>
     </thead>
     <tbody>
@@ -26,36 +27,69 @@ If you wish to contribute towards improving this site you can create a pull requ
             <td><a href="https://github.com/alexbegt">alexbegt</a></td>
             <td>Developer</td>
             <td>Natura</td>
+            <td>
+              {% include social-link.html site="github"     name="alexbegt" %}
+              {% include social-link.html site="curseforge" name="alexbegt" %}
+              {% include social-link.html site="reddit"     name="alexbegt" %}
+            </td>
         </tr>
         <tr>
             <td><img src="/assets/images/members/fuj1n.png"/></td>
             <td><a href="https://github.com/fuj1n">fuj1n</a></td>
             <td>Developer</td>
             <td>Tinkers' Mechworks</td>
+            <td>
+              {% include social-link.html site="github"     name="fuj1n" %}
+              {% include social-link.html site="curseforge" name="fuj1n" %}
+              {% include social-link.html site="reddit"     name="fuj1n" %}
+              {% include social-link.html site="bluesky"    name="fuj1n.bsky.social" %}
+            </td>
         </tr>
         <tr>
             <td><img src="/assets/images/members/knightminer.jfif"/></td>
             <td><a href="https://github.com/KnightMiner">KnightMiner</a></td>
             <td>Developer</td>
             <td>Tinkers' Construct</td>
+            <td>
+              {% include social-link.html site="github"     name="KnightMiner" %}
+              {% include social-link.html site="curseforge" name="knightminer" %}
+              {% include social-link.html site="reddit"     name="KnightMiner" %}
+              {% include social-link.html site="patreon"    name="KnightMiner" %}
+            </td>
         </tr>
         <tr>
             <td><img src="/assets/images/members/progwml6.png"/></td>
             <td><a href="https://github.com/progwml6">progwml6</a></td>
             <td>Developer, DevOps</td>
             <td>Natura</td>
+            <td>
+              {% include social-link.html site="github"     name="progwml6" %}
+              {% include social-link.html site="curseforge" name="progwml6" %}
+            </td>
         </tr>
         <tr>
             <td><img src="/assets/images/members/boni.png"/></td>
             <td><a href="https://github.com/bonii-xx">boni</a></td>
             <td>Former Developer</td>
             <td>Tinkers' Construct</td>
+            <td>
+              {% include social-link.html site="github"     name="bonii-xx" %}
+              {% include social-link.html site="curseforge" name="bonusboni" %}
+              {% include social-link.html site="reddit"     name="bonusboni" %}
+            </td>
         </tr>
         <tr>
             <td><img src="/assets/images/members/mdiyo.png"/></td>
             <td><a href="https://github.com/mDiyo">mDiyo</a></td>
             <td>Designer, Former Developer</td>
             <td>Tinkers' Construct</td>
+            <td>
+              {% include social-link.html site="github"     name="mDiyo" %}
+              {% include social-link.html site="curseforge" name="mdiyo" %}
+              {% include social-link.html site="reddit"     name="mDiyo" %}
+              {% include social-link.html site="patreon"    name="mDiyo" %}
+              {% include social-link.html site="https://www.mdiyo.com/" %}
+            </td>
         </tr>
     </tbody>
 </table>

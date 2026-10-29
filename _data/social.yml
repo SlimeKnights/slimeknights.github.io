@@ -1,0 +1,26 @@
+bluesky:
+  title: Bluesky
+  link: https://bsky.app/profile/
+  icon: bluesky
+
+curseforge:
+  title: CurseForge
+  link: https://www.curseforge.com/members/
+  icon: curseforge
+  custom_icon: true
+  
+github:
+  title: GitHub
+  link: https://github.com/
+  icon: github
+  
+patreon:
+  title: Patreon
+  link: http://www.patreon.com/
+  icon: patreon
+  custom_icon: true
+  
+reddit:
+  title: Reddit
+  link: https://www.reddit.com/user/
+  icon: reddit
