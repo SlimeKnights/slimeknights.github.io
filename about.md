@@ -43,6 +43,7 @@ If you wish to contribute towards improving this site you can create a pull requ
               {% include social-link.html site="curseforge" name="fuj1n" %}
               {% include social-link.html site="reddit"     name="fuj1n" %}
               {% include social-link.html site="bluesky"    name="fuj1n.bsky.social" %}
+              {% include social-link.html site="twitter"    name="fuj1n" %}
             </td>
         </tr>
         <tr>
@@ -54,6 +55,7 @@ If you wish to contribute towards improving this site you can create a pull requ
               {% include social-link.html site="github"     name="KnightMiner" %}
               {% include social-link.html site="curseforge" name="knightminer" %}
               {% include social-link.html site="reddit"     name="KnightMiner" %}
+              {% include social-link.html site="twitter"    name="KnightMiner" %}
               {% include social-link.html site="patreon"    name="KnightMiner" %}
             </td>
         </tr>
@@ -65,6 +67,8 @@ If you wish to contribute towards improving this site you can create a pull requ
             <td>
               {% include social-link.html site="github"     name="progwml6" %}
               {% include social-link.html site="curseforge" name="progwml6" %}
+              {% include social-link.html site="bluesky"    name="progwml6.bsky.social" %}
+              {% include social-link.html site="twitter"    name="progwml6" %}
             </td>
         </tr>
         <tr>
@@ -76,6 +80,7 @@ If you wish to contribute towards improving this site you can create a pull requ
               {% include social-link.html site="github"     name="bonii-xx" %}
               {% include social-link.html site="curseforge" name="bonusboni" %}
               {% include social-link.html site="reddit"     name="bonusboni" %}
+              {% include social-link.html site="twitter"    name="bonusboni" %}
             </td>
         </tr>
         <tr>

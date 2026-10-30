@@ -24,3 +24,8 @@ reddit:
   title: Reddit
   link: https://www.reddit.com/user/
   icon: reddit
+
+twitter:
+  title: Twitter
+  link: https://twitter.com/
+  icon: x
