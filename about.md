@@ -31,6 +31,7 @@ If you wish to contribute towards improving this site you can create a pull requ
               {% include social-link.html site="github"     name="alexbegt" %}
               {% include social-link.html site="curseforge" name="alexbegt" %}
               {% include social-link.html site="reddit"     name="alexbegt" %}
+              {% include social-link.html site="twitter"    name="alexbegt" %}
             </td>
         </tr>
         <tr>
@@ -93,6 +94,7 @@ If you wish to contribute towards improving this site you can create a pull requ
               {% include social-link.html site="curseforge" name="mdiyo" %}
               {% include social-link.html site="reddit"     name="mDiyo" %}
               {% include social-link.html site="patreon"    name="mDiyo" %}
+              {% include social-link.html site="twitter"    name="Merdiwen" %}
               {% include social-link.html site="https://www.mdiyo.com/" %}
             </td>
         </tr>
