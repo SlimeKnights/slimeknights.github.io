@@ -17,7 +17,7 @@ metalic_arts_21:
 
 
 materials_and_you_20:
-  path: tinkers/3.12.1/materials_and_you
+  path: tinkers/3.12.1.231/materials_and_you
   arrows: tinkers/materials_and_you
   max_page: 34
   next:
@@ -45,7 +45,7 @@ materials_and_you_20:
       text: Further Reading
 
 puny_smelting_20:
-  path: tinkers/3.12.1/puny_smelting
+  path: tinkers/3.12.1.231/puny_smelting
   arrows: tinkers/puny_smelting
   max_page: 105
   previous:
@@ -84,7 +84,7 @@ puny_smelting_20:
       text: Further Reading
 
 mighty_smelting_20:
-  path: tinkers/3.12.1/mighty_smelting
+  path: tinkers/3.12.1.231/mighty_smelting
   arrows: tinkers/mighty_smelting
   max_page: 85
   previous:
@@ -114,7 +114,7 @@ mighty_smelting_20:
       text: Defense
 
 fantastic_foundry_20:
-  path: tinkers/3.12.1/fantastic_foundry
+  path: tinkers/3.12.1.231/fantastic_foundry
   arrows: tinkers/fantastic_foundry
   max_page: 30
   previous:
@@ -141,7 +141,7 @@ fantastic_foundry_20:
       text: Tier 4 Armor
 
 tinkers_gadgetry_20:
-  path: tinkers/3.12.1/tinkers_gadgetry
+  path: tinkers/3.12.1.231/tinkers_gadgetry
   arrows: tinkers/tinkers_gadgetry
   max_page: 81
   previous:
@@ -178,7 +178,7 @@ tinkers_gadgetry_20:
       text: Slimy Armor
 
 encyclopedia_20:
-  path: tinkers/3.12.1/encyclopedia
+  path: tinkers/3.12.1.231/encyclopedia
   arrows: tinkers/encyclopedia
   max_page: 292
   previous:
