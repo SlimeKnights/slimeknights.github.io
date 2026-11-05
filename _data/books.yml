@@ -1,3 +1,21 @@
+metalic_arts_21:
+  path: metalborn/1.1.0
+  arrows: metalborn
+  max_page: 24
+  titles:
+    - index: 1
+      text: Metal Forge
+      
+    - index: 4
+      text: Feruchemy
+      
+    - index: 10
+      text: Hemalurgy
+      
+    - index: 13
+      text: Metal Powers
+
+
 materials_and_you_20:
   path: tinkers/3.12.1/materials_and_you
   arrows: tinkers/materials_and_you
