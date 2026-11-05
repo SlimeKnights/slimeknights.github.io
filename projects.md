@@ -18,7 +18,7 @@ These SlimeKnights projects are actively supported, either on the latest Minecra
 
 <div class="project-list">
     {% include project.html
-      name="mantle" latest="1.20.1"
+      name="mantle" latest="1.21.1"
       description="Mantle is a mod containing shared code for SlimeKnights mods. Why? For science and slime, why else?"
     %}
     {% include project.html
@@ -64,19 +64,19 @@ These mods are made by a member of SlimeKnights, but the projects are not part o
       description="Allows stacking items together if they share one of a whitelist of tags, for easy conversion between common mod items like ingots and nuggets."
     %}
     {% include project.html
-      name="ceramics" latest="1.20.1"
+      name="ceramics" latest="1.21.1"
       author="KnightMiner"
       description="Originally inspired by the clay bucket from Iguana Tinker Tweaks, this mod simply added a clay bucket, but now it adds quite a few other features made from clay to both improve the early game and be used in long term builds."
+    %}
+    {% include project.html
+      name="metalborn" latest="1.21.1"
+      author="KnightMiner"
+      description="Magic mod about storing power in metal. Inspired by Feruchemy from Brandon Sanderson's Mistborn series."
     %}
     {% include project.html
       name="inspirations" latest="1.20.1"
       author="KnightMiner"
       description="Inspirations is a mod for Minecraft adding various smaller features to the game. The design is targeted towards vanilla, so instead of game changing features there are many smaller changes. "
-    %}
-    {% include project.html
-      name="metalborn" latest="1.20.1"
-      author="KnightMiner"
-      description="Magic mod about storing power in metal. Inspired by Feruchemy from Brandon Sanderson's Mistborn series."
     %}
     {% include project.html
       name="simple-absorption" title="Simple Absorption" latest="1.20.1"
